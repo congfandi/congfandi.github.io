@@ -1,3 +1,3 @@
 source 'https://rubygems.org'
-
-gemspec
+gem 'rouge'
+gem 'github-pages', group: :jekyll_plugins
