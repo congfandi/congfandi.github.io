@@ -8,4 +8,4 @@ description: Cong is a man of power full spirit on programming.
 
 _yay_
 
-[back](./)
+[back](../)
