@@ -11,7 +11,7 @@ Hobi saya adalah belajar pemrograman baru, bagi saya membuat sebuah program adal
 
 Spesialis saya adalah dibidang mobile developer, akan tetapi saya juga menguasai beberapa framework web programming seperti laravel. dibindang mobile saya menguasai beberapa bahasa pemrograman seperti Dart,Java dan Kotlin.
 
-Selain sebagai seorang pegawai, saya tidak hanya fokus pada apa yang saya kerjakan di kantor, akan tetapi saya juga membangun sebuah startup yang berbasis di gresik dengan nama [Genta Software Nusantara](www.gentasoft.com) atau bisa disingkat [Gentasoft](https://gentasoft.com) disini saya menjabat sebagai CTO sekaligus sebagai founder.
+Selain sebagai seorang pegawai, saya tidak hanya fokus pada apa yang saya kerjakan di kantor, akan tetapi saya juga membangun sebuah startup yang berbasis di gresik dengan nama [Genta Software Nusantara](https://gentasoft.com) atau bisa disingkat [Gentasoft](https://gentasoft.com) disini saya menjabat sebagai CTO sekaligus sebagai founder.
 
 ---
 
