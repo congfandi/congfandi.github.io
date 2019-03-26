@@ -3,8 +3,15 @@ layout: page
 title: About
 ---
 
-Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. Created for free and for fun by Stijn. Get the latest version at the [Github repository](https://github.com/stijnvc/holo-alfa).
+Assalamualaikum Warohmatullah Wabarokaatu, 
+
+Perkenalkan, nama Saya Cong Fandi, umur saya 24 Tahun, Saya berasal dari Pamekasan Madura, namu saat ini saya tinggal di gresik bersama anak dan isteri saya. disini saya tinggal di perumahan Giri asri gang z nomer 16, Gresik. Saya merupakan anak ke-1 dari empat bersaudara. Ayah Saya seorang petani, dan sekarang sedang menjadi TKI di negara mlaisia. Sementara itu, ibu saya juga ikut membantu ayah untuk menggarap sawah. 
+
+Hobi saya adalah belajar pemrograman baru, bagi saya membuat sebuah program adalah kenikmatan tersendiri, bahkan tidak ada hari libut bagi saya karena saya sangat mencintai pekerjaan saya sebagai seorang developer.
+
+Spesialis saya adalah dibidang mobile developer, akan tetapi saya juga menguasai beberapa framework web programming seperti laravel. dibindang mobile saya menguasai beberapa bahasa pemrograman seperti Dart,Java dan Kotlin.
+
+Selain sebagai seorang pegawai, saya juga membangun
 
 ---
 
-Holo Alfa is open source, [MIT license](http://opensource.org/licenses/MIT).
