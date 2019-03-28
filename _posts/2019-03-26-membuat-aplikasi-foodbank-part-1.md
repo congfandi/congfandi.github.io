@@ -10,20 +10,21 @@ Oke kita mulai saja tutorialnya.
 1. Buat aplikasi dengan menggunakan **Android Studio**
 2. Atur project seperti gambar 1
    ![Gambar 1](/../img/foodbank1/gambar1.png)
-   _Gambar 1_
+   *Gambar 1*
 
    saya sangat menyarankan teman-teman utntuk mengatur aplikasi seperti yang ada pada gambar 1.0 agar tidak terjadi error yang tidak di inginkan, jika ingin membuat yang berbeda silahkan tapi lakukan hal itu diluar kelas ya .
 3. Setelah project selesai dibuat, Buatlah beberapa folder yang ada didalam `id.gresikdev.foodbank`  antara lain **models** , **views**, **controllers** seperti gambar 2
 ![Gambar 2](/../img/foodbank1/gambar2.png)
-    _Gambar 2_
+    *Gambar 2*
 
 4. Masih didalam folder(istilah lainnya *package*) `id.gresikdev.foodbank` kita pindahkan file `MainActivity` kedalam *package* **views** kemudian buat beberapa *Activity* `LoginActivity`, `RegisterActivity`, `SplashActivity` dan `WelcomeActivity` dengan cara : Klik kanan pada *package* **views** => **New** => **Activity** => **Empty Activity**.
 Struktur file dapat dilihat pada gambar 3.
 ![Gambar 3](/../img/foodbank1/gambar3.png)
+*Gambar 3*
 
 5. Jalankan aplikasi, maka aplikasi akan terlihat seperti gambar 4 
    ![Gambar 4](/../img/foodbank1/gambar4.png).
-
+*Gambar 4*
 
 Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
 **SplashActivity** => **WelcomeActivity** => **LoginActivity**/**RegisterActivity**, langkah-langkahnya adalah sebagai berikut :
@@ -83,7 +84,10 @@ jika dijalankan, aplikasi tidak lagi mengarah pada *Activity* `MainActivity` aka
                 android:layout_height="wrap_content" />
         </RelativeLayout>
     ```
-Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* padahal seharusnya activity ini tidak memiliki toolbar. maka kita hilangkan dulu toolbarnya.
+Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* padahal seharusnya activity ini tidak memiliki toolbar lihat gambar 5.
+![Gambar 5](/../img/foodbank1/gambar5.png)
+*Gambar 5*
+maka kita hilangkan dulu toolbarnya.
 
 **Menghilangkan *toolbar* pada *activity* `SplashActivity`**
 1. Buka file `styles.xml` yang ada pada package *res* => *values* => `styles.xml`
@@ -109,3 +113,4 @@ Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* p
    ```
 kemudian jalankan aplikasi dan *toolbar* akan otomatis hilang. lihat gambar 6
 ![Gambar 6](/../img/foodbank1/gambar6.png)
+*Gambar 6*
