@@ -82,4 +82,29 @@ jika dijalankan, aplikasi tidak lagi mengarah pada *Activity* `MainActivity` aka
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </RelativeLayout>
-```
+    ```
+Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* padahal seharusnya activity ini tidak memiliki toolbar. maka kita hilangkan dulu toolbarnya.
+
+**Menghilangkan *toolbar* pada *activity* `SplashActivity`**
+1. Buka file `styles.xml` yang ada pada package *res* => *values* => `styles.xml`
+2. tambah kode berikut 
+   ```xml
+        <!--Tema tanpa toolbar-->
+    <style name="tanpaToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+   ```
+3. buka lagi file `AndroidManifest.xml`, kemudian tambahkan kode berikut
+   ````xml
+        <activity android:name=".views.SplashActivity" android:theme="@style/tanpaToolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+   ```
+kemudian jalankan aplikasi dan toolbar akan otomatis hilang.
