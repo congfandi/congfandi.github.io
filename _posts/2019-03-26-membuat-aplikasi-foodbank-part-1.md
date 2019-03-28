@@ -109,3 +109,21 @@ maka kita hilangkan dulu toolbarnya.
 kemudian jalankan aplikasi dan *toolbar* akan otomatis hilang. lihat gambar 6
 ![Gambar 6](/../img/foodbank1/gambar6.png)
 *Gambar 6*
+
+Langkah selanjutnya adalah membuat aplikasi secara otomatis berpindah halaman setelah 3 detik, oke kita mulai saja:
+
+**Memindahkan halaman secara otomatis dalam 3 detik**
+1. buka file `SplashActivity.java` 
+2. buatlah method dengan nama *pergiKeWelcome*
+    ```java
+         private void pergiKeWelcome(){
+        TimerTask task = new TimerTask() {
+            @Override
+            public void run() {
+                startActivity(new Intent(SplashActivity.this,WelcomeActivity.class));
+            }
+        };
+        Timer timer = new Timer("Pindah Halaman");
+        timer.schedule(task,3000);
+    }
+    ```
