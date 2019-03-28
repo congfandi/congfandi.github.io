@@ -1,7 +1,7 @@
 Bismillah, 
 
 Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan **HRC**. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan **GresikDev**.
-
+<!--more-->
 Pada tutorial ini, kita akan mencoba membuat sebuah aplikasi bank makanan (Foodbank) dimana Mockup dari aplikasi ini dapat dilihat [disini](https://www.behance.net/gallery/67347541/FoodBank-Restaurant-App-UI-Kit).
 
 Oke kita mulai saja tutorialnya.
@@ -127,3 +127,11 @@ Langkah selanjutnya adalah membuat aplikasi secara otomatis berpindah halaman se
         timer.schedule(task,3000);
     }
     ```
+
+Oke, sampai itu dulu tutorial kali ini selanjutnya kita akan membahas bagaimana mengubah tampilan di *activity* `WelcomeActivity.java` . Sampai jumpa dipertemuan selanjutnya
+
+----
+
+>***Tidak ada jalan pintas untuk menjadi developer selain mencoba dan gagal***
+<small>Naruto Uzumaki</small>
+
