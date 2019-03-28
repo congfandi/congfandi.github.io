@@ -30,7 +30,7 @@ Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
 **SplashActivity** => **WelcomeActivity** => **LoginActivity**/**RegisterActivity**, langkah-langkahnya adalah sebagai berikut :
 1. Buka file `AndroidManifest.xml` yang ada pada folder **manifests**
 2. Edit file yang sebelumya 
-   ```manifest
+   ```xml
     <activity android:name=".views.RegisterActivity"></activity>
     <activity android:name=".views.LoginActivity" />
     <activity android:name=".views.WelcomeActivity" />
@@ -44,7 +44,7 @@ Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
     </activity>
    ```
    menjadi seperti ini
-   ```manifest
+   ```xml
         <activity android:name=".views.RegisterActivity"></activity>
         <activity android:name=".views.LoginActivity" />
         <activity android:name=".views.WelcomeActivity" />
@@ -87,6 +87,7 @@ jika dijalankan, aplikasi tidak lagi mengarah pada *Activity* `MainActivity` aka
 Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* padahal seharusnya activity ini tidak memiliki toolbar lihat gambar 5.
 ![Gambar 5](/../img/foodbank1/gambar5.png)
 *Gambar 5*
+
 maka kita hilangkan dulu toolbarnya.
 
 **Menghilangkan *toolbar* pada *activity* `SplashActivity`**
