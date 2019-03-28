@@ -107,4 +107,5 @@ Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* p
             </intent-filter>
         </activity>
    ```
-kemudian jalankan aplikasi dan toolbar akan otomatis hilang.
+kemudian jalankan aplikasi dan *toolbar* akan otomatis hilang. lihat gambar 6
+![Gambar 6](/../img/foodbank1/gambar6.png)
