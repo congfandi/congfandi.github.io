@@ -56,3 +56,30 @@ Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
             </intent-filter>
         </activity>
    ```
+jika dijalankan, aplikasi tidak lagi mengarah pada *Activity* `MainActivity` akan tetapi sudah mengarah pada `SplashActivity`. langkah selanjutnya kita akan mrugah tampilan `SplashActivity`.
+
+**Merubah Tampilan `SplashActivty`**
+1. Buka File `activity_splash.xml`, file ini ada pada package *res* => *layout*
+2. kemudian tuliskan code berikut pada tab *Teks*
+   ```xml
+        <?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".views.SplashActivity">
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:text="Versi 1.0.0"
+                android:layout_marginBottom="20.0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+```
