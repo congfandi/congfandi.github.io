@@ -2,7 +2,7 @@
 layout: page
 title: About
 ---
-![Forest]({{ site.baseurl }}/img/congfandi.jpg) <small>Source: [imgur.com](http://imgur.com/KTfsVZL)</small>
+![Forest]({{ site.baseurl }}/img/congfandi.jpg)
 Assalamualaikum Warohmatullah Wabarokaatu, 
 
 Perkenalkan, nama Saya Cong Fandi, umur saya 24 Tahun, Saya berasal dari Pamekasan Madura, namu saat ini saya tinggal di gresik bersama anak dan isteri saya. Disini saya tinggal di Perumahan Giri Asri Gang Z nomer 16, Gresik.
