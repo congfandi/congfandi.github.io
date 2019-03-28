@@ -8,11 +8,15 @@ Oke kita mulai saja tutorialnya.
 
 **Tutorial Membuat Foodbank**
 1. Buat aplikasi dengna menggunakan **Android Studio**
-2. Atur project seperti gambar 1.0
-   ![Gambar 1.0](/../img/foodbank1/gambar1.png)
-   _Gambar 1.2_
-   
+2. Atur project seperti gambar 1
+   ![Gambar 1](/../img/foodbank1/gambar1.png)
+   _Gambar 1_
+
    saya sangat menyarankan teman-teman utntuk mengatur aplikasi seperti yang ada pada gambar 1.0 agar tidak terjadi error yang tidak di inginkan, jika ingin membuat yang berbeda silahkan tapi lakukan hal itu diluar kelas ya .
-3. Setelah project selesai dibuat, Buatlah beberapa folder yang ada didalam `id.gresikdev.foodbank` seperti gambar 1.1
-![Gambar 1.1](/../img/foodbank1/gambar2.png)
-    _Gambar 1.2_
+3. Setelah project selesai dibuat, Buatlah beberapa folder yang ada didalam `id.gresikdev.foodbank`  antara lain **models** , **views**, **controllers** seperti gambar 2
+![Gambar 2](/../img/foodbank1/gambar2.png)
+    _Gambar 2_
+
+4. Masih didalam folder(istilah lainnya *package*) `id.gresikdev.foodbank` kita pindahkan file `MainActivity` kedalam *package* **views** kemudian buat beberapa *Activity* `LoginActivity`, `RegisterActivity`, `SplashActivity` dan `WelcomeActivity` dengan cara : Klik kanan pada *package* **views** => **New** => **Activity** => **Empty Activity**.
+Struktur file dapat dilihat pada gambar 3.
+![Gambar 3](/../img/foodbank1/gambar3.png)
