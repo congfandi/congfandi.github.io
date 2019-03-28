@@ -1,3 +1,4 @@
+![Cover](/../img/foodbank1/cover.png)
 Bismillah, 
 
 Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan **HRC**. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan **GresikDev**.
