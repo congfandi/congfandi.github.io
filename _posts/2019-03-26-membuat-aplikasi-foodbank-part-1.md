@@ -1,6 +1,6 @@
 Bismillah, 
 
-Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan **HRC**. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan GresikDev.
+Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan **HRC**. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan **GresikDev**.
 
 Pada tutorial ini, kita akan mencoba membuat sebuah aplikasi bank makanan (Foodbank) dimana Mockup dari aplikasi ini dapat dilihat [disini](https://www.behance.net/gallery/67347541/FoodBank-Restaurant-App-UI-Kit).
 
@@ -23,4 +23,36 @@ Struktur file dapat dilihat pada gambar 3.
 
 5. Jalankan aplikasi, maka aplikasi akan terlihat seperti gambar 4 
    ![Gambar 4](/../img/foodbank1/gambar4.png).
-6. 
+
+
+Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
+**SplashActivity** => **WelcomeActivity** => **LoginActivity**/**RegisterActivity**, langkah-langkahnya adalah sebagai berikut :
+1. Buka file `AndroidManifest.xml` yang ada pada folder **manifests**
+2. Edit file yang sebelumya 
+   ```manifest
+    <activity android:name=".views.RegisterActivity"></activity>
+    <activity android:name=".views.LoginActivity" />
+    <activity android:name=".views.WelcomeActivity" />
+    <activity android:name=".views.SplashActivity" />
+    <activity android:name=".views.MainActivity">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+   ```
+   menjadi seperti ini
+   ```manifest
+        <activity android:name=".views.RegisterActivity"></activity>
+        <activity android:name=".views.LoginActivity" />
+        <activity android:name=".views.WelcomeActivity" />
+        <activity android:name=".views.MainActivity" />
+        <activity android:name=".views.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+   ```
