@@ -105,12 +105,6 @@ maka kita hilangkan dulu toolbarnya.
 3. buka lagi file `AndroidManifest.xml`, kemudian tambahkan kode berikut
    ````xml
         <activity android:name=".views.SplashActivity" android:theme="@style/tanpaToolbar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
    ```
 kemudian jalankan aplikasi dan *toolbar* akan otomatis hilang. lihat gambar 6
 ![Gambar 6](/../img/foodbank1/gambar6.png)
