@@ -8,7 +8,7 @@ Langkah-Langkah mengupload file ke github
    
 2. Pastikan komputer kalian sudah terinstall git, jika kalian menggunakan *Windows* tutorial nya [disini](https://www.petanikode.com/git-install/), bagi pengguna linux, ketikkan saja perintah
    
-sudo apt-install git
+        sudo apt-install git
    
 bagi penggunana mac, ketikkan saja perintah ini di terminal
 
