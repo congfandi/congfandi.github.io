@@ -1,7 +1,7 @@
 ![Cover](/../img/30-03-2019/cover.png)
 
 Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke github, gitlab atau bitbucket. Tutorial ini membahas secara sederhana saja, kita mulai saja.
-
+<!--more-->
 Langkah-Langkah mengupload file ke github
 
 1. Daftar dulu ke [Github](https://github.com)
