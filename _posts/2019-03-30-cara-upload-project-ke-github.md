@@ -82,7 +82,7 @@ untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai k
 
 
 **Udate repository**
-
+Tambahkan file appun di dalam direktory **Coba** kemudian jalankan perintah ini di terminal, jika berhasil seharusnya file yang kalian masuka tadi sudah bisa dilihat di repository kalian.
 ```
    1. git add .
 ```
@@ -94,4 +94,8 @@ untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai k
 ```
 
 
+
+Oke sekian dari saya, maaf atas kesalah typo tulisan jika ada dan maaf atas kesalahan kata jika ada kata yang menyinggung kalian, akhir kata. **Happy Coding**
+
+>Coding itu dicoba, bukan sekedar dibaca dan dibayangka <small>Cong Fandi</small>
 
