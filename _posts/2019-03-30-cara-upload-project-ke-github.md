@@ -1,33 +1,33 @@
 ![Cover](/../img/30-03-2019/cover.png)
 
+
 Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke github, gitlab atau bitbucket. Tutorial ini membahas secara sederhana saja, kita mulai saja.
 <!--more-->
-Langkah-Langkah mengupload file ke github
-
+**Langkah-Langkah mengupload file ke github**
 1. Daftar dulu ke [Github](https://github.com)
    
 2. Pastikan komputer kalian sudah terinstall git, jika kalian menggunakan *Windows* tutorial nya [disini](https://www.petanikode.com/git-install/), bagi pengguna linux, ketikkan saja perintah
    
         sudo apt-install git
    
-bagi penggunana mac, ketikkan saja perintah ini di terminal
+    bagi penggunana mac, ketikkan saja perintah ini di terminal
 
     
         brew install git
     
 
-jika sudah terintall, pastikan git terinstall dengan baik dengan mengetikkan perintah ini di terminal
+    jika sudah terintall, pastikan git terinstall dengan baik dengan mengetikkan perintah ini di terminal
 
     
         git --version
     
 
-jika terminal kalian keluar tulisan seperti dibawah ini
+    jika terminal kalian keluar tulisan seperti dibawah ini
 
     
         git version 2.21.0
 
-itu artinya komputer kalian sudah terinstall dengan baik.
+    itu artinya komputer kalian sudah terinstall dengan baik.
 
 3. Oke sekarang kita buat sebuah folder, di **Desktop** dengan nama **`Coba`**, 
 4. Kemudian buat lah file didalamnya dengan nama **`README.md`** 
@@ -37,9 +37,9 @@ itu artinya komputer kalian sudah terinstall dengan baik.
         hai ini adalah file readme yang ada di folder git saya.
     ```
 
-Struktur folder nya dapat dilihat pada gambar 1
+    Struktur folder nya dapat dilihat pada gambar 1
 
-![Gambar 1](/../img/30-03-2019/gambar1.png)
+    ![Gambar 1](/../img/30-03-2019/gambar1.png)
 
 6. Langkah selanjutnya adalah buka terminal kalian kemudian masuk ke direktori Desktop/Coba. Kalau di komputer saya saya(Mac) tinggal mengetikkan perintah ini
 
@@ -76,7 +76,7 @@ untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai k
     
         git push -u origin master
 
-jika berhasil, seharusnya kalian sudah bisa melihat hasilnya di repositori kalian seperti gambat dibawah ini
+    jika berhasil, seharusnya kalian sudah bisa melihat hasilnya di repositori kalian seperti gambat dibawah ini
 
 ![gambar hasil](/../img/30-03-2019/sukses.png)
 
