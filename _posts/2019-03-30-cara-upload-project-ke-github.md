@@ -76,6 +76,10 @@ untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai k
     
         git push -u origin master
 
+jika berhasil, seharusnya kalian sudah bisa melihat hasilnya di repositori kalian seperti gambat dibawah ini
+
+![gambar hasil](/../img/30-03-2019/sukses.png)
+
 
 **Udate repository**
 
