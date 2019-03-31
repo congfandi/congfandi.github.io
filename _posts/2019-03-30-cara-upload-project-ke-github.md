@@ -6,7 +6,7 @@ Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke gi
 **Langkah-Langkah mengupload file ke github**
 1. Daftar dulu ke [Github](https://github.com)
    
-2. Pastikan komputer kalian sudah terinstall git, jika kalian menggunakan *Windows* tutorial nya [disini](https://www.petanikode.com/git-install/), bagi pengguna linux, ketikkan saja perintah
+2. Pastikan komputer kalian sudah terinstall git, jika kalian menggunakan *Windows* tutorial nya [disini](https://www.petanikode.com/git-install/), bagi pengguna linux, ketikan saja perintah
    
         sudo apt-install git
    
@@ -52,9 +52,9 @@ Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke gi
         git init
    ```
 8. Buat repository pada akun github kalian
-   ![Github](../img/30-03-2019/cover.png)
-   tombol **New** 
-9. Isi kolom sesuai dengn yang kalian mau, tapi saran saya disamakan dengan nama folder yang kalian buat.
+    ![Github](/../img/30-03-2019/cover.png)
+    tombol **New** 
+9.  Isi kolom sesuai dengn yang kalian mau, tapi saran saya disamakan dengan nama folder yang kalian buat.
 ![gambar 2](/../img/30-03-2019/gambar2.png)
 untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai kebutuhanmu.
 10. Copy URL project seperti pada gambar dibawah
