@@ -1,6 +1,6 @@
 ![Cover]()
 OK, kita berjumpa lagi di tutorial kedua dalam membuat aplikasi *Foodbank*. Semoga kita semua tetap di istiqomahkan dalam belajar dan diberi kemudahan dalam menerima ilmu-ilmunya Allah. Aamiinn....
-
+<!--more-->
 Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya. Langkah-langkahnya antara lain :
 
 1. Buka Project yang sudah kita buat di pertemuan sebelumya, kalau teman - teman baru mengikuti di pertemuan ini, silahkan buka dulu ya tutorial pada part 1 [disini](https://congfandi.github.io/2019/03/26/membuat-aplikasi-foodbank-part-1/).
