@@ -1,4 +1,4 @@
-![Cover]()
+![Cover](/../img/05-04-2019/gift2.gif)
 OK, kita berjumpa lagi di tutorial kedua dalam membuat aplikasi *Foodbank*. Semoga kita semua tetap di istiqomahkan dalam belajar dan diberi kemudahan dalam menerima ilmu-ilmunya Allah. Aamiinn....
 <!--more-->
 Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya. Langkah-langkahnya antara lain :
@@ -254,3 +254,18 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
     - [ ] Pilih `@drawable/ic_restaurant_menu_black_24dp` dan atur seperti gambar 5
             ![Gambar 5](/../img/05-04-2019/gambar5.png)
             *Gambar 5*
+
+16. Edit dan percantik file `welcome_second.xml` dan `welcome_third.xml` seperti pada langkah 15.
+dan psatikan aplikasi kalian berjalan sesuai dengan gift dibawah 
+![GIFT2](/../img/05-04-2019/gift2.gif)
+
+untuk icon-icon yang dibutuhkan dapat dilihat pada gambar 6
+![gambar 6](/../img/05-04-2019/gambar6.png)
+*Gambar 6*
+
+oke, sampai sini dulu untuk tutorial kali ini, di tutorial part tiga kita akan menambahkan *indicator* pada welcome screen sehingga kita dapat melihat page dari screen yang sedang berjalan.
+
+Maaf apa bila ada typo kata atau ada bahasa yang menyinggung dan sampai jumpa di pertemuan selanjutnya ya ....
+
+
+>**`Tidak ada yang tidak mungkin di dunia IT selama kamu mau mencoba dan berusaha`** <small>Cong Fandi</small>
