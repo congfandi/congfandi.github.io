@@ -201,3 +201,56 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
             }
     ```
 12. Jalankan aplikasi dan kalian sudah selesai membuat `logic` nya. terlihat tampilan seperti dibawah ini 
+    ![GIFT](/../img/05-04-2019/Apr-05-2019&#32;10-24-00.gif)
+
+13. Langkah selanjutnya adalah dengan menghilangkan *`Toolbar`* pada aplikasi, caranya dapat dilihat pada tutorial sebelumnya,
+    
+14. Jika toolbar nya sudah hilang, saat nya kita mempercantik tampilan aplikasi, Buka file `welcome_first.xl` dan edit menjadi seperti dibawah ini 
+    
+    ```xml
+            <?xml version="1.0" encoding="utf-8"?>
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimary"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_restaurant_menu_black_24dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp" />
+                    <TextView
+                        android:layout_marginTop="32.0dp"
+                        android:textAlignment="center"
+                        android:text="EAT FROM THE BEST RESTAURANTS"
+                        android:textColor="#FFFFFF"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:layout_marginTop="32.0dp"
+                        android:textAlignment="center"
+                        android:text="Access all the best restaurant around you and enjoy their cuisine at home..."
+                        android:textColor="#44EED4"
+                        android:layout_width="190dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+    ``` 
+
+15. Menambahkan file `@drawable/ic_restaurant_menu_black_24dp`. Caranya adalah sebagai berikut
+    - [ ] Klik kanan pada direktori `drawable`
+    - [ ] Kemudian arahkan kursor pada `New` => `Vector Asset`
+            Lihat gambar 3
+            ![Gambar 3](/../img/05-04-2019/gambar3.png)
+            *Gambar 3*
+    - [ ] Klik logo android pada menu `Clip Art`
+            Lihat gambar 4
+            ![Gambar 4](/../img/05-04-2019/gambar4.png)
+            *Gambar4*
+    - [ ] Pilih `@drawable/ic_restaurant_menu_black_24dp` dan atur seperti gambar 5
+            ![Gambar 5](/../img/05-04-2019/gambar5.png)
+            *Gambar 5*
