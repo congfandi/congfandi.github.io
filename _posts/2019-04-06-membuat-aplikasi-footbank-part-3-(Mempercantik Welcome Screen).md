@@ -289,7 +289,7 @@ Caranya sebagai berikut :
         </RelativeLayout>
    ```
 
-3. *`Buatlah tulisan ` **Register** `dapat di klik dan arahkan fungsinya untuk membuka halaman register`* (Ini chalange untuk temen-temen)
+3. *`Buatlah tulisan ` **Register** `dapat di klik dan arahkan fungsinya untuk membuka halaman register`* (Ini challenge untuk temen-temen)
 4. tampilan login seharusnya seperti gambar 2
    ![Gambar2](/../img/06-04-2019/gambar2.png)
 
