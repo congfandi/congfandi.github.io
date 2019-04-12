@@ -153,8 +153,8 @@ membuat logic pada slider dihalaman welcome, caranya :
                 }
             }
         ```
-    3. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
-    4. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
+   3. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
+   4. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
    ![Gift](/../img/06-04-2019/cover.gif)
 
 
