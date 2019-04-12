@@ -60,13 +60,12 @@ Langkah pertama, kita akan menambahkan icon indicator, yaitu tanda halaman yang 
 **Mempercantik tombol `ORDER NOW`**
 
 untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk itu kita akan membuat background terleibh dahulu, caranya : 
-
-   1. Klik kanan pada package *`res -> drawable`*
-   2. Pilih *`New -> Drawable resource file`*
-   3. Beri nama *`background_tombol`*
-   4. Buka dan ganti kodenya menjadi seperti ini
+1. Klik kanan pada package *`res -> drawable`*
+2. Pilih *`New -> Drawable resource file`*
+3. Beri nama *`background_tombol`*
+4. Buka dan ganti kodenya menjadi seperti ini
         
-        ```xml
+    ```xml
             <?xml version="1.0" encoding="utf-8"?>
             <shape xmlns:android="http://schemas.android.com/apk/res/android"
                 android:shape="rectangle">
@@ -76,15 +75,14 @@ untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk it
                     android:topRightRadius="24dp"
                     android:topLeftRadius="24dp"/>
             </shape>
-        ```
+    ```
 
-    5. Tambahkan file yang telah dibuat kedalam tombol *`Order Now`* dengan cara menambahkan atribut baru kedalamnya 
+5. Tambahkan file yang telah dibuat kedalam tombol *`Order Now`* dengan cara menambahkan atribut baru kedalamnya 
    
         ```xml
             android:background="@drawable/background_tombol"
         ```
-
-    6. Harusnya tampilan tombol *`Order now`* sudah berubah sekarang
+6. Harusnya tampilan tombol *`Order now`* sudah berubah sekarang
 
 
 **Membuat Logic `Slider`**
@@ -155,14 +153,16 @@ membuat logic pada slider dihalaman welcome, caranya :
                 }
             }
         ```
-    3. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
-    4. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
+    1. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
+    2. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
    ![Gift](/../img/06-04-2019/cover.gif)
 
 
 **Mempercantik halaman login**
+
 halaman login dan register merupakan halaman yang sangat penting pada aplikasi ini, pada dasarnya tidak semua aplikasi membutuhkan halaman login dan halaman register.
 Caranya sebagai berikut : 
+
 1. Buka file *`activity_login.xml`*
 2. Tambahkan kode berikut
    
@@ -288,7 +288,7 @@ Caranya sebagai berikut :
             </LinearLayout>
         </RelativeLayout>
    ```
-   
+
 3. *`Buatlah tulisan ` **Register** `dapat di klik dan arahkan fungsinya untuk membuka halaman register`* (Ini chalange untuk temen-temen)
 4. tampilan login seharusnya seperti gambar 2
    ![Gambar2](/../img/06-04-2019/gambar2.png)
