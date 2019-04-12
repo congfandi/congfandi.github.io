@@ -296,6 +296,7 @@ Caranya sebagai berikut :
 5. Untuk file `background_facebook.xml` , `background_google.xml`  dan `background_twitter.xml`  silahkan dibuat sesuai dengan yang kalian sukai.
 
 **Mempercantik halaman Register**
+
 Silahkan percantik halaman register sesuai dengan yang kalian sukai, punya saya, saya buat seperti gambar 3
 ![Gambar 3](/../img/06-04-2019/gambar3.png)
 
