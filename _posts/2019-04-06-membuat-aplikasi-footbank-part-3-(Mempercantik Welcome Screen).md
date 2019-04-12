@@ -58,11 +58,14 @@ Langkah pertama, kita akan menambahkan icon indicator, yaitu tanda halaman yang 
 
 
 **Mempercantik tombol `ORDER NOW`**
+
 untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk itu kita akan membuat background terleibh dahulu, caranya : 
+
    1. Klik kanan pada package *`res -> drawable`*
    2. Pilih *`New -> Drawable resource file`*
    3. Beri nama *`background_tombol`*
    4. Buka dan ganti kodenya menjadi seperti ini
+        
         ```xml
             <?xml version="1.0" encoding="utf-8"?>
             <shape xmlns:android="http://schemas.android.com/apk/res/android"
@@ -74,15 +77,20 @@ untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk it
                     android:topLeftRadius="24dp"/>
             </shape>
         ```
-    1. Tambahkan file yang telah dibuat kedalam tombol *`Order Now`* dengan cara menambahkan atribut baru kedalamnya 
+
+    5. Tambahkan file yang telah dibuat kedalam tombol *`Order Now`* dengan cara menambahkan atribut baru kedalamnya 
+   
         ```xml
             android:background="@drawable/background_tombol"
         ```
-    2. Harusnya tampilan tombol *`Order now`* sudah berubah sekarang
+
+    6. Harusnya tampilan tombol *`Order now`* sudah berubah sekarang
 
 
 **Membuat Logic `Slider`**
+
 membuat logic pada slider dihalaman welcome, caranya :
+
    1. Buka file *`WelcomeActivity.java`*
    2. Tambahkan kode berikut
         ```java
@@ -157,6 +165,7 @@ halaman login dan register merupakan halaman yang sangat penting pada aplikasi i
 Caranya sebagai berikut : 
 1. Buka file *`activity_login.xml`*
 2. Tambahkan kode berikut
+   
    ```xml
         <?xml version="1.0" encoding="utf-8"?>
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -279,6 +288,7 @@ Caranya sebagai berikut :
             </LinearLayout>
         </RelativeLayout>
    ```
+   
 3. *`Buatlah tulisan ` **Register** `dapat di klik dan arahkan fungsinya untuk membuka halaman register`* (Ini chalange untuk temen-temen)
 4. tampilan login seharusnya seperti gambar 2
    ![Gambar2](/../img/06-04-2019/gambar2.png)
