@@ -79,9 +79,9 @@ untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk it
 
 5. Tambahkan file yang telah dibuat kedalam tombol *`Order Now`* dengan cara menambahkan atribut baru kedalamnya 
    
-        ```xml
+    ```xml
             android:background="@drawable/background_tombol"
-        ```
+    ```
 6. Harusnya tampilan tombol *`Order now`* sudah berubah sekarang
 
 
@@ -153,8 +153,8 @@ membuat logic pada slider dihalaman welcome, caranya :
                 }
             }
         ```
-    1. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
-    2. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
+    3. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
+    4. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
    ![Gift](/../img/06-04-2019/cover.gif)
 
 
