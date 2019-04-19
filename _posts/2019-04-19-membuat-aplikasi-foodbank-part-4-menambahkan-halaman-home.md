@@ -1,4 +1,4 @@
-![Cover](../img/19-04-2019/cover.png)
+![Cover](/../img/19-04-2019/cover.png)
 
 Kita berjumpa lagi di pertemuan yang ke empat, tak terasa sudah sampai pada modul utama, yaitu menambahkan halaman utama aplikas. Untuk mendongkrak semangat teman-teman, **Saya akan memilih aplikasi terbaik dari teman-teman yang ikut HRC ini, kemudian kita akan memasang aplikasi nya di [Google Play](www.play.google.com) hanya satu aplikasi**. Tapi jangan khawatir, saya akan membuat tutorial nya di blog seder hana ini agar semuanya mengerti bagaimana cara mengupload aplikasi ke [google play](www.play.google.com). Untuk systemnya kita akan lakukan di kelas ya :-) .
 <!--more-->
@@ -16,14 +16,14 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
    - Pilih `New`
    - Pilih `Android Resource Directory`
    - Atur seperti pada gambar 1
-    ![gambar 1](../img/19-04-2019/1.png)
+    ![gambar 1](/../img/19-04-2019/1.png)
     *Gambar 1*
 2. Klik kanan pada folder `menu` yang sudah kalian buat kemudian tambahkan sebuah file dengan nama `mytoolbar` cara nya adalah sebagai berikut
     - Klik kanan folder `menu`
     - Pilih `New`
     - Pilih `menu resource file`
     - atu seperti gambar 2
-    ![gambar 2](../img/19-04-2019/2.png)
+    ![gambar 2](/../img/19-04-2019/2.png)
     *gambar 2*
 3. Buka dan edit file `mytoolbar` seperti code berikut
    ```xml
@@ -49,17 +49,6 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
         }
    ```
 3. Silahkan jalankan aplikasinya dan lihat hasilnya.
-
-
-**Menambahkan tombol kiri atas pada aplikasi**
-
-1. Edit dan tambahkan kode berikut kedalam file `MainActivity`
-    ```java
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setDisplayShowCustomEnabled(true);
-        getSupportActionBar().setIcon(R.drawable.ic_garis_tiga);
-    ```    
-2. Jalankan Aplikasi dan lihat hasilnya
 
 **Menambahkan 3 tombol di bawah `Toolbar`**
 1. Buka file `activity_main.xml`
@@ -123,11 +112,113 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
                     </RelativeLayout>
                 </LinearLayout>
 
-                <android.support.v7.widget.RecyclerView
+                <FrameLayout
+                    android:id="@+id/container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_below="@+id/layout_filter" />
-
             </RelativeLayout>
    ```
-3. 
+3. Hasil nya akan nampak seperti gambar 3
+   ![Gambar 3](/../img/19-04-2019/3.png)
+
+**Membuat logic tombol filter**
+1. Buka file `MainActivity`
+2. tambahkan kode berikut
+   ```java
+
+    RelativeLayout btnList, btnGrid, btnProfil;
+    ImageView iconList, iconGrid, iconProfil;
+
+    private void setFilter() {
+        btnList = findViewById(R.id.btn_list);
+        btnGrid = findViewById(R.id.btn_grid);
+        btnProfil = findViewById(R.id.btn_profil);
+        iconList = findViewById(R.id.icon_list);
+        iconGrid = findViewById(R.id.icon_grid);
+        iconProfil = findViewById(R.id.icon_profil);
+
+        setBackgroundTombol(1);
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setBackgroundTombol(1);
+            }
+        });
+        btnGrid.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setBackgroundTombol(2);
+            }
+        });
+        btnProfil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                setBackgroundTombol(3);
+            }
+        });
+    }
+
+    private void setBackgroundTombol(int tombolYangDiKlik) {
+        //Asumsi
+        //tombolYangDiKlik == 1 maka yang di klik adalah tombol list
+        //tombolYangDiKlik == 2 maka yang di klik adalah tombol grid
+        //tombolYangDiKlik == 1 maka yang di klik adalah tombol profil
+        btnList.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 1 ? R.color.colorOrange : R.color.colorAbuabu));
+        btnGrid.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 2 ? R.color.colorOrange : R.color.colorAbuabu));
+        btnProfil.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 3 ? R.color.colorOrange : R.color.colorAbuabu));
+        iconList.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 1 ? R.drawable.ic_list_white : R.drawable.ic_list_orange));
+        iconGrid.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 2 ? R.drawable.ic_grid_white : R.drawable.ic_grid_orange));
+        iconProfil.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 3 ? R.drawable.ic_person_white : R.drawable.ic_person_orange));
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.container, tombolYangDiKlik == 1
+                        ? new HalamanList() : tombolYangDiKlik == 2
+                        ? new HalamanGrid() :
+                        new HalamanProfil())
+                .commit();
+        }
+   ```
+
+
+**Membuat halaman *`HalamanList`*, *`HalamanGrid`* dan halaman *`HalamanProfile`***
+1. Klik kanan pada folder `views`
+2. Pilih `New`
+3. Pilih Fragment
+4. Pilih `Fragment(Blank)`
+5. Atur **Sama Persis** dengan yang ada pada gambar 4
+   ![Gambar 4](/../img/19-04-2019/4.png)
+   *Gambar 4*
+6. Buat halaman yang lain nya sesuai dengan yang ada pada koding teman-teman.
+
+
+**Menambahkan `Color`**
+1. Buka file `colors.xml` yang ada pada folder `res/values`
+2. Tambah kode berikut didalmnya
+   ```xml
+        <color name="colorOrange">#FD7D38</color>
+        <color name="colorAbuabu">#E6E6E6</color>
+   ```
+
+**Menambahkan icon**
+berikut nama-nama icon yang temen-temen butuhkan :
+1. Icon untuk halaman list
+   - ic_list_orange.xml
+   - ic_list_white.xml
+2. Icon untuk halaman grid
+   - ic_grid_orange.xml
+   - ic_grid_white.xml
+3. Icon untuk halaman profil
+   - ic_person_orange.xml
+   - ic_person_white.xml
+
+*Keterangan :*
+  - [ ] Silahkan gunakan icon yang temen-temen suka dan warna yang temen-temen suka
+  - [ ] Nama file disamakan dahulu, apabila sudah sukses dan tidak terjadi error dengan koding temen-temen silahkan edit sesuka hati.
+
+
+Cukup sekian untuk tutorial kali ini, semoga dapat bermanfaat, maaf atas kekurangan yang ada.
+
+
+>Harga dirimu berbanding lurus dengan seberapa besar kau menghargai orang lain. <small>Anonimus</small>
