@@ -75,8 +75,8 @@ berikut nama-nama icon yang temen-temen butuhkan :
    - ic_person_white.xml
 
 *Keterangan :*
-  [ ] Silahkan gunakan icon yang temen-temen suka dan warna yang temen-temen suka
-  [ ] Nama file disamakan dahulu, apabila sudah sukses dan tidak terjadi error dengan koding temen-temen silahkan edit sesuka hati.
+  - [ ] Silahkan gunakan icon yang temen-temen suka dan warna yang temen-temen suka
+  - [ ] Nama file disamakan dahulu, apabila sudah sukses dan tidak terjadi error dengan koding temen-temen silahkan edit sesuka hati.
 
 
 **Menambahkan 3 tombol di bawah `Toolbar`**
