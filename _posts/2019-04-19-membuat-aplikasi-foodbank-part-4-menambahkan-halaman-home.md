@@ -10,7 +10,8 @@ Silahkan berikan aksi pada tombol `login` yang ada pada halaman `LoginScreen`, d
 
 Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
 
-**Menambahkan `Toolbar` pada halaman `MainActivity`**
+**Menambahkan `ActionBar` pada halaman `MainActivity`**
+
 1. Tambahkan sebuah folder pada direktori `res` dengan cara 
    - Klik kanan pada folder `res`
    - Pilih `New`
@@ -22,7 +23,7 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
     - Klik kanan folder `menu`
     - Pilih `New`
     - Pilih `menu resource file`
-    - atu seperti gambar 2
+    - atur seperti gambar 2
     ![gambar 2](/../img/19-04-2019/2.png)
     *gambar 2*
 3. Buka dan edit file `mytoolbar` seperti code berikut
@@ -40,7 +41,7 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
    
 **Menambahkan `mytoolbar` kedalam halaman `MainActivity`**
 1. Buka file `MainActivity`
-2. tambah kode berikut tepat didalam kelas `MainActivity`
+2. tambahkan kode berikut tepat didalam kelas `MainActivity`
    ```java
          @Override
          public boolean onCreateOptionsMenu(Menu myMenu) {
@@ -49,6 +50,34 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
         }
    ```
 3. Silahkan jalankan aplikasinya dan lihat hasilnya.
+
+
+**Menambahkan `Color`**
+
+1. Buka file `colors.xml` yang ada pada folder `res/values`
+2. Tambah kode berikut didalmnya
+   ```xml
+        <color name="colorOrange">#FD7D38</color>
+        <color name="colorAbuabu">#E6E6E6</color>
+   ```
+
+**Menambahkan icon**
+
+berikut nama-nama icon yang temen-temen butuhkan :
+1. Icon untuk halaman list
+   - ic_list_orange.xml
+   - ic_list_white.xml
+2. Icon untuk halaman grid
+   - ic_grid_orange.xml
+   - ic_grid_white.xml
+3. Icon untuk halaman profil
+   - ic_person_orange.xml
+   - ic_person_white.xml
+
+*Keterangan :*
+  [ ] Silahkan gunakan icon yang temen-temen suka dan warna yang temen-temen suka
+  [ ] Nama file disamakan dahulu, apabila sudah sukses dan tidak terjadi error dengan koding temen-temen silahkan edit sesuka hati.
+
 
 **Menambahkan 3 tombol di bawah `Toolbar`**
 1. Buka file `activity_main.xml`
@@ -121,68 +150,69 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
    ```
 3. Hasil nya akan nampak seperti gambar 3
    ![Gambar 3](/../img/19-04-2019/3.png)
+   *Gambar 3*
 
 **Membuat logic tombol filter**
 1. Buka file `MainActivity`
 2. tambahkan kode berikut
    ```java
+        RelativeLayout btnList, btnGrid, btnProfil;
+        ImageView iconList, iconGrid, iconProfil;
 
-    RelativeLayout btnList, btnGrid, btnProfil;
-    ImageView iconList, iconGrid, iconProfil;
+        private void setFilter() {
+            btnList = findViewById(R.id.btn_list);
+            btnGrid = findViewById(R.id.btn_grid);
+            btnProfil = findViewById(R.id.btn_profil);
+            iconList = findViewById(R.id.icon_list);
+            iconGrid = findViewById(R.id.icon_grid);
+            iconProfil = findViewById(R.id.icon_profil);
 
-    private void setFilter() {
-        btnList = findViewById(R.id.btn_list);
-        btnGrid = findViewById(R.id.btn_grid);
-        btnProfil = findViewById(R.id.btn_profil);
-        iconList = findViewById(R.id.icon_list);
-        iconGrid = findViewById(R.id.icon_grid);
-        iconProfil = findViewById(R.id.icon_profil);
+            setBackgroundTombol(1);
 
-        setBackgroundTombol(1);
-
-        btnList.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setBackgroundTombol(1);
-            }
-        });
-        btnGrid.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setBackgroundTombol(2);
-            }
-        });
-        btnProfil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                setBackgroundTombol(3);
-            }
-        });
-    }
-
-    private void setBackgroundTombol(int tombolYangDiKlik) {
-        //Asumsi
-        //tombolYangDiKlik == 1 maka yang di klik adalah tombol list
-        //tombolYangDiKlik == 2 maka yang di klik adalah tombol grid
-        //tombolYangDiKlik == 1 maka yang di klik adalah tombol profil
-        btnList.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 1 ? R.color.colorOrange : R.color.colorAbuabu));
-        btnGrid.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 2 ? R.color.colorOrange : R.color.colorAbuabu));
-        btnProfil.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 3 ? R.color.colorOrange : R.color.colorAbuabu));
-        iconList.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 1 ? R.drawable.ic_list_white : R.drawable.ic_list_orange));
-        iconGrid.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 2 ? R.drawable.ic_grid_white : R.drawable.ic_grid_orange));
-        iconProfil.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 3 ? R.drawable.ic_person_white : R.drawable.ic_person_orange));
-        getSupportFragmentManager()
-                .beginTransaction()
-                .replace(R.id.container, tombolYangDiKlik == 1
-                        ? new HalamanList() : tombolYangDiKlik == 2
-                        ? new HalamanGrid() :
-                        new HalamanProfil())
-                .commit();
+            btnList.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setBackgroundTombol(1);
+                }
+            });
+            btnGrid.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setBackgroundTombol(2);
+                }
+            });
+            btnProfil.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    setBackgroundTombol(3);
+                }
+            });
         }
+
+        private void setBackgroundTombol(int tombolYangDiKlik) {
+            //Asumsi
+            //tombolYangDiKlik == 1 maka yang di klik adalah tombol list
+            //tombolYangDiKlik == 2 maka yang di klik adalah tombol grid
+            //tombolYangDiKlik == 1 maka yang di klik adalah tombol profil
+            btnList.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 1 ? R.color.colorOrange : R.color.colorAbuabu));
+            btnGrid.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 2 ? R.color.colorOrange : R.color.colorAbuabu));
+            btnProfil.setBackgroundColor(getResources().getColor(tombolYangDiKlik == 3 ? R.color.colorOrange : R.color.colorAbuabu));
+            iconList.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 1 ? R.drawable.ic_list_white : R.drawable.ic_list_orange));
+            iconGrid.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 2 ? R.drawable.ic_grid_white : R.drawable.ic_grid_orange));
+            iconProfil.setImageDrawable(getResources().getDrawable(tombolYangDiKlik == 3 ? R.drawable.ic_person_white : R.drawable.ic_person_orange));
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.container, tombolYangDiKlik == 1
+                            ? new HalamanList() : tombolYangDiKlik == 2
+                            ? new HalamanGrid() :
+                            new HalamanProfil())
+                    .commit();
+            }
    ```
 
 
 **Membuat halaman *`HalamanList`*, *`HalamanGrid`* dan halaman *`HalamanProfile`***
+
 1. Klik kanan pada folder `views`
 2. Pilih `New`
 3. Pilih Fragment
@@ -192,31 +222,9 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
    *Gambar 4*
 6. Buat halaman yang lain nya sesuai dengan yang ada pada koding teman-teman.
 
+jika koding kaliasn sukses, seharusnya akan nampak seperti gift dibawah ini.
 
-**Menambahkan `Color`**
-1. Buka file `colors.xml` yang ada pada folder `res/values`
-2. Tambah kode berikut didalmnya
-   ```xml
-        <color name="colorOrange">#FD7D38</color>
-        <color name="colorAbuabu">#E6E6E6</color>
-   ```
-
-**Menambahkan icon**
-berikut nama-nama icon yang temen-temen butuhkan :
-1. Icon untuk halaman list
-   - ic_list_orange.xml
-   - ic_list_white.xml
-2. Icon untuk halaman grid
-   - ic_grid_orange.xml
-   - ic_grid_white.xml
-3. Icon untuk halaman profil
-   - ic_person_orange.xml
-   - ic_person_white.xml
-
-*Keterangan :*
-  - [ ] Silahkan gunakan icon yang temen-temen suka dan warna yang temen-temen suka
-  - [ ] Nama file disamakan dahulu, apabila sudah sukses dan tidak terjadi error dengan koding temen-temen silahkan edit sesuka hati.
-
+![Gift](/../img/19-04-2019/gif.gif)
 
 Cukup sekian untuk tutorial kali ini, semoga dapat bermanfaat, maaf atas kekurangan yang ada.
 
