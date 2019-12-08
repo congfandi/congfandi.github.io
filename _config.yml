@@ -16,3 +16,6 @@ paginate: 4
 author: Cong Fandi
 
 gems: [jekyll-paginate]
+
+plugins:
+  - jekyll-time-to-read
