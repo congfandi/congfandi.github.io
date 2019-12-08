@@ -1,4 +1,4 @@
-![Cover](/../img/30-03-2019/cover.png)
+![Cover](/../images/30-03-2019/cover.png)
 
 
 Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke github, gitlab atau bitbucket. Tutorial ini membahas secara sederhana saja, kita mulai saja.
@@ -39,7 +39,7 @@ Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke gi
 
     Struktur folder nya dapat dilihat pada gambar 1
 
-    ![Gambar 1](/../img/30-03-2019/gambar1.png)
+    ![Gambar 1](/../images/30-03-2019/gambar1.png)
 
 6. Langkah selanjutnya adalah buka terminal kalian kemudian masuk ke direktori Desktop/Coba. Kalau di komputer saya saya(Mac) tinggal mengetikkan perintah ini
 
@@ -52,13 +52,13 @@ Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke gi
         git init
    ```
 8. Buat repository pada akun github kalian
-    ![Github](/../img/30-03-2019/cover.png)
+    ![Github](/../images/30-03-2019/cover.png)
     tombol **New** 
 9.  Isi kolom sesuai dengn yang kalian mau, tapi saran saya disamakan dengan nama folder yang kalian buat.
-![gambar 2](/../img/30-03-2019/gambar2.png)
+![gambar 2](/../images/30-03-2019/gambar2.png)
 untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai kebutuhanmu.
 10. Copy URL project seperti pada gambar dibawah
-    ![Gambar 4](/../img/30-03-2019/gambar4.png)
+    ![Gambar 4](/../images/30-03-2019/gambar4.png)
 11. Kembali lagi ke terminal dimana peoject mu berada
 12. ketikkan perintah
         
@@ -78,7 +78,7 @@ untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai k
 
     jika berhasil, seharusnya kalian sudah bisa melihat hasilnya di repositori kalian seperti gambat dibawah ini
 
-![gambar hasil](/../img/30-03-2019/sukses.png)
+![gambar hasil](/../images/30-03-2019/sukses.png)
 
 
 **Udate repository**

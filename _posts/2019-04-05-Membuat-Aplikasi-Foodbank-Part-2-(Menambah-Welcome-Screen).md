@@ -1,4 +1,4 @@
-![Cover](/../img/05-04-2019/gift2.gif)
+![Cover](/../images/05-04-2019/gift2.gif)
 OK, kita berjumpa lagi di tutorial kedua dalam membuat aplikasi *Foodbank*. Semoga kita semua tetap di istiqomahkan dalam belajar dan diberi kemudahan dalam menerima ilmu-ilmunya Allah. Aamiinn....
 <!--more-->
 Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya. Langkah-langkahnya antara lain :
@@ -29,7 +29,7 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
    - [ ] `welcome_third.xml`
   
     Lihatlah gambar 1.
-    ![Gambar 1](/../img/05-04-2019/gambar1.png)
+    ![Gambar 1](/../images/05-04-2019/gambar1.png)
     *Gambar 1*
 
 5. Edit dan tambahkan tiga file diatas dengan kode seperti dibawah ini :
@@ -113,7 +113,7 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
    ```
 
 9. Buatlah Package dengan nama `adapter` kemudian buatlah sebuah file di dalamnya dengan nama `WelcomeAdapter.java` . lihatlah pada gambar 2.
-    ![Gambar 2](/../img/05-04-2019/gambar2.png)
+    ![Gambar 2](/../images/05-04-2019/gambar2.png)
 
 10. Buka file `WelcomeAdapter.java` kemudian tambahkan code berikut
     
@@ -201,7 +201,7 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
             }
     ```
 12. Jalankan aplikasi dan kalian sudah selesai membuat `logic` nya. terlihat tampilan seperti dibawah ini 
-    ![GIFT](/../img/05-04-2019/Apr-05-2019&#32;10-24-00.gif)
+    ![GIFT](/../images/05-04-2019/Apr-05-2019&#32;10-24-00.gif)
 
 13. Langkah selanjutnya adalah dengan menghilangkan *`Toolbar`* pada aplikasi, caranya dapat dilihat pada tutorial sebelumnya,
     
@@ -245,22 +245,22 @@ Kali ini kita akan membuat *WelcomeScreen* dapat berfungsi sebagaimana mestinya.
     - [ ] Klik kanan pada direktori `drawable`
     - [ ] Kemudian arahkan kursor pada `New` => `Vector Asset`
             Lihat gambar 3
-            ![Gambar 3](/../img/05-04-2019/gambar3.png)
+            ![Gambar 3](/../images/05-04-2019/gambar3.png)
             *Gambar 3*
     - [ ] Klik logo android pada menu `Clip Art`
             Lihat gambar 4
-            ![Gambar 4](/../img/05-04-2019/gambar4.png)
+            ![Gambar 4](/../images/05-04-2019/gambar4.png)
             *Gambar4*
     - [ ] Pilih `@drawable/ic_restaurant_menu_black_24dp` dan atur seperti gambar 5
-            ![Gambar 5](/../img/05-04-2019/gambar5.png)
+            ![Gambar 5](/../images/05-04-2019/gambar5.png)
             *Gambar 5*
 
 16. Edit dan percantik file `welcome_second.xml` dan `welcome_third.xml` seperti pada langkah 15.
 dan psatikan aplikasi kalian berjalan sesuai dengan gift dibawah 
-![GIFT2](/../img/05-04-2019/gift2.gif)
+![GIFT2](/../images/05-04-2019/gift2.gif)
 
 untuk icon-icon yang dibutuhkan dapat dilihat pada gambar 6
-![gambar 6](/../img/05-04-2019/gambar6.png)
+![gambar 6](/../images/05-04-2019/gambar6.png)
 *Gambar 6*
 
 oke, sampai sini dulu untuk tutorial kali ini, di tutorial part tiga kita akan menambahkan *indicator* pada welcome screen sehingga kita dapat melihat page dari screen yang sedang berjalan.

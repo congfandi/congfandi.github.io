@@ -1,4 +1,4 @@
-![Cover](/../img/06-04-2019/gift2.gif)
+![Cover](/../images/06-04-2019/gift2.gif)
 Pada tutorial kali ini, kita akan mempercantik tampilan Welcome Screen. Kita langsung saja pada tutorialnya.
 <!--more-->
 
@@ -53,7 +53,7 @@ Langkah pertama, kita akan menambahkan icon indicator, yaitu tanda halaman yang 
             android:layout_height="40.0dp" />
    ```
    pada preview, harusnya tampil seperti gambar 1.
-   ![Gambar 1](/../img/06-04-2019/gambar1.png)
+   ![Gambar 1](/../images/06-04-2019/gambar1.png)
    *Gambar 1*
 
 
@@ -155,7 +155,7 @@ membuat logic pada slider dihalaman welcome, caranya :
         ```
    3. Kita akan menjelaskan maksud dari kode ini dikelas nanti.
    4. Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman *`Welcome`* dan akan terlihat seperti gift dibawah
-   ![Gift](/../img/06-04-2019/cover.gif)
+   ![Gift](/../images/06-04-2019/cover.gif)
 
 
 **Mempercantik halaman login**
@@ -291,19 +291,19 @@ Caranya sebagai berikut :
 
 3. *`Buatlah tulisan ` **Register** `dapat di klik dan arahkan fungsinya untuk membuka halaman register`* (Ini challenge untuk temen-temen)
 4. tampilan login seharusnya seperti gambar 2
-   ![Gambar2](/../img/06-04-2019/gambar2.png)
+   ![Gambar2](/../images/06-04-2019/gambar2.png)
 
 5. Untuk file `background_facebook.xml` , `background_google.xml`  dan `background_twitter.xml`  silahkan dibuat sesuai dengan yang kalian sukai.
 
 **Mempercantik halaman Register**
 
 Silahkan percantik halaman register sesuai dengan yang kalian sukai, punya saya, saya buat seperti gambar 3
-![Gambar 3](/../img/06-04-2019/gambar3.png)
+![Gambar 3](/../images/06-04-2019/gambar3.png)
 
 
 Hasil Akhir dari tutorial kali ini dapat dilihat pada gif dibawah
 
-![Gift](/../img/06-04-2019/gift2.gif)
+![Gift](/../images/06-04-2019/gift2.gif)
 
 Ada banyak hal yang belum saya sampaikan pada tulisan ini, kita bahasnya dikelas ya, jika ada yang belum faham monggo ditanyakan.
 

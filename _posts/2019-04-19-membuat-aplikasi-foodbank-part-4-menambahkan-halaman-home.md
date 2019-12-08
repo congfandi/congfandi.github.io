@@ -1,4 +1,4 @@
-![Cover](/../img/19-04-2019/cover.png)
+![Cover](/../images/19-04-2019/cover.png)
 
 Kita berjumpa lagi di pertemuan yang ke empat, tak terasa sudah sampai pada modul utama, yaitu menambahkan halaman utama aplikas. Untuk mendongkrak semangat teman-teman, **Saya akan memilih aplikasi terbaik dari teman-teman yang ikut HRC ini, kemudian kita akan memasang aplikasi nya di [Google Play](www.play.google.com) hanya satu aplikasi**. Tapi jangan khawatir, saya akan membuat tutorial nya di blog seder hana ini agar semuanya mengerti bagaimana cara mengupload aplikasi ke [google play](www.play.google.com). Untuk systemnya kita akan lakukan di kelas ya :-) .
 <!--more-->
@@ -17,14 +17,14 @@ Jika sudah seksai, kita lanjut ke tutorial selanjutnya.
    - Pilih `New`
    - Pilih `Android Resource Directory`
    - Atur seperti pada gambar 1
-    ![gambar 1](/../img/19-04-2019/1.png)
+    ![gambar 1](/../images/19-04-2019/1.png)
     *Gambar 1*
 2. Klik kanan pada folder `menu` yang sudah kalian buat kemudian tambahkan sebuah file dengan nama `mytoolbar` cara nya adalah sebagai berikut
     - Klik kanan folder `menu`
     - Pilih `New`
     - Pilih `menu resource file`
     - atur seperti gambar 2
-    ![gambar 2](/../img/19-04-2019/2.png)
+    ![gambar 2](/../images/19-04-2019/2.png)
     *gambar 2*
 3. Buka dan edit file `mytoolbar` seperti code berikut
    ```xml
@@ -149,7 +149,7 @@ berikut nama-nama icon yang temen-temen butuhkan :
             </RelativeLayout>
    ```
 3. Hasil nya akan nampak seperti gambar 3
-   ![Gambar 3](/../img/19-04-2019/3.png)
+   ![Gambar 3](/../images/19-04-2019/3.png)
    *Gambar 3*
 
 **Membuat logic tombol filter**
@@ -218,13 +218,13 @@ berikut nama-nama icon yang temen-temen butuhkan :
 3. Pilih Fragment
 4. Pilih `Fragment(Blank)`
 5. Atur **Sama Persis** dengan yang ada pada gambar 4
-   ![Gambar 4](/../img/19-04-2019/4.png)
+   ![Gambar 4](/../images/19-04-2019/4.png)
    *Gambar 4*
 6. Buat halaman yang lain nya sesuai dengan yang ada pada koding teman-teman.
 
 jika koding kaliasn sukses, seharusnya akan nampak seperti gift dibawah ini.
 
-![Gift](/../img/19-04-2019/gif.gif)
+![Gift](/../images/19-04-2019/gif.gif)
 
 Cukup sekian untuk tutorial kali ini, semoga dapat bermanfaat, maaf atas kekurangan yang ada.
 

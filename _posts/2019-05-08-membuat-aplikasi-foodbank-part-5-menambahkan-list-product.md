@@ -1,4 +1,4 @@
-!["cover"](/../img/19-04-2019/cover.png)
+!["cover"](/../images/19-04-2019/cover.png)
 Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam bentuk `list`.
 
 Langkah - langkah nya adalah : 
@@ -258,7 +258,7 @@ Langkah - langkah nya adalah :
         }
     ```
     hasilnya harusnya seperti dibawah ini
-    !["adfadf"](/../img/08-05-2019/list.gif)
+    !["adfadf"](/../images/08-05-2019/list.gif)
 
 
     Oke, sekian pada modul kali ini sampai ketemu pada modul selanjutnya

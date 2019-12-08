@@ -1,4 +1,4 @@
-![Cover](/../img/foodbank1/cover.png)
+![Cover](/../images/foodbank1/cover.png)
 Bismillah, 
 
 Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan **HRC**. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan **GresikDev**.
@@ -10,21 +10,21 @@ Oke kita mulai saja tutorialnya.
 **Tutorial Membuat Foodbank**
 1. Buat aplikasi dengan menggunakan **Android Studio**
 2. Atur project seperti gambar 1
-   ![Gambar 1](/../img/foodbank1/gambar1.png)
+   ![Gambar 1](/../images/foodbank1/gambar1.png)
    *Gambar 1*
 
    saya sangat menyarankan teman-teman utntuk mengatur aplikasi seperti yang ada pada gambar 1.0 agar tidak terjadi error yang tidak di inginkan, jika ingin membuat yang berbeda silahkan tapi lakukan hal itu diluar kelas ya .
 3. Setelah project selesai dibuat, Buatlah beberapa folder yang ada didalam `id.gresikdev.foodbank`  antara lain **models** , **views**, **controllers** seperti gambar 2
-![Gambar 2](/../img/foodbank1/gambar2.png)
+![Gambar 2](/../images/foodbank1/gambar2.png)
     *Gambar 2*
 
 4. Masih didalam folder(istilah lainnya *package*) `id.gresikdev.foodbank` kita pindahkan file `MainActivity` kedalam *package* **views** kemudian buat beberapa *Activity* `LoginActivity`, `RegisterActivity`, `SplashActivity` dan `WelcomeActivity` dengan cara : Klik kanan pada *package* **views** => **New** => **Activity** => **Empty Activity**.
 Struktur file dapat dilihat pada gambar 3.
-![Gambar 3](/../img/foodbank1/gambar3.png)
+![Gambar 3](/../images/foodbank1/gambar3.png)
 *Gambar 3*
 
 5. Jalankan aplikasi, maka aplikasi akan terlihat seperti gambar 4 
-   ![Gambar 4](/../img/foodbank1/gambar4.png).
+   ![Gambar 4](/../images/foodbank1/gambar4.png).
 *Gambar 4*
 
 Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
@@ -86,7 +86,7 @@ jika dijalankan, aplikasi tidak lagi mengarah pada *Activity* `MainActivity` aka
         </RelativeLayout>
     ```
 Saat aplikasi dijalankan, *activity* `SplashActivity` masih memiliki *toolbar* padahal seharusnya activity ini tidak memiliki toolbar lihat gambar 5.
-![Gambar 5](/../img/foodbank1/gambar5.png)
+![Gambar 5](/../images/foodbank1/gambar5.png)
 *Gambar 5*
 
 maka kita hilangkan dulu toolbarnya.
@@ -108,7 +108,7 @@ maka kita hilangkan dulu toolbarnya.
         <activity android:name=".views.SplashActivity" android:theme="@style/tanpaToolbar">
    ```
 kemudian jalankan aplikasi dan *toolbar* akan otomatis hilang. lihat gambar 6
-![Gambar 6](/../img/foodbank1/gambar6.png)
+![Gambar 6](/../images/foodbank1/gambar6.png)
 *Gambar 6*
 
 Langkah selanjutnya adalah membuat aplikasi secara otomatis berpindah halaman setelah 3 detik, oke kita mulai saja:
