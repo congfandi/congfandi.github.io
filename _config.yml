@@ -19,3 +19,4 @@ gems: [jekyll-paginate]
 
 plugins:
   - jekyll-time-to-read
+theme: jekyll-theme-cayman
