@@ -1,68 +1,66 @@
-# MatJek
+# Holo Alfa Jekyll theme [![Build Status](https://travis-ci.org/steinvc/holo-alfa.svg?branch=master)](https://travis-ci.org/steinvc/holo-alfa) #
 
-A responsive [Material](https://material.io/) theme based on [Materialize.css](http://materializecss.com/) for jekyll sites.
+>This project is no longer maintained. It will probably still work fine though.
 
-## Features
+![Screenshot](http://i.imgur.com/Gi46aag.jpg)
 
-* Google Analytics
-* Disqus
-* [GitHub project page](https://shawnteoh.github.io/matjek/projects/)
-* [Tags](https://shawnteoh.github.io/matjek/tags/) and [Categories](https://shawnteoh.github.io/matjek/categories/)
-* Modular CSS and JS includes ([example](https://github.com/ShawnTeoh/matjek/blob/gh-pages/projects.md/))
-* [Fancy "About" page](https://shawnteoh.github.io/matjek/about)
+Holo Alfa is a minimalist, mobile first Jekyll theme with focus on readability and content. Created for free and fun by Stijn. Also works great as a base to build your own theme on.
 
-## Installation
+See it in action: http://steinvc.github.io/holo-alfa/.
 
-Clone or fork this repo and edit `_config.yml` as needed.
+## Feature highlights ##
 
-## Configuration
+* Mobile first design
+* Extensive content styling
+* Responsive video's (using [FitVids.JS](http://fitvidsjs.com/))
+* Support for authors and guest authors
+* Read time on articles
+* Disqus comments
+* Language localization
+* Automatic [og metadata](http://ogp.me/)
+* Automatic archive page (without plugins)
+* Automatic sitemap en RSS feed
+* Contact page (with working email form)
+* A lot of (optional) customization options (all in `_config.yml`)
 
-Most of the configurations can be found in `_config.yml`. The configurations listed below are specific to MatJek. If you are not using `google_tracking_id` or `disqus_shortname`, just remove them completely.
+And much more.
 
-```yaml
-github_profile: "github_profile_url"
-user: "your_name" # Appears at sidebar
-user_email: "your_email" # Appears at sidebar, remove whole variable if unwanted
-contact_url: "google_form_link"
-google_tracking_id: "google_analytics_ID"
-disqus_shortname: "shortname_given_by_Disqus"
-```
+## Getting started ##
 
-Edit the images in `assets/res` to suit your liking, but try to stick to the original resolutions.
+If you're new to Jekyll, check out http://jekyllrb.com/ and read up on Jekyll. It's worth it.
 
-If you would like to enable comments in a post (disqus_shortname must be provided), add this line to the front matter of the post.
+* [Another great resource to learn about Jekyll](http://www.smashingmagazine.com/2014/08/build-blog-jekyll-github-pages/)
+* [Github's guide to using Jekyll with Pages](https://help.github.com/articles/using-jekyll-with-pages/)
 
-```yaml
-comments: 1
-```
+### Installing ##
 
-Add tags and categories to your posts in the front matter as well. Multiple tags/categories can be assigned but need to be separated by spaces.
+As simple as forking the repository, and then clone it so you can edit the files locally.
 
-```yaml
-categories: default default2
-tags: test test2
-```
+### Configuration ###
 
-## Contributing
+Edit `_config.yml`!
 
-Bug reports and pull requests are welcomed on GitHub at https://github.com/shawnteoh/matjek. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+You can find `_config.yml` in your site's root directory. This configuration file contains some necessary settings and some optional customization settings. **All settings are explained in `_config.yml` itself.** Also make sure to use the developement configuration file (`_config_dev.yml`) for running your site locally. This way you don't get your URLs mixed up.
 
-## Development
+There are some customizations that can't be done in `_config.yml`. These include:
 
-To set up your environment to develop this theme, clone/fork the repo and run `bundle install`.
+* Editing the About, Contact and Archive page.
+* Adding or removing pages from the navigation. This can be done in `\_includes\navigation.html`.
+* The "thanks" page after a message has been send through the contact page: `thanks.md`
+* The gradient on cover images: `\_includes\gradient.css` (this is explained in `_config.yml`).
 
-To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000/matjek/`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+Also make sure to replace the placeholder favicons and the `\img\og-image.jpg` with your own.
 
-## License
+### Start the Jekyll server ###
 
-The theme is available as open source under the terms of the [GPL v3 License](https://www.gnu.org/licenses/gpl-3.0.en.html).
+You can learn how to do this by reading [this](https://help.github.com/articles/using-jekyll-with-pages/).
 
-## Libraries
-* [Materialize.css](http://materializecss.com/)
-* [GeoPattern](https://github.com/btmills/geopattern/)
-* [Animate.css](https://daneden.github.io/animate.css/)
-* [Morphtext](http://morphext.fyianlai.com/)
+> Tip: to run your site locally with `_config_dev.yml` as configuration file, use this command at the root of your site `bundle exec jekyll serve --config _config_dev.yml`.
 
-## References
-* https://github.com/DONGChuan/Yummy-Jekyll/
-* https://github.com/codinfox/codinfox-lanyon/
+When everything is OK, your site should now be available at `http://localhost:4000`.
+
+That's it.
+
+---
+
+[MIT license](http://opensource.org/licenses/MIT)
