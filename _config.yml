@@ -27,7 +27,6 @@ analytics: # Google Analytics
 # Build Settings
 markdown: kramdown
 plugins:
-<<<<<<< HEAD
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
@@ -36,7 +35,3 @@ paginate: 8
 paginate_path: "/page/:num"
 
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
-=======
-  - jekyll-time-to-read
-theme: jekyll-theme-cayman
->>>>>>> a2de00392959ca2c0163c667d2a4adbac8ab4f7f
