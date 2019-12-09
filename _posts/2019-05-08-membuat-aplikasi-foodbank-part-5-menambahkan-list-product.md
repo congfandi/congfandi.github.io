@@ -3,7 +3,7 @@ Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam be
 
 Langkah - langkah nya adalah : 
 
-time : {{ content | reading_time_as_i }}
+time : {{ reading_time_as_i }}
 
 1. Bukan file `HalamanList.java` dan hapus kode yang tidak diperlukan dan hasilnya harus nya seperti code dibawah
 <!--more-->   
