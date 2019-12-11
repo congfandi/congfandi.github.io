@@ -1,3 +1,8 @@
+---
+title: Membuat Aplikasi Foodbank Part 1
+cover-image: hipster.jpg
+---
+
 ![Cover](/../img/foodbank1/cover.png)
 Bismillah, 
 
