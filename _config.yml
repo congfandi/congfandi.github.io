@@ -1,17 +1,17 @@
 
 # The name of your website.
-name: Cong Fandi
+name: The Ngoding
 
 description:
 
   # Description of your site. This will show up in google.
-  meta: Sekedar ingin berbagi.
+  meta: Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan rekan pembaca sekalian
 
   # Description of your site. This will show up on the front page.
   subtitle: .
 
 author:
-  name: Cong Fandi # Change this!
+  name: The Ngoding # Change this!
 
   # Necessary for contact page
   email: congfandi@gmail.com # Change this!
@@ -39,7 +39,7 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: Copyright 2019 congfandi.github.io.
+footer-text: Copyright 2019 thengoding.om.
 
 # Preferably 64px in height. Leave empty = disable.
 logo-image: # /img/logo.png
