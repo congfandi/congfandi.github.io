@@ -1,5 +1,5 @@
 ---
-title: Membuat Aplikasi Foodbank Part 1
+title: Filter Log AWS
 cover-image: hipster.jpg
 ---
 
