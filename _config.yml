@@ -39,10 +39,10 @@ display-social-icons: false
 # If you want social links to open in a new tab, set this as true
 social-icons-open-newtab: true
 
-footer-text: Copyright 2019 thengoding.om.
+footer-text: Copyright 2019 thengoding.com
 
 # Preferably 64px in height. Leave empty = disable.
-logo-image: # /img/logo.png
+logo-image: /img/code.png
 
 # Toolbar color for Chrome on Android.
 theme-color-attr: "#00f0ff"
