@@ -1,6 +1,6 @@
 ---
 title: Membuat aplikasi foodbank part 4 - Menambahkan halam home
-cover-image: /../img/19-04-2019/cover.png
+cover-image: cover-19-04-2019.png
 ---
 
 
