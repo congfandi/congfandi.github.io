@@ -1,7 +1,9 @@
 ---
-title: Membuat aplikasi foodbank part-5 - Menambahkan list product
-cover-image: list.gif
+title: [Android Native] Membuat aplikasi foodbank part-5 - Menambahkan list product
+cover-image: hipster.jpg
 ---
+
+![Cover](/../img/covers/list.gif)
 Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam bentuk `list`.
 
 Langkah - langkah nya adalah : 

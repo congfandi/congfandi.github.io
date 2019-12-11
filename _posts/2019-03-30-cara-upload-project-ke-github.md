@@ -1,3 +1,7 @@
+---
+title: Upload project ke github
+cover-image: hipster.jpg
+---
 ![Cover](/../img/30-03-2019/cover.png)
 
 

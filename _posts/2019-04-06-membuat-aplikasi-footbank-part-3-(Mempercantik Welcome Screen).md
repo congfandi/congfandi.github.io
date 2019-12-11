@@ -1,3 +1,7 @@
+---
+title: [Android Native] Membuat aplikasi foodbank part 3 - Mempercantik welcome screen
+cover-image: hipster.jpg
+---
 ![Cover](/../img/06-04-2019/gift2.gif)
 Pada tutorial kali ini, kita akan mempercantik tampilan Welcome Screen. Kita langsung saja pada tutorialnya.
 <!--more-->
