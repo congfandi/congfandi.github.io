@@ -1,5 +1,5 @@
 ---
-title: [Android Native] Membuat aplikasi foodbank part-5 - Menambahkan list product
+title: Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product
 cover-image: hipster.jpg
 ---
 

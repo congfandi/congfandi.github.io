@@ -1,5 +1,5 @@
 ---
-title: [Android Native] Membuat aplikasi foodbank part 2 - Menambahkan welcome screen
+title: Android Native Membuat aplikasi foodbank part 2 - Menambahkan welcome screen
 cover-image: hipster.jpg
 ---
 ![Cover](/../img/05-04-2019/gift2.gif)

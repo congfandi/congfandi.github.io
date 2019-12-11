@@ -1,5 +1,5 @@
 ---
-title: [Android Native] Membuat aplikasi foodbank part 4 - Menambahkan halam home
+title: Android Native Membuat aplikasi foodbank part 4 - Menambahkan halam home
 cover-image: hipster.jpg
 ---
 ![Cover](/../img/covers/cover-19-04-2019.png)
