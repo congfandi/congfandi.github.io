@@ -1,6 +1,6 @@
 ---
 title: Membuat aplikasi foodbank part-5 - Menambahkan list product
-cover-image: /img/19-04-2019/cover.png
+cover-image: img/19-04-2019/cover.png
 ---
 Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam bentuk `list`.
 
