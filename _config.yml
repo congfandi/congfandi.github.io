@@ -42,7 +42,7 @@ social-icons-open-newtab: true
 footer-text: Copyright 2019 thengoding.com
 
 # Preferably 64px in height. Leave empty = disable.
-logo-image: the-ngoding-logo.png
+logo-image: https://thengoding.com/the-ngoding-logo.png
 
 # Toolbar color for Chrome on Android.
 theme-color-attr: "#00f0ff"
