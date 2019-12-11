@@ -1,4 +1,8 @@
-![Cover](/../img/19-04-2019/cover.png)
+---
+title: Membuat aplikasi foodbank part 4 - Menambahkan halam home
+cover-image: /img/19-04-2019/cover.png
+---
+
 
 Kita berjumpa lagi di pertemuan yang ke empat, tak terasa sudah sampai pada modul utama, yaitu menambahkan halaman utama aplikas. Untuk mendongkrak semangat teman-teman, **Saya akan memilih aplikasi terbaik dari teman-teman yang ikut HRC ini, kemudian kita akan memasang aplikasi nya di [Google Play](www.play.google.com) hanya satu aplikasi**. Tapi jangan khawatir, saya akan membuat tutorial nya di blog seder hana ini agar semuanya mengerti bagaimana cara mengupload aplikasi ke [google play](www.play.google.com). Untuk systemnya kita akan lakukan di kelas ya :-) .
 <!--more-->

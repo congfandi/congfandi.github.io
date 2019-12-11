@@ -1,10 +1,13 @@
-!["cover"](/../img/19-04-2019/cover.png)
+---
+title: Membuat aplikasi foodbank part-5 - Menambahkan list product
+cover-image: /img/19-04-2019/cover.png
+---
 Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam bentuk `list`.
 
 Langkah - langkah nya adalah : 
-
-1. Bukan file `HalamanList.java` dan hapus kode yang tidak diperlukan dan hasilnya harus nya seperti code dibawah
 <!--more-->   
+1. Bukan file `HalamanList.java` dan hapus kode yang tidak diperlukan dan hasilnya harus nya seperti code dibawah
+
 ```java
     package id.gresikdev.foodbank.views;
     import android.os.Bundle;
