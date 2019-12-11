@@ -5,10 +5,10 @@ name: The Ngoding
 description:
 
   # Description of your site. This will show up in google.
-  meta: Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan rekan pembaca sekalian
+  meta: Ngoding, pemrograman, android, ios, flutter, java, dart, kotlin
 
   # Description of your site. This will show up on the front page.
-  subtitle: .
+  subtitle: Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.
 
 author:
   name: The Ngoding # Change this!
