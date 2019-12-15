@@ -12,7 +12,7 @@ Hola sahabat pembaca semua, kali ini saya ingin berbagi tips tentang xcode dan g
 3. kita ingin menghubungkan keduanya
 
 ### Langkah-Langkah ###
-1. Tambahkan akun github/gitlab/bitbucket teman-teman kedalam xcode, caranya lihat pada postingan [ini](https://thengoding.com)
+1. Tambahkan akun github/gitlab/bitbucket teman-teman kedalam xcode, caranya lihat pada postingan [ini](https://thengoding.com/2019/12/15/menambahkan-akun-git-kedalam-xcode/)
 
 2. Klik menu view > Navigators > Show Source Control Navigator
 
