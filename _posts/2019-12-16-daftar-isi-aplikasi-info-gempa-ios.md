@@ -2,14 +2,13 @@
 title: Daftar Isi Membuat aplikasi Info Gempa IOS
 cover-image: hipster.jpg
 ---
-![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
-<!-- more -->
+
 ## Daftar Isi ##
 
 1. [Setup Project](www.thengoding.com)
 
 2. [Membuat List](www.thengoding.com)
-
+<!--more-->
 3. [Membuat Item List](www.thengoding.com)
 
 4. [Perpindahan halaman](www.thengoding.com)
@@ -25,3 +24,5 @@ cover-image: hipster.jpg
 9. [Convert JSON ke Model](www.thengoding.com)
 
 10. [Bonus - Convert time](www.thengoding.com)
+
+![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
