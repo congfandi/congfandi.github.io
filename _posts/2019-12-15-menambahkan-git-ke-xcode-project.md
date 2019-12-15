@@ -6,6 +6,7 @@ cover-image: hipster.jpg
 
 Hola sahabat pembaca semua, kali ini saya ingin berbagi tips tentang xcode dan git, bagaimana sih cara menghubungkan prohect xcode kita dengan git. Oke, kita langsung saja pada simulasinya.
 <!--more-->
+
 ### Simulasi ###
 1. Kita sudah punya XCODE project
 2. Kita sudah punya github project
@@ -21,6 +22,8 @@ Hola sahabat pembaca semua, kali ini saya ingin berbagi tips tentang xcode dan g
 ![Git and Xcode]({{ site.baseurl }}/img/191215/git_and_xcode.png)
 
 4. ada 2 menu yang dapat digunakan
+
    - Create jika teman-teman ingin membuat project baru di git
    - Add jika ingin menggabungkan antara project di git dan project xcode
+
 5. Untuk commit push dan pull nya dpat diakses di menu bar `Source Control`
