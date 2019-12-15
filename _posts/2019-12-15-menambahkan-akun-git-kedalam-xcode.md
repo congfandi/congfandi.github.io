@@ -4,8 +4,8 @@ cover-image: hipster.jpg
 ---
 
 
-Halo sobat, kali ini saya mau nulis tentang gimana sih cara menambahkan akun git kita kedalam xcode, berikut tata caranya : 
-
+Halo sobat, kali ini saya mau nulis tentang gimana sih cara menambahkan akun git kita kedalam xcode, berikut tata caranya.
+<!--more-->
 
 1. Buka Xcode
 
@@ -17,7 +17,7 @@ Halo sobat, kali ini saya mau nulis tentang gimana sih cara menambahkan akun git
 
 4. Klik tombol `add` atau `+` pada tab `Account`
 
-![akungit]({{ site.baseurl }}/img/191215/aku-git.png)
+![akungit]({{ site.baseurl }}/img/191215/akun-git.png)
 
 5. Pilih jenis akun temen-temen
 
