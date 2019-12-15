@@ -25,7 +25,7 @@ langsung aja tutorial nya...
    
    ![akungit]({{ site.baseurl }}/img/191215/pengaturan-github.png)
 
-4. Scroll kebawah hingga ketemu tulisa `Custome Domain`
+4. Scroll kebawah hingga ketemu tulisa `Custom Domain`
 
 5. Masukan alamat domain yang sudah sobat beli, lihat gambar dibawah ini
 
