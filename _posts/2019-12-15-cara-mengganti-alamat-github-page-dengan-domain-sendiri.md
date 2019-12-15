@@ -15,7 +15,7 @@ langsung aja tutorial nya...
 2. Sudah punya domain sendiri, kalau belum punya silahkan beli dulu dtempat yang kamu suka,
 
 
-## Langkah - langkah  pada bagian Github##
+## Langkah - langkah  pada bagian Github ##
 
 1. Masuk ke github teman-teman atau klik link ini [github.com](github.com)
 
@@ -42,14 +42,14 @@ langsung aja tutorial nya...
 
    |       Domain       |       Type       |         Destination        |
    |       WWW          |       CNAME      |   *`congfandi`*.github.io  |
-   |  *`mydomain.com`*  |       A          |   185.199.108.153          |
-   |  *`mydomain.com`*  |       A          |   185.199.109.153          |
-   |  *`mydomain.com`*  |       A          |   185.199.110.153          |
-   |  *`mydomain.com`*  |       A          |   185.199.111.153          |
+   |  *`mydomain.com`*  |        A         |   185.199.108.153          |
+   |  *`mydomain.com`*  |        A         |   185.199.109.153          |
+   |  *`mydomain.com`*  |        A         |   185.199.110.153          |
+   |  *`mydomain.com`*  |        A         |   185.199.111.153          |
 
    Keterangan : 
      
-     - Ganti congfandi dengan nama git page teman teman
+     - Ganti *`congfandi`* dengan nama git page teman teman
      
      - Ganti *`mydomain.com`* dengan domain teman teman
 
@@ -62,4 +62,5 @@ terima kasih sudah berkunjung :-) .
 
 
 
->Harga dirimu berbanding lurus dengan seberapa besar kau menghargai orang lain. <small>Anonimus</small>
+
+>Harga dirimu berbanding lurus dengan seberapa besar kau menghargai orang lain. <small>Anonymous</small>
