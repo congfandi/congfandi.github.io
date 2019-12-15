@@ -19,7 +19,7 @@ Hola sahabat pembaca semua, kali ini saya ingin berbagi tips tentang xcode dan g
 
 3. Klik kanan pada project file, Perhatikan gambar dibawah ini
 
-![Git and Xcode]({{ site.baseurl }}/img/191215/git_and_xcode.png)
+      ![Git and Xcode]({{ site.baseurl }}/img/191215/git_and_xcode.png)
 
 4. ada 2 menu yang dapat digunakan
 
