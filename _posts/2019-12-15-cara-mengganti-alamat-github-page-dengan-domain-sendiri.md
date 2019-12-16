@@ -63,4 +63,4 @@ terima kasih sudah berkunjung :-) .
 
 
 
->Harga dirimu berbanding lurus dengan seberapa besar kau menghargai orang lain. <small>Anonymous</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>

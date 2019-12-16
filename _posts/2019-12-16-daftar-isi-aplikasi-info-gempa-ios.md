@@ -26,3 +26,6 @@ cover-image: hipster.jpg
 10. [Bonus - Convert time](www.thengoding.com)
 
 ![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
+
+
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>

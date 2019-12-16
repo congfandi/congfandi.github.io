@@ -272,4 +272,4 @@ oke, sampai sini dulu untuk tutorial kali ini, di tutorial part tiga kita akan m
 Maaf apa bila ada typo kata atau ada bahasa yang menyinggung dan sampai jumpa di pertemuan selanjutnya ya ....
 
 
->Tidak ada yang tidak mungkin di dunia IT selama kamu mau mencoba dan berusaha <small>Cong Fandi</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>

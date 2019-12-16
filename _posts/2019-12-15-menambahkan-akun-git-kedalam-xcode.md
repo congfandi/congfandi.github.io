@@ -26,3 +26,5 @@ Halo sobat, kali ini saya mau nulis tentang gimana sih cara menambahkan akun git
 7. selesai
 
 Sekian, moga bermanfaat ...
+
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>

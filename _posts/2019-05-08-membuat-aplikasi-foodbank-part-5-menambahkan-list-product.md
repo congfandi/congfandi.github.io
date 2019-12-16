@@ -270,4 +270,4 @@ Langkah - langkah nya adalah :
 
 
 
->Semangat muda!<small>Gai sensei</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>

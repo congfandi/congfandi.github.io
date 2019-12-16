@@ -138,6 +138,5 @@ Oke, sampai itu dulu tutorial kali ini selanjutnya kita akan membahas bagaimana 
 
 ----
 
->***Tidak ada jalan pintas untuk menjadi developer selain mencoba dan gagal***
-<small>Naruto Uzumaki</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
 
