@@ -41,6 +41,7 @@ langsung aja tutorial nya...
 3. tambahkan setting berikut pada pengaturan DNS teman-teman
 
    |       Domain       |       Type       |         Destination        |
+   |:------------------:|:----------------:|:--------------------------:|
    |       WWW          |       CNAME      |   *`congfandi`*.github.io  |
    |  *`mydomain.com`*  |        A         |   185.199.108.153          |
    |  *`mydomain.com`*  |        A         |   185.199.109.153          |
