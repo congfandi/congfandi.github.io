@@ -314,4 +314,4 @@ Ada banyak hal yang belum saya sampaikan pada tulisan ini, kita bahasnya dikelas
 Oke sekian dari saya, maaf atas kesalahan dan ketidak sempurnaan modulnya, sampai ketemu dikelas.
 
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

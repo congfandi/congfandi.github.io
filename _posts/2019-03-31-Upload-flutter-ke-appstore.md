@@ -7,4 +7,4 @@ Sebenarnya sudah banyak yang membahas bagaimana sih cara upload aplikasi flutter
 
 
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

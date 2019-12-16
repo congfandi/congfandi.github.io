@@ -114,4 +114,4 @@ Tables are a part of [GFM](https://help.github.com/articles/github-flavored-mark
 You can get Holo Alfa at the [Github repository](https://github.com/steinvc/holo-alfa). Maybe add/suggest new features. Or report bugs.
 
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

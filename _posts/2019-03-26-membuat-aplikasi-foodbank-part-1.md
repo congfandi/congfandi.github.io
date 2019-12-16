@@ -138,5 +138,5 @@ Oke, sampai itu dulu tutorial kali ini selanjutnya kita akan membahas bagaimana 
 
 ----
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 

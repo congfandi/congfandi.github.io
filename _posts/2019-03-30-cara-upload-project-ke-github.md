@@ -101,5 +101,5 @@ Tambahkan file appun di dalam direktory **Coba** kemudian jalankan perintah ini 
 
 Oke sekian dari saya, maaf atas kesalah typo tulisan jika ada dan maaf atas kesalahan kata jika ada kata yang menyinggung kalian, akhir kata. **Happy Coding**
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 

@@ -58,4 +58,4 @@ Sekian tutorial kali ini semoga bermanfaat.
 
 Jika ada yang mau didiskusikan silahkan hubungi saya lewat semua social media yang saya sertakan di blog ini.
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

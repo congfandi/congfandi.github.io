@@ -28,4 +28,4 @@ cover-image: hipster.jpg
 ![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
 
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

@@ -232,4 +232,4 @@ jika koding kaliasn sukses, seharusnya akan nampak seperti gift dibawah ini.
 Cukup sekian untuk tutorial kali ini, semoga dapat bermanfaat, maaf atas kekurangan yang ada.
 
 
->Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small>Penulis</small>
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
