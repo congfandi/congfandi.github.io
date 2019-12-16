@@ -1,5 +1,5 @@
 ---
-title: Daftar Isi Membuat aplikasi Info Gempa IOS
+title: Info Gempa - Membuat List
 cover-image: hipster.jpg
 ---
 
