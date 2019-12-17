@@ -38,30 +38,28 @@ setelah selesai membuat list, saatnya kita membuat item list sehingga nampak leb
 4. Beli nama file yang kita buat dengan `ItemList`
    
 5. Ganti code nya
-   
-        **Before**
+    
+    **Before**
 
-            ```swift
+        ```swift
+              import SwiftUI
 
-                    import SwiftUI
-
-                    struct ContentView: View {
-                        var body: some View {
-                            Text("Hello, World!")
-                        }
+               struct ContentView: View {
+                    var body: some View {
+                        Text("Hello, World!")
                     }
+                }
 
-                    struct ContentView_Previews: PreviewProvider {
-                        static var previews: some View {
+                struct ContentView_Previews: PreviewProvider {
+                    static var previews: some View {
                             ContentView()
                         }
                     }
+        ```
 
-            ```
+    Menjadi seperti ini 
 
-        Menjadi seperti ini 
-        
-        **After**
+    **After**
 
             ```swift
 
@@ -100,7 +98,6 @@ setelah selesai membuat list, saatnya kita membuat item list sehingga nampak leb
                             ItemList()
                         }
                     }
-
             ```
 
 6. Buka file `ContentView.swift` dan ganti menjadi seperti ini
