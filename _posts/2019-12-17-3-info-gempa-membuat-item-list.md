@@ -59,6 +59,8 @@ setelah selesai membuat list, saatnya kita membuat item list sehingga nampak leb
 
             ```
 
+        Menjadi seperti ini 
+        
         **After**
 
             ```swift
