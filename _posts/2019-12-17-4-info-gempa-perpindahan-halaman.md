@@ -23,8 +23,35 @@ Pada tutorial kali ini, kita akan mensimulasikan perpindahan halaman antar tampi
 
 ## langkah - Langkah ##
 
-1. Buka 
+1. Buka File `ContentView.swift`
+   
+2. Ganti codenya menjadi seperti dibawah ini
 
+    ```swift
+            import SwiftUI
+
+            struct ContentView: View {
+                var body: some View {
+                    NavigationView{
+                        List{
+                            ForEach(0...10,id: \.self){ index in
+                                NavigationLink(destination: Text("Next Page")){
+                                    ItemList()
+                                }.navigationBarTitle("Info Gempa")
+                            }
+                        }
+                    }
+                }
+            }
+
+            struct ContentView_Previews: PreviewProvider {
+                static var previews: some View {
+                    ContentView()
+                }
+            }
+    ```
+
+3. Silahkan coba aplikasinya, harusnya sudah dapat di klik
 
 
 

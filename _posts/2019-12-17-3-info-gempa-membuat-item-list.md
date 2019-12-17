@@ -43,60 +43,61 @@ setelah selesai membuat list, saatnya kita membuat item list sehingga nampak leb
 
             ```swift
 
-                import SwiftUI
+                    import SwiftUI
 
-                struct ContentView: View {
-                    var body: some View {
-                        Text("Hello, World!")
+                    struct ContentView: View {
+                        var body: some View {
+                            Text("Hello, World!")
+                        }
                     }
-                }
 
-                struct ContentView_Previews: PreviewProvider {
-                    static var previews: some View {
-                        ContentView()
+                    struct ContentView_Previews: PreviewProvider {
+                        static var previews: some View {
+                            ContentView()
+                        }
                     }
-                }
 
             ```
+
         **After**
 
             ```swift
 
-                import SwiftUI
+                    import SwiftUI
 
-                struct ItemList: View {
-                        var body: some View {
-                            HStack(alignment: .center, spacing: 9){
-                                VStack(alignment: .leading){
-                                    Text("4.5")
-                                        .foregroundColor(.white)
-                                        .font(.headline)
-                                        .bold()
-                                }.frame(width:100,height:100)
-                                    .background(Color.green)
-                                    .clipShape(Circle())
-                                    .overlay(Circle().stroke(Color.gray,lineWidth: 1))
-                                    .shadow(radius: 10)
-                                VStack{
-                                    Text("4KM Coba, Coba")
-                                        .foregroundColor(.gray)
-                                        .bold()
-                                    
-                                    Text("Time : 25 December 2019")
-                                        .italic()
-                                        .foregroundColor(.orange)
-                                        .padding(.top,2)
+                    struct ItemList: View {
+                            var body: some View {
+                                HStack(alignment: .center, spacing: 9){
+                                    VStack(alignment: .leading){
+                                        Text("4.5")
+                                            .foregroundColor(.white)
+                                            .font(.headline)
+                                            .bold()
+                                    }.frame(width:100,height:100)
+                                        .background(Color.green)
+                                        .clipShape(Circle())
+                                        .overlay(Circle().stroke(Color.gray,lineWidth: 1))
+                                        .shadow(radius: 10)
+                                    VStack{
+                                        Text("4KM Coba, Coba")
+                                            .foregroundColor(.gray)
+                                            .bold()
+                                        
+                                        Text("Time : 25 December 2019")
+                                            .italic()
+                                            .foregroundColor(.orange)
+                                            .padding(.top,2)
+                                    }
                                 }
                             }
                         }
-                    }
 
 
-                struct ContentView_Previews: PreviewProvider {
-                    static var previews: some View {
-                        ItemList()
+                    struct ContentView_Previews: PreviewProvider {
+                        static var previews: some View {
+                            ItemList()
+                        }
                     }
-                }
 
             ```
 
