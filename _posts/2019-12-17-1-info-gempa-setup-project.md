@@ -55,10 +55,5 @@ Sebagai informasi, kita akan membuat sebuah aplikasi yang saya beri nama `Info G
 
 sekian penjelasan kali ini.
 
-[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/) [Tutorial Selanjutnya](/)
-
-
-
-
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

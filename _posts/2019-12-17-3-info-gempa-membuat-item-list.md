@@ -1,0 +1,104 @@
+---
+title: Info Gempa - Membuat Item List
+cover-image: hipster.jpg
+---
+
+Pada tutorial kali ini, kita akan membuat item list pada halaman utama aplikasi
+<!--more-->
+
+## Daftar Isi ##
+
+[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/)
+
+
+## Spesifikasi APlikasi ##
+
+|  Spesifikasi  | Keterangan      |
+| :------------ |:---------------:|
+|  Bahasa       | Swift 5         |
+| Framework     | SwiftUI         |
+| Editor/Tool   | Xcode 11.3      |
+| Platform      | IOS             | 
+
+
+setelah selesai membuat list, saatnya kita membuat item list sehingga nampak lebih bagus tampilannya, langkah - langkah nya adalah sebagai berikut : 
+
+## Langkah - Langkah ##
+
+1. Buka Project File temen - temen pada xcode
+   
+2. Klik kanan kemudian `New File`
+   
+   ![list]({{ site.baseurl }}/img/191217/new.png)
+   
+3. Pilih `SwiftUI`
+   
+   ![list]({{ site.baseurl }}/img/191217/swiftui.png)
+   
+4. Beli nama file yang kita buat dengan `ItemList`
+   
+5. Ganti code nya
+   
+  **Before**
+
+    ```swift
+        import SwiftUI
+
+        struct ContentView: View {
+            var body: some View {
+                Text("Hello, World!")
+            }
+        }
+
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+    ```
+   **After**
+
+    ```swift
+        import SwiftUI
+
+        struct ContentView: View {
+            var body: some View {
+                HStack(alignment: .center, spacing: 9){
+            VStack(alignment: .leading){
+                Text("4.5")
+                    .foregroundColor(.white)
+                    .font(.headline)
+                    .bold()
+            }.frame(width:100,height:100)
+                .background(Color.green)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.gray,lineWidth: 1))
+                .shadow(radius: 10)
+            VStack{
+                Text("4KM Coba, Coba")
+                    .foregroundColor(.gray)
+                    .bold()
+                
+                Text("Time : 25 December 2019")
+                    .italic()
+                    .foregroundColor(.orange)
+                    .padding(.top,2)
+            }
+        }
+            }
+        }
+
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+    ```
+
+6. Tampilan akhirnya akan seperti dibawah gambar dibawah ini
+   
+
+
+
+
+>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>

@@ -78,8 +78,4 @@ sehingga tampilannya akan seperti dibawah ini
 cukup sekian pembahasan pembuatan list, selanjutnya kita akan membahas pembuatan item pada list yang kita buat pada tutorial ini.. sampai jumpa di tutorial selanjutnya...
 
 
-[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/)  [Setup Project](https://thengoding.com/2019/12/17/1-info-gempa-setup-project/)
-
-
-
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
