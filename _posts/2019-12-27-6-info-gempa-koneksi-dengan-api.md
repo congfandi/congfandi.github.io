@@ -4,8 +4,7 @@ cover-image: hipster.jpg
 ---
 
 Kita sudah selesai membuat membuat tampilan aplikasi, saatnya kita membuat koneksi dengan real data dengan menggunakan API
-
-<!-- more -->
+<!--more-->
 
 ## Daftar Isi ##
 
@@ -50,7 +49,7 @@ Kita sudah selesai membuat membuat tampilan aplikasi, saatnya kita membuat konek
 
    ```
 
-   4. Koneksi dengan api sudah selseai, namun hasilnya belum bisa dilihat.. kita akan bahas pada modul selanjutnya
+4. Koneksi dengan api sudah selseai, namun hasilnya belum bisa dilihat.. kita akan bahas pada modul selanjutnya
 
 
 
