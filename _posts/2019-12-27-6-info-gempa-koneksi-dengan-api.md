@@ -31,9 +31,9 @@ Kita sudah selesai membuat membuat tampilan aplikasi, saatnya kita membuat konek
    
    ```swift
          import Foundation
-         class NetworkingManager: ObservableObject {
-             @Published var dataList = QuakeAPIList(features : [])
+         class NetworkingManager{
              
+        
              init() {
                  
                  guard let url = URL(string : "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson") else {return}
