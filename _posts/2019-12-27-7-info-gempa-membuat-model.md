@@ -24,17 +24,17 @@ Pada pembahasan kali ini kita akan membahas bagaimana cara mmebuat model pada pe
 Model yang akan kita buat adalah sesuai dengan yang dibutuhkan oleh aplikasi dan menyesuaikan dengan `JSON`  yang di dapat dari [API GEMPA](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson).
 Berikut data yang kita butuhkan untuk membuat aplikasi info gempa ini
 
-## Kebutuhan Aplikasi ##
+## Kebutuhan Atribut Model ##
 
-|      Nama      |      Tipe Data      |       Keterangan        |  
+|     Atribut    |      Tipe Data      |       Keterangan        |  
 | :--------------| :------------------:|:------------------------|
 | mag            | Double              | Informasi kekuatan gempa|
 | place          | String              | informasi tempat gempat |
 | time           | Double              | informasi waktu gempa   |
 | detail         | String              | URL detail gempa        |
-| title          | String              | Informasi gempa         |
+| title          | String              | Informasi judul gempa   |
 | type           | String              | Tipe Gempa              |
-| coordinates    | List<Double>        | Lat Long gempat (Peta)  |
+| coordinates    | List Double        | Lat Long gempa (Peta)  |
 
 
 ## Format JSON API ##
@@ -84,11 +84,53 @@ Berikut data yang kita butuhkan untuk membuat aplikasi info gempa ini
 
 ## langkah - Langkah ##
 
+1. Buat sebuah file dengan nama `Quake`
+2. Copy dan paste code dibawah ini
+   
+   ```swift
+         import Foundation
+
+         struct Features : Decodable, Hashable{
+             var properties : Properties
+             var geometry : Geometry
+         }
+
+         struct Properties : Decodable, Hashable {
+             var mag : Double
+             var place  : String
+             var time : Double
+             var detail : String
+             var title : String
+         }
+
+         struct Geometry : Decodable, Hashable {
+             var type : String
+             var coordinates : [Double]
+         }
+
+         struct QuakeAPIList : Decodable {
+             var features : [Features]
+         }
+   ```
+
+3. Model selesai dibuat,
+
+
+## Penjelasan Model ##
+
+1. `struct` menunjukan pojo/model
+   
+2. kelas `Features` dibuat karena atribut yang dibutuhkan ada didalam list dengan nama `Features`
+   
+3. kelas `Properties` dibuat karena atribut yang dibutuhkan ada dalan json object ini
+   
+4. kelas `Geometry` dibuat karena atribut `type` dan `coordinates` ada dalam json object ini
+   
+5. kelas `QuakeAPIList` dibuat untuk menampung seluruh return yang di dapat dari api untuk selanjutnya diconversi kedalam bentuk object
 
 
 
-
-
+Oke sekian pada modul tutorial kali ini, selanjutnya kita akan mengconversi json menjadi pojo seperti yang sudah kita buat ini.
 
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
