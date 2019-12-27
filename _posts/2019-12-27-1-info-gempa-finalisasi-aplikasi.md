@@ -1,5 +1,5 @@
 ---
-title: 
+title: Info Gempa - Finalisasi Project
 cover-image: hipster.jpg
 ---
 
