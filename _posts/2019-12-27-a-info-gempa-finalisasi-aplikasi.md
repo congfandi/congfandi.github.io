@@ -8,7 +8,7 @@ Alhamdulillah sudah sampai dipenghujung tutorial, kali ini kita akan membahas fi
 
 ## Daftar Isi ##
 
-[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/)
+[Daftar Isi](https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/)
 
 
 ## Spesifikasi APlikasi ##

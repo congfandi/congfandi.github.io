@@ -17,25 +17,28 @@ Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk
 
 ## Daftar Isi ##
 
-1. [Setup Project](https://thengoding.com/2019/12/17/1-info-gempa-setup-project/)
+1. [Setup Project](https://thengoding.com/2019/12/27/i-info-gempa-setup-project/)
 
-2. [Membuat List](https://thengoding.com/2019/12/17/2-info-gempa-membuat-list/)
+2. [Membuat List](https://thengoding.com/2019/12/27/h-info-gempa-membuat-list/)
 
-3. [Membuat Item List](https://thengoding.com/2019/12/17/3-info-gempa-membuat-item-list/)
+3. [Membuat Item List](https://thengoding.com/2019/12/27/g-info-gempa-membuat-item-list/)
 
-4. [Perpindahan halaman](https://thengoding.com/2019/12/17/4-info-gempa-perpindahan-halaman/)
+4. [Perpindahan halaman](https://thengoding.com/2019/12/27/f-info-gempa-perpindahan-halaman/)
 
-5. [Membuat Detail Gempa / Map](https://thengoding.com/2019/12/27/5-info-gempa-membuat-peta/)
+5. [Membuat Detail Gempa / Map](https://thengoding.com/2019/12/27/e-info-gempa-membuat-peta/)
 
-6. [Koneksi dengan API](https://thengoding.com/2019/12/27/6-info-gempa-koneksi-dengan-api/)
+6. [Koneksi dengan API](https://thengoding.com/2019/12/27/d-info-gempa-koneksi-dengan-api/)
 
-7. [Membuat Model](https://thengoding.com/2019/12/27/7-info-gempa-membuat-model/)
+7. [Membuat Model](https://thengoding.com/2019/12/27/c-info-gempa-membuat-model/)
 
-8. [Convert JSON ke Model](https://thengoding.com/2019/12/27/8-info-gempa-conversi-json-ke-model/)
+8. [Convert JSON ke Model](https://thengoding.com/2019/12/27/b-info-gempa-conversi-json-ke-model/)
 
-9. [Finalisasi](https://thengoding.com/2019/12/27/1-info-gempa-finalisasi-aplikasi/)
+9. [Finalisasi](https://thengoding.com/2019/12/27/a-info-gempa-finalisasi-aplikasi/)
+    
 
 ## Simulasi Aplikasi ##
+
+
 
 ![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
 

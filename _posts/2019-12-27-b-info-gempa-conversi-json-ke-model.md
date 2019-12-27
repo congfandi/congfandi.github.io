@@ -8,7 +8,7 @@ Pada pembahasan sebelumnya, kita sudah membahas bagaimana membuat sebuah model, 
 
 ## Daftar Isi ##
 
-[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/)
+[Daftar Isi](https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/)
 
 
 ## Spesifikasi APlikasi ##

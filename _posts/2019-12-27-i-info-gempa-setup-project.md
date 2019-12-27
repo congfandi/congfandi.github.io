@@ -9,7 +9,7 @@ Sebagai informasi, kita akan membuat sebuah aplikasi yang saya beri nama `Info G
 
 ## Daftar Isi ##
 
-[Daftar Isi](https://thengoding.com/2019/12/16/daftar-isi-aplikasi-info-gempa-ios/)
+[Daftar Isi](https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/)
 
 
 ## Spesifikasi APlikasi ##
