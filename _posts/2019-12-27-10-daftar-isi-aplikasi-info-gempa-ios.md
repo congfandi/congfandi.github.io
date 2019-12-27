@@ -18,13 +18,15 @@ Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk
 
 5. [Membuat Detail Gempa / Map](https://thengoding.com/2019/12/27/5-info-gempa-membuat-peta/)
 
-6. [Koneksi dengan API](www.thengoding.com)
+6. [Koneksi dengan API](https://thengoding.com/2019/12/27/6-info-gempa-koneksi-dengan-api/)
 
-7. [Membuat Model](www.thengoding.com)
+7. [Membuat Model](https://thengoding.com/2019/12/27/7-info-gempa-membuat-model/)
 
-8. [Convert JSON ke Model](www.thengoding.com)
+8. [Convert JSON ke Model](https://thengoding.com/2019/12/27/8-info-gempa-conversi-json-ke-model/)
 
-9.  [Bonus - Convert time](www.thengoding.com)
+9. [Finalisasi](www.thengoding.com)
+
+## Simulasi Aplikasi ##
 
 ![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
 

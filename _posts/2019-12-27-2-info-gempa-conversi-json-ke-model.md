@@ -26,7 +26,7 @@ Pada pembahasan sebelumnya, kita sudah membahas bagaimana membuat sebuah model, 
 
 2. Edit file tersebut
    
-   `Before`
+   ## Before ##
    ```swift
          import Foundation
          class NetworkingManager{
@@ -47,7 +47,7 @@ Pada pembahasan sebelumnya, kita sudah membahas bagaimana membuat sebuah model, 
 
    ```
 
-   `After`
+   ## After ##
    ```swift
          import Foundation
          class NetworkingManager: ObservableObject {
