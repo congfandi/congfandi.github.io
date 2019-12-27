@@ -1,10 +1,19 @@
 ---
-title: Daftar Isi Membuat aplikasi Info Gempa IOS
+title: Info Gempa - Daftar Isi
 cover-image: hipster.jpg
 ---
 Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk demo aplikasinya dapat dilihat pada bagian akhir tulisan ini. 
-
 <!--more-->
+
+## Spesifikasi APlikasi ##
+
+|  Spesifikasi  | Keterangan      |
+| :------------ |:---------------:|
+|  Bahasa       | Swift 5         |
+| Framework     | SwiftUI         |
+| Editor/Tool   | Xcode 11.3      |
+| Platform      | IOS             | 
+
 
 ## Daftar Isi ##
 
