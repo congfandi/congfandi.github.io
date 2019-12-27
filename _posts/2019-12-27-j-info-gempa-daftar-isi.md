@@ -33,7 +33,7 @@ Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk
 
 8. [Convert JSON ke Model](https://thengoding.com/2019/12/27/8-info-gempa-conversi-json-ke-model/)
 
-9. [Finalisasi](www.thengoding.com)
+9. [Finalisasi](https://thengoding.com/2019/12/27/1-info-gempa-finalisasi-aplikasi/)
 
 ## Simulasi Aplikasi ##
 
