@@ -2,28 +2,29 @@
 title: Daftar Isi Membuat aplikasi Info Gempa IOS
 cover-image: hipster.jpg
 ---
+Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk demo aplikasinya dapat dilihat pada bagian akhir tulisan ini. 
+
+<!--more-->
 
 ## Daftar Isi ##
 
-1. [Setup Project](www.thengoding.com)
+1. [Setup Project](https://thengoding.com/2019/12/17/1-info-gempa-setup-project/)
 
-2. [Membuat List](www.thengoding.com)
-<!--more-->
-3. [Membuat Item List](www.thengoding.com)
+2. [Membuat List](https://thengoding.com/2019/12/17/2-info-gempa-membuat-list/)
 
-4. [Perpindahan halaman](www.thengoding.com)
+3. [Membuat Item List](https://thengoding.com/2019/12/17/3-info-gempa-membuat-item-list/)
 
-5. [Membuat Detail Gempa](www.thengoding.com)
+4. [Perpindahan halaman](https://thengoding.com/2019/12/17/4-info-gempa-perpindahan-halaman/)
 
-6. [Membuat Peta tampilan](www.thengoding.com)
+5. [Membuat Detail Gempa / Map](https://thengoding.com/2019/12/27/5-info-gempa-membuat-peta/)
 
-7. [Koneksi dengan API](www.thengoding.com)
+6. [Koneksi dengan API](www.thengoding.com)
 
-8. [Membuat Model](www.thengoding.com)
+7. [Membuat Model](www.thengoding.com)
 
-9. [Convert JSON ke Model](www.thengoding.com)
+8. [Convert JSON ke Model](www.thengoding.com)
 
-10. [Bonus - Convert time](www.thengoding.com)
+9.  [Bonus - Convert time](www.thengoding.com)
 
 ![Simulasi APP]({{ site.baseurl }}/img/191216/app.gif)
 
