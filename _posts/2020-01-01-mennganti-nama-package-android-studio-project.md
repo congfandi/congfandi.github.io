@@ -29,8 +29,6 @@ Hola Sobat ngoding, setelah sebelumnya kita membahas tentang bagaimana cara meng
     ![dotname]({{ site.baseurl }}/img/200101/settingpackage.png)
 
 3. Pada bagian package, dan folder aplication, klik folder tersebut
-    
-    ![dotname]({{ site.baseurl }}/img/200101/tabpackage.png)
 
 4. lakuakan penggantian nama dengan cara tekan secara bersamaan pada keyboard `Shift`  + `F6`
    
