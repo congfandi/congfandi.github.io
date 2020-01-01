@@ -4,7 +4,7 @@ cover-image: hipster.jpg
 ---
 
 Halo sobat ngoding, awal tahun 2020 ini aku buka dengan tulisan sederhana ini... sebenanrnya hanya untuk mengisi waktu luang aja karena tanggal 1 pada liburan semua.
-<!-- more -->
+<!--more-->
 Mengganti nama project pada android studio merupakan suatu tindakan yang perlu kamu tahu jika kamu adalah seorang developer android, kenapa begitu ? karena hal ini kamu butuhkan jika ternyata project yang kamu buat mengandung `typo` atau ternyata nama project yang sudah kamu tulis salah atau ingin menggantinya karena ada permintaan dari client. 
 
 oke kita mulai saja langkah - langkahnya , namun seperti biasa kita tuliskan dulu simulasinya nya
