@@ -4,7 +4,7 @@ cover-image: hipster.jpg
 ---
 
 Halo sobat ngoding, awal tahun 2020 ini aku buka dengan tulisan sederhana ini... sebenanrnya hanya untuk mengisi waktu luang aja karena tanggal 1 pada liburan semua.
-
+<!-- more -->
 Mengganti nama project pada android studio merupakan suatu tindakan yang perlu kamu tahu jika kamu adalah seorang developer android, kenapa begitu ? karena hal ini kamu butuhkan jika ternyata project yang kamu buat mengandung `typo` atau ternyata nama project yang sudah kamu tulis salah atau ingin menggantinya karena ada permintaan dari client. 
 
 oke kita mulai saja langkah - langkahnya , namun seperti biasa kita tuliskan dulu simulasinya nya
@@ -26,7 +26,7 @@ oke kita mulai saja langkah - langkahnya , namun seperti biasa kita tuliskan dul
 
 1. Ganti Tab project menjadi `Project files`
 
-        ![The Ngoding - Tab Project]({{ site.baseurl }}/img/200101/tabproject.png)
+    ![TabProject]({{ site.baseurl }}/img/200101/tabproject.png)
    
 2. Klik kanan pada root project
 
@@ -34,20 +34,20 @@ oke kita mulai saja langkah - langkahnya , namun seperti biasa kita tuliskan dul
    
    - Klik kanan `Refactor` => `Rename` atau
         
-        ![The Ngoding - Rename]({{ site.baseurl }}/img/200101/refactor.png)
+    ![Rename]({{ site.baseurl }}/img/200101/refactor.png)
   
    - Tekan secara bersamaan pada keyboard `Shift` + `F6`
   
 4. Ganti nama menjadi `MyApplication` dan pastikan untuk mencentang reference dan string name nya 
    
 
-        ![The Ngoding - rename]({{ site.baseurl }}/img/200101/rename.png)
+    ![rename]({{ site.baseurl }}/img/200101/rename.png)
 
 5. Expand(Buka) `.idea` folder
 
 6. Klik `.name` dan ganti menjadi `My Application`
 
-        ![The Ngoding - dotname]({{ site.baseurl }}/img/200101/dotname.png)
+    ![dotname]({{ site.baseurl }}/img/200101/dotname.png)
 
 7. Klik `setting.gradle` 
    
