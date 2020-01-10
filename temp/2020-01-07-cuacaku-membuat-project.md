@@ -1,19 +1,21 @@
 ---
-title: Asisten Hujan - Daftar Isi
+title: 
 cover-image: hipster.jpg
 ---
-
-Halo sobat ngoding, kali ini saya akan membuat tutorial membuat aplikasi *Asisten Hujan* dengan spesifikasi dibawah ini : 
 
 ## Spesifikasi Aplikasi ##
 
 |  Spesifikasi  | Keterangan      |
 | :------------ |:---------------:|
-| Nama Aplikasi | Asisten Hujan   |
+| Nama Aplikasi | Cuacaku         |
 | Bahasa        | Kotlin          |
 | Pattern       | MVVM            |
 | Editor/Tool   | Android Studio  |
 | Platform      | Android         | 
+
+
+
+
 
 
 
