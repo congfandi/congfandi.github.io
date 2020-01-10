@@ -10,7 +10,7 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 ## Simulasi ##
 
-1. Sudah punya akun google play console, kalau belum punya beli dulu disini [google]([www.console.plastore.com](https://play.google.com/))
+1. Sudah punya akun google play console, kalau belum punya beli dulu disini [www.console.plastore.com](https://play.google.com/)
 
 2. Sudah ada project flutter
 
