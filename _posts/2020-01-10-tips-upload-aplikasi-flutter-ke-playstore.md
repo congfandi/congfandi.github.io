@@ -19,13 +19,16 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 1. ### Gunakan Android Studio ###
 2. ### Pastikan Package kalian benar ###
-3. ### Buat JKS File ###
-4. ### Buat key.propertise ###
+3. ### Buat `JKS` File ###
+4. ### Buat `key.propertise` ###
 5. ### Edit file `project/android/app/build.gradle` ###
 6. ### Ganti APP Icon ###
 
 
 
+*noted*
+    this content is not finish yet, will finihing soon... thanks for visiting my personal blog..
 
+    sincerly yours : The Ngoding
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
