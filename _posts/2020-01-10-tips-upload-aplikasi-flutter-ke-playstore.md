@@ -1,5 +1,5 @@
 ---
-title: Tips upload aplikasi flutter ke playstore
+title:  Upload Aplikasi flutter ke playstore
 cover-image: hipster.jpg
 ---
 
@@ -18,6 +18,7 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 ## Langkah -  langkah ##
 
 1. ### Gunakan Android Studio ###
+   
 2. ### Pastikan Package kalian benar ###
 3. ### Buat `JKS` File ###
 4. ### Buat `key.propertise` ###
