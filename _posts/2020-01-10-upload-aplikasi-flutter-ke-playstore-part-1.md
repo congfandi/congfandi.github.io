@@ -1,10 +1,10 @@
 ---
-title:  Upload Aplikasi flutter ke playstore
+title:  Upload Aplikasi flutter ke playstore part 1
 cover-image: hipster.jpg
 ---
 
 
-Hi soba ngoding, kali saya khsus membahas tips tips upload aplikasi yang dibuat menggunakan flutter ke playstore.
+Hi sobat ngoding, kali ini saya khsus membahas cara upload aplikasi yang dibuat menggunakan flutter ke playstore. Cara uploadnya saya bagi menjadi 2 bagian, yang pertama ini adalah khusus bagaimana cara membuat `app-release.apk` untuk bisa dimasukan ke ke playstore.
  <!--more-->
 Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada blog saya ini akan saya tambahkan beberapa hal yang tidak dibahas disana, seperti biasa kita mulai saja tutorial nya dengan simulasi
 
@@ -27,7 +27,7 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 3. ### Buat `key.propertise` ###
    
-   Buatlah file ini pada lokasi berikut _<app dir>/android/key.properties_ kemudian isi filenya menjadi seperti ini 
+   Buatlah file ini pada lokasi berikut `app dir>/android/key.properties` kemudian isi filenya menjadi seperti ini 
 
    ```gradle
       storePassword=<password from previous step>
@@ -41,13 +41,13 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
    a. Ganti
 
-        ```
-            android {
-        ```
         
-        menjadi
+            android {
+        
+        
+    menjadi
 
-        ```
+        
             def keystoreProperties = new Properties()
             def keystorePropertiesFile = rootProject.file('key.properties')
             if (keystorePropertiesFile.exists()) {
@@ -55,11 +55,11 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
             }
 
             android {
-        ```
+        
 
     b. Ganti
 
-        ```
+        
             buildTypes {
                 release {
                     // TODO: Add your own signing config for the release build.
@@ -68,11 +68,11 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
                     signingConfig signingConfigs.debug
                 }
             }
-        ```
+        
 
-        Menjadi
+    Menjadi
 
-        ```
+        
             signingConfigs {
                 release {
                     keyAlias keystoreProperties['keyAlias']
@@ -86,9 +86,32 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
                     signingConfig signingConfigs.release
                 }
             }
-        ```
+        
 
 5. ### Ganti APP Icon ###
+
+    Untuk mengganti icon, sudah saya tulis pada bagian yang lain yaitu pada tulisan saya ini [Mengganti Icon aplikasi android](https://thengoding.com/2020/01/13/mengganti-icon-aplikasi-android/)
+
+6. ### Mengetikkan perintah pada terminal ###
+   
+   Ini adalah bagian akhir dari tulisan saya ini, silahkan buka terminal pada `direktory` project teman teman, baik Linux/Mac atau Windows caranya sama aja,
+
+    #### membuat apk release ####
+    - flutter Clean
+    - flutter Build Apk --release 
+  
+    #### membuat apk debug ####
+    - flutter Clean
+    - flutter Build Apk --debug
+
+    #### membuat app bundle ####
+    - flutter clean
+    -  flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+
+7. Tunggu hingga proses pembuatan apk selesai, jika sukses hasil apka teman-teman akan ada pada folder `build/app/outputs/apk/release/app-release.apk`
+   
+
+
 
 
 
