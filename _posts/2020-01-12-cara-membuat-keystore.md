@@ -24,15 +24,19 @@ Cara :
 1. Buka Project Android Studio anda (Project android bukan flutter)
    
 2. Klik menu *Build->Generate Signed Bundle/APK*
+   
     ![generate]({{ site.baseurl }}/img/200112/signed.png)
 
 3. Pilih Next Saja
+   
     ![generate]({{ site.baseurl }}/img/200112/choose.png)
 
 4. Kemuadian Klik New
+   
     ![generate]({{ site.baseurl }}/img/200112/new.png)
 
 5. Kemudian isi sesuai dengan penjelasan dibawah ini
+   
    ![generate]({{ site.baseurl }}/img/200112/field.png)
 
    *Key Store Path*
@@ -102,7 +106,7 @@ Cara :
    b. Windows
 
         
-            keytool -genkey -v -keystore c:/Users/USER_NAME/key.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias key
+        keytool -genkey -v -keystore c:/Users/USER_NAME/key.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias key
         
     Setelah itu isi field2 yang diminta seperti pada android studio diatas.
 

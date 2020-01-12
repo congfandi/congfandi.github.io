@@ -10,7 +10,7 @@ Terdapat bebagai macam cara yang bisa kita lakukan, namun disini penulis akan me
 
 ## Langkah - langkah manual ##
 
-1. Buat File icon teman-teman dengan ukuran 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192
+1. Buat File icon teman-teman dengan ukuran 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192 boleh berformat `png` atau `jpg`
 
 2. Pada bagian `src/res` buat folder tambahan dengan nama `drawable-hdpi` , `drawable-mdpi` , `drawable-xhdpi`, `drawable-xxhdpi` dan `drawable-xxxhdpi`
 
@@ -43,7 +43,7 @@ Terdapat bebagai macam cara yang bisa kita lakukan, namun disini penulis akan me
 
 dengan menggunakan `Batch drawable importer` kita tidak perlu membuat banyak file, cukup dengan sekali klik maka secara otomatis icon aplikasi kita menjadi 5 bagian dengan folder masing masing, caranya adalah sebagai berikut :
 
-1. Buat Icon nya dengan ukuran 192x192
+1. Buat Icon nya dengan ukuran 192x192 boleh berformat `png` atau `jpg`
 
 2. Install Plugin pada Android Studio dengan nama `Android Drawable Importer` , Untuk menginstall plugin pada android studio, teman-teman bisa klik menu `Preferences -> Plugin` kemudian pada pencarian, ketikkan saja `Android Drawable importer` maka akan muncul drawable importer nya dan pilih install
    

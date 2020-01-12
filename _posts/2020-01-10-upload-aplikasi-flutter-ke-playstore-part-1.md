@@ -10,7 +10,7 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 ## Simulasi ##
 
-1. Sudah punya akun google play console, kalau belum punya beli dulu disini [https://play.google.com/](https://play.google.com/)
+1. Sudah punya akun google play console, kalau belum punya beli dulu disini [https://play.google.com/](https://play.google.com/apps/publish/)
 
 2. Sudah ada project flutter
 
@@ -94,17 +94,17 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 6. ### Mengetikkan perintah pada terminal ###
    
-   Ini adalah bagian akhir dari tulisan saya ini, silahkan buka terminal pada `direktory` project teman teman, baik Linux/Mac atau Windows caranya sama aja,
+   Ini adalah bagian akhir dari tulisan saya ini, silahkan buka terminal pada `directory` project teman teman, baik Linux/Mac atau Windows caranya sama aja,
 
-    #### membuat apk release ####
-    - flutter Clean
-    - flutter Build Apk --release 
+    *membuat apk release*
+    - flutter clean
+    - flutter build apk --release 
   
-    #### membuat apk debug ####
-    - flutter Clean
-    - flutter Build Apk --debug
+    *membuat apk debug*
+    - flutter clean
+    - flutter build apk --debug
 
-    #### membuat app bundle ####
+    *membuat app bundle*
     - flutter clean
     -  flutter build appbundle --target-platform android-arm,android-arm64,android-x64
 
