@@ -95,15 +95,15 @@ Cara :
    
    a. Mac atau Linux
 
-        ```terminal
+        
         keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
-        ```
+        
 
    b. Windows
 
-        ```terminal
+        
             keytool -genkey -v -keystore c:/Users/USER_NAME/key.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias key
-        ``` 
+        
     Setelah itu isi field2 yang diminta seperti pada android studio diatas.
 
 Dan sepertin itu temen2 cara membuat *Key Store*. temen2 dapat menggunakan *Key Store* tersebut untk mengupload aplikasi ke google play console.
