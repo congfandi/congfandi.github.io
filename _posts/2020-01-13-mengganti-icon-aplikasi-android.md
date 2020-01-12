@@ -8,7 +8,7 @@ Pada pembahasan kali ini, kita akan mensimulasikan bagaimana caranya mengganti i
 
 Terdapat bebagai macam cara yang bisa kita lakukan, namun disini penulis akan membagikan cara penulis dalam mengganti app icon dengan mudah dan gampang, serta langsung menjadi beberapa bagian ukuran layar.
 
-## Langkah - langkah manual##
+## Langkah - langkah manual ##
 
 1. Buat File icon teman-teman dengan ukuran 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192
 
@@ -41,11 +41,11 @@ Terdapat bebagai macam cara yang bisa kita lakukan, namun disini penulis akan me
 
 ## Langkah - langkah dengan `Batch Drawable Inporter` ##
 
-dengan menggunakan `batch drawable importer` kita tidak perlu membuat banyak file, cukup dengan sekali klik maka secara otomatis icon aplikasi kita menjadi 5 bagian dengan folder masing masing, caranya adalah sebagai berikut :
+dengan menggunakan `Batch drawable importer` kita tidak perlu membuat banyak file, cukup dengan sekali klik maka secara otomatis icon aplikasi kita menjadi 5 bagian dengan folder masing masing, caranya adalah sebagai berikut :
 
-1. Buat Icon nya dengan ukuran salah satu ukuran  192x192
+1. Buat Icon nya dengan ukuran 192x192
 
-2. Install Plugin pada Android Studio dengan nama `Android Drawable Importer`
+2. Install Plugin pada Android Studio dengan nama `Android Drawable Importer` , Untuk menginstall plugin pada android studio, teman-teman bisa klik menu `Preferences -> Plugin` kemudian pada pencarian, ketikkan saja `Android Drawable importer` maka akan muncul drawable importer nya dan pilih install
    
 3. Restart Android Studio
 
@@ -53,13 +53,11 @@ dengan menggunakan `batch drawable importer` kita tidak perlu membuat banyak fil
    
 5. Setelah itu pilih `Batch Drawable Importer`
    
-6. 
+6. Pilih Icon yang sudah dibuat, kemudian klik oke
    
-7. Pilih Icon yang sudah dibuat,kemudian klik oke
+7. Icon sudah menjadi beberapa bagian 
    
-8. Icon sudah menjadi beberapa bagian 
-   
-9.  Masukan nama icon teman-teman ke `AndroidManifest.xml` aplikasi pada bagian ini
+8.  Masukan nama icon teman-teman ke `AndroidManifest.xml` aplikasi pada bagian ini
    
    ```manifest
          <application
