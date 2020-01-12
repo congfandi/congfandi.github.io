@@ -10,26 +10,86 @@ Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada
 
 ## Simulasi ##
 
-1. Sudah punya akun google play console, kalau belum punya beli dulu disini [www.console.plastore.com](https://play.google.com/)
+1. Sudah punya akun google play console, kalau belum punya beli dulu disini [https://play.google.com/](https://play.google.com/)
 
 2. Sudah ada project flutter
 
 
 ## Langkah -  langkah ##
 
-1. ### Gunakan Android Studio ###
+1. ### Pastikan Package kalian benar ###
    
-2. ### Pastikan Package kalian benar ###
-3. ### Buat `JKS` File ###
-4. ### Buat `key.propertise` ###
-5. ### Edit file `project/android/app/build.gradle` ###
-6. ### Ganti APP Icon ###
+   Memastikan nama package kalian benar adalah langkah yang paling penting menurut saya pribadi, karena nama package tidak dapat diganti setelah aplikasi kalian masuk ke playstore, untuk mengganti nama package apabila ada kesalahan, teman-teman dapat merubahnya, tutorialnya ada pada blog ini juga atau klik aja bagian disni [Cara mengganti nama package](https://thengoding.com/2020/01/01/mennganti-nama-package-android-studio-project/)
+
+2. ### Buat `Key Store` File ###
+   
+   Membuat *Key Store* adalah langkah yang penting juga karena playstore dapat menerima aplikasi apabila key store disertakan pada aplikasi sobat, untuk membuat key store, dapat mengunjungi halaman [ini](https://thengoding.com/2020/01/12/cara-membuat-keystore/)
+
+3. ### Buat `key.propertise` ###
+   
+   Buatlah file ini pada lokasi berikut _<app dir>/android/key.properties_ kemudian isi filenya menjadi seperti ini 
+
+   ```gradle
+      storePassword=<password from previous step>
+      keyPassword=<password from previous step>
+      keyAlias=key
+      storeFile=<location of the key store file, such as /Users/<user name>/key.jks>
+   ```
+4. ### Edit file `<app dir>/android/app/build.gradle` ###
+   
+   Ada beberapa step untuk meng edit file gradle ini, 
+
+   a. Ganti
+
+        ```
+            android {
+        ```
+        
+        menjadi
+
+        ```
+            def keystoreProperties = new Properties()
+            def keystorePropertiesFile = rootProject.file('key.properties')
+            if (keystorePropertiesFile.exists()) {
+                keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+            }
+
+            android {
+        ```
+
+    b. Ganti
+
+        ```
+            buildTypes {
+                release {
+                    // TODO: Add your own signing config for the release build.
+                    // Signing with the debug keys for now,
+                    // so `flutter run --release` works.
+                    signingConfig signingConfigs.debug
+                }
+            }
+        ```
+
+        Menjadi
+
+        ```
+            signingConfigs {
+                release {
+                    keyAlias keystoreProperties['keyAlias']
+                    keyPassword keystoreProperties['keyPassword']
+                    storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+                    storePassword keystoreProperties['storePassword']
+                }
+            }
+            buildTypes {
+                release {
+                    signingConfig signingConfigs.release
+                }
+            }
+        ```
+
+5. ### Ganti APP Icon ###
 
 
-
-*noted*
-    this content is not finish yet, will finihing soon... thanks for visiting my personal blog..
-
-    sincerly yours : The Ngoding
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
