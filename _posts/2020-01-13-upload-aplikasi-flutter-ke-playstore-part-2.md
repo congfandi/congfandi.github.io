@@ -58,6 +58,6 @@ Kita langsung pada langkah - langkah nya :
 
 Sekian sobat ngoding tentang bagaimana cara mengupload aplikasi pada google palystore.. semoga bermanfaat sampai ketemu di tutorial selanjutnya ... :-)
 
-jika ada yang mau didiskusikan silahkan dapat menghubungi saya menggunaka semua social media yang saya sertkan di blog pribadi ini
+jika ada yang mau didiskusikan silahkan dapat menghubungi saya menggunakan semua social media yang saya sertkan di blog pribadi ini
 
 >Usaha yang disandarkan padanya doa, tidak akan pernah berkhianat<small> - Penulis</small>
