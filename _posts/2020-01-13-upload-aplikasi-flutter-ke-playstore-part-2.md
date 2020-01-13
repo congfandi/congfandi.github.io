@@ -6,7 +6,7 @@ cover-image: hipster.jpg
 Okay sobat ngoding, melanjutkan pembahasan sebelumnya yaitu pada part 1 [Upload Aplikasi Flutter ke Playstore Part 1](https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/) kita akan membahas disisi playstorenya, pada bagian ini tidak dibutuhkan skill ngoding.. heeee .... 
 <!--more-->
 
-Sebelum melanjutkan, untuk dapat memasukan aplikasi ke google playstore, teman teman harus membeli akun google developer seharga `$25` dan cara belinya hanya dapat menggunakan kartu kredit, sebenannrya dapat menggunakan VCC nya BNI atau BCA namun akhir2 ini banyak tersiar kabar kalau cara itu tidak bisa dilakukan lagi karena sudah ditolak sama si google (hingga tulisan ini terbit penulis belum mencoba lagi untuk yg VCC). penulis juga pernah membeli menggunakan kartu kredit juga pernah membeli menggunakan VCC BCA (Virtual Credit Card).
+Sebelum melanjutkan, untuk dapat memasukan aplikasi ke google playstore, teman teman harus membeli akun google developer seharga `$25` dan cara belinya hanya dapat menggunakan kartu kredit, sebenarya dapat menggunakan VCC nya BNI atau BCA namun akhir2 ini banyak tersiar kabar kalau cara itu tidak bisa dilakukan lagi karena sudah ditolak sama si google (hingga tulisan ini terbit penulis belum mencoba lagi untuk yg VCC). penulis juga pernah membeli menggunakan kartu kredit juga pernah membeli menggunakan VCC BCA (Virtual Credit Card).
 
 Kita langsung pada langkah - langkah nya : 
 
