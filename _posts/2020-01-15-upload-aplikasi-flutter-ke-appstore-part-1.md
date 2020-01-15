@@ -29,7 +29,7 @@ Seperti biasa kita harus mulai dengan simulasinya dahulu
 
 ## Langkah - Langkah Pada bagian Apple Developer Console ##
 
-1. Mac teman teman sudah terinstall certificate apple developer, jika belum silahkan lihat pada tutorial [Menambahkan Apple Developer Certificate](/)
+1. Mac teman teman sudah terinstall certificate apple developer, jika belum silahkan lihat pada tutorial [Menambahkan Apple Developer Certificate](https://thengoding.com/2020/01/14/xcode-menambahkan-apple-developer-certificate/)
 
 2. Masuk ke site [Apple Developer](https://developer.apple.com/) dan login
 
