@@ -3,7 +3,9 @@ title: XCODE - Menambahkan apple developer certificate
 cover-image: hipster.jpg
 ---
 
-Halo sobat ngoding, kali ini pembahasan kita tentang xcode nih.. tentang bagaimana cara menambahkan certificate apple developer pada perangkat macbook kita atau imac kita, ada banyak juga yang sudah membahas terkait masalah ini, akan tetapi saya ingin berbagi tentang bagaimana cara saya memasukan apple certificate ini. Awalnya saya sangat kesulitan untuk melakukan hal ini karena minimnya dokumentasi dalam bahasa indonesia dan jarang juga ada orang yang membahas masalah ini. oke kita langsung mulai dengan simulasinya dulu : 
+Halo sobat ngoding, kali ini pembahasan kita tentang xcode nih.. tentang bagaimana cara menambahkan certificate apple developer pada perangkat macbook kita atau imac kita, ada banyak juga yang sudah membahas terkait masalah ini, akan tetapi saya ingin berbagi tentang bagaimana cara saya memasukan apple certificate ini. 
+<!--more-->
+Awalnya saya sangat kesulitan untuk melakukan hal ini karena minimnya dokumentasi dalam bahasa indonesia dan jarang juga ada orang yang membahas masalah ini. oke kita langsung mulai dengan simulasinya dulu : 
 
 
 ## Simulasi ##
@@ -15,13 +17,13 @@ Halo sobat ngoding, kali ini pembahasan kita tentang xcode nih.. tentang bagaima
 
 ## Langkah - langkah Pada perangkat Macbook/Imac ##
 
-1. Buka `Keychain Access` 
+1. Buka aplikasi `Keychain Access` pada Mac teman teman
    
 2. Pada menu `Keychain Access`, temen temen pilih `Certificate Assistant` kemudian `Request a Certificate From a Certificate Authority...`
    
    ![generate]({{ site.baseurl }}/img/200115/choose.png)
 
-3. Akan muncul dialog meminta email dan lokasi dimana tempat akan menyimpan certofocate nya, seperti pada gambar dibawah ini, isi email dan lokasi penyimpanan pilih yang `Save To Disk`
+3. Akan muncul dialog meminta email dan lokasi dimana tempat akan menyimpan certoficate nya, seperti pada gambar dibawah ini, isi email dan lokasi penyimpanan pilih yang `Save To Disk`
    
     ![generate]({{ site.baseurl }}/img/200115/create.png)
 
@@ -39,11 +41,11 @@ Oke, Langkah pada bagian Macbook/Imac sudah selesai, sekarang kita akan masuk pa
 
 3. Buat `Certificate` Baru dengan mengklik tombol plus (+) pada halaman `Certifacates, Identifiers & Profiles`  
 
-    ![generate]({{ site.baseurl }}/img/200115/create.png)
+    ![generate]({{ site.baseurl }}/img/200115/new.png)
 
 4. Akan muncul pilihan yang lumayan banyak, karena kita akan membuat certificate, maka temen temen pilih yang `Apple Development` maka kita akan bebas membuat aplikasi disemua produk Apple.
    
-   ![generate]({{ site.baseurl }}/img/200115/chosenext.png)
+   ![generate]({{ site.baseurl }}/img/200115/choosenext.png)
 
 5. Kemudian temen temen pilih `certicate` yang sudah kita buat pada langkah langkah sebelumya, Kemudian next
    
@@ -53,9 +55,7 @@ Oke, Langkah pada bagian Macbook/Imac sudah selesai, sekarang kita akan masuk pa
 
     ![generate]({{ site.baseurl }}/img/200115/download.png)
 
-    ![generate]({{ site.baseurl }}/img/200115/return.png)
-
-7. Setelah Selesai didownload, *`Buka File`* `Development.cer` yang sudah kita download, maka secara otomatis akan membuka aplikasi `Keychain Access` , dan apabila berhasil maka akan muncul certificate baru seperti pada gambar dibawah ini,
+7. Setelah Selesai didownload, Buka File `Development.cer` yang sudah kita download, maka secara otomatis akan membuka aplikasi `Keychain Access` , dan apabila berhasil maka akan muncul certificate baru seperti pada gambar dibawah ini,
 
     ![generate]({{ site.baseurl }}/img/200115/final.png)
 

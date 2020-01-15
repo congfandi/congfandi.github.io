@@ -3,9 +3,9 @@ title: Upload Aplikasi Flutter ke Appstore Part 1
 cover-image: hipster.jpg
 ---
 
-Sebelumnya saya sudah membahas (Upload aplikasi flutter ke playstore)[https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/], saat nya kita membahas bagaiaman cara upload aplikasi flutter ke appstore. Sebenarnya flutter juga sudah membahas juga di blognya cara uploadnya ke appstore namun saya disini akan membahas lebih detail. 
+Sebelumnya saya sudah membahas [Upload aplikasi flutter ke playstore](https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/), saat nya kita membahas bagaiaman cara upload aplikasi flutter ke appstore. Sebenarnya flutter juga sudah membahas juga di blognya cara uploadnya ke appstore namun saya disini akan membahas lebih detail. 
 <!--more-->
-Seperti pada pembahasan (Upload aplikasi flutter ke playstore)[https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/] , kita akan membagi pembahasan kali ini menjadi 3 bagian, bagian pertama kita akan membahas pada sisi developer console nya dan bagian kedua kita bahas disisi apstore connect nya dan terakhir pada bagian xcode nya. Ada beberapa syarat yang harus kalian penuhi sebelum kalian mengupload aplikasi kalian ke appstore, syarat -syarat sebagai berikut : 
+Seperti pada pembahasan [Upload aplikasi flutter ke playstore](https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/) , kita akan membagi pembahasan kali ini menjadi 3 bagian, bagian pertama kita akan membahas pada sisi developer console nya dan bagian kedua kita bahas disisi appstore connect nya dan terakhir pada bagian xcode nya. Ada beberapa syarat yang harus kalian penuhi sebelum kalian mengupload aplikasi kalian ke appstore, syarat -syarat sebagai berikut : 
 
 ## Syarat Upload aplikasi ke appstore ##
 
@@ -27,7 +27,7 @@ Seperti biasa kita harus mulai dengan simulasinya dahulu
 3. Sudah punya Macbook/Imac dan Iphone/Ipad (Hal ini wajib dan tidak dapat di tolerir)
 
 
-## Langkah - Langkah Pada bagian Apple Developer Console##
+## Langkah - Langkah Pada bagian Apple Developer Console ##
 
 1. Mac teman teman sudah terinstall certificate apple developer, jika belum silahkan lihat pada tutorial [Menambahkan Apple Developer Certificate](/)
 
@@ -47,7 +47,7 @@ Seperti biasa kita harus mulai dengan simulasinya dahulu
 
     ![generate]({{ site.baseurl }}/img/200115/package.png)
 
-7. Apabila sudah selesai maka akan identifier aplikasi teman-teman akan muncul seerti pada gambar dibawah ini
+7. Apabila sudah selesai maka identifier aplikasi teman-teman akan muncul seperti pada gambar dibawah ini
    
    ![generate]({{ site.baseurl }}/img/200115/list.png)
 
