@@ -3,7 +3,7 @@ title: Upload Aplikasi Flutter ke Appstore Part 2
 cover-image: hipster.jpg
 ---
 
-Pada bagian 2 ini, kita akan membahas di sisi appstore connectnya, sebagai informasi, appstore adalah portal playstore disisi developernya sedangkan apple developer console adalah portal bagi developernya (ini adalah pengertian yang penulis pahami), jadi keduanya adalah hal yang berbda.
+Pada bagian 2 ini, kita akan membahas di sisi appstore connectnya, sebagai informasi, appstore adalah portal appstore disisi developernya sedangkan apple developer console adalah portal bagi developernya (ini adalah pengertian yang penulis pahami), jadi keduanya adalah hal yang berbda.
 <!--more-->
 Oke kita langsung saja pada tutorialnya.
 
@@ -17,7 +17,7 @@ Oke kita langsung saja pada tutorialnya.
 
 ## Langkah - Langkah Pada bagian Appstore Connect ##
 
-1. Buka alamat (Appstore Connect)[https://appstoreconnect.apple.com/]
+1. Buka alamat [Appstore Connect](https://appstoreconnect.apple.com/)
 
 2. Pilih menu `My Apps`
 
