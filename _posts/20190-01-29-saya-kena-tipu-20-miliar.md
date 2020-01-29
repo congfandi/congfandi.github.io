@@ -20,6 +20,15 @@ And, what is your profession?
 Are you married or single? 
 Please can I trust you with all my heart?
 
+dalam bahasa indonesia artinya seperti ini
+
+>Terima kasih atas tanggapan Anda. Nama saya Ny. Ana Christopher Saya dari Romania dan suami saya dari Inggris dan kami tinggal di Bristol. Saya kehilangan suami pada 16 Agustus 2014. Sementara itu saya sudah lama berjuang dengan kanker dan dokter saya mengatakan bahwa tahap ini tidak dapat dikendalikan dan saya masih punya beberapa bulan lagi untuk hidup. Di bawah ini adalah foto saya, saya harap Anda akan senang melihatnya kapan saja Anda bebas. Saya juga ingin Anda mengirimi saya foto Anda sendiri dan memberi tahu saya lebih banyak tentang diri Anda. Anda berasal dari negara mana?
+Apa nama aslimu?
+Berapa usia Anda sekarang?
+Dan, apa profesi Anda?
+Apakah Anda sudah menikah atau belum menikah?
+Tolong bisakah saya mempercayai Anda dengan sepenuh hati?
+
 
 
 
