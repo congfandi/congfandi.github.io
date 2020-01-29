@@ -7,11 +7,11 @@ Bismillah, Sobat ngoding kali ini saya tidak akan membahas tentang dunia coding 
 
 <!--more-->
 
-Awalnya saya tidak menyangka bahwa sanya saya akan dimodusin oleh seseorang yang mengaku dari luar negeri (United Kindom) dan hendak menawarkan project kepada saya, hari itu tepatnya pada hari Jumat tanggal 24 Januari 2020, saya mendapatkan pesan itu melalui platform *LinkedIn*, teman teman bisa baca pesannya pada gambar dibawah
+Awalnya saya tidak menyangka bahwa saya akan dimodusin oleh seseorang yang mengaku dari luar negeri (United Kindom) dan hendak menawarkan project kepada saya, hari itu tepatnya pada hari Jumat tanggal 24 Januari 2020, saya mendapatkan pesan itu melalui platform *LinkedIn*.
 
 ![generate]({{ site.baseurl }}/img/200129/satu.png) 
 
-Karena saya memang sedang ingin mencari kerja remote dibidang perkodingan, saya kira orang ini akan menawarkan project kepada saya otomatis saya langsung menghubungi dia melalui *WhatsApp*. Pesan saya tidak langsung dibalas sama orang ini dan pada keeseokan harinya pada hari sabtu tepatnya jam 10 pagi saya mendapatkan balasan yang berbunyi seperti ini
+Karena saya memang sedang ingin mencari kerja remote dibidang perkodingan, saya kira orang ini akan menawarkan project kepada saya otomatis saya langsung menghubungi dia melalui *WhatsApp*. Pesan saya tidak langsung dibalas dan pada keesekan harinya pada hari sabtu tepatnya jam 10 pagi saya mendapatkan balasan yang berbunyi seperti ini
 
 `Thanks for your responses.  My name is Mrs. Ana Christopher I am from Romania and my husband is from United Kingdom and we live in Bristol. I lost my husband on August 16, 2014. Meanwhile I have been struggling with cancer for long time and my doctor said that the present stage is uncontrollable and I have a few months more to live. Below are my pictures, I hope you will love to look on them at anytime you are free. I will also like you to send me your own pictures and tell me more about yourself. Which country exactly are you from?
 What is your real name?
@@ -33,17 +33,17 @@ dan mohon maaf sobat ngoding, saya tidak bisa menampilkan disini fotonya karena 
 
 Berlanjut setelah itu, saya tidak langsung merespon karena saya langsung sadar kalau saya sudah menjadi target penipuan dan saya berfikir agak lama untuk merespon orang ini.
 
-Setelah sholat dzuhur sayapun punya ide untuk terus membalas orang ini dan memberikan dia harapan agar seolah-olah saya sudah termakan omongan dia. Sayapun menjawab dengan memberikan informasi terkait nama saya dan umur saya. oh iya sebelumnya orang ini maksa menelpon saya menggunakan whatsapp video sebanyak dua kali dan saya langsung menolaknya serta saya memberikan alasan bahwa saya tidak bisa berbahasa ingris.
+Setelah sholat dzuhur sayapun punya ide untuk terus membalas orang ini dan memberikan dia harapan agar seolah-olah saya sudah termakan omongan dia. Sayapun menjawab dengan memberikan informasi terkait nama saya dan umur saya. oh iya sebelumnya orang ini menelpon saya menggunakan whatsapp video sebanyak dua kali dan saya langsung menolaknya serta saya memberikan alasan bahwa saya tidak bisa berbahasa inggris.
 
-Setelah saya menolaknya, diapun langsung masuk pada intinya, dia memiliki uang sebesar $1.500.000 (Rp.20.452.500.000) yang ingin dia sumbangkan kepada negara saya dan dia ingin agar saya membangunkan rumah sakit dinegara saya serta dia ingin agar saya memberikan nama rumah sakit itu dengan nama dia untuk menghormati dia katanya.
+Setelah saya menolaknya, diapun langsung masuk pada intinya, dia memiliki uang sebesar $1.500.000 (Rp.20.452.500.000) yang ingin dia sumbangkan kepada janda dan anak yatim dan dia ingin agar saya membangunkan rumah sakit serta dia ingin agar saya memberikan nama rumah sakit itu dengan nama dia untuk menghormati dia katanya.
 
 *Noted* Percakapan lengkap akan saya sertakan diakhir tulisan ini
 
-Oke dari sini sayapun berpura-pura seolah saya sangat antusias dan tertarik akan penawaran dia apalagi dia mengatakan bahwa dia ingin aku menggunakan 30%(6miliar) dari total uang yang akan saya terima sebagai biaya operasional.
+Oke dari sini sayapun berpura-pura seolah saya sangat antusias dan tertarik akan penawaran dia apalagi dia mengatakan bahwa dia ingin aku menggunakan 30%(6 miliar) dari total uang yang akan saya terima sebagai biaya operasional.
 
-Setelah saya mengatakan setuju dan sepakat untuk menerima project itu, diapun meminta saya menunggu beberapa hari, dia bilang bahwa dia ingin mendiskusikan hal itu dengan beberapa orang kepercayaan dia. selang sehari setelah itu, diapun mengirimi saya pesan bahwa dia tidak bisa mengirimkan uangnya karena tidak diizdinkan oleh pemerintahan disana dan dia akan mengirimkan uangnya melalui agen pengiriman untuk itu dia meminta saya untuk mengirimkan alamat saya dan idCard saya baik KTP, SIM atay Pasport. Sayapun mengirimkannya karena di idCard saya tidak tertulis jelas alamatnya makanya saya berani mengirimkan kepadanya. Di KTP saya hanya tertulis nama dusun dan nama desa saja hal ini karena saya hidup dipelosok desa yang tidak ada sistem nomer pada masing masing rumah yang ada, dan saya sangat tidak menganjurkan untuk dilakukan oleh orang yang di idCard nya tertulis jelas alamat nya nomer dan RT/RW nya karena dapat dimanfaatkan oleh orang yang tidak bertanggung jawab.
+Setelah saya mengatakan setuju dan sepakat untuk menerima project itu, diapun meminta saya menunggu beberapa hari, dia bilang bahwa dia ingin mendiskusikan hal itu dengan beberapa orang kepercayaan dia. selang sehari setelah itu, diapun mengirimi saya pesan bahwa dia tidak bisa mengirimkan uangnya karena tidak diizdinkan oleh pemerintahan disana dan dia akan mengirimkan uangnya melalui agen pengiriman untuk itu dia meminta saya untuk mengirimkan alamat saya dan idCard saya baik KTP, SIM atau Pasport. Sayapun mengirimkannya karena di idCard saya tidak tertulis jelas alamatnya makanya saya berani mengirimkan kepadanya. Di KTP saya hanya tertulis nama dusun dan nama desa saja hal ini karena saya hidup dipelosok desa yang tidak ada sistem nomer pada masing masing rumah yang ada, dan saya sangat tidak menganjurkan untuk dilakukan oleh orang yang di idCard nya tertulis jelas alamat nya nomer dan RT/RW nya karena dapat dimanfaatkan oleh orang yang tidak bertanggung jawab.
 
-Setelah saya mengirimkan informasi yang dia butuhkan, dia berkata bahawa akan menghubungi saya lagi apa bila sudah selesai mengurus pengiriman duitnya dan sayapun mengiyakan perkataaanya. Selang sehari setelah itu, saya mendapatkan pesna lagi darinya bahwa sanya dia sudah selesai mengurus pengirimannya dan dari sinilah mulai terlihat jelas niat dia untuk mendapatkan uang dari saya dia mengatakan hal seperti ini :
+Setelah saya mengirimkan informasi yang dia butuhkan, dia berkata bahwa akan menghubungi saya lagi apa bila sudah selesai mengurus pengiriman duitnya dan sayapun mengiyakan perkataaanya. Selang sehari setelah itu, saya mendapatkan pesan lagi darinya, dia sudah selesai mengurus pengirimannya dan dari sinilah mulai terlihat jelas niat dia untuk mendapatkan uang dari saya dia mengatakan hal seperti ini :
 
 `I just received information from the courier office now. They  have finished and finally concluded all arrangement with the diplomat and the package have been given to the diplomats completely sealed and label as a diplomatic luggage and baggage.
 
