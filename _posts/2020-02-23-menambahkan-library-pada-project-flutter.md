@@ -23,7 +23,7 @@ selanjutnya kita paste saja `provider: ^4.0.4` tepat dibawah `dependencies` seja
 
 Kemudian ketikkan ini pada `terminal` atau `CMD` teman-teman
 
-    ```terminal
+    ```
             flutter packages get
     ```
 jika muncul tulisan seperti ini
