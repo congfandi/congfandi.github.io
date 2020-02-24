@@ -23,9 +23,9 @@ selanjutnya kita paste saja `provider: ^4.0.4` tepat dibawah `dependencies` seja
 
 Kemudian ketikkan ini pada `terminal` atau `CMD` teman-teman
 
-        ```terminal
+    ```terminal
             flutter packages get
-        ```
+    ```
 jika muncul tulisan seperti ini
 
 
@@ -42,13 +42,13 @@ berarti library sukses ditambahkan
 akan muncul seperti ini
 
     ```terminal
-        Error detected in pubspec.yaml:
-        Error on line 26, column 12: Mapping values are not allowed here. Did you miss a colon earlier?
-        ╷
-        26 │    provider: ^4.0.4
-        │            ^
-        ╵
-        Please correct the pubspec.yaml file at /Users/busol/Desktop/filter_provider/pubspec.yaml
+                Error detected in pubspec.yaml:
+                Error on line 26, column 12: Mapping values are not allowed here. Did you miss a colon earlier?
+                ╷
+                26 │    provider: ^4.0.4
+                │            ^
+                ╵
+                Please correct the pubspec.yaml file at /Users/busol/Desktop/filter_provider/pubspec.yaml
     ```
 2. Kesalahan karena library tidak ada di pub.dev
 
