@@ -23,11 +23,9 @@ selanjutnya kita paste saja `provider: ^4.0.4` tepat dibawah `dependencies` seja
 
 Kemudian ketikkan ini pada `terminal` atau `CMD` teman-teman
 
-    ```cmd
-        flutter packages get
-    ```
-jika muncul tulisan seperti ini
+`flutter packages get`
 
+jika muncul tulisan seperti ini
 
 `Running "flutter pub get" in filter_provider...                     0.5s`
 
@@ -41,7 +39,8 @@ berarti library sukses ditambahkan
 
 akan muncul seperti ini
 
-    ```terminal
+
+ 
                 Error detected in pubspec.yaml:
                 Error on line 26, column 12: Mapping values are not allowed here. Did you miss a colon earlier?
                 ╷
@@ -49,13 +48,14 @@ akan muncul seperti ini
                 │            ^
                 ╵
                 Please correct the pubspec.yaml file at /Users/busol/Desktop/filter_provider/pubspec.yaml
-    ```
+
+   
 2. Kesalahan karena library tidak ada di pub.dev
 
-        ```terminal
+        
                 Because filter_provider depends on provide ^4.0.4 which doesn't match any versions, version solving failed.
                 pub get failed (1; Because filter_provider depends on provide ^4.0.4 which doesn't match any versions, version solving failed.)
-        ```
+        
 
 Oke cukup sekian, semoga tulsian yang singkat ini dapat bermanfaat bagi teman teman pembaca sekalian, akhir kata ... See You On the next chapter :-D
 
