@@ -21,7 +21,7 @@ OKe kita lanjut aja ke tutorialnya.
 
 ![generate]({{ site.baseurl }}/img/200224/file.png) 
 
-3. Tambahkan librari provider 4.0.4, kenapa ko 4.0.4 ? jawaban karena saya saat menulis artikel ini yang versi terbaru provider adalah 4.0.4. bagi yang belu mengerti cara menambah library, kamu dapat membacanya di tulisan saya dibawah disini [](https://thengoding.com)
+3. Tambahkan librari `provider: ^4.0.4` , kenapa ko 4.0.4 ? jawabannya karena saya saat menulis artikel ini  versi terbaru provider adalah 4.0.4 :-D. Bagi yang belum mengerti cara menambah library, kamu dapat membacanya di tulisan saya disini [Menambahkan library pada project flutter](https://thengoding.com/2020/02/23/menambahkan-library-pada-project-flutter/)
 
 4. 
 

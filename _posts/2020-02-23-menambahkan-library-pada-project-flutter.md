@@ -35,7 +35,7 @@ berarti library sukses ditambahkan
 
 #kesalahan-kesalahan saat menambahkan library
 
-1. Kesalahan indentasi (tidak sejaja dengan tulisan flutter dibawa dependencies)
+1. Kesalahan indentasi (tidak sejajar dengan tulisan flutter dibawa dependencies)
    akan muncul seperti ini
 
 
