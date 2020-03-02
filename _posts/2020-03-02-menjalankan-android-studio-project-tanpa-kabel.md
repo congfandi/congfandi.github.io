@@ -5,7 +5,7 @@ cover-image: hipster.jpg
 
 Bismillah,
 
-Hai sobat ngoding semuanya, kali ini saya ingin berbagi tentang masalah harian saya selama menjadi developer mobile dimana saya merasa kesulitan saat harus menjalankan aplikasi yang saya buat menggunakan *real device* atau hp sementara kabel harus terus tertancap pada aplikasi android saya. Setelah beberapa saat merasa risih dengan kondisi ini akhirnya sayapun mulai mencari cara bagaimana agar saya dapat menjalanakan aplikasi saya tanpa harus menghubungkan hp saya dengan laptop/ macbook saya.
+Hai sobat ngoding semuanya, kali ini saya ingin berbagi tentang masalah harian saya selama menjadi developer mobile dimana saya merasa kesulitan saat harus menjalankan aplikasi yang saya buat menggunakan *real device* atau hp sementara kabel harus terus tertancap pada macbook saya. Setelah beberapa saat merasa risih dengan kondisi ini akhirnya sayapun mulai mencari cara bagaimana agar saya dapat menjalanakan aplikasi saya tanpa harus menghubungkan hp saya dengan laptop/ macbook saya.
 
 Oke kita mulai saja tutorialnya...
 
@@ -21,13 +21,13 @@ Oke kita mulai saja tutorialnya...
 
 2. Buka menu *Preferances* 
 
-3. Buka pada menu marketplace, lakukan pencarian *Android WIFI ADB*
+3. Buka pada menu marketplace, lakukan pencarian *Android WIFI ADB* kemudian install
 
     ![Preferances]({{ site.baseurl }}/img/200302/preferances.png)
 
 4. Restart Android Studio
 
-5. Setelah Android Stidio dibuka, Lihat pada bagian kanan
+5. Setelah Android Stidio terbuka, Lihat pada bagian kanan
 
 6. Lihat menu *Android WIFI ADB* dan klik
 
@@ -37,7 +37,7 @@ Oke kita mulai saja tutorialnya...
 
 8. Pastikan Laptop atau macbook teman-teman terhubung dengan jaringan yang sama pada Hp
 
-9. Jika hp sudah terlihat di dafta, klik *Connect*
+9. Jika hp sudah terlihat di daftar, klik *Connect*
 
 10. Cabut kabel dan jalankan aplikasi.
 
