@@ -6,7 +6,7 @@ cover-image: hipster.jpg
 Halo sobat ngoding semua, kali ini saya mau berbagi tentang sebuah cara yang bisa kalian lakukan untuk melakukan debug aplikasi kalian di android studio. Jangan perhatikan judulnya ya itu cuman buat seru seruan aja :-D.
 
 Oke kita mulai dari latar belakang saya membuat tulisan ini, barangkali ada yang melakukan hal yang sama dengan yang saya lakukan.
-
+<!--more-->
 ## Latar belakang ##
 Teman-teman pembuat aplikasi yang menggunakan tool `Android Studio` sebagai editor pasti kenal dong dengan yang namanya *print("test")* dan *Log.e("haiiii")*. iya kedua script ini digunakan untuk menampilkan sebuah nilai atau melihat nilai atau mengetes script kita jalan atau tidak. Cukup menjengkelkan jika kita harus menjalankan dulu semua aplikasinya kemudian kita lihat hasilnya di `console` kita. 
 
@@ -50,7 +50,7 @@ dan hasilnya dapat dilihat dibawah ini
 Kalian bisa memberikan banyak breakpoint pada 1 file atau 1 kelas baik berbeda2 maupun sama kelas.
 
 Oh iya, jika kalian ingin melanjutkan tekan aja *F9* fungsi ini digunakan untuk next break point, jika tidak ada lagi aplikasi langsung jalan seperti biasa jika masih ada break point lagi dia akan ke break point selanjutnya.
-<!--more-->
+
 Btw, terima kasih buat [Mas Umam](https://www.linkedin.com/in/muhammad-sa-idul-umam-47a56b183/) yang uda bersedia ngajarin saya cara debug mode di android studio, semoga ilmunya tambah berkah :-) .
 
 Oke sobat ngoding cukup sekian dulu tulisan singkat saya kali ini, semoga bermanfaat.
