@@ -6,7 +6,7 @@ cover-image: hipster.jpg
 Bismillah,
 
 Hai sobat ngoding semuanya, kali ini saya ingin berbagi tentang masalah harian saya selama menjadi developer mobile dimana saya merasa kesulitan saat harus menjalankan aplikasi yang saya buat menggunakan *real device* atau hp sementara kabel harus terus tertancap pada macbook saya. Setelah beberapa saat merasa risih dengan kondisi ini akhirnya sayapun mulai mencari cara bagaimana agar saya dapat menjalanakan aplikasi saya tanpa harus menghubungkan hp saya dengan laptop/ macbook saya.
-
+<!--more-->
 Oke kita mulai saja tutorialnya...
 
 ## Simulasi ##
