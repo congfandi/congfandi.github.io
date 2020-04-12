@@ -151,10 +151,10 @@ void main() {
 
 ## Hasil ##
 
-Hasil (Waktu dalam satuan ms)
+Hasil (Waktu dalam satuan millisecond(ms))
 ![Hasil Time](https://github.com/congfandi/riset/blob/master/Pencarian%20data%20terkecil%20.png?raw=true)
 
-Hasil (Tatal WAktu)
+Hasil (Total WAktu)
 ![Total WAktu](https://github.com/congfandi/riset/blob/master/chart.png?raw=true)
 
 
@@ -162,8 +162,8 @@ Tabel Hasil
 
 |Percobaan Ke|Solusi 4|	Solusi 3|	Solusi 2|	Solusi 1|
 |:----------:|:------:|:-------:|:---------:|:---------:|
-|1	25	|21|	3|0	|50|
-|2	15	|20|	1|5	|50|
+|1	|25	|21|	3|0	|50|
+|2	|15	|20|	1|5	|50|
 |3	|9	|0	|5	|45|
 |4	|5	|0	|5	|26|
 |5	|0	|5	|4	|41|
@@ -264,6 +264,9 @@ Tabel Hasil
 |100|	0|	5|	6|	0|
 
 
+## Kesimpulan ##
+
+**Dari hasil percobaan yang dialukan dapat diambil kesimpulan bahwa methode tercepat diperoleh oleh methode pada solusi nomer 2 dengan total waktu yang dibutuhkan pada 100x percobaan adalah 12.9 persen dan metode terlama adalah pada solusi ke 1 dimana total waktu yg dibutuhkan pada 100 percobaan adalah 60.1 persen.**
 
 ## Source Code ##
 Source Code dapat dilihat pada link [Github](https://github.com/congfandi/riset)
