@@ -184,7 +184,7 @@ void main() {
 
 ## Hasil ##
 
-[Hasil](https://docs.google.com/spreadsheets/d/188luHM3uMr-_O1c7H5GDRJhdL0pkXV0UASSbALnlRVQ/edit?usp=sharing)
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwMyzecfdgYEfvCblc_B2blkiwlgxOVRqT4MQC-LipNtlWMMQSUaSqFhkRTniqEC1L_skaot-KdOUX/pubhtml?widget=true&amp;headers=false"></iframe>
 
 Hasil (Waktu dalam satuan millisecond(ms))
 ![Hasil Time](https://github.com/congfandi/riset/blob/master/Diagram%20Pencarian%20Data%20Terkecil%20dengan%205%20methode.png?raw=true)
