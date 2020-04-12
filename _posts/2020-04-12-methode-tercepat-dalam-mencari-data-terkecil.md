@@ -16,7 +16,7 @@ Berikut hasil simulasi dan percobaan yang saya lakukan.
 
 2. Editor yang  digunakan adalah online editor pada web [dartpad](https://dartpad.dev/)
 
-3. Percobaan  dilakukan dengan menggunakan 10 data training
+3. Percobaan  dilakukan dengan menggunakan 10.000 data training
 
 4. *Data yang dicari adalah data yang lebih dari 3 dan kurang dari 8*
 
@@ -43,18 +43,7 @@ class Data {
 ## Data Training ##
 
 ```dart
-final dataTrainig = [
-  new Data(lat: 1, lang: 1, jarak: 3.45),
-  new Data(lat: 2, lang: 2, jarak: 3.20),
-  new Data(lat: 3, lang: 3, jarak: 3.50),
-  new Data(lat: 4, lang: 4, jarak: 3.30),
-  new Data(lat: 5, lang: 5, jarak: 5.10),
-  new Data(lat: 6, lang: 6, jarak: 3.90),
-  new Data(lat: 7, lang: 7, jarak: 7.0),
-  new Data(lat: 8, lang: 8, jarak: 3.15),
-  new Data(lat: 9, lang: 9, jarak: 9.0),
-  new Data(lat: 10, lang: 10, jarak: 3.0),
-];
+final dataTrainig = [];
 ```
 
 ## Solusi ##
@@ -65,7 +54,6 @@ Solusi yang diberikan dibedakan berdasarkan jenis-jenis Perulangan(for) yang ada
 
 ```dart
 solusi1() {
-  final stopwatch = Stopwatch()..start();
   double jarakTerdekat = double.infinity;
   Data dataTerdekat;
   dataTrainig.forEach((data) {
@@ -76,7 +64,6 @@ solusi1() {
       }
     }
   });
-  print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
   return jarakTerdekat;
 }
 ```
@@ -85,7 +72,6 @@ solusi1() {
 
 ```dart
 solusi2() {
-   final stopwatch = Stopwatch()..start();
   double jarakTerdekat = double.infinity;
   Data dataTerdekat;
   for (Data data in dataTrainig) {
@@ -96,7 +82,6 @@ solusi2() {
       }
     }
   }
-  print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
   return jarakTerdekat;
 }
 ```
@@ -105,7 +90,6 @@ solusi2() {
 
 ```dart
 solusi3() {
-   final stopwatch = Stopwatch()..start();
   double jarakTerdekat = double.infinity;
   Data dataTerdekat;
   for (var i = 0; i < dataTrainig.length; i++) {
@@ -117,7 +101,6 @@ solusi3() {
       }
     }
   }
-  print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
   return jarakTerdekat;
 }
 ```
@@ -126,7 +109,6 @@ solusi3() {
 
 ```dart
 solusi4() {
-   final stopwatch = Stopwatch()..start();
   double jarakTerdekat = double.infinity;
   Data dataTerdekat;
   int totalData = dataTrainig.length;
@@ -139,7 +121,6 @@ solusi4() {
       }
     }
   }
-  print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
   return jarakTerdekat;
 }
 ```
@@ -160,7 +141,7 @@ solusi5(double jarakTerdekat, int index, Data dataTerdekat) {
       solusi5(jarakTerdekat, index, dataTerdekat);
     }
   } else {
-    print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
+      jarakTerdekat=dataTerdekat.jarak;
   }
   return jarakTerdekat;
 }
@@ -170,13 +151,26 @@ solusi5(double jarakTerdekat, int index, Data dataTerdekat) {
 
 ```dart
 void main() {
- 
-  for(var i=0;i<100;i++){
-//     solusi1();
-//     solusi2();
-//     solusi3();
-//     solusi4();
-//     solusi5(double.infinity,0,new Data()); 
+
+//simulasi jika ada 10.000 data
+//asumsi data yang ada dalam area adalah diatas 3 dan dibawah 8
+//jarak terkecil yang akan diambil
+
+  for (var i = 0; i < 10000; i++) {
+//    generate 10k Data
+    dataTrainig
+        .add(new Data(lat: i, lang: i, jarak: new Random().nextDouble() * 10));
+  }
+
+  for (var i = 0; i < 100; i++) {
+//    finding Solution
+    final stopwatch = Stopwatch()..start();
+//        solusi1();
+//        solusi2();
+//        solusi3();
+//        solusi4();
+        solusi5(double.infinity, 0, new Data());
+    print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
   }
 }
 
@@ -184,123 +178,123 @@ void main() {
 
 ## Hasil ##
 
-<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwMyzecfdgYEfvCblc_B2blkiwlgxOVRqT4MQC-LipNtlWMMQSUaSqFhkRTniqEC1L_skaot-KdOUX/pubhtml?widget=true&amp;headers=false"></iframe>
-
 Hasil (Waktu dalam satuan millisecond(ms))
-![Hasil Time](https://github.com/congfandi/riset/blob/master/Diagram%20Pencarian%20Data%20Terkecil%20dengan%205%20methode.png?raw=true)
+![Hasil Time](https://github.com/congfandi/riset/blob/master/Diagram%20Pencarian%20Data%20Terkecil%20dengan%205%20methode%20(1).png?raw=true)
 
-Hasil (Total WAktu)
-![Total WAktu](https://github.com/congfandi/riset/blob/master/Screen%20Shot%202020-04-12%20at%2010.58.48.png?raw=true)
-
+Hasil (Rata-Rata Waktu(ms))
+![Total WAktu](https://github.com/congfandi/riset/blob/master/Screen%20Shot%202020-04-12%20at%2017.47.44.png?raw=true)
 
 Tabel Hasil
 
 |Percobaan Ke|	Methode 1	|Methode 2	|Methode 3	|Methode 4	|Methode 5|
 |:----------:|:----------:|:---------:|:---------:|:---------:|:-------:|
-|1	|45|20|20|19|0|
-|2	|31|10|20|15|0|
-|3	|30|9	|10|4|0|
-|4	|20|5	|4|	5 |0|
-|5	|30|5	|5|	5 |0|
-|6	|15|5	|5|	0	|0|
-|7	|15|0	|5|	5	|4|
-|8	|10|5	|5|	0	|0|
-|9	|10|5	|0|	5	|0|
-|10	|5|	5	|6|	5	|0|
-|11	|11|5	|0|	0	|0|
-|12	|10|5	|5|	0	|0|
-|13	|10|5	|5|	0	|5|
-|14	|5|	0	|5|	0	|0|
-|15	|10|0	|5|	0	|0|
-|16	|5|	5	|0|	5	|0|
-|17	|9|	5	|0|	0	|0|
-|18	|5|	5	|5|	0	|0|
-|19	|15|0	|5|	5	|0|
-|20	|10|10|	5|0	|0|
-|21	|20|5	|0|	5	|5|
-|22	|15|0	|5|	0	|0|
-|23	|5|	0	|0|	0	|0|
-|24	|10|4	|0|	0	|0|
-|25	|6|	5	|5|	0	|5|
-|26	|5|	0	|0|	5	|0|
-|27	|5|	0	|0|	5	|0|
-|28	|5|	0	|0|	0	|0|
-|29	|5|	0	|0|	5	|5|
-|30	|4|	0	|5|	0	|0|
-|31	|10|5	|0|	0	|0|
-|32	|5|	0	|5|	0	|0|
-|33	|5|	0	|0|	0	|0|
-|34	|10|0	|5|	0	|0|
-|35	|5|	0	|5|	0	|0|
-|36	|5|	0	|0|	5	|0|
-|37	|5|	0	|5|	0	|0|
-|38	|10|5	|0|	0	|0|
-|39	|5|	0	|5|	0	|0|
-|40	|5|	0	|0|	5	|0|
-|41	|10|0	|5|	0	|0|
-|42	|5|	0	|5|	0	|0|
-|43	|4|	0	|0|	5	|0|
-|44	|6|	0	|6|	0	|0|
-|45	|5|	0	|5|	0	|0|
-|46	|10|0	|0|	0	|0|
-|47	|5|	0	|0|	5	|0|
-|48	|5|	0	|5|	11|	0|
-|49	|5|	5	|5|	15|	0|
-|50	|10|0|	0|	0	|0|
-|51	|5|	0	|0|	0	|0|
-|52	|4|	5	|0|	0	|0|
-|53	|5|	0	|0|	5	|0|
-|54	|10|0	|5|	0	|0|
-|55	|6|	0	|6|	0	|0|
-|56	|10|0	|	5|	0	|0|
-|57	|5|	5	|0|	0	|0|
-|58	|6|	0	|5|	4	|0|
-|59	|5|	0	|0|	0	|0|
-|60	|10|5	|	0|	0	|0|
-|61	|10|0|	0|	0	|0|
-|62	|5|	0	|5|	0	|0|
-|63	|10|0 |	4| 5 |0|
-|64	|5|	0	|5|	5	|0|
-|65	|5|	0	|0|	0	|0|
-|66	|5|	0	|5|	0	|0|
-|67	|10|0	|6|	5	|0|
-|68	|9|	5	|0|	0	|0|
-|69	|10|	0|0| 0|0|
-|70	|10|	0|0| 0|0|
-|71	|20|	6|0|	0|0|
-|72	|10|0	|	0|	0	|0|
-|73	|5|	0	|5|	0	|0|
-|74	|10|0	|0|	5	|0|
-|75	|5|	0	|0|	0	|0|
-|76	|15|0	|5|	0	|0|
-|77	|0|	0	|5|	0	|0|
-|78	|5|	0	|4|	0	|0|
-|79	|5|	0	|5|	4	|0|
-|80	|5|	5	|0|	0	|0|
-|81	|6|	0	|5|	0	|0|
-|82	|5|	5	|5|	0	|0|
-|83	|10|0	|5|	4	|0|
-|84	|5|	5	|0|	5	|0|
-|85	|10|0	|0|	5	|0|
-|86	|5|	5	|0|	5	|0|
-|87	|10|0	|5|	5	|5|
-|88	|5|	0	|0|	0	|0|
-|89	|9|	0	|0|	0	|0|
-|90	|5|	0	|0|	0	|0|
-|91	|5|	5	|0|	5	|0|
-|92	|6|	0	|5|	5	|0|
-|93	|5|	0	|5|	0	|0|
-|94	|10|0	|5|	0	|6|
-|95	|10|0	|0|	5	|0|
-|96	|15|0	|4|	0	|0|
-|97	|10|5	|0|	0	|0|
-|98	|10|0	|0|	0	|0|
-|99	|10|6	|5|	0	|4|
-|100|	0|5	|5|	6	|0|
+|1	|1069|1677|1727	|1350|2568|
+|2	|573|	527	|2844	|1973|312|
+|3	|166|	745	|282	|236|	278|
+|4	|200|	698	|236	|166|	259|
+|5	|201|	853	|243	|205|	247|
+|6	|293|	525	|225	|193|	233|
+|7	|466|	138	|215	|299|	251|
+|8	|162|	122	|220	|228|	236|
+|9	|157|	114	|204	|445|	228|
+|10	|150|	110	|179	|166|	258|
+|11	|148|	123	|165	|159|	553|
+|12	|145|	118	|126	|135|	787|
+|13	|148|	114	|119	|135|	498|
+|14	|147|	114	|114	|136|	559|
+|15	|148|	111	|111	|132|	648|
+|16	|149|	112	|112	|128|	484|
+|17	|154|	112	|115	|138|	549|
+|18	|155|	109	|173	|128|	517|
+|19	|155|	109	|154	|129|	501|
+|20	|150|	109	|160	|139|	619|
+|21	|149|	180	|183	|138|	559|
+|22	|151|	115	|166	|138|	426|
+|23	|152|	143	|166	|153|	585|
+|24	|584|	154	|185	|152|	1193|
+|25	|1209|126	|181	|187|	555|
+|26	|541|	122	|189	|210|	430|
+|27	|615|	133	|192	|209|	961|
+|28	|748|	146	|320	|241|	302|
+|29	|667|	2545|	510	|299|	215|
+|30	|598|	271	|180	|520|	208|
+|31	|434|	255	|170	|235|	208|
+|32	|356|	369	|162	|282|	206|
+|33	|346|	766	|159	|185|	200|
+|34	|329|	429	|172	|215|	208|
+|35	|319|	300	|566	|161|	216|
+|36	|318|	292	|191	|155|	213|
+|37	|310|	284	|205	|235|	327|
+|38	|365|	335	|252	|168|	1090|
+|39	|316|	267	|294	|169|	220|
+|40	|316|	291	|204	|210|	213|
+|41	|354|	213	|211	|218|	217|
+|42	|370|	298	|152	|215|	215|
+|43	|408|	439	|144	|437|	228|
+|44	|864|	451	|141	|163|	272|
+|45	|521|	312	|141	|159|	337|
+|46	|506|	314	|150	|159|	297|
+|47	|376|	288	|137	|156|	217|
+|48	|342|	212	|139	|184|	215|
+|49	|432|	286	|141	|166|	223|
+|50	|421|	333	|154	|213|	271|
+|51	|347|	307	|149	|163|	217|
+|52	|342|	283	|140	|252|	221|
+|53	|330|	292	|144	|245|	209|
+|54	|333|	294	|186	|172|	206|
+|55	|321|	430	|154	|172|	206|
+|56	|384|	292	|146	|156|	210|
+|57	|350|	368	|140	|158|	223|
+|58	|328|	288	|148	|154|	206|
+|59	|326|	214	|141	|160|	209|
+|60	|337|	281	|183	|147|	202|
+|61	|320|	294	|142	|148|	201|
+|62	|318|	287	|189	|150|	213|
+|63	|315|	209	|140	|166|	200|
+|64	|316|	278	|142	|148|	200|
+|65	|319|	285	|147	|154|	198|
+|66	|314|	279	|141	|160|	199|
+|67	|314|	276	|140	|150|	198|
+|68	|317|	326	|144	|154|	213|
+|69	|316|	383	|139	|150|	201|
+|70	|366|	297	|135	|142|	204|
+|71	|481|	290	|135	|148|	202|
+|72	|325|	289	|141	|152|	213|
+|73	|343|	359	|136	|237|	198|
+|74	|324|	478	|141	|244|	204|
+|75	|327|	660	|137	|169|	232|
+|76	|311|	308	|151	|156|	228|
+|77	|322|	320	|149	|153|	208|
+|78	|311|	319	|135	|145|	208|
+|79	|363|	438	|144	|148|	204|
+|80	|312|	482	|141	|176|	205|
+|81	|320|	289	|137	|157|	220|
+|82	|308|	296	|135	|155|	203|
+|83	|322|	287	|136	|155|	204|
+|84	|308|	207	|145	|150|	209|
+|85	|448|	278	|139	|162|	203|
+|86	|321|	202	|146	|153|	205|
+|87	|343|	433	|136	|164|	203|
+|88	|318|	329	|145	|149|	202|
+|89	|318|	556	|134	|152|	201|
+|90	|322|	306	|135	|152|	202|
+|91	|322|	439	|129	|157|	203|
+|92	|484|	756	|218	|240|	278|
+|93	|407|12020| 147	|234|	210|
+|94	|342|	567	|145	|275|	209|
+|95	|461|	450	|140	|186|	238|
+|96	|356|	2663|	166	|162|	217|
+|97	|466|	906	|153	|151|	221|
+|98	|599|	1436|	142	|154|	207|
+|99	|520|	368	|139	|148|	203|
+|100|1172|367	|134	|151|	217|
 
 ## Kesimpulan ##
 
-**Dari hasil percobaan yang dialukan dapat diambil kesimpulan bahwa methode tercepat diperoleh oleh methode pada solusi nomer 5 dengan total waktu rata-rata yang dibutuhkan untuk 100x percobaan adalah 2.4 persen dan metode terlama adalah pada solusi ke 1 dimana total waktu yg dibutuhkan pada 100 percobaan adalah 53.7 persen.**
+- Methode tercepat dalam menemukan data terkecil adalah methode ke 4 dan ke 3
+- Methode yang paling lama dalam menemukan data terkecil adalah methode ke 2
+- Methode 4 dan 3 tidak memiliki perbedaan yang signifikan
+- Methode 1 dan 2 memiliki perbedaan waktu yang tidak terlalu jauh yakni 22.8 dan 31.1 persen. 
 
 ## Source Code ##
 Source Code dapat dilihat pada link [Github](https://github.com/congfandi/riset)
