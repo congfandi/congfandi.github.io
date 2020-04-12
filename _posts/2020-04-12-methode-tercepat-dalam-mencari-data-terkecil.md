@@ -1,5 +1,5 @@
 ---
-title: Mencari Data Terkecil dengan 4 methode
+title: Methode Tercepat dalam mencari data terkecil
 cover-image: hipster.jpg
 ---
 Bismillah, Halo sobat ngoding.....
