@@ -50,7 +50,7 @@ final dataTrainig = [];
 
 Solusi yang diberikan dibedakan berdasarkan jenis-jenis Perulangan(for) yang ada pada bahasa pemrograman dart. Pada penelitian ini, terdapat 4 jenis jenis perulangan(solusi), antara lain : 
 
-1. Solusi 1 
+*Solusi 1*
 
 ```dart
 solusi1() {
@@ -68,7 +68,7 @@ solusi1() {
 }
 ```
 
-2. Solusi 2
+*Solusi 2*
 
 ```dart
 solusi2() {
@@ -86,7 +86,7 @@ solusi2() {
 }
 ```
 
-3. Solusi 3
+*Solusi 3*
 
 ```dart
 solusi3() {
@@ -105,7 +105,7 @@ solusi3() {
 }
 ```
 
-4. Solusi 4
+*Solusi 4*
 
 ```dart
 solusi4() {
@@ -125,7 +125,7 @@ solusi4() {
 }
 ```
 
-5. Solusi 5
+*Solusi 5*
 
 ```dart
 solusi5(double jarakTerdekat, int index, Data dataTerdekat) {
