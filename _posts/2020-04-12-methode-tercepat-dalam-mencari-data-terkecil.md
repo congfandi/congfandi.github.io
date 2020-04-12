@@ -144,135 +144,161 @@ solusi4() {
 }
 ```
 
+5. Solusi 5
+
+```dart
+solusi5(double jarakTerdekat, int index, Data dataTerdekat) {
+  final stopwatch = Stopwatch()..start();
+  if (index < dataTrainig.length - 1) {
+    if (jarakTerdekat > dataTrainig[index].jarak) {
+      jarakTerdekat = dataTrainig[index].jarak;
+      dataTerdekat = dataTrainig[index];
+      index++;
+      solusi5(jarakTerdekat, index, dataTerdekat);
+    } else {
+      index++;
+      solusi5(jarakTerdekat, index, dataTerdekat);
+    }
+  } else {
+    print('${stopwatch.elapsed.toString().split(':')[2].split('.')[1]}');
+  }
+  return jarakTerdekat;
+}
+```
+
 ## Methode Execution ##
 
 ```dart
 void main() {
  
   for(var i=0;i<100;i++){
-   solusi1(); 
+//     solusi1();
+//     solusi2();
+//     solusi3();
+//     solusi4();
+//     solusi5(double.infinity,0,new Data()); 
   }
 }
+
 ```
 
 ## Hasil ##
 
 Hasil (Waktu dalam satuan millisecond(ms))
-![Hasil Time](https://github.com/congfandi/riset/blob/master/Pencarian%20data%20terkecil%20.png?raw=true)
+![Hasil Time](https://github.com/congfandi/riset/blob/master/Diagram%20Pencarian%20Data%20Terkecil%20dengan%205%20methode.png?raw=true)
 
 Hasil (Total WAktu)
-![Total WAktu](https://github.com/congfandi/riset/blob/master/chart.png?raw=true)
+![Total WAktu](https://github.com/congfandi/riset/blob/master/Screen%20Shot%202020-04-12%20at%2010.58.48.png?raw=true)
 
 
 Tabel Hasil
 
-|Percobaan Ke|Solusi 4|	Solusi 3|	Solusi 2|	Solusi 1|
-|:----------:|:------:|:-------:|:---------:|:---------:|
-|1	|25	|21|	30|50|
-|2	|15	|20|	15|50|
-|3	|9	|0	|5	|45|
-|4	|5	|0	|5	|26|
-|5	|0	|5	|4	|41|
-|6	|0	|0	|5	|10|
-|7	|0	|0	|5	|15|
-|8	|5	|0	|0	|10|
-|9	|0	|0	|0	|10|
-|10|	0|	0|	0|	9|
-|11	|5	|0	|0	|10|
-|12|	0|	0|	0|	6|
-|13	|0	|5	|4	|15|
-|14	|5	|5	|5	|10|
-|15	|5	|5	|0	|11|
-|16	|0	|0	|0	|10|
-|17|	6|	4|	0|	4|
-|18|	0|	6|	5|	5|
-|19	|0	|0	|0	|10|
-|20|	0|	0|	0|	9|
-|21|	0|	0|	5|	5|
-|22	|0	|0	|0	|10|
-|23	|5	|5	|0	|10|
-|24	|0	|5	|0	|10|
-|25	|0	|0	|4	|10|
-|26	|0	|0	|5	|11|
-|27	|4	|0	|0	|19|
-|28	|4	|0	|6	|15|
-|29|	0|	0|	0|	9|
-|30|	0|	0|	5|	5|
-|31	|6	|6	|4	|15|
-|32	|0	|0	|0	|10|
-|33|	5|	5|	5|	9|
-|34|	5|	0|	0|	5|
-|35	|0	|4	|0	|16|
-|36	|5	|0	|5	|15|
-|37	|0	|5	|0	|15|
-|38	|0	|6	|0	|15|
-|39	|0	|0	|0	|40|
-|40	|0	|5	|5	|16|
-|41	|5	|0	|5	|15|
-|42	|5	|0	|0	|25|
-|43	|0	|0	|0	|16|
-|44|	0|	0|	0|	4|
-|45	|0	|5	|0	|10|
-|46	|4	|5	|0	|10|
-|47|	0|	5|	0|	5|
-|48|	5|	0|	0|	5|
-|49|	0|	0|	6|	0|
-|50	|5	|0	|0	|11|
-|51	|0	|5	|0	|10|
-|52|	0|	0|	5|	9|
-|53|	0|	0|	5|	0|
-|54|	5|	5|	5|	5|
-|55|	5|	0|	0|	6|
-|56|	0|	0|	5|	5|
-|57|	0|	0|	4|	5|
-|58|	0|	4|	5|	5|
-|59|	5|	5|	0|	6|
-|60	|5	|0	|0	|24|
-|61|	0|	0|	0|	5|
-|62	|0	|0	|0	|10|
-|63|	0|	0|	0|	5|
-|64|	0|	0|	0|	5|
-|65|	5|	4|	0|	5|
-|66|	5|	0|	5|	5|
-|67	|0	|0	|0	|10|
-|68|	6|	0|	0|	5|
-|69|	6|	0|	0|	5|
-|70|	0|	0|	0|	5|
-|71	|5	|0	|5	|10|
-|72|	0|	0|	4|	5|
-|73|	0|	5|	5|	4|
-|74|	0|	5|	0|	0|
-|75|	5|	5|	0|	4|
-|76|	0|	5|	0|	5|
-|77|	5|	5|	5|	5|
-|78|	0|	5|	0|	5|
-|79|	5|	0|	0|	5|
-|80|	0|	5|	0|	5|
-|81|	5|	0|	0|	4|
-|82	|5	|4	|0	|10|
-|83|	0|	5|	0|	4|
-|84	|4	|10|	0|	6|
-|85	|0	|4	|0	|10|
-|86|	0|	0|	0|	0|
-|87|	0|	0|	5|	5|
-|88|	0|	0|	0|	5|
-|89	|0	|0	|5	|11|
-|90|	0|	4|	5|	5|
-|91|	0|	0|	0|	5|
-|92|	6|	0|	0|	4|
-|93	|0	|4	|0	|10|
-|94|	0|	0|	0|	5|
-|95|	0|	0|	0|	5|
-|96|	5|	5|	0|	5|
-|97|	0|	0|	5|	5|
-|98	|0	|0	|0	|10|
-|99|	0|	5|	0|	5|
-|100|	0|	5|	6|	0|
-
+|Percobaan Ke|	Methode 1	|Methode 2	|Methode 3	|Methode 4	|Methode 5|
+|:----------:|:----------:|:---------:|:---------:|:---------:|:-------:|
+|1	|45|20|20|19|0|
+|2	|31|10|20|15|0|
+|3	|30|9	|10|4|0|
+|4	|20|5	|4|	5 |0|
+|5	|30|5	|5|	5 |0|
+|6	|15|5	|5|	0	|0|
+|7	|15|0	|5|	5	|4|
+|8	|10|5	|5|	0	|0|
+|9	|10|5	|0|	5	|0|
+|10	|5|	5	|6|	5	|0|
+|11	|11|5	|0|	0	|0|
+|12	|10|5	|5|	0	|0|
+|13	|10|5	|5|	0	|5|
+|14	|5|	0	|5|	0	|0|
+|15	|10|0	|5|	0	|0|
+|16	|5|	5	|0|	5	|0|
+|17	|9|	5	|0|	0	|0|
+|18	|5|	5	|5|	0	|0|
+|19	|15|0	|5|	5	|0|
+|20	|10|10|	5|0	|0|
+|21	|20|5	|0|	5	|5|
+|22	|15|0	|5|	0	|0|
+|23	|5|	0	|0|	0	|0|
+|24	|10|4	|0|	0	|0|
+|25	|6|	5	|5|	0	|5|
+|26	|5|	0	|0|	5	|0|
+|27	|5|	0	|0|	5	|0|
+|28	|5|	0	|0|	0	|0|
+|29	|5|	0	|0|	5	|5|
+|30	|4|	0	|5|	0	|0|
+|31	|10|5	|0|	0	|0|
+|32	|5|	0	|5|	0	|0|
+|33	|5|	0	|0|	0	|0|
+|34	|10|0	|5|	0	|0|
+|35	|5|	0	|5|	0	|0|
+|36	|5|	0	|0|	5	|0|
+|37	|5|	0	|5|	0	|0|
+|38	|10|5	|0|	0	|0|
+|39	|5|	0	|5|	0	|0|
+|40	|5|	0	|0|	5	|0|
+|41	|10|0	|5|	0	|0|
+|42	|5|	0	|5|	0	|0|
+|43	|4|	0	|0|	5	|0|
+|44	|6|	0	|6|	0	|0|
+|45	|5|	0	|5|	0	|0|
+|46	|10|0	|0|	0	|0|
+|47	|5|	0	|0|	5	|0|
+|48	|5|	0	|5|	11|	0|
+|49	|5|	5	|5|	15|	0|
+|50	|10|0|	0|	0	|0|
+|51	|5|	0	|0|	0	|0|
+|52	|4|	5	|0|	0	|0|
+|53	|5|	0	|0|	5	|0|
+|54	|10|0	|5|	0	|0|
+|55	|6|	0	|6|	0	|0|
+|56	|10|0	|	5|	0	|0|
+|57	|5|	5	|0|	0	|0|
+|58	|6|	0	|5|	4	|0|
+|59	|5|	0	|0|	0	|0|
+|60	|10|5	|	0|	0	|0|
+|61	|10|0|	0|	0	|0|
+|62	|5|	0	|5|	0	|0|
+|63	|10|0 |	4| 5 |0|
+|64	|5|	0	|5|	5	|0|
+|65	|5|	0	|0|	0	|0|
+|66	|5|	0	|5|	0	|0|
+|67	|10|0	|6|	5	|0|
+|68	|9|	5	|0|	0	|0|
+|69	|10|	0|0| 0|0|
+|70	|10|	0|0| 0|0|
+|71	|20|	6|0|	0|0|
+|72	|10|0	|	0|	0	|0|
+|73	|5|	0	|5|	0	|0|
+|74	|10|0	|0|	5	|0|
+|75	|5|	0	|0|	0	|0|
+|76	|15|0	|5|	0	|0|
+|77	|0|	0	|5|	0	|0|
+|78	|5|	0	|4|	0	|0|
+|79	|5|	0	|5|	4	|0|
+|80	|5|	5	|0|	0	|0|
+|81	|6|	0	|5|	0	|0|
+|82	|5|	5	|5|	0	|0|
+|83	|10|0	|5|	4	|0|
+|84	|5|	5	|0|	5	|0|
+|85	|10|0	|0|	5	|0|
+|86	|5|	5	|0|	5	|0|
+|87	|10|0	|5|	5	|5|
+|88	|5|	0	|0|	0	|0|
+|89	|9|	0	|0|	0	|0|
+|90	|5|	0	|0|	0	|0|
+|91	|5|	5	|0|	5	|0|
+|92	|6|	0	|5|	5	|0|
+|93	|5|	0	|5|	0	|0|
+|94	|10|0	|5|	0	|6|
+|95	|10|0	|0|	5	|0|
+|96	|15|0	|4|	0	|0|
+|97	|10|5	|0|	0	|0|
+|98	|10|0	|0|	0	|0|
+|99	|10|6	|5|	0	|4|
+|100|	0|5	|5|	6	|0|
 
 ## Kesimpulan ##
 
-**Dari hasil percobaan yang dialukan dapat diambil kesimpulan bahwa methode tercepat diperoleh oleh methode pada solusi nomer 2 dengan total waktu yang dibutuhkan pada 100x percobaan adalah 12.9 persen dan metode terlama adalah pada solusi ke 1 dimana total waktu yg dibutuhkan pada 100 percobaan adalah 60.1 persen.**
+**Dari hasil percobaan yang dialukan dapat diambil kesimpulan bahwa methode tercepat diperoleh oleh methode pada solusi nomer 5 dengan total waktu rata-rata yang dibutuhkan untuk 100x percobaan adalah 2.4 persen dan metode terlama adalah pada solusi ke 1 dimana total waktu yg dibutuhkan pada 100 percobaan adalah 53.7 persen.**
 
 ## Source Code ##
 Source Code dapat dilihat pada link [Github](https://github.com/congfandi/riset)
