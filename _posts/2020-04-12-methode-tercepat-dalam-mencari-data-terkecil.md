@@ -5,17 +5,23 @@ cover-image: hipster.jpg
 Bismillah, Halo sobat ngoding.....
 Kali ini saya akan bercerita tentang kecepatan sebuah methode dalam mencari data terkecil dari kumpulan data training. Dalam riset ini saya membuat data training dengan menggunakan sebuah object buatan saya sendiri.
 
-Awalnya saya hanya ingin mencari methode terbaik untuk menghitung dan mencari data dari sekumpulan data yang yang, tentunya saya memiliki banyak pilihan untuk menggunakan kumpulan methode yang ada pada bahasa pemrograman dart. 
+Awalnya saya hanya ingin mencari methode terbaik untuk menghitung dan mencari data dari sekumpulan data, tentunya saya memiliki banyak pilihan untuk menggunakan beberapa methode yang ada pada bahasa pemrograman dart. 
 <!--more-->
 
 Berikut hasil simulasi dan percobaan yang saya lakukan.
 
 ## Simulasi ##
+
 1. Percobaan saya lakukan dengan menggunakan bahasa pemrograman dart
+
 2. Editor yang  digunakan adalah online editor pada web [dartpad](https://dartpad.dev/)
+
 3. Percobaan  dilakukan dengan menggunakan 10 data training
+
 4. *Data yang dicari adalah data yang lebih dari 3 dan kurang dari 8*
+
 5. Percobaan dilakukan dengan menghitung lama sebuah solusi(methode) dieksekusi
+
 6. Percobaan dilakukan sebanyak 100x pada masing masing solusi
 
 ## Object Training Dalam bahasa dart ##
