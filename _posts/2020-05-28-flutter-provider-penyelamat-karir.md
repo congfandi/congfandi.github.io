@@ -1,7 +1,35 @@
 ---
-title: 
+title: Flutter Provider Penyelamat Karirku
 cover-image: hipster.jpg
 ---
 
+*Flutter Provider Sang Penyelamat Karir*
+
+Ceritanya, saya ada project, bisa dibilang big projcet lah ya..
+aku udah selsai garap dari semua task yang diberikan dan juga uda dapat duit sih..
+Aku garap project ini menggunakan flutter dengan state management menggunakan provider..
+
+singkatnya, waktu berlalu dan aplikasi working welll....
+
+hingga pada akhirnya ouwner nya call me and say UI/UX berubah total dan UI yang lama dibuang semuanya...
+
+dalam hati agak kesel sih,, kerjaan berbulan2 dibuang gitu aja...
+
+tapi, aku berakhir dengan bahagia karena bisa membuktikan urgensinya standarisasi dan pemilihan architecture yang tepat saat ingin membuat aplikasi..
+
+Akhirnya akupun iseng membuka beberapa ui dan coba menggantinya...
+
+dan betapa bahaigianya saya ternyata saya ndak perlu ganti logicnya sama sekali.. bahkan titik koma dari logicnya ndak perlu saya ganti..
+
+saya hanya tinggal fokus pada tampilan nya saja..
+
+beruntung sekali saya dahulu waktu membangun aplikasi membedakan semua LOGIC dan UI nya..
+
+bahkan untuk urusan state dan update UI tidak saya letakkan di UI class..
+
+saya membuat file khusus  dan folder khusus untuk UI nya dan Logic nya.. akhirnya saya tertolong berkat kerja keras saya yang dahulu 🙂 ...
+
+
+#Project #flutter #provider #statemanagement
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
