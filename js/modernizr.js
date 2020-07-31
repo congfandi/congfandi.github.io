@@ -1,8 +1,8 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-cssgradients-shiv-cssclasses-prefixes-load
  */
-import { firebase } from "https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js";
-import {  } from "https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js";  
+include("https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js");
+include("https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js");  
 (window.Modernizr = (function (a, b, c) {
      
   var firebaseConfig = {
