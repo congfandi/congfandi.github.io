@@ -27,7 +27,7 @@ OKe kita mulai saja seperti biasanya :
     ![BuatProject]({{ site.baseurl }}/img/200731/3.png)
 5. Setelah itu, masukan nama aplikasi dan pilih selanjutnya
     ![BuatProject]({{ site.baseurl }}/img/200731/4.png)
-6. Jika sudah terlihat barisan kode jva script, ambil code tersebut
+6. Jika sudah terlihat barisan kode javaScript, ambil code tersebut
     ![BuatProject]({{ site.baseurl }}/img/200731/5.png)
 7. Masuk ke cpanel web sobat ngoding, dan carilah file index.html/
 index.php/ file yang di jalankan pada halaman pertama atau pada semua halaman
