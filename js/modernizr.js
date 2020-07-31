@@ -1,24 +1,7 @@
 /* Modernizr 2.8.3 (Custom Build) | MIT & BSD
  * Build: http://modernizr.com/download/#-cssgradients-shiv-cssclasses-prefixes-load
  */
-include("https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js");
-include("https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js");  
 (window.Modernizr = (function (a, b, c) {
-     
-  var firebaseConfig = {
-    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
-    authDomain: "my-apps-2660a.firebaseapp.com",
-    databaseURL: "https://my-apps-2660a.firebaseio.com",
-    projectId: "my-apps-2660a",
-    storageBucket: "my-apps-2660a.appspot.com",
-    messagingSenderId: "261985294091",
-    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
-    measurementId: "G-PFCC72DX37"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-
     function v(a) {
         j.cssText = a;
     }
