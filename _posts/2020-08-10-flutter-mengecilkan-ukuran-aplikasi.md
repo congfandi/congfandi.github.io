@@ -27,7 +27,7 @@ Tips ini tidak banyak berpengaruh sih pada ukuran app temen temen, tapi tips ini
 ## 3 Analisa file yang paling besar dan hapus yang tidak perlu ##
 Cara ini menurut saya pribadi lumayan ampuh banget dan ini sudah ditulis juga sama si jujel di situs berikut [Reduce APK Size](https://developer.android.com/topic/performance/reduce-apk-size)
 
-## 4 Gunakan Build appbundle dan hindari build .apk (Untuk yang mau dirilis ke android)"
+## 4 Gunakan Build appbundle dan hindari build .apk (Untuk yang mau dirilis ke android)
 Nah, ini cara yang terakhir nih.. jika kalian biasa menggunakan perintah berikut untuk membuat apk
 
 ```
