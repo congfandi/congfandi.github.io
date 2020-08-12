@@ -56,7 +56,7 @@ Disini temen2 juga bisa memilih type nya, baik itu debug ataupun release dan pro
 
 *g. Publish*
 
-    ![Code Magic]({{ site.baseurl }}/img/200812/publish.png)
+![Code Magic]({{ site.baseurl }}/img/200812/publish.png)
 
 Nah yang terakhir temen2 dan yang paling bisa menetukan yang kalian sukses atau gagal.. perhatikan gambar diatas, yang saya berikan kotak merah itu bagian terpentignya.
 
@@ -64,7 +64,7 @@ Nah yang terakhir temen2 dan yang paling bisa menetukan yang kalian sukses atau 
 
 Temen2 bisa mendapatkan IOS Code Signing (Code signing certificate,Provisioning profiles) bisa temen2 dapatkan dari [Apple Developer](https://developer.apple.com/account/resources/certificates/list) tapi ingat ya, kalian harus sudah membeli akun apple dev ya baru kalian bisa membuat IOS code signing.. dan untuk membuat Signing Certificate temen temen harus punya macbook untuk membuatnya.
 
-    untuk tutorial ini akan saya buat terpisah teman2. ditunggu saja ya :-) .
+untuk tutorial ini akan saya buat terpisah teman2. ditunggu saja ya :-) .
 
 ## App Store Connect ##
 
