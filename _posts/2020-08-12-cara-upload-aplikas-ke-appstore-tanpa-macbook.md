@@ -6,7 +6,7 @@ cover-image: hipster.jpg
 *Cara Upload Aplikasi Ke AppStore tanpa Macbook*
 
 
-Bismillah, Kali ini saya ingin berbagi tentang bagaimana sih cara upload aplikasi ke appstore tanpa macbbok, khusunya bagi pengguna flutter developer. Tutorial kali ini lebih dikhususkan bagi pengguna flutter sebeanarnya dan sebagai pengetahuan bagi temen temen bahwa appstore dan playstore itu bisa upload aplikasi tanpa harus menggunakan website resmi mereka dan ini legal ya.
+Bismillah, Kali ini saya ingin berbagi tentang bagaimana sih cara upload aplikasi ke appstore tanpa macbook, khusunya bagi pengguna flutter developer. Tutorial kali ini lebih dikhususkan bagi pengguna flutter sebeanarnya dan sebagai pengetahuan bagi temen temen bahwa appstore dan playstore itu bisa upload aplikasi tanpa harus menggunakan website resmi mereka dan ini legal ya.
 <!--more-->
 
 Sebelum kita mulai tutorialnya, ada beberapa hal yang harus kalian ketahui terlebih dahulu yaitu tentang [Codmagic](https://codemagic.io/start/), tool ini yang akan kita gunakan untuk upload aplikasi kita ke appstore. Tool ini merupakan tool yang biasa digunakan untuk proses CI/CD oleh seorang pengembang dan tool ini dapat mempercepat proses development dan dsitribusi aplikasi kita serta didalam codemagic juga terdapat tool untuk testing.
@@ -69,7 +69,7 @@ bagi kalian yang mau upload aplikasi ke appstore secara manual (dari xcode) bisa
 
         Masukan apple id developer temen2 dan jangan lupa ya aktifkan App Password,
 
-        untuk mengakrifkannya, temen2 bisa lakukan di [Apple ID](https://appleid.apple.com/account/manage), masuk ke menu *Keamanan* dan aktifkan *KATA SANDI KHUSUS APP* nah, dari sini kalian bakalan dapat kata sandi untuk aplikasi temen2,, silahkan masukan ke codemagic kembali.
+        untuk mengaktifkannya, temen2 bisa lakukan di [Apple ID](https://appleid.apple.com/account/manage), masuk ke menu *Keamanan* dan aktifkan *KATA SANDI KHUSUS APP* nah, dari sini kalian bakalan dapat kata sandi untuk aplikasi temen2,, silahkan masukan ke codemagic kembali.
 
 
 Jika tidak ada yang gagal dalam proses setup, artinya aplikasi temen2 siap diupload ke appstore tanpa menggunakan macbook..
