@@ -58,19 +58,19 @@ Disini temen2 juga bisa memilih type nya, baik itu debug ataupun release dan pro
 
     ![Code Magic]({{ site.baseurl }}/img/200812/publish.png)
 
-    Nah yang terakhir temen2 dan yang paling bisa menetukan yang kalian sukses atau gagal.. perhatikan gambar diatas, yang saya berikan kotak merah itu bagian terpentignya.
+Nah yang terakhir temen2 dan yang paling bisa menetukan yang kalian sukses atau gagal.. perhatikan gambar diatas, yang saya berikan kotak merah itu bagian terpentignya.
 
-    ## IOS Code Signing ##
+## IOS Code Signing ##
 
-    Temen2 bisa mendapatkan IOS Code Signing (Code signing certificate,Provisioning profiles) bisa temen2 dapatkan dari [Apple Developer](https://developer.apple.com/account/resources/certificates/list) tapi ingat ya, kalian harus sudah membeli akun apple dev ya baru kalian bisa membuat IOS code signing.. dan untuk membuat Signing Certificate temen temen harus punya macbook untuk membuatnya.
+Temen2 bisa mendapatkan IOS Code Signing (Code signing certificate,Provisioning profiles) bisa temen2 dapatkan dari [Apple Developer](https://developer.apple.com/account/resources/certificates/list) tapi ingat ya, kalian harus sudah membeli akun apple dev ya baru kalian bisa membuat IOS code signing.. dan untuk membuat Signing Certificate temen temen harus punya macbook untuk membuatnya.
 
-     untuk tutorial ini akan saya buat terpisah teman2. ditunggu saja ya :-) .
+    untuk tutorial ini akan saya buat terpisah teman2. ditunggu saja ya :-) .
 
-    ## App Store Connect ##
+## App Store Connect ##
 
-    Masukan apple id developer temen2 dan jangan lupa ya aktifkan App Password,
+Masukan apple id developer temen2 dan jangan lupa ya aktifkan App Password,
 
-    untuk mengaktifkannya, temen2 bisa lakukan di [Apple ID](https://appleid.apple.com/account/manage), masuk ke menu *Keamanan* dan aktifkan *KATA SANDI KHUSUS APP* nah, dari sini kalian bakalan dapat kata sandi untuk aplikasi temen2,, silahkan masukan ke codemagic kembali.
+untuk mengaktifkannya, temen2 bisa lakukan di [Apple ID](https://appleid.apple.com/account/manage), masuk ke menu *Keamanan* dan aktifkan *KATA SANDI KHUSUS APP* nah, dari sini kalian bakalan dapat kata sandi untuk aplikasi temen2,, silahkan masukan ke codemagic kembali.
 
 
 Jika tidak ada yang gagal dalam proses setup, artinya aplikasi temen2 siap diupload ke appstore tanpa menggunakan macbook..
