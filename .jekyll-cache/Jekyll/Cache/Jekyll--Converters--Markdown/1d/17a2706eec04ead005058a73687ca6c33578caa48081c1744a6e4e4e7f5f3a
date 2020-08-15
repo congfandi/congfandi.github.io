@@ -1,0 +1,66 @@
+I"	<p>Holaaaa sahabat ngoding semua, kali ini saya mau nulis tentang hal yang ga kalah menarik nih yaitu <a href="http://localhost:4000/2020/08/15/tips-membuat-custom-color-flutter">tips membuat custom warna di flutter</a>.</p>
+
+<p>Standartnya di flutter sudah ada warna bawaan yang ada pada MaterialColor class, namun jika kita menghendaki pewarnaan sendiri pada aplikas kita, kita harus membuat beberapa beberapa daftarnya dulu dan kebayang jika kita harus menulisnya manual setiap kita butuh warnanya, nah pada tulisan kali ini saya akan bebagi tips yang saya gunakan untuk membuat custom warna sendiri. yok langsung lanjut ke tutorialnya.</p>
+
+<h2 id="langkah-1">Langkah 1</h2>
+<p>Buatlah sebuah file dengan nama <code class="language-plaintext highlighter-rouge">custom_color.dart</code> , disni kita akan selalu menggunakan file ini untuk mewarnai widget kita baik itu text maupun widget2 lain yang dapat diberikan warna.</p>
+
+<h2 id="langkah-2">Langkah 2</h2>
+<p>Kumpulkan semua warna yang temen2 butuhkan dalam membuat aplikasinya, sebagai contoh, lihatlah pada gambar dibawah, asumsinya kita sudah punya wana yang kita inginkan sebagai warna primary (utama) aplikasi kita.</p>
+
+<p><img src="http://localhost:4000/img/200815/color.png" alt="warna" /></p>
+
+<p>50 : #FEECEB</p>
+
+<p>100 : #FCC7C3</p>
+
+<p>200 : #FAA19B</p>
+
+<p>300 : #F88279</p>
+
+<p>400 : #F66257</p>
+
+<p>500 : #F44336</p>
+
+<p>600 : #D63B2F</p>
+
+<p>700 : #B73229</p>
+
+<p>800 : #992A22</p>
+
+<p>900 : #7A221B</p>
+
+<p>A100: #FCC7C3</p>
+
+<p>A200: #FAA19B</p>
+
+<p>A400: #F66257</p>
+
+<p>A700: #B73229</p>
+
+<h2 id="langkah-3">Langkah 3</h2>
+
+<p>Kita masukan semua kode warna yang sudah kita kumpulkan pada kelas <code class="language-plaintext highlighter-rouge">custome_color.dart</code> dan hasilnya seperti ini :</p>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CustomColor</span><span class="o">{</span>
+    <span class="kd">static</span> <span class="kd">final</span> <span class="n">_primary</span> <span class="o">=</span> <span class="mh">0xffF66257</span><span class="o">;</span>             
+                                                
+<span class="kd">final</span> <span class="n">colorPrimary</span> <span class="o">=</span> <span class="n">MaterialColor</span><span class="o">(</span><span class="n">_primary</span><span class="o">,</span> <span class="o">{</span>  
+  <span class="mi">50</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffFEECEB</span><span class="o">),</span>                        
+  <span class="mi">100</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffFCC7C3</span><span class="o">),</span>                       
+  <span class="mi">200</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffFAA19B</span><span class="o">),</span>                       
+  <span class="mi">300</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffF88279</span><span class="o">),</span>                       
+  <span class="mi">400</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="n">_primary</span><span class="o">),</span>                         
+  <span class="mi">500</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffF44336</span><span class="o">),</span>                       
+  <span class="mi">600</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffD63B2F</span><span class="o">),</span>                       
+  <span class="mi">700</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xffB73229</span><span class="o">),</span>                       
+  <span class="mi">800</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xff992A22</span><span class="o">),</span>                       
+  <span class="mi">900</span><span class="o">:</span> <span class="n">Color</span><span class="o">(</span><span class="mh">0xff7A221B</span><span class="o">),</span>                       
+<span class="o">});</span>                                              
+<span class="o">}</span>
+</code></pre></div></div>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+:ET
