@@ -1,6 +1,9 @@
 ---
 title: Menambahkan library pada project flutter
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 Bismillah,
 

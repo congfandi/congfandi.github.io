@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Finalisasi Project
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Alhamdulillah sudah sampai dipenghujung tutorial, kali ini kita akan membahas finalisasi project hingga project dapat kita gunakan layaknya sebuah aplikasi.

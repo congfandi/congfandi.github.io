@@ -1,6 +1,9 @@
 ---
 title: Flutter Provider Penyelamat Karirku
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 *Flutter Provider Sang Penyelamat Karir*

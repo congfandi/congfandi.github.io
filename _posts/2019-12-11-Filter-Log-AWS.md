@@ -1,6 +1,9 @@
 ---
 title: Filter Log AWS
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, AWS, Tutorial]
 ---
 
 Hallo guys, kali ini saya mau share tentang filter AWS logging , ini sangat bermanfaat bagi kalian yang sedang menggunakan AWS sebagai server kalian,

@@ -1,6 +1,9 @@
 ---
 title:  Upload Aplikasi flutter ke playstore part 1
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Android, Tips]
 ---
 
 

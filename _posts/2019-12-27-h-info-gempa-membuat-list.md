@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Membuat list
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Pada tutorial kali ini, kita akan membuat list pada halaman utama aplikasi

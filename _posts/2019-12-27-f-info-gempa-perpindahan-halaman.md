@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Perpindahan Halaman
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Pada tutorial kali ini, kita akan mensimulasikan perpindahan halaman antar tampilan di `SwiftUI`

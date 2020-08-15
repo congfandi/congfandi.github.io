@@ -1,6 +1,9 @@
 ---
 title: Tips Memperkecil Ukuran Aplikasi Flutter
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 *Tips Memperkecil Ukuran Aplikias Flutter*

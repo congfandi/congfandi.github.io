@@ -1,6 +1,9 @@
 ---
 title: Cara membuat Key Store File
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Android, Tips]
 ---
 
 

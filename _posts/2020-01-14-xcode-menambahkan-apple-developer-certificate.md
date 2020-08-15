@@ -1,6 +1,9 @@
 ---
 title: XCODE - Menambahkan apple developer certificate
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 Halo sobat ngoding, kali ini pembahasan kita tentang xcode nih.. tentang bagaimana cara menambahkan certificate apple developer pada perangkat macbook kita atau imac kita, ada banyak juga yang sudah membahas terkait masalah ini, akan tetapi saya ingin berbagi tentang bagaimana cara saya memasukan apple certificate ini. 

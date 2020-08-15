@@ -1,6 +1,9 @@
 ---
 title: Mengganti Icon Aplikasi Android
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Android, Tips]
 ---
 
 Pada pembahasan kali ini, kita akan mensimulasikan bagaimana caranya mengganti icon aplikasi di andriod studio project.

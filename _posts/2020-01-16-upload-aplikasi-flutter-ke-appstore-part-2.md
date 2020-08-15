@@ -1,6 +1,9 @@
 ---
 title: Upload Aplikasi Flutter ke Appstore Part 2
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 Pada bagian 2 ini, kita akan membahas di sisi appstore connectnya, sebagai informasi, appstore adalah portal appstore disisi developernya sedangkan apple developer console adalah portal bagi developernya (ini adalah pengertian yang penulis pahami), jadi keduanya adalah hal yang berbda.

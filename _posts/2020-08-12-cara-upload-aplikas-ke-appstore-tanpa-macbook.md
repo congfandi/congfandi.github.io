@@ -1,6 +1,9 @@
 ---
 title: Cara Upload Aplikasi Ke AppStore tanpa Macbook
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 *Cara Upload Aplikasi Ke AppStore tanpa Macbook*

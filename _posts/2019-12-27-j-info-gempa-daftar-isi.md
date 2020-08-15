@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Daftar Isi
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk demo aplikasinya dapat dilihat pada bagian akhir tulisan ini. 
 <!--more-->

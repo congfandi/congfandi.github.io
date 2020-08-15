@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product - The Ngoding</title>
+
+  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
+
+    <meta content="The Ngoding" property="og:site_name">
+  
+    <meta content="Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product" property="og:title">
+  
+  
+    <meta content="article" property="og:type">
+  
+  
+    <meta content="Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.
+" property="og:description">
+  
+  
+    <meta content="http://localhost:4000/2019/05/08/membuat-aplikasi-foodbank-part-5-menambahkan-list-product/" property="og:url">
+  
+  
+    <meta content="2019-05-08T00:00:00+07:00" property="article:published_time">
+    <meta content="http://localhost:4000/about/" property="article:author">
+  
+  
+    <meta content="http://localhost:4000/assets/img/hipster.jpg" property="og:image">
+  
+  
+    
+  
+  
+    
+    <meta content="Developer" property="article:tag">
+    
+    <meta content="Android" property="article:tag">
+    
+    <meta content="JAVA" property="article:tag">
+    
+    <meta content="Tutorial" property="article:tag">
+    
+  
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:creator" content="@">
+  
+    <meta name="twitter:title" content="Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product">
+  
+  
+    <meta name="twitter:url" content="http://localhost:4000/2019/05/08/membuat-aplikasi-foodbank-part-5-menambahkan-list-product/">
+  
+  
+    <meta name="twitter:description" content="Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.
+">
+  
+  
+    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/hipster.jpg">
+  
+
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta property="og:image" content="">
+	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#263959">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#263959">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
+	<!-- Styles -->
+	<link rel="stylesheet" href="/assets/css/main.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <aside class="sidebar">
+  <header>
+    <div class="about">
+      <div class="cover-author-image">
+        <a href="http://localhost:4000/"><img src="http://localhost:4000/assets/img/code.png" alt="The Ngoding"></a>
+      </div>
+      <div class="author-name">The Ngoding</div>
+      <p>Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.</p>
+    </div>
+    <div class="warning">
+      <a href="http://localhost:4000">Home</a>
+    </div>
+    <div>
+      <a href="http://localhost:4000/daftar-isi">Daftar Isi</a>
+    </div>
+    <div>
+      <a href="http://localhost:4000/resume">Tentang Penulis</a>
+    </div>
+  </header> <!-- End Header -->
+  <footer>
+    <section class="contact">
+      <h3 class="contact-title">Contact me</h3>
+      <ul>
+        
+          <li><a href="https://twitter.com/artemsheludko_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        
+        
+          <li><a href="https://facebook.com/congfandii" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        
+        
+          <li class="github"><a href="http://github.com/congfandi" target="_blank"><i class="fa fa-github"></i></a></li>
+        
+        
+          <li class="linkedin"><a href="https://in.linkedin.com/in/moh-supandi-49b717119/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        
+        
+          <li class="email"><a href="mailto:congfandi@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+        
+      </ul>
+    </section> <!-- End Section Contact -->
+    <div class="copyright">
+      <p>2020 &copy; The Ngoding</p>
+    </div>
+  </footer> <!-- End Footer -->
+</aside> <!-- End Sidebar -->
+<div class="content-box clearfix">
+  <article class="article-page">
+  <div class="page-content">
+    
+    <div class="page-cover-image">
+      <figure>
+        <img class="page-image" src=/assets/img/hipster.jpg alt="Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product">
+        
+          <figcaption>Developer</figcaption>
+        
+      </figure>
+    </div> <!-- End Page Cover Image -->
+    
+    <div class="wrap-content">
+      <header class="header-page">
+        <h1 class="page-title">Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product</h1>
+        <div class="page-date"><span>2019, May 08&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
+      </header>
+      <p><img src="/../img/covers/list.gif" alt="Cover" />
+Oke, kita lanjutkan tutorial selanjutnya yaitu menambahkan list product dalam bentuk <code class="language-plaintext highlighter-rouge">list</code>.</p>
+
+<p>Langkah - langkah nya adalah : 
+<!--more--></p>
+<ol>
+  <li>Bukan file <code class="language-plaintext highlighter-rouge">HalamanList.java</code> dan hapus kode yang tidak diperlukan dan hasilnya harus nya seperti code dibawah</li>
+</ol>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kn">package</span> <span class="nn">id.gresikdev.foodbank.views</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">android.os.Bundle</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">android.support.v4.app.Fragment</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">android.view.LayoutInflater</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">android.view.View</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">android.view.ViewGroup</span><span class="o">;</span>
+    <span class="kn">import</span> <span class="nn">id.gresikdev.foodbank.R</span><span class="o">;</span>
+
+    <span class="kd">public</span> <span class="kd">class</span> <span class="nc">HalamanList</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+
+        <span class="kd">public</span> <span class="nf">HalamanList</span><span class="o">()</span> <span class="o">{</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span>
+                                <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_halaman_list</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+</code></pre></div></div>
+<ol>
+  <li>buka <code class="language-plaintext highlighter-rouge">file fragment_halaman_list.xml</code> dan ubah codenya menjadi seperti dibawah ini
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+     <span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+         <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
+         <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+         <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+         <span class="na">tools:context=</span><span class="s">".views.HalamanList"</span><span class="nt">&gt;</span>
+
+         <span class="nt">&lt;android.support.v7.widget.RecyclerView</span>
+             <span class="na">android:id=</span><span class="s">"@+id/list_food"</span>
+             <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+             <span class="na">android:layout_height=</span><span class="s">"match_parent"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;/LinearLayout&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>buat sebuah file pada folder <code class="language-plaintext highlighter-rouge">layout</code> dengan nama <code class="language-plaintext highlighter-rouge">item_food</code></li>
+  <li>tambahkan code berikut pada file yang kamu buat
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+         <span class="nt">&lt;LinearLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+         <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+         <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+         <span class="na">android:orientation=</span><span class="s">"vertical"</span><span class="nt">&gt;</span>
+
+         <span class="nt">&lt;ImageView</span>
+             <span class="na">android:id=</span><span class="s">"@+id/img_food"</span>
+             <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+             <span class="na">android:layout_height=</span><span class="s">"200dp"</span>
+             <span class="na">android:scaleType=</span><span class="s">"fitXY"</span>
+             <span class="na">android:src=</span><span class="s">"@drawable/humberger"</span> <span class="nt">/&gt;</span>
+
+         <span class="nt">&lt;TextView</span>
+             <span class="na">android:id=</span><span class="s">"@+id/txt_food_name"</span>
+             <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+             <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+             <span class="na">android:layout_marginLeft=</span><span class="s">"16.0dp"</span>
+             <span class="na">android:layout_marginTop=</span><span class="s">"16.0dp"</span>
+             <span class="na">android:layout_marginRight=</span><span class="s">"16.0dp"</span>
+             <span class="na">android:ellipsize=</span><span class="s">"end"</span>
+             <span class="na">android:maxLines=</span><span class="s">"1"</span>
+             <span class="na">android:text=</span><span class="s">"Humberger"</span>
+
+             <span class="na">android:textColor=</span><span class="s">"#000000"</span>
+             <span class="na">android:textSize=</span><span class="s">"17.0dp"</span> <span class="nt">/&gt;</span>
+
+         <span class="nt">&lt;Button</span>
+             <span class="na">android:id=</span><span class="s">"@+id/btn_ready_in"</span>
+             <span class="na">android:layout_width=</span><span class="s">"150.0dp"</span>
+             <span class="na">android:layout_height=</span><span class="s">"35.0dp"</span>
+             <span class="na">android:layout_gravity=</span><span class="s">"right"</span>
+             <span class="na">android:layout_margin=</span><span class="s">"16.0dp"</span>
+             <span class="na">android:background=</span><span class="s">"@drawable/background_tombol"</span>
+             <span class="na">android:text=</span><span class="s">"Ready in 26 min"</span>
+             <span class="na">android:textAllCaps=</span><span class="s">"false"</span>
+             <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;/LinearLayout&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Download dan tambahkan gambar <a href="https://drive.google.com/drive/folders/1SaxTgSEMh2VeG6_9d3vhQy-dSWdmJbbz?usp=sharing">disini</a> 
+<em>Noted</em> : Gambar mungkin memiliki hak cipta, saya sarankan gunakan gambar lain yang sudah jelas tidak memiliki hak cipta agar aplikasi tidak ditolak di playstore.</p>
+  </li>
+  <li>Tambahkan file java pada folder <em><code class="language-plaintext highlighter-rouge">model</code></em> dengan nama <code class="language-plaintext highlighter-rouge">Food</code>.</li>
+  <li>Tambahkan kode berikut
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="kn">package</span> <span class="nn">id.gresikdev.foodbank.models</span><span class="o">;</span>
+     <span class="kn">import</span> <span class="nn">android.graphics.drawable.Drawable</span><span class="o">;</span>
+
+     <span class="kd">public</span> <span class="kd">class</span> <span class="nc">Food</span> <span class="o">{</span>
+         <span class="nc">String</span> <span class="n">foodName</span><span class="o">;</span>
+         <span class="nc">Drawable</span> <span class="n">foodImage</span><span class="o">;</span>
+         <span class="nc">String</span> <span class="n">foodDetail</span><span class="o">;</span>
+         <span class="nc">String</span> <span class="n">foodBtnTitle</span><span class="o">;</span>
+         <span class="kt">int</span> <span class="n">foodPrice</span><span class="o">;</span>
+
+         <span class="kd">public</span> <span class="nf">Food</span><span class="o">(</span><span class="nc">String</span> <span class="n">foodName</span><span class="o">,</span> <span class="nc">Drawable</span> <span class="n">foodImage</span><span class="o">,</span> <span class="nc">String</span> <span class="n">foodDetail</span><span class="o">,</span> <span class="nc">String</span> <span class="n">foodBtnTitle</span><span class="o">,</span> <span class="kt">int</span> <span class="n">foodPrice</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodName</span> <span class="o">=</span> <span class="n">foodName</span><span class="o">;</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodImage</span> <span class="o">=</span> <span class="n">foodImage</span><span class="o">;</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodDetail</span> <span class="o">=</span> <span class="n">foodDetail</span><span class="o">;</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodBtnTitle</span> <span class="o">=</span> <span class="n">foodBtnTitle</span><span class="o">;</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodPrice</span> <span class="o">=</span> <span class="n">foodPrice</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="nf">Food</span><span class="o">()</span> <span class="o">{</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getFoodName</span><span class="o">()</span> <span class="o">{</span>
+             <span class="k">return</span> <span class="n">foodName</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFoodName</span><span class="o">(</span><span class="nc">String</span> <span class="n">foodName</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodName</span> <span class="o">=</span> <span class="n">foodName</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="nc">Drawable</span> <span class="nf">getFoodImage</span><span class="o">()</span> <span class="o">{</span>
+             <span class="k">return</span> <span class="n">foodImage</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFoodImage</span><span class="o">(</span><span class="nc">Drawable</span> <span class="n">foodImage</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodImage</span> <span class="o">=</span> <span class="n">foodImage</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getFoodDetail</span><span class="o">()</span> <span class="o">{</span>
+             <span class="k">return</span> <span class="n">foodDetail</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFoodDetail</span><span class="o">(</span><span class="nc">String</span> <span class="n">foodDetail</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodDetail</span> <span class="o">=</span> <span class="n">foodDetail</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="nc">String</span> <span class="nf">getFoodBtnTitle</span><span class="o">()</span> <span class="o">{</span>
+             <span class="k">return</span> <span class="n">foodBtnTitle</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFoodBtnTitle</span><span class="o">(</span><span class="nc">String</span> <span class="n">foodBtnTitle</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodBtnTitle</span> <span class="o">=</span> <span class="n">foodBtnTitle</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">int</span> <span class="nf">getFoodPrice</span><span class="o">()</span> <span class="o">{</span>
+             <span class="k">return</span> <span class="n">foodPrice</span><span class="o">;</span>
+         <span class="o">}</span>
+
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">setFoodPrice</span><span class="o">(</span><span class="kt">int</span> <span class="n">foodPrice</span><span class="o">)</span> <span class="o">{</span>
+             <span class="k">this</span><span class="o">.</span><span class="na">foodPrice</span> <span class="o">=</span> <span class="n">foodPrice</span><span class="o">;</span>
+         <span class="o">}</span>
+     <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Tambahkan file java pada folder <code class="language-plaintext highlighter-rouge">adapter</code> dengan nama <em><code class="language-plaintext highlighter-rouge">ListFoodController</code></em></li>
+  <li>
+    <p>Edit dan tambahkan code dibawah ini
+   ```java
+        package id.gresikdev.foodbank.adapter;</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    import android.content.Context;
+    import android.support.annotation.NonNull;
+    import android.support.v7.widget.RecyclerView;
+    import android.view.LayoutInflater;
+    import android.view.View;
+    import android.view.ViewGroup;
+    import android.widget.Button;
+    import android.widget.ImageView;
+    import android.widget.TextView;
+
+    import java.util.ArrayList;
+
+    import id.gresikdev.foodbank.R;
+    import id.gresikdev.foodbank.models.Food;
+
+    public class ListFoodController extends RecyclerView.Adapter&lt;ListFoodController.ListFoodHolder&gt; {
+
+
+        private ArrayList&lt;Food&gt; listFood;
+        private Context context;
+
+        public ListFoodController(ArrayList&lt;Food&gt; listFood, Context context) {
+            this.listFood = listFood;
+            this.context = context;
+        }
+
+        @NonNull
+        @Override
+        public ListFoodHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+            return new ListFoodHolder(LayoutInflater.from(context).inflate(R.layout.item_food, viewGroup, false));
+        }
+
+        @Override
+        public void onBindViewHolder(@NonNull ListFoodHolder listFoodHolder, int i) {
+            Food myFood = listFood.get(i);
+            listFoodHolder.bind(myFood);
+        }
+
+        @Override
+        public int getItemCount() {
+            return listFood.size();
+        }
+
+        class ListFoodHolder extends RecyclerView.ViewHolder {
+            ImageView foodImage;
+            TextView title;
+            Button foodInfo;
+
+            private ListFoodHolder(@NonNull View itemView) {
+                super(itemView);
+                foodImage = itemView.findViewById(R.id.img_food);
+                title = itemView.findViewById(R.id.txt_food_name);
+                foodInfo = itemView.findViewById(R.id.btn_ready_in);
+            }
+
+            void bind(Food food) {
+                foodImage.setImageDrawable(food.getFoodImage());
+                title.setText(food.getFoodName());
+                foodInfo.setText(food.getFoodBtnTitle());
+            }
+        }
+    }
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>```</p>
+<ol>
+  <li>Buka file <code class="language-plaintext highlighter-rouge">HalamanList.java</code> kemudian edit menjadi seperti dibawah ini
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kd">public</span> <span class="kd">class</span> <span class="nc">HalamanList</span> <span class="kd">extends</span> <span class="nc">Fragment</span> <span class="o">{</span>
+        <span class="kd">private</span> <span class="nc">ArrayList</span><span class="o">&lt;</span><span class="nc">Food</span><span class="o">&gt;</span> <span class="n">myFoods</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ArrayList</span><span class="o">&lt;&gt;();</span>
+        <span class="kd">private</span> <span class="nc">RecyclerView</span> <span class="n">mylistFood</span><span class="o">;</span>
+        <span class="kd">private</span> <span class="nc">ListFoodController</span> <span class="n">listAdapter</span><span class="o">;</span>
+
+        <span class="kd">public</span> <span class="nf">HalamanList</span><span class="o">()</span> <span class="o">{</span>
+        <span class="o">}</span>
+
+        <span class="kd">private</span> <span class="nc">View</span> <span class="n">myView</span><span class="o">;</span>
+
+        <span class="kd">private</span> <span class="kt">void</span> <span class="nf">getFood</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">100</span><span class="o">;</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+                <span class="n">myFoods</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="k">new</span> <span class="nc">Food</span><span class="o">(</span><span class="s">"Food number "</span> <span class="o">+</span> <span class="n">i</span><span class="o">,</span> <span class="n">getResources</span><span class="o">().</span><span class="na">getDrawable</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">donut</span><span class="o">),</span> <span class="s">"detail food"</span><span class="o">,</span> <span class="s">"Ready in "</span> <span class="o">+</span> <span class="o">(</span><span class="mi">10</span> <span class="o">*</span> <span class="n">i</span><span class="o">)</span> <span class="o">+</span> <span class="s">" min"</span><span class="o">,</span> <span class="n">i</span><span class="o">));</span>
+            <span class="o">}</span>
+        <span class="o">}</span>
+
+        <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setView</span><span class="o">()</span> <span class="o">{</span>
+            <span class="n">getFood</span><span class="o">();</span>
+            <span class="n">mylistFood</span> <span class="o">=</span> <span class="n">myView</span><span class="o">.</span><span class="na">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">list_food</span><span class="o">);</span>
+            <span class="n">listAdapter</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ListFoodController</span><span class="o">(</span><span class="n">myFoods</span><span class="o">,</span> <span class="n">getContext</span><span class="o">());</span>
+            <span class="n">mylistFood</span><span class="o">.</span><span class="na">setLayoutManager</span><span class="o">(</span><span class="k">new</span> <span class="nc">LinearLayoutManager</span><span class="o">(</span><span class="n">getContext</span><span class="o">()));</span>
+            <span class="n">mylistFood</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="n">listAdapter</span><span class="o">);</span>
+        <span class="o">}</span>
+
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="nc">View</span> <span class="nf">onCreateView</span><span class="o">(</span><span class="nc">LayoutInflater</span> <span class="n">inflater</span><span class="o">,</span> <span class="nc">ViewGroup</span> <span class="n">container</span><span class="o">,</span>
+                                <span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">myView</span> <span class="o">=</span> <span class="n">inflater</span><span class="o">.</span><span class="na">inflate</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">fragment_halaman_list</span><span class="o">,</span> <span class="n">container</span><span class="o">,</span> <span class="kc">false</span><span class="o">);</span>
+            <span class="n">setView</span><span class="o">();</span>
+            <span class="k">return</span> <span class="n">myView</span><span class="o">;</span>
+        <span class="o">}</span>
+
+    <span class="o">}</span>
+</code></pre></div>    </div>
+    <p>hasilnya harusnya seperti dibawah ini
+<img src="/../img/08-05-2019/list.gif" alt="&quot;adfadf&quot;" /></p>
+
+    <p>Oke, sekian pada modul kali ini sampai ketemu pada modul selanjutnya</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+      <div class="page-footer">
+        <div class="page-share">
+          <a href="https://twitter.com/intent/tweet?text=Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product&url=http://localhost:4000/2019/05/08/membuat-aplikasi-foodbank-part-5-menambahkan-list-product/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
+          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2019/05/08/membuat-aplikasi-foodbank-part-5-menambahkan-list-product/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
+        </div>
+        <div class="page-tag">
+          
+            <a href="/tags#Developer" class="tag">&#35; Developer</a>
+          
+            <a href="/tags#Android" class="tag">&#35; Android</a>
+          
+            <a href="/tags#JAVA" class="tag">&#35; JAVA</a>
+          
+            <a href="/tags#Tutorial" class="tag">&#35; Tutorial</a>
+          
+        </div>
+      </div>
+      <section class="comment-area">
+  <div class="comment-wrapper">
+    
+    <div id="disqus_thread" class="article-comments"></div>
+    <script>
+      (function() {
+          var d = document, s = d.createElement('script');
+          s.src = '//the-ngoding.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+  </div>
+</section> <!-- End Comment Area -->
+
+    </div> <!-- End Wrap Content -->
+  </div> <!-- End Page Content -->
+</article> <!-- End Article Page -->
+
+</div>
+
+  </div>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+     <script>
+       // Your web app's Firebase configuration
+       var firebaseConfig = {
+         apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+         authDomain: "my-apps-2660a.firebaseapp.com",
+         databaseURL: "https://my-apps-2660a.firebaseio.com",
+         projectId: "my-apps-2660a",
+         storageBucket: "my-apps-2660a.appspot.com",
+         messagingSenderId: "261985294091",
+         appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+         measurementId: "G-PFCC72DX37"
+       };
+       // Initialize Firebase
+       firebase.initializeApp(firebaseConfig);
+       firebase.analytics();
+     </script>
+
+</body>
+</html>

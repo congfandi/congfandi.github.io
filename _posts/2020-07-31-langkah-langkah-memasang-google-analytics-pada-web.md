@@ -1,6 +1,9 @@
 ---
 title: Langkah langkah memasang google analytics pada web
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Web, Tips]
 ---
 
 *Langkah langkah memasang google analytics pada web*

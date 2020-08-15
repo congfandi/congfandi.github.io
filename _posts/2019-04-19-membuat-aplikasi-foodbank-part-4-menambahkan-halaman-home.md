@@ -1,6 +1,9 @@
 ---
 title: Android Native Membuat aplikasi foodbank part 4 - Menambahkan halam home
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android, JAVA, Tutorial]
 ---
 ![Cover](/../img/covers/cover-19-04-2019.png)
 Kita berjumpa lagi di pertemuan yang ke empat, tak terasa sudah sampai pada modul utama, yaitu menambahkan halaman utama aplikas.

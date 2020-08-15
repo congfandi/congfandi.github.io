@@ -1,6 +1,9 @@
 ---
 title: Upload Aplikasi Flutter ke Appstore Part 3
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 Akhirnya masuk pada pembahasan yang terakhir yaitu, pada bagian XCODE nya, bagian ini adalah bagian yang terakhir dari pembahasan kali ini. pada bagian ini kita akan mempelajari bagaimana sih cara upload aplikasi ke appstore melalui XCODE, berbeda dengan playstore yang harus kita masukkan aplikasinya yang berupa .apk file, pada apple developer sudut pandang itu harus kita ubah karena yang melakukan upload aplikasi ke appstore adalah xcodenya dan kita tidak bisa upload aplikasi seperti layaknya playstore kecuali menggunakan CI/CD tool seperti `Codemagic`.

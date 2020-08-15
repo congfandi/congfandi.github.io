@@ -1,6 +1,9 @@
 ---
 title: Android Native Membuat aplikasi foodbank part 2 - Menambahkan welcome screen
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android, JAVA, Tutorial]
 ---
 ![Cover](/../img/05-04-2019/gift2.gif)
 OK, kita berjumpa lagi di tutorial kedua dalam membuat aplikasi *Foodbank*. Semoga kita semua tetap di istiqomahkan dalam belajar dan diberi kemudahan dalam menerima ilmu-ilmunya Allah. Aamiinn....

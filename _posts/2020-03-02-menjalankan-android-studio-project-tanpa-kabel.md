@@ -1,6 +1,9 @@
 ---
 title: Menjalankan Project Android Studio Tanpa Kabel
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android Studio, Tips]
 ---
 
 Bismillah,

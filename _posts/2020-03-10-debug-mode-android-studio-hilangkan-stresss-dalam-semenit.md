@@ -1,6 +1,9 @@
 ---
 title: Debug Mode Android Studio hilangkan stress dalam semenit
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android Studio, Tips]
 ---
 
 Halo sobat ngoding semua, kali ini saya mau berbagi tentang sebuah cara yang bisa kalian lakukan untuk melakukan debug aplikasi kalian di android studio. Jangan perhatikan judulnya ya itu cuman buat seru seruan aja :-D.

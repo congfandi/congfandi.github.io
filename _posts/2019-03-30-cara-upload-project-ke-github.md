@@ -1,6 +1,9 @@
 ---
 title: Upload project ke github
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Github, Tutorial]
 ---
 ![Cover](/../img/30-03-2019/cover.png)
 

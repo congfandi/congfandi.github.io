@@ -1,6 +1,9 @@
 ---
 title: Saya kena tipu 20 miliar
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Penipuan, Tips]
 ---
 
 Bismillah, Sobat ngoding kali ini saya tidak akan membahas tentang dunia coding dulu, karena menurut saya hal ini sangat perlu di bahas agar tidak ada yang kena ya, tulisan kali ini akan sangat panjang namun semoga dapat memberikan wawasan kepada rekan rekan sekalian dan dapat menimbulkan rasa mawas diri. Oke kita mulai saja storinya :-D .

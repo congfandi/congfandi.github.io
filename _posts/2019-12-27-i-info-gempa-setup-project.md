@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Setup Project
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Sebagai informasi, kita akan membuat sebuah aplikasi yang saya beri nama `Info Gempa`. Aplikasi ini akan menampilkan informasi gempa diseluruh dunia.

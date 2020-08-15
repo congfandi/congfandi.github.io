@@ -1,6 +1,9 @@
 ---
 title: Android Native Membuat aplikasi foodbank part-5 - Menambahkan list product
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android, JAVA, Tutorial]
 ---
 
 ![Cover](/../img/covers/list.gif)

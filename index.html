@@ -1,43 +1,19 @@
 ---
-layout: default
-home: true
+layout: main
 ---
-
-
-
 {% for post in paginator.posts %}
-
-{% assign minutes = post.content | number_of_words | divided_by: 180 %}
-{% if minutes == 0 %}
-  {% assign read-time = site.var_less_than_a_minute_read %}
-{% else %}
-  {% assign read-time = minutes | append: "&nbsp;" | append: site.var_min_read %}
-{% endif %}
-
-  <article>
-    <span class="meta">
-      {% if site.display-author-front-page %}
-        {% if post.author.name %}
-          {{ post.author.name }} •
-        {% else %}
-          {% if site.author.name %}
-            {{ site.author.name }} •
-          {% endif %}
-        {% endif %}
-      {% endif %}
-      {{ post.date | date: site.date_format }} • {{ read-time }}</span>
-  	<a href="{{ post.url | prepend: site.baseurl }}"><h1>{{ post.title }}</h1></a>
-      <p>
-      {% if post.summary %}
-        {{ post.summary }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% else %}
-        {{ post.excerpt | remove: '<p>' | remove: '</p>' }}&nbsp;<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">{{ site.var_read }}  →</a>
-      {% endif %}
-      </p>
-
-  </article>
+<article class="post">
+  {% if post.img %}
+    <a class="post-thumbnail" style="background-image: url({{"/assets/img/" | prepend: site.baseurl | append : post.img}})" href="{{post.url | prepend: site.baseurl}}"></a>
+  {% else %}
+  {% endif %}
+  <div class="post-content">
+    <h2 class="post-title"><a href="{{post.url | prepend: site.baseurl}}">{{post.title}}</a></h2>
+    <p>{{ post.content | strip_html | truncatewords: 15 }}</p>
+    <span class="post-date">{{post.date | date: '%Y, %b %d'}}&nbsp;&nbsp;&nbsp;—&nbsp;</span>
+    <span class="post-words">{% capture words %}{{ post.content | number_of_words }}{% endcapture %}{% unless words contains "-" %}{{ words | plus: 250 | divided_by: 250 | append: " minute read" }}{% endunless %}</span>
+  </div>
+</article>
 {% endfor %}
 
-{% if paginator.previous_page or paginator.next_page %}
-  {% include pagination.html %}
-{% endif %}
+{% include pagination.html %}

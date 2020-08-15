@@ -1,6 +1,9 @@
 ---
 title: Android Studio - Mengganti nama project 
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Android, Tips]
 ---
 
 Halo sobat ngoding, awal tahun 2020 ini aku buka dengan tulisan sederhana ini... sebenanrnya hanya untuk mengisi waktu luang aja karena tanggal 1 pada liburan semua.

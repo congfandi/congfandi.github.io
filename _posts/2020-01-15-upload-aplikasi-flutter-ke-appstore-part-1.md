@@ -1,6 +1,9 @@
 ---
 title: Upload Aplikasi Flutter ke Appstore Part 1
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Flutter, Tips]
 ---
 
 Sebelumnya saya sudah membahas [Upload aplikasi flutter ke playstore](https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/), saat nya kita membahas bagaiaman cara upload aplikasi flutter ke appstore. Sebenarnya flutter juga sudah membahas juga di blognya cara uploadnya ke appstore namun saya disini akan membahas lebih detail. 

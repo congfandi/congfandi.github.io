@@ -1,6 +1,9 @@
 ---
 title: Methode Tercepat dalam mencari data terkecil
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Riset, Tips]
 ---
 Bismillah, Halo sobat ngoding.....
 Kali ini saya akan bercerita tentang kecepatan sebuah methode dalam mencari data terkecil dari kumpulan data training. Dalam riset ini saya membuat data training dengan menggunakan sebuah object buatan saya sendiri.

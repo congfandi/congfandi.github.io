@@ -1,6 +1,9 @@
 ---
 title: Android Native Membuat Aplikasi Foodbank Part 1
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, Android, JAVA, Tutorial]
 ---
 
 ![Cover](/../img/foodbank1/cover.png)

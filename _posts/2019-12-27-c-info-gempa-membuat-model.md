@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Membuat Model
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Pada pembahasan kali ini kita akan membahas bagaimana cara mmebuat model pada pemrograman `Swift` dengan menggunakan framework `SwiftUI`.

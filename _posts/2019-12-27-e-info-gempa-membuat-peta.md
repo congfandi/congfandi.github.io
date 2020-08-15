@@ -1,6 +1,9 @@
 ---
 title: Info Gempa - Membuat Peta
-cover-image: hipster.jpg
+img: hipster.jpg
+layout: post
+fig-caption: Developer
+tags: [Developer, IOS, SWIFTUI, Tutorial]
 ---
 
 Pada tutorial kali ini, kita akan membuat detail halaman yang merupakan tampilan peta atau map
