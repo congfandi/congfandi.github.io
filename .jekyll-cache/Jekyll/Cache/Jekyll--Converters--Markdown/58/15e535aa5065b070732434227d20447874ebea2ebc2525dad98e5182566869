@@ -1,0 +1,139 @@
+I"ì<p>Halo sobat ngoding, kali ini saya ingin menulis tentang cara membuat JKS file atau istilah kerenya <em>Key Store</em>. Sebagai intrudction, <em>Key Store file adalah file yang digunakan untuk mengupload aplikasi ke playstore</em> ini menurut pengertian saya probadi dan agar dapat dengan mudah difahami. Keystore ini sebagai kunci atau syarat agar aplikasi dapat diupload ke playstore, mennurut google, isi dari <em>Key Store</em> ini adalah penandatanganan aplikasi.
+<!--more-->
+Perlu di ingat bahwa , <em>_1 Key Store dapat dipasang di banyak aplikasi namun 1 aplikasi yang sudah tayang di playstore, Key Store nya tidak dapat diganti_</em></p>
+
+<h2 id="cara-membuat-keystore">Cara Membuat Keystore</h2>
+<p>Keystore dapat dibuat dengan 2 cara,</p>
+
+<p>Cara :</p>
+<ol>
+  <li>
+    <p>Dengan Android Studio</p>
+  </li>
+  <li>
+    <p>Dengan Terminal/CMD</p>
+  </li>
+</ol>
+
+<h2 id="memebuat-keystore-dengan-android-studio">Memebuat Keystore dengan Android Studio</h2>
+
+<ol>
+  <li>
+    <p>Buka Project Android Studio anda (Project android bukan flutter)</p>
+  </li>
+  <li>
+    <p>Klik menu <em>Build-&gt;Generate Signed Bundle/APK</em></p>
+
+    <p><img src="/img/200112/signed.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Pilih Next Saja</p>
+
+    <p><img src="/img/200112/choose.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Kemuadian Klik New</p>
+
+    <p><img src="/img/200112/new.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Kemudian isi sesuai dengan penjelasan dibawah ini</p>
+
+    <p><img src="/img/200112/field.png" alt="generate" /></p>
+
+    <p><em>Key Store Path</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Lokasi dimana keystore akan disimpan setelah selesai nanti
+</code></pre></div>    </div>
+
+    <p><em>Password</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Password untuk password *Key Store*nya
+</code></pre></div>    </div>
+
+    <p><em>Confirm</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Konfirmasi Password *Key Store* nya
+</code></pre></div>    </div>
+
+    <p><em>Alias</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Nama Alias dari *Key Store*
+</code></pre></div>    </div>
+
+    <p><em>Password</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Pasword Key nya
+</code></pre></div>    </div>
+
+    <p><em>Confirm</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Konfirmasi password Key nya
+</code></pre></div>    </div>
+
+    <p><em>Validity(years)</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Masa Berlaku *Key Store* nya dalam satuan tahun
+</code></pre></div>    </div>
+
+    <p><em>First and last name</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Nama lengkap pembuat keystore (boleh atas nama perusahaan)
+</code></pre></div>    </div>
+
+    <p><em>Organization Unit</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Unit Kerja
+</code></pre></div>    </div>
+
+    <p><em>Organization</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Divisi
+</code></pre></div>    </div>
+
+    <p><em>City/Locality</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Kota 
+</code></pre></div>    </div>
+
+    <p><em>State or Province</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Provinsi
+</code></pre></div>    </div>
+
+    <p><em>Country Code</em></p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> Kode Negara (ID) unutk indonesia (EN) untu English dst..
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<h2 id="membuat-keystore-dengan-terminalcmd">Membuat Keystore dengan Terminal/CMD</h2>
+
+<ol>
+  <li>
+    <p>Buka terminal (Mac/Linux) / CMD (Windows)</p>
+  </li>
+  <li>
+    <p>Jalankan perintah dibawah ini</p>
+
+    <p>a. Mac atau Linux</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key
+</code></pre></div>    </div>
+
+    <p>b. Windows</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> keytool -genkey -v -keystore c:/Users/USER_NAME/key.jks -storetype JKS -keyalg RSA -keysize 2048 -validity 10000 -alias key
+</code></pre></div>    </div>
+
+    <p>Setelah itu isi field2 yang diminta seperti pada android studio diatas.</p>
+  </li>
+</ol>
+
+<p>Dan sepertin itu temen2 cara membuat <em>Key Store</em>. temen2 dapat menggunakan <em>Key Store</em> tersebut untk mengupload aplikasi ke google play console.</p>
+
+<blockquote>
+  <p>Kode Error itu seperti micin, jika kebanyakan dapat membahayakan :-D<small> - Penulis</small></p>
+</blockquote>
+:ET

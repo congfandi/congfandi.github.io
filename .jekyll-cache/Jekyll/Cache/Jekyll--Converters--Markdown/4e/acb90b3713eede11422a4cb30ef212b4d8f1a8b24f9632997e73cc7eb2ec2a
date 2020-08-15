@@ -1,0 +1,61 @@
+I"›<p>Bismillah,</p>
+
+<p>Hai sobat ngoding semuanya, kali ini saya ingin berbagi tentang masalah harian saya selama menjadi developer mobile dimana saya merasa kesulitan saat harus menjalankan aplikasi yang saya buat menggunakan <em>real device</em> atau hp sementara kabel harus terus tertancap pada macbook saya. Setelah beberapa saat merasa risih dengan kondisi ini akhirnya sayapun mulai mencari cara bagaimana agar saya dapat menjalanakan aplikasi saya tanpa harus menghubungkan hp saya dengan laptop/ macbook saya.
+<!--more-->
+Oke kita mulai saja tutorialnyaâ€¦</p>
+
+<h2 id="simulasi">Simulasi</h2>
+
+<ol>
+  <li>Sudah ada project <em>Android</em> atau <em>Flutter</em> project</li>
+  <li>Sebuah Kabel untuk menghubungkan hp dengan laptop/macbook</li>
+  <li>Sebuah HP (Tentunya)</li>
+</ol>
+
+<h2 id="langkah---langkah">Langkah - Langkah</h2>
+
+<ol>
+  <li>
+    <p>Buka project teman-teman (Android atau flutter project)</p>
+  </li>
+  <li>
+    <p>Buka menu <em>Preferances</em></p>
+  </li>
+  <li>
+    <p>Buka pada menu marketplace, lakukan pencarian <em>Android WIFI ADB</em> kemudian install</p>
+
+    <p><img src="/img/200302/preferances.png" alt="Preferances" /></p>
+  </li>
+  <li>
+    <p>Restart Android Studio</p>
+  </li>
+  <li>
+    <p>Setelah Android Stidio terbuka, Lihat pada bagian kanan</p>
+  </li>
+  <li>
+    <p>Lihat menu <em>Android WIFI ADB</em> dan klik</p>
+
+    <p><img src="/img/200302/rightmenu.png" alt="Preferances" /></p>
+  </li>
+  <li>
+    <p>Hubungkan hp teman-teman menggunakan kabel</p>
+  </li>
+  <li>
+    <p>Pastikan Laptop atau macbook teman-teman terhubung dengan jaringan yang sama pada Hp</p>
+  </li>
+  <li>
+    <p>Jika hp sudah terlihat di daftar, klik <em>Connect</em></p>
+  </li>
+  <li>
+    <p>Cabut kabel dan jalankan aplikasi.</p>
+  </li>
+</ol>
+
+<p>Sejauh yang saya gunakan tool ini tidak memiliki kendala, hanya saja jika laptop dihubungkan dengan thetrung dari HP yang dikoneksikan, tool ini tidak dapat mendeteksi hp saya.</p>
+
+<p>Oke selamat mencoba dan sampai jumpa di tutorial selanjutnya :-) .</p>
+
+<blockquote>
+  <p>Karena aku bukan orang yang pasti bisa, aku akan berusaha untuk terbiasa agar aku biasa menjadi bisa :-)<small> - Penulis</small></p>
+</blockquote>
+:ET

@@ -1,0 +1,77 @@
+I"(<p>Pada tutorial kali ini, kita akan mensimulasikan perpindahan halaman antar tampilan di <code class="language-plaintext highlighter-rouge">SwiftUI</code>
+<!--more--></p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+
+<p><a href="https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/">Daftar Isi</a></p>
+
+<h2 id="spesifikasi-aplikasi">Spesifikasi APlikasi</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Spesifikasi</th>
+      <th style="text-align: center">Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Bahasa</td>
+      <td style="text-align: center">Swift 5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Framework</td>
+      <td style="text-align: center">SwiftUI</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Editor/Tool</td>
+      <td style="text-align: center">Xcode 11.3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Platform</td>
+      <td style="text-align: center">IOS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="langkah---langkah">langkah - Langkah</h2>
+
+<ol>
+  <li>
+    <p>Buka File <code class="language-plaintext highlighter-rouge">ContentView.swift</code></p>
+  </li>
+  <li>
+    <p>Ganti codenya menjadi seperti dibawah ini</p>
+
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         <span class="kd">import</span> <span class="kt">SwiftUI</span>
+
+         <span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+             <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+                 <span class="kt">NavigationView</span><span class="p">{</span>
+                     <span class="kt">List</span><span class="p">{</span>
+                         <span class="kt">ForEach</span><span class="p">(</span><span class="mi">0</span><span class="o">...</span><span class="mi">10</span><span class="p">,</span><span class="nv">id</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="k">self</span><span class="p">){</span> <span class="n">index</span> <span class="k">in</span>
+                             <span class="kt">NavigationLink</span><span class="p">(</span><span class="nv">destination</span><span class="p">:</span> <span class="kt">Text</span><span class="p">(</span><span class="s">"Next Page"</span><span class="p">)){</span>
+                                 <span class="kt">ItemList</span><span class="p">()</span>
+                             <span class="p">}</span><span class="o">.</span><span class="nf">navigationBarTitle</span><span class="p">(</span><span class="s">"Info Gempa"</span><span class="p">)</span>
+                         <span class="p">}</span>
+                     <span class="p">}</span>
+                 <span class="p">}</span>
+             <span class="p">}</span>
+         <span class="p">}</span>
+
+         <span class="kd">struct</span> <span class="kt">ContentView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+             <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="kd">some</span> <span class="kt">View</span> <span class="p">{</span>
+                 <span class="kt">ContentView</span><span class="p">()</span>
+             <span class="p">}</span>
+         <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Silahkan coba aplikasinya, harusnya sudah dapat di klik</p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+:ET
