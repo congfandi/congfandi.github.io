@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+Info Gempa - Membuat Item List • The Ngoding
+
+</title>
+<meta name="description" content=" Yuk ngoding bareng!">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feed.xml">
+
+<!-- icons -->
+<link rel="apple-touch-icon" href="//apple-touch-icon.png">
+<link rel="icon" type="image/png" href="//favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//android-chrome-192x192.png" sizes="192x192">
+<meta name="theme-color" content="#00f0ff">
+<meta name="msapplication-TileColor" content="#00f0ff">
+<meta name="msapplication-TileImage" content="//mstile-310x310.png">
+<!-- /icons -->
+
+<!-- og tags -->
+<meta property="og:site_name" content="The Ngoding">
+<meta property="og:title" content="Info Gempa - Membuat Item List • The Ngoding">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="og:image" content="http://localhost:4000//img/hipster.jpg">
+  
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000//2019/12/27/g-info-gempa-membuat-item-list/">
+<meta property="og:description" content="
+
+Yuk ngoding bareng!
+">
+<!-- /og tags -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//js/modernizr.js"></script>
+<script src="//js/fitvids.js"></script>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//css/reset.css">
+<link rel="stylesheet" href="//css/pygments.css">
+
+<link rel="stylesheet" href="//css/style.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<style>
+header {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 500px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+header::after {
+  display: none;
+}
+</style>
+
+
+</head>
+<body>
+	
+	<div class="cover-image-container">
+		<img alt="Cover image" src="//img/covers/hipster.jpg">
+	</div>
+	
+	<div class="wrap">
+		<header>
+  <a href="//" class="website-title">
+    
+      <img alt="The Ngoding" src="/https://thengoding.com/the-ngoding-logo.png">
+    
+
+  </a>
+  <nav>
+  <a href="//archive/">Daftar Isi</a>
+  <a href="//contact/">Hubungi Saya</a>
+  <a href="//resume/">Tentang Saya</a>
+</nav>
+
+  
+</header>
+
+		
+
+
+<article>
+  <span class="meta">Dec 27, 2019 • 3&nbsp;min read</span>
+	<h1>Info Gempa - Membuat Item List</h1>
+		<p>Pada tutorial kali ini, kita akan membuat item list pada halaman utama aplikasi
+<!--more--></p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+
+<p><a href="https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/">Daftar Isi</a></p>
+
+<h2 id="spesifikasi-aplikasi">Spesifikasi APlikasi</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Spesifikasi</th>
+      <th style="text-align: center">Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Bahasa</td>
+      <td style="text-align: center">Swift 5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Framework</td>
+      <td style="text-align: center">SwiftUI</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Editor/Tool</td>
+      <td style="text-align: center">Xcode 11.3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Platform</td>
+      <td style="text-align: center">IOS</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>setelah selesai membuat list, saatnya kita membuat item list sehingga nampak lebih bagus tampilannya, langkah - langkah nya adalah sebagai berikut :</p>
+
+<h2 id="langkah---langkah">Langkah - Langkah</h2>
+
+<ol>
+  <li>
+    <p>Buka Project File temen - temen pada xcode</p>
+  </li>
+  <li>
+    <p>Klik kanan kemudian <code class="language-plaintext highlighter-rouge">New File</code></p>
+
+    <p><img src="//img/191217/new.png" alt="list" /></p>
+  </li>
+  <li>
+    <p>Pilih <code class="language-plaintext highlighter-rouge">SwiftUI</code></p>
+
+    <p><img src="//img/191217/swiftui.png" alt="list" /></p>
+  </li>
+  <li>
+    <p>Beli nama file yang kita buat dengan <code class="language-plaintext highlighter-rouge">ItemList</code></p>
+  </li>
+  <li>
+    <p>Ganti code nya</p>
+
+    <p><strong>Before</strong></p>
+
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kd">import</span> <span class="kt">SwiftUI</span>
+
+      <span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+          <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+                  <span class="kt">Text</span><span class="p">(</span><span class="s">"Hello, World!"</span><span class="p">)</span>
+          <span class="p">}</span>
+      <span class="p">}</span>
+
+      <span class="kd">struct</span> <span class="kt">ContentView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+          <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+                  <span class="kt">ContentView</span><span class="p">()</span>
+              <span class="p">}</span>
+      <span class="p">}</span>
+</code></pre></div>    </div>
+
+    <p>Menjadi seperti ini</p>
+
+    <p><strong>After</strong></p>
+
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="kd">import</span> <span class="kt">SwiftUI</span>
+
+        <span class="kd">struct</span> <span class="kt">ItemList</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+                <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+                    <span class="kt">HStack</span><span class="p">(</span><span class="nv">alignment</span><span class="p">:</span> <span class="o">.</span><span class="n">center</span><span class="p">,</span> <span class="nv">spacing</span><span class="p">:</span> <span class="mi">9</span><span class="p">){</span>
+                        <span class="kt">VStack</span><span class="p">(</span><span class="nv">alignment</span><span class="p">:</span> <span class="o">.</span><span class="n">leading</span><span class="p">){</span>
+                            <span class="kt">Text</span><span class="p">(</span><span class="s">"4.5"</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">foregroundColor</span><span class="p">(</span><span class="o">.</span><span class="n">white</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">font</span><span class="p">(</span><span class="o">.</span><span class="n">headline</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">bold</span><span class="p">()</span>
+                        <span class="p">}</span><span class="o">.</span><span class="nf">frame</span><span class="p">(</span><span class="nv">width</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span><span class="nv">height</span><span class="p">:</span><span class="mi">100</span><span class="p">)</span>
+                            <span class="o">.</span><span class="nf">background</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">green</span><span class="p">)</span>
+                            <span class="o">.</span><span class="nf">clipShape</span><span class="p">(</span><span class="kt">Circle</span><span class="p">())</span>
+                            <span class="o">.</span><span class="nf">overlay</span><span class="p">(</span><span class="kt">Circle</span><span class="p">()</span><span class="o">.</span><span class="nf">stroke</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">gray</span><span class="p">,</span><span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">1</span><span class="p">))</span>
+                            <span class="o">.</span><span class="nf">shadow</span><span class="p">(</span><span class="nv">radius</span><span class="p">:</span> <span class="mi">10</span><span class="p">)</span>
+                        <span class="kt">VStack</span><span class="p">{</span>
+                            <span class="kt">Text</span><span class="p">(</span><span class="s">"4KM Coba, Coba"</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">foregroundColor</span><span class="p">(</span><span class="o">.</span><span class="n">gray</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">bold</span><span class="p">()</span>
+                               
+                            <span class="kt">Text</span><span class="p">(</span><span class="s">"Time : 25 December 2019"</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">italic</span><span class="p">()</span>
+                                <span class="o">.</span><span class="nf">foregroundColor</span><span class="p">(</span><span class="o">.</span><span class="n">orange</span><span class="p">)</span>
+                                <span class="o">.</span><span class="nf">padding</span><span class="p">(</span><span class="o">.</span><span class="n">top</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+                        <span class="p">}</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+            <span class="p">}</span>
+
+        <span class="kd">struct</span> <span class="kt">ContentView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+            <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+                <span class="kt">ItemList</span><span class="p">()</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Buka file <code class="language-plaintext highlighter-rouge">ContentView.swift</code> dan ganti menjadi seperti ini</p>
+
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+     <span class="kd">import</span> <span class="kt">SwiftUI</span>
+     <span class="kd">struct</span> <span class="kt">ContentView</span><span class="p">:</span> <span class="kt">View</span> <span class="p">{</span>
+         <span class="k">var</span> <span class="nv">body</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+             <span class="kt">List</span><span class="p">{</span>
+                 <span class="kt">ForEach</span><span class="p">(</span><span class="mi">0</span><span class="o">...</span><span class="mi">10</span><span class="p">,</span><span class="nv">id</span><span class="p">:</span> <span class="p">\</span><span class="o">.</span><span class="k">self</span><span class="p">){</span> <span class="n">index</span> <span class="k">in</span>
+                 <span class="kt">ItemList</span><span class="p">()</span>
+                 <span class="p">}</span>
+             <span class="p">}</span>
+         <span class="p">}</span>
+     <span class="p">}</span>
+
+     <span class="kd">struct</span> <span class="kt">ContentView_Previews</span><span class="p">:</span> <span class="kt">PreviewProvider</span> <span class="p">{</span>
+         <span class="kd">static</span> <span class="k">var</span> <span class="nv">previews</span><span class="p">:</span> <span class="n">some</span> <span class="kt">View</span> <span class="p">{</span>
+             <span class="kt">ContentView</span><span class="p">()</span>
+         <span class="p">}</span>
+     <span class="p">}</span>
+
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Maka tampilannya seperti dibawah ini</p>
+
+    <p><img src="//img/191217/list-final.png" alt="list" /></p>
+  </li>
+</ol>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+  
+    
+      
+        <small><em>Post by: The Ngoding </em></small>
+      
+    
+  
+</article>
+
+
+<div class="pagination clearfix">
+  <div class="left">
+    
+      <a href="//2019/12/27/h-info-gempa-membuat-list/">‹ Next post</a>
+    
+  </div>
+  <div class="right">
+    
+      <a href="//2019/12/27/f-info-gempa-perpindahan-halaman/">Previous post ›</a>
+    
+  </div>
+</div>
+
+
+
+
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+    authDomain: "my-apps-2660a.firebaseapp.com",
+    databaseURL: "https://my-apps-2660a.firebaseio.com",
+    projectId: "my-apps-2660a",
+    storageBucket: "my-apps-2660a.appspot.com",
+    messagingSenderId: "261985294091",
+    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+    measurementId: "G-PFCC72DX37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<footer>
+  <div class="inner">
+    <p>Copyright 2019 thengoding.com</p>
+  </div>
+</footer>
+
+</body>
+</html>

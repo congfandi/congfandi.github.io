@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+Upload Aplikasi Flutter ke Appstore Part 1 • The Ngoding
+
+</title>
+<meta name="description" content=" Yuk ngoding bareng!">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feed.xml">
+
+<!-- icons -->
+<link rel="apple-touch-icon" href="//apple-touch-icon.png">
+<link rel="icon" type="image/png" href="//favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//android-chrome-192x192.png" sizes="192x192">
+<meta name="theme-color" content="#00f0ff">
+<meta name="msapplication-TileColor" content="#00f0ff">
+<meta name="msapplication-TileImage" content="//mstile-310x310.png">
+<!-- /icons -->
+
+<!-- og tags -->
+<meta property="og:site_name" content="The Ngoding">
+<meta property="og:title" content="Upload Aplikasi Flutter ke Appstore Part 1 • The Ngoding">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="og:image" content="http://localhost:4000//img/hipster.jpg">
+  
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000//2020/01/15/upload-aplikasi-flutter-ke-appstore-part-1/">
+<meta property="og:description" content="
+
+Yuk ngoding bareng!
+">
+<!-- /og tags -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//js/modernizr.js"></script>
+<script src="//js/fitvids.js"></script>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//css/reset.css">
+<link rel="stylesheet" href="//css/pygments.css">
+
+<link rel="stylesheet" href="//css/style.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<style>
+header {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 500px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+header::after {
+  display: none;
+}
+</style>
+
+
+</head>
+<body>
+	
+	<div class="cover-image-container">
+		<img alt="Cover image" src="//img/covers/hipster.jpg">
+	</div>
+	
+	<div class="wrap">
+		<header>
+  <a href="//" class="website-title">
+    
+      <img alt="The Ngoding" src="/https://thengoding.com/the-ngoding-logo.png">
+    
+
+  </a>
+  <nav>
+  <a href="//archive/">Daftar Isi</a>
+  <a href="//contact/">Hubungi Saya</a>
+  <a href="//resume/">Tentang Saya</a>
+</nav>
+
+  
+</header>
+
+		
+
+
+<article>
+  <span class="meta">Jan 15, 2020 • 2&nbsp;min read</span>
+	<h1>Upload Aplikasi Flutter ke Appstore Part 1</h1>
+		<p>Sebelumnya saya sudah membahas <a href="https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/">Upload aplikasi flutter ke playstore</a>, saat nya kita membahas bagaiaman cara upload aplikasi flutter ke appstore. Sebenarnya flutter juga sudah membahas juga di blognya cara uploadnya ke appstore namun saya disini akan membahas lebih detail. 
+<!--more-->
+Seperti pada pembahasan <a href="https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/">Upload aplikasi flutter ke playstore</a> , kita akan membagi pembahasan kali ini menjadi 3 bagian, bagian pertama kita akan membahas pada sisi developer console nya dan bagian kedua kita bahas disisi appstore connect nya dan terakhir pada bagian xcode nya. Ada beberapa syarat yang harus kalian penuhi sebelum kalian mengupload aplikasi kalian ke appstore, syarat -syarat sebagai berikut :</p>
+
+<h2 id="syarat-upload-aplikasi-ke-appstore">Syarat Upload aplikasi ke appstore</h2>
+
+<ol>
+  <li>
+    <p>Sudah memiliki akun apple developer</p>
+  </li>
+  <li>
+    <p>Memiliki Macbook/Imac</p>
+  </li>
+  <li>
+    <p>Memiliki Iphone/Ipad</p>
+  </li>
+</ol>
+
+<p>Seperti biasa kita harus mulai dengan simulasinya dahulu</p>
+
+<h2 id="simulasi">Simulasi</h2>
+
+<ol>
+  <li>
+    <p>Sudah ada project flutter</p>
+  </li>
+  <li>
+    <p>Sudah punya akun apple developer. Akun apple developer ini harus temen-temen beli dengan harga $99/tahun dan berbeda dengan playstore yang sekali beli untuk selamanya, akun apple developer harus diperpanjang setiap tahunnya.</p>
+  </li>
+  <li>
+    <p>Sudah punya Macbook/Imac dan Iphone/Ipad (Hal ini wajib dan tidak dapat di tolerir)</p>
+  </li>
+</ol>
+
+<h2 id="langkah---langkah-pada-bagian-apple-developer-console">Langkah - Langkah Pada bagian Apple Developer Console</h2>
+
+<ol>
+  <li>
+    <p>Mac teman teman sudah terinstall certificate apple developer, jika belum silahkan lihat pada tutorial <a href="https://thengoding.com/2020/01/14/xcode-menambahkan-apple-developer-certificate/">Menambahkan Apple Developer Certificate</a></p>
+  </li>
+  <li>
+    <p>Masuk ke site <a href="https://developer.apple.com/">Apple Developer</a> dan login</p>
+  </li>
+  <li>
+    <p>Pilih Menu Pilih Menu <code class="language-plaintext highlighter-rouge">Certifacates, Identifiers &amp; Profiles</code></p>
+  </li>
+  <li>
+    <p>Pada halaman <code class="language-plaintext highlighter-rouge">Certifacates, Identifiers &amp; Profiles</code> , pilih Identifier dan buat identifier baru dengan mengklik tombol plus pada bagian kiri atas setelah nama identifier</p>
+
+    <p><img src="//img/200115/identifier.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Setelah itu, temen temen akan diminta memilih jenis identifier yang akan dibuat, pilih seperti pada gambar dibawah ini</p>
+
+    <p><img src="//img/200115/appid.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Setelah itu, teman teman akan diminta untuk memasukkan nama package aplikasi, hal ini sangat penting karena package tidak dapat diganti setelah tayang di appstore</p>
+
+    <p><img src="//img/200115/package.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Apabila sudah selesai maka identifier aplikasi teman-teman akan muncul seperti pada gambar dibawah ini</p>
+
+    <p><img src="//img/200115/list.png" alt="generate" /></p>
+  </li>
+</ol>
+
+<p>Cukup sekian teman teman, kita akan melanjutkan pembahasan pada tulisan selanjutnya, yaitu pada bagian Apple Store Connect. Sampai ketemu di tuisan saya selanjutnya dan akhit kata happy ngoding :-D</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+  
+    
+      
+        <small><em>Post by: The Ngoding </em></small>
+      
+    
+  
+</article>
+
+
+<div class="pagination clearfix">
+  <div class="left">
+    
+      <a href="//2020/01/16/upload-aplikasi-flutter-ke-appstore-part-2/">‹ Next post</a>
+    
+  </div>
+  <div class="right">
+    
+      <a href="//2020/01/14/xcode-menambahkan-apple-developer-certificate/">Previous post ›</a>
+    
+  </div>
+</div>
+
+
+
+
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+    authDomain: "my-apps-2660a.firebaseapp.com",
+    databaseURL: "https://my-apps-2660a.firebaseio.com",
+    projectId: "my-apps-2660a",
+    storageBucket: "my-apps-2660a.appspot.com",
+    messagingSenderId: "261985294091",
+    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+    measurementId: "G-PFCC72DX37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<footer>
+  <div class="inner">
+    <p>Copyright 2019 thengoding.com</p>
+  </div>
+</footer>
+
+</body>
+</html>

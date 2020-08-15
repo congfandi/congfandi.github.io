@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>The Ngoding</title>
+		<description>{&quot;meta&quot;=&gt;&quot;Yuk ngoding bareng!&quot;, &quot;subtitle&quot;=&gt;&quot;Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.&quot;}</description>
+		<link>http://localhost:4000</link>
+		<atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Tips Membuat Custom Warna Flutter</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;&lt;em&gt;Tips Membuat Custom Warna Flutter&lt;/em&gt;
+Holaaaa sahabat ngoding semua, kali ini saya mau nulis tentang hal yang ga kalah menarik nih yaitu tips membuat custom warna di flutter.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sat, 15 Aug 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/08/15/tips-membuat-custom-warna-flutter/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/08/15/tips-membuat-custom-warna-flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Cara Upload Aplikasi Ke AppStore tanpa Macbook</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;&lt;em&gt;Cara Upload Aplikasi Ke AppStore tanpa Macbook&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bismillah, Kali ini saya ingin berbagi tentang bagaimana sih cara upload aplikasi ke appstore tanpa macbook, khusunya bagi pengguna flutter developer. Tutorial kali ini lebih dikhususkan bagi pengguna flutter sebeanarnya dan sebagai pengetahuan bagi temen temen bahwa appstore dan playstore itu bisa upload aplikasi tanpa harus menggunakan website resmi mereka dan ini legal ya.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 12 Aug 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/08/12/cara-upload-aplikas-ke-appstore-tanpa-macbook/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/08/12/cara-upload-aplikas-ke-appstore-tanpa-macbook/</guid>
+			</item>
+		
+			<item>
+				<title>Tips Memperkecil Ukuran Aplikasi Flutter</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;&lt;em&gt;Tips Memperkecil Ukuran Aplikias Flutter&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Hola sobat ngoding yang budiman.. masih semangat ngoding kan ? . Oke jadi kali ini saya mau nulis tentang pertanyaan yang sering muncul nih dikomunitas flutter indonesia dimana bnayak dari temen-temen komunitas bertanya bagaimana cara memperkecil ukuran aplikasi yang dibuat dengan flutter.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 10 Aug 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/08/10/flutter-mengecilkan-ukuran-aplikasi/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/08/10/flutter-mengecilkan-ukuran-aplikasi/</guid>
+			</item>
+		
+			<item>
+				<title>Langkah langkah memasang google analytics pada web</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;&lt;em&gt;Langkah langkah memasang google analytics pada web&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Bismillah, sudah 2 bulanan lebih saya belum nulis lagi. Alhamdulillah baru ada kesempatan untuk bercerita kepada sobat ngoding semuanya. Kali ini saya ingin berbagi tips seputar web analytics, dimana hal ini sobat butuhkan untuk melihat jumlah pengunjung web kita tanpa membebani kinerja aplikasi kita. Tulisan ini bermula saat ada seorang web yang bertanya disebuah komunitas tentang bagaimana mengetahui jumlah pengunjung tanpa mempengaruhi performa aplikasi dan inilah jawabannya.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Fri, 31 Jul 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/07/31/langkah-langkah-memasang-google-analytics-pada-web/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/07/31/langkah-langkah-memasang-google-analytics-pada-web/</guid>
+			</item>
+		
+			<item>
+				<title>Flutter Provider Penyelamat Karirku</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;&lt;em&gt;Flutter Provider Sang Penyelamat Karir&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Halo Sobat ngoding semua… Udah lamaa saya tidak nulis karena kesibukan di kerjaan :-) . Kali ini saya tidka akan menulis tentang cara menulis kode, tapi kali ini saya mau curhat sedikit nih tentang pengalaman paling berharga dalam hidup saya selama menjadi seorang developer.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 28 May 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/05/28/flutter-provider-penyelamat-karir/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/05/28/flutter-provider-penyelamat-karir/</guid>
+			</item>
+		
+			<item>
+				<title>Methode Tercepat dalam mencari data terkecil</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;Bismillah, Halo sobat ngoding…..
+Kali ini saya akan bercerita tentang kecepatan sebuah methode dalam mencari data terkecil dari kumpulan data training. Dalam riset ini saya membuat data training dengan menggunakan sebuah object buatan saya sendiri.&lt;/p&gt;
+
+&lt;p&gt;Awalnya saya hanya ingin mencari methode terbaik untuk menghitung dan mencari data dari sekumpulan data, tentunya saya memiliki banyak pilihan untuk menggunakan beberapa methode yang ada pada bahasa pemrograman dart.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 12 Apr 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/04/12/methode-tercepat-dalam-mencari-data-terkecil/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/04/12/methode-tercepat-dalam-mencari-data-terkecil/</guid>
+			</item>
+		
+			<item>
+				<title>Debug Mode Android Studio hilangkan stress dalam semenit</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;Halo sobat ngoding semua, kali ini saya mau berbagi tentang sebuah cara yang bisa kalian lakukan untuk melakukan debug aplikasi kalian di android studio. Jangan perhatikan judulnya ya itu cuman buat seru seruan aja :-D.&lt;/p&gt;
+
+&lt;p&gt;Oke kita mulai dari latar belakang saya membuat tulisan ini, barangkali ada yang melakukan hal yang sama dengan yang saya lakukan.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 10 Mar 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/03/10/debug-mode-android-studio-hilangkan-stresss-dalam-semenit/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/03/10/debug-mode-android-studio-hilangkan-stresss-dalam-semenit/</guid>
+			</item>
+		
+			<item>
+				<title>Menjalankan Project Android Studio Tanpa Kabel</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;Bismillah,&lt;/p&gt;
+
+&lt;p&gt;Hai sobat ngoding semuanya, kali ini saya ingin berbagi tentang masalah harian saya selama menjadi developer mobile dimana saya merasa kesulitan saat harus menjalankan aplikasi yang saya buat menggunakan &lt;em&gt;real device&lt;/em&gt; atau hp sementara kabel harus terus tertancap pada macbook saya. Setelah beberapa saat merasa risih dengan kondisi ini akhirnya sayapun mulai mencari cara bagaimana agar saya dapat menjalanakan aplikasi saya tanpa harus menghubungkan hp saya dengan laptop/ macbook saya.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Mon, 02 Mar 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/03/02/menjalankan-android-studio-project-tanpa-kabel/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/03/02/menjalankan-android-studio-project-tanpa-kabel/</guid>
+			</item>
+		
+			<item>
+				<title>Menambahkan library pada project flutter</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;Bismillah,&lt;/p&gt;
+
+&lt;p&gt;Hai sobat ngoding, kali ini saya bahas sedikit tentang bagaimana cara menambahkan library pada project flutter kita. Tidak sama dengan native project, flutter memiliki cara sendiri dalam menambahkan library, tentunya lebih mudah dan gampang daripada native code.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Sun, 23 Feb 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/02/23/menambahkan-library-pada-project-flutter/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/02/23/menambahkan-library-pada-project-flutter/</guid>
+			</item>
+		
+			<item>
+				<title>Saya kena tipu 20 miliar</title>
+				
+					
+						<dc:creator>{&quot;name&quot;=&gt;&quot;The Ngoding&quot;, &quot;email&quot;=&gt;&quot;congfandi@gmail.com&quot;, &quot;info&quot;=&gt;nil}</dc:creator>
+					
+				
+				
+					<description>&lt;p&gt;Bismillah, Sobat ngoding kali ini saya tidak akan membahas tentang dunia coding dulu, karena menurut saya hal ini sangat perlu di bahas agar tidak ada yang kena ya, tulisan kali ini akan sangat panjang namun semoga dapat memberikan wawasan kepada rekan rekan sekalian dan dapat menimbulkan rasa mawas diri. Oke kita mulai saja storinya :-D .&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 29 Jan 2020 00:00:00 +0700</pubDate>
+				<link>http://localhost:4000//2020/01/29/saya-kena-tipu-20-miliar/</link>
+				<guid isPermaLink="true">http://localhost:4000//2020/01/29/saya-kena-tipu-20-miliar/</guid>
+			</item>
+		
+	</channel>
+</rss>

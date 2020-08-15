@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+Android Native Membuat Aplikasi Foodbank Part 1 • The Ngoding
+
+</title>
+<meta name="description" content=" Yuk ngoding bareng!">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feed.xml">
+
+<!-- icons -->
+<link rel="apple-touch-icon" href="//apple-touch-icon.png">
+<link rel="icon" type="image/png" href="//favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//android-chrome-192x192.png" sizes="192x192">
+<meta name="theme-color" content="#00f0ff">
+<meta name="msapplication-TileColor" content="#00f0ff">
+<meta name="msapplication-TileImage" content="//mstile-310x310.png">
+<!-- /icons -->
+
+<!-- og tags -->
+<meta property="og:site_name" content="The Ngoding">
+<meta property="og:title" content="Android Native Membuat Aplikasi Foodbank Part 1 • The Ngoding">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="og:image" content="http://localhost:4000//img/hipster.jpg">
+  
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000//2019/03/26/membuat-aplikasi-foodbank-part-1/">
+<meta property="og:description" content="
+
+Yuk ngoding bareng!
+">
+<!-- /og tags -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//js/modernizr.js"></script>
+<script src="//js/fitvids.js"></script>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//css/reset.css">
+<link rel="stylesheet" href="//css/pygments.css">
+
+<link rel="stylesheet" href="//css/style.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<style>
+header {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 500px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+header::after {
+  display: none;
+}
+</style>
+
+
+</head>
+<body>
+	
+	<div class="cover-image-container">
+		<img alt="Cover image" src="//img/covers/hipster.jpg">
+	</div>
+	
+	<div class="wrap">
+		<header>
+  <a href="//" class="website-title">
+    
+      <img alt="The Ngoding" src="/https://thengoding.com/the-ngoding-logo.png">
+    
+
+  </a>
+  <nav>
+  <a href="//archive/">Daftar Isi</a>
+  <a href="//contact/">Hubungi Saya</a>
+  <a href="//resume/">Tentang Saya</a>
+</nav>
+
+  
+</header>
+
+		
+
+
+<article>
+  <span class="meta">Mar 26, 2019 • 4&nbsp;min read</span>
+	<h1>Android Native Membuat Aplikasi Foodbank Part 1</h1>
+		<p><img src="/../img/foodbank1/cover.png" alt="Cover" />
+Bismillah,</p>
+
+<p>Tutorial kali ini khusus untuk teman-teman Universitas Muhammadiyah Gresik (UMG) yang mengadakan Event Tahunan <strong>HRC</strong>. Event ini diselengarakan oleh Himatif UMG dengan kerja sama dengan <strong>GresikDev</strong>.
+<!--more-->
+Pada tutorial ini, kita akan mencoba membuat sebuah aplikasi bank makanan (Foodbank) dimana Mockup dari aplikasi ini dapat dilihat <a href="https://www.behance.net/gallery/67347541/FoodBank-Restaurant-App-UI-Kit">disini</a>.</p>
+
+<p>Oke kita mulai saja tutorialnya.</p>
+
+<p><strong>Tutorial Membuat Foodbank</strong></p>
+<ol>
+  <li>Buat aplikasi dengan menggunakan <strong>Android Studio</strong></li>
+  <li>
+    <p>Atur project seperti gambar 1
+<img src="/../img/foodbank1/gambar1.png" alt="Gambar 1" />
+<em>Gambar 1</em></p>
+
+    <p>saya sangat menyarankan teman-teman utntuk mengatur aplikasi seperti yang ada pada gambar 1.0 agar tidak terjadi error yang tidak di inginkan, jika ingin membuat yang berbeda silahkan tapi lakukan hal itu diluar kelas ya .</p>
+  </li>
+  <li>
+    <p>Setelah project selesai dibuat, Buatlah beberapa folder yang ada didalam <code class="language-plaintext highlighter-rouge">id.gresikdev.foodbank</code>  antara lain <strong>models</strong> , <strong>views</strong>, <strong>controllers</strong> seperti gambar 2
+<img src="/../img/foodbank1/gambar2.png" alt="Gambar 2" />
+ <em>Gambar 2</em></p>
+  </li>
+  <li>
+    <p>Masih didalam folder(istilah lainnya <em>package</em>) <code class="language-plaintext highlighter-rouge">id.gresikdev.foodbank</code> kita pindahkan file <code class="language-plaintext highlighter-rouge">MainActivity</code> kedalam <em>package</em> <strong>views</strong> kemudian buat beberapa <em>Activity</em> <code class="language-plaintext highlighter-rouge">LoginActivity</code>, <code class="language-plaintext highlighter-rouge">RegisterActivity</code>, <code class="language-plaintext highlighter-rouge">SplashActivity</code> dan <code class="language-plaintext highlighter-rouge">WelcomeActivity</code> dengan cara : Klik kanan pada <em>package</em> <strong>views</strong> =&gt; <strong>New</strong> =&gt; <strong>Activity</strong> =&gt; <strong>Empty Activity</strong>.
+Struktur file dapat dilihat pada gambar 3.
+<img src="/../img/foodbank1/gambar3.png" alt="Gambar 3" />
+<em>Gambar 3</em></p>
+  </li>
+  <li>Jalankan aplikasi, maka aplikasi akan terlihat seperti gambar 4 
+<img src="/../img/foodbank1/gambar4.png" alt="Gambar 4" />.
+<em>Gambar 4</em></li>
+</ol>
+
+<p>Selanjutnya kita akan membuat agar aplikasi berjalan seperti ini
+<strong>SplashActivity</strong> =&gt; <strong>WelcomeActivity</strong> =&gt; <strong>LoginActivity</strong>/<strong>RegisterActivity</strong>, langkah-langkahnya adalah sebagai berikut :</p>
+<ol>
+  <li>Buka file <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code> yang ada pada folder <strong>manifests</strong></li>
+  <li>Edit file yang sebelumya
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.RegisterActivity"</span><span class="nt">&gt;&lt;/activity&gt;</span>
+ <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.LoginActivity"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.WelcomeActivity"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.SplashActivity"</span> <span class="nt">/&gt;</span>
+ <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.MainActivity"</span><span class="nt">&gt;</span>
+     <span class="nt">&lt;intent-filter&gt;</span>
+             <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">"android.intent.action.MAIN"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">"android.intent.category.LAUNCHER"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;/intent-filter&gt;</span>
+ <span class="nt">&lt;/activity&gt;</span>
+</code></pre></div>    </div>
+    <p>menjadi seperti ini</p>
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.RegisterActivity"</span><span class="nt">&gt;&lt;/activity&gt;</span>
+     <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.LoginActivity"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.WelcomeActivity"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.MainActivity"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;activity</span> <span class="na">android:name=</span><span class="s">".views.SplashActivity"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;intent-filter&gt;</span>
+             <span class="nt">&lt;action</span> <span class="na">android:name=</span><span class="s">"android.intent.action.MAIN"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;category</span> <span class="na">android:name=</span><span class="s">"android.intent.category.LAUNCHER"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;/intent-filter&gt;</span>
+     <span class="nt">&lt;/activity&gt;</span>
+</code></pre></div>    </div>
+    <p>jika dijalankan, aplikasi tidak lagi mengarah pada <em>Activity</em> <code class="language-plaintext highlighter-rouge">MainActivity</code> akan tetapi sudah mengarah pada <code class="language-plaintext highlighter-rouge">SplashActivity</code>. langkah selanjutnya kita akan mrugah tampilan <code class="language-plaintext highlighter-rouge">SplashActivity</code>.</p>
+  </li>
+</ol>
+
+<p><strong>Merubah Tampilan <code class="language-plaintext highlighter-rouge">SplashActivty</code></strong></p>
+<ol>
+  <li>Buka File <code class="language-plaintext highlighter-rouge">activity_splash.xml</code>, file ini ada pada package <em>res</em> =&gt; <em>layout</em></li>
+  <li>kemudian tuliskan code berikut pada tab <em>Teks</em>
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+     <span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+         <span class="na">xmlns:app=</span><span class="s">"http://schemas.android.com/apk/res-auto"</span>
+         <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
+         <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+         <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+         <span class="na">tools:context=</span><span class="s">".views.SplashActivity"</span><span class="nt">&gt;</span>
+         <span class="nt">&lt;ImageView</span>
+             <span class="na">android:src=</span><span class="s">"@mipmap/ic_launcher"</span>
+             <span class="na">android:layout_centerInParent=</span><span class="s">"true"</span>
+             <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+             <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;TextView</span>
+             <span class="na">android:text=</span><span class="s">"Versi 1.0.0"</span>
+             <span class="na">android:layout_marginBottom=</span><span class="s">"20.0dp"</span>
+             <span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+             <span class="na">android:layout_alignParentBottom=</span><span class="s">"true"</span>
+             <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+             <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+     <span class="nt">&lt;/RelativeLayout&gt;</span>
+</code></pre></div>    </div>
+    <p>Saat aplikasi dijalankan, <em>activity</em> <code class="language-plaintext highlighter-rouge">SplashActivity</code> masih memiliki <em>toolbar</em> padahal seharusnya activity ini tidak memiliki toolbar lihat gambar 5.
+<img src="/../img/foodbank1/gambar5.png" alt="Gambar 5" />
+<em>Gambar 5</em></p>
+  </li>
+</ol>
+
+<p>maka kita hilangkan dulu toolbarnya.</p>
+
+<p><strong>Menghilangkan <em>toolbar</em> pada <em>activity</em> <code class="language-plaintext highlighter-rouge">SplashActivity</code></strong></p>
+<ol>
+  <li>Buka file <code class="language-plaintext highlighter-rouge">styles.xml</code> yang ada pada package <em>res</em> =&gt; <em>values</em> =&gt; <code class="language-plaintext highlighter-rouge">styles.xml</code></li>
+  <li>tambah kode berikut
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="c">&lt;!--Tema tanpa toolbar--&gt;</span>
+ <span class="nt">&lt;style</span> <span class="na">name=</span><span class="s">"tanpaToolbar"</span> <span class="na">parent=</span><span class="s">"Theme.AppCompat.Light.NoActionBar"</span><span class="nt">&gt;</span>
+     <span class="c">&lt;!-- Customize your theme here. --&gt;</span>
+     <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"colorPrimary"</span><span class="nt">&gt;</span>@color/colorPrimary<span class="nt">&lt;/item&gt;</span>
+     <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"colorPrimaryDark"</span><span class="nt">&gt;</span>@color/colorPrimaryDark<span class="nt">&lt;/item&gt;</span>
+     <span class="nt">&lt;item</span> <span class="na">name=</span><span class="s">"colorAccent"</span><span class="nt">&gt;</span>@color/colorAccent<span class="nt">&lt;/item&gt;</span>
+ <span class="nt">&lt;/style&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>buka lagi file <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code>, kemudian tambahkan kode berikut
+    <pre><code class="language-`xml">     &lt;activity android:name=".views.SplashActivity" android:theme="@style/tanpaToolbar"&gt;
+</code></pre>
+    <p>kemudian jalankan aplikasi dan <em>toolbar</em> akan otomatis hilang. lihat gambar 6
+<img src="/../img/foodbank1/gambar6.png" alt="Gambar 6" />
+<em>Gambar 6</em></p>
+  </li>
+</ol>
+
+<p>Langkah selanjutnya adalah membuat aplikasi secara otomatis berpindah halaman setelah 3 detik, oke kita mulai saja:</p>
+
+<p><strong>Memindahkan halaman secara otomatis dalam 3 detik</strong></p>
+<ol>
+  <li>buka file <code class="language-plaintext highlighter-rouge">SplashActivity.java</code></li>
+  <li>buatlah method dengan nama <em>pergiKeWelcome</em>
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">private</span> <span class="kt">void</span> <span class="nf">pergiKeWelcome</span><span class="o">(){</span>
+     <span class="nc">TimerTask</span> <span class="n">task</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">TimerTask</span><span class="o">()</span> <span class="o">{</span>
+         <span class="nd">@Override</span>
+         <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+             <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">SplashActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span><span class="nc">WelcomeActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+         <span class="o">}</span>
+     <span class="o">};</span>
+     <span class="nc">Timer</span> <span class="n">timer</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Timer</span><span class="o">(</span><span class="s">"Pindah Halaman"</span><span class="o">);</span>
+     <span class="n">timer</span><span class="o">.</span><span class="na">schedule</span><span class="o">(</span><span class="n">task</span><span class="o">,</span><span class="mi">3000</span><span class="o">);</span>
+ <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+</ol>
+
+<p>Oke, sampai itu dulu tutorial kali ini selanjutnya kita akan membahas bagaimana mengubah tampilan di <em>activity</em> <code class="language-plaintext highlighter-rouge">WelcomeActivity.java</code> . Sampai jumpa dipertemuan selanjutnya</p>
+
+<hr />
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+
+  
+    
+      
+        <small><em>Post by: The Ngoding </em></small>
+      
+    
+  
+</article>
+
+
+<div class="pagination clearfix">
+  <div class="left">
+    
+      <a href="//2019/03/30/cara-upload-project-ke-github/">‹ Next post</a>
+    
+  </div>
+  <div class="right">
+    
+      <a href="//2015/07/22/theme-introduction/">Previous post ›</a>
+    
+  </div>
+</div>
+
+
+
+
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+    authDomain: "my-apps-2660a.firebaseapp.com",
+    databaseURL: "https://my-apps-2660a.firebaseio.com",
+    projectId: "my-apps-2660a",
+    storageBucket: "my-apps-2660a.appspot.com",
+    messagingSenderId: "261985294091",
+    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+    measurementId: "G-PFCC72DX37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<footer>
+  <div class="inner">
+    <p>Copyright 2019 thengoding.com</p>
+  </div>
+</footer>
+
+</body>
+</html>

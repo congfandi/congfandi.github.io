@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+Upload project ke github • The Ngoding
+
+</title>
+<meta name="description" content=" Yuk ngoding bareng!">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feed.xml">
+
+<!-- icons -->
+<link rel="apple-touch-icon" href="//apple-touch-icon.png">
+<link rel="icon" type="image/png" href="//favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//android-chrome-192x192.png" sizes="192x192">
+<meta name="theme-color" content="#00f0ff">
+<meta name="msapplication-TileColor" content="#00f0ff">
+<meta name="msapplication-TileImage" content="//mstile-310x310.png">
+<!-- /icons -->
+
+<!-- og tags -->
+<meta property="og:site_name" content="The Ngoding">
+<meta property="og:title" content="Upload project ke github • The Ngoding">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="og:image" content="http://localhost:4000//img/hipster.jpg">
+  
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000//2019/03/30/cara-upload-project-ke-github/">
+<meta property="og:description" content="
+
+Yuk ngoding bareng!
+">
+<!-- /og tags -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//js/modernizr.js"></script>
+<script src="//js/fitvids.js"></script>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//css/reset.css">
+<link rel="stylesheet" href="//css/pygments.css">
+
+<link rel="stylesheet" href="//css/style.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<style>
+header {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 500px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+header::after {
+  display: none;
+}
+</style>
+
+
+</head>
+<body>
+	
+	<div class="cover-image-container">
+		<img alt="Cover image" src="//img/covers/hipster.jpg">
+	</div>
+	
+	<div class="wrap">
+		<header>
+  <a href="//" class="website-title">
+    
+      <img alt="The Ngoding" src="/https://thengoding.com/the-ngoding-logo.png">
+    
+
+  </a>
+  <nav>
+  <a href="//archive/">Daftar Isi</a>
+  <a href="//contact/">Hubungi Saya</a>
+  <a href="//resume/">Tentang Saya</a>
+</nav>
+
+  
+</header>
+
+		
+
+
+<article>
+  <span class="meta">Mar 30, 2019 • 2&nbsp;min read</span>
+	<h1>Upload project ke github</h1>
+		<p><img src="/../img/30-03-2019/cover.png" alt="Cover" /></p>
+
+<p>Tutorial kali ini adalah cara sederhana memasukan peoject/folder/file kita ke github, gitlab atau bitbucket. Tutorial ini membahas secara sederhana saja, kita mulai saja.
+<!--more-->
+<strong>Langkah-Langkah mengupload file ke github</strong></p>
+<ol>
+  <li>
+    <p>Daftar dulu ke <a href="https://github.com">Github</a></p>
+  </li>
+  <li>
+    <p>Pastikan komputer kalian sudah terinstall git, jika kalian menggunakan <em>Windows</em> tutorial nya <a href="https://www.petanikode.com/git-install/">disini</a>, bagi pengguna linux, ketikan saja perintah</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sudo apt-install git
+</code></pre></div>    </div>
+
+    <p>bagi penggunana mac, ketikkan saja perintah ini di terminal</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> brew install git
+</code></pre></div>    </div>
+
+    <p>jika sudah terintall, pastikan git terinstall dengan baik dengan mengetikkan perintah ini di terminal</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git --version
+</code></pre></div>    </div>
+
+    <p>jika terminal kalian keluar tulisan seperti dibawah ini</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> git version 2.21.0
+</code></pre></div>    </div>
+
+    <p>itu artinya komputer kalian sudah terinstall dengan baik.</p>
+  </li>
+  <li>Oke sekarang kita buat sebuah folder, di <strong>Desktop</strong> dengan nama <strong><code class="language-plaintext highlighter-rouge">Coba</code></strong>,</li>
+  <li>Kemudian buat lah file didalamnya dengan nama <strong><code class="language-plaintext highlighter-rouge">README.md</code></strong></li>
+  <li>
+    <p>Dan isilah file itu dengan tulisan</p>
+
+    <div class="language-md highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     hai ini adalah file readme yang ada di folder git saya.
+</code></pre></div>    </div>
+
+    <p>Struktur folder nya dapat dilihat pada gambar 1</p>
+
+    <p><img src="/../img/30-03-2019/gambar1.png" alt="Gambar 1" /></p>
+  </li>
+  <li>
+    <p>Langkah selanjutnya adalah buka terminal kalian kemudian masuk ke direktori Desktop/Coba. Kalau di komputer saya saya(Mac) tinggal mengetikkan perintah ini</p>
+
+    <div class="language-terminal highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="go"> cd Desktop/Coba
+</span></code></pre></div>    </div>
+  </li>
+  <li>Ketikkan perintah
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     git init
+</code></pre></div>    </div>
+  </li>
+  <li>Buat repository pada akun github kalian
+ <img src="/../img/30-03-2019/cover.png" alt="Github" />
+ tombol <strong>New</strong></li>
+  <li>Isi kolom sesuai dengn yang kalian mau, tapi saran saya disamakan dengan nama folder yang kalian buat.
+<img src="/../img/30-03-2019/gambar2.png" alt="gambar 2" />
+untuk pengaturan yang tidak disebutkan di tutorial ini silahkan di atur sesuai kebutuhanmu.</li>
+  <li>Copy URL project seperti pada gambar dibawah
+<img src="/../img/30-03-2019/gambar4.png" alt="Gambar 4" /></li>
+  <li>Kembali lagi ke terminal dimana peoject mu berada</li>
+  <li>
+    <p>ketikkan perintah</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin url_repository_kalian
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>kemudian ketikkan perintah</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git add .
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>dilanjutkan dengan perintah</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git commit -m "pesan kalian terserah"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>kemudian yang terakhir adalah</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push -u origin master
+</code></pre></div>    </div>
+
+    <p>jika berhasil, seharusnya kalian sudah bisa melihat hasilnya di repositori kalian seperti gambat dibawah ini</p>
+  </li>
+</ol>
+
+<p><img src="/../img/30-03-2019/sukses.png" alt="gambar hasil" /></p>
+
+<p><strong>Udate repository</strong>
+Tambahkan file appun di dalam direktory <strong>Coba</strong> kemudian jalankan perintah ini di terminal, jika berhasil seharusnya file yang kalian masuka tadi sudah bisa dilihat di repository kalian.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   1. git add .
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   2. git commit -m "pesanmu"
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   3. git push
+</code></pre></div></div>
+
+<p>Oke sekian dari saya, maaf atas kesalah typo tulisan jika ada dan maaf atas kesalahan kata jika ada kata yang menyinggung kalian, akhir kata. <strong>Happy Coding</strong></p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+
+  
+    
+      
+        <small><em>Post by: The Ngoding </em></small>
+      
+    
+  
+</article>
+
+
+<div class="pagination clearfix">
+  <div class="left">
+    
+      <a href="//2019/04/05/Membuat-Aplikasi-Foodbank-Part-2-(Menambah-Welcome-Screen)/">‹ Next post</a>
+    
+  </div>
+  <div class="right">
+    
+      <a href="//2019/03/26/membuat-aplikasi-foodbank-part-1/">Previous post ›</a>
+    
+  </div>
+</div>
+
+
+
+
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+    authDomain: "my-apps-2660a.firebaseapp.com",
+    databaseURL: "https://my-apps-2660a.firebaseio.com",
+    projectId: "my-apps-2660a",
+    storageBucket: "my-apps-2660a.appspot.com",
+    messagingSenderId: "261985294091",
+    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+    measurementId: "G-PFCC72DX37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<footer>
+  <div class="inner">
+    <p>Copyright 2019 thengoding.com</p>
+  </div>
+</footer>
+
+</body>
+</html>

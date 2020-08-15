@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>
+
+Debug Mode Android Studio hilangkan stress dalam semenit • The Ngoding
+
+</title>
+<meta name="description" content=" Yuk ngoding bareng!">
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="//feed.xml">
+
+<!-- icons -->
+<link rel="apple-touch-icon" href="//apple-touch-icon.png">
+<link rel="icon" type="image/png" href="//favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="//favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="//android-chrome-192x192.png" sizes="192x192">
+<meta name="theme-color" content="#00f0ff">
+<meta name="msapplication-TileColor" content="#00f0ff">
+<meta name="msapplication-TileImage" content="//mstile-310x310.png">
+<!-- /icons -->
+
+<!-- og tags -->
+<meta property="og:site_name" content="The Ngoding">
+<meta property="og:title" content="Debug Mode Android Studio hilangkan stress dalam semenit • The Ngoding">
+<meta property="og:locale" content="en">
+
+  
+    <meta property="og:image" content="http://localhost:4000//img/hipster.jpg">
+  
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://localhost:4000//2020/03/10/debug-mode-android-studio-hilangkan-stresss-dalam-semenit/">
+<meta property="og:description" content="
+
+Yuk ngoding bareng!
+">
+<!-- /og tags -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//js/modernizr.js"></script>
+<script src="//js/fitvids.js"></script>
+<link href='//fonts.googleapis.com/css?family=Source+Code+Pro:400,700|Source+Sans+Pro:600,900|Crimson+Text:700italic,600,600italic,400,700,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//css/reset.css">
+<link rel="stylesheet" href="//css/pygments.css">
+
+<link rel="stylesheet" href="//css/style.css">
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+
+<style>
+header {
+  margin-bottom: 40px;
+}
+@media all and (min-width: 500px) {
+  header {
+    margin-bottom: 100px;
+  }
+}
+header::after {
+  display: none;
+}
+</style>
+
+
+</head>
+<body>
+	
+	<div class="cover-image-container">
+		<img alt="Cover image" src="//img/covers/hipster.jpg">
+	</div>
+	
+	<div class="wrap">
+		<header>
+  <a href="//" class="website-title">
+    
+      <img alt="The Ngoding" src="/https://thengoding.com/the-ngoding-logo.png">
+    
+
+  </a>
+  <nav>
+  <a href="//archive/">Daftar Isi</a>
+  <a href="//contact/">Hubungi Saya</a>
+  <a href="//resume/">Tentang Saya</a>
+</nav>
+
+  
+</header>
+
+		
+
+
+<article>
+  <span class="meta">Mar 10, 2020 • 2&nbsp;min read</span>
+	<h1>Debug Mode Android Studio hilangkan stress dalam semenit</h1>
+		<p>Halo sobat ngoding semua, kali ini saya mau berbagi tentang sebuah cara yang bisa kalian lakukan untuk melakukan debug aplikasi kalian di android studio. Jangan perhatikan judulnya ya itu cuman buat seru seruan aja :-D.</p>
+
+<p>Oke kita mulai dari latar belakang saya membuat tulisan ini, barangkali ada yang melakukan hal yang sama dengan yang saya lakukan.
+<!--more--></p>
+<h2 id="latar-belakang">Latar belakang</h2>
+<p>Teman-teman pembuat aplikasi yang menggunakan tool <code class="language-plaintext highlighter-rouge">Android Studio</code> sebagai editor pasti kenal dong dengan yang namanya <em>print(“test”)</em> dan <em>Log.e(“haiiii”)</em>. iya kedua script ini digunakan untuk menampilkan sebuah nilai atau melihat nilai atau mengetes script kita jalan atau tidak. Cukup menjengkelkan jika kita harus menjalankan dulu semua aplikasinya kemudian kita lihat hasilnya di <code class="language-plaintext highlighter-rouge">console</code> kita.</p>
+
+<h2 id="solusi">Solusi</h2>
+<p>Setelah saya bertanya kepada teman saya terkait cara yang enak (ingat bukan cara terbaik ya) buat debug mode di android studio, diapun menunjukkannya kepada saya dan ternyata android studio sudah menyediakannya dan sangat mudah untuk mengakses nya nama menu nya <em>Debug</em></p>
+
+<h2 id="simulasi">Simulasi</h2>
+<p>Sekarang kita langsung aja ya ke simulasinya.</p>
+
+<ol>
+  <li>
+    <p>Buka project teman-teman (Android atau flutter)</p>
+  </li>
+  <li>
+    <p>Cari sebuah method yang kalian ingin cek nilai dari masing masing parameternya</p>
+  </li>
+</ol>
+
+<p><img src="//img/200310/first.png" alt="Preferances" /></p>
+
+<p>Contoh pada gambar diatas adalah saya ingin melihat nilai dari parameter <em>_clockType</em> yang ditampilkan saat saya mengakses kelas <code class="language-plaintext highlighter-rouge">ClockInProvider</code></p>
+
+<ol>
+  <li>
+    <p>Beri break point pada akhir method agar nilainya dapat di set dulu seperti pada gambar diatas</p>
+  </li>
+  <li>
+    <p>jalankan aplikasi dengan mengklik <em>Debug</em> bukan yang run, lihat gambar dibawah</p>
+  </li>
+</ol>
+
+<p><img src="//img/200310/second.png" alt="Preferances" /></p>
+
+<ol>
+  <li>
+    <p>Akses fitur atau menu yang menjalankan fungsi/method/kelas yang diberi tanda break point tadi</p>
+  </li>
+  <li>
+    <p><strong>Apliakasi akan terhendi dibreak point dan seolah2 aplikasi terhendi atau error atau bug, akan tetapi tidak, sebenarnya aplikasi berhenti karena adanya breakpoint tadi</strong></p>
+  </li>
+  <li>
+    <p>Sorot nilai dan lihat datanya (menggunakan cursor) dan nilai dari parameter akan muncul</p>
+  </li>
+  <li>
+    <p>Jika tidak muncul saat disorot yang kalian lakukan adalah</p>
+  </li>
+</ol>
+
+<table>
+  <tbody>
+    <tr>
+      <td>&gt;Klik kanan pada parameter &gt; Evaluate Expression</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>dan hasilnya dapat dilihat dibawah ini</p>
+
+<p><img src="//img/200310/last.png" alt="Preferances" /></p>
+
+<p>Kalian bisa memberikan banyak breakpoint pada 1 file atau 1 kelas baik berbeda2 maupun sama kelas.</p>
+
+<p>Oh iya, jika kalian ingin melanjutkan tekan aja <em>F9</em> fungsi ini digunakan untuk next break point, jika tidak ada lagi aplikasi langsung jalan seperti biasa jika masih ada break point lagi dia akan ke break point selanjutnya.</p>
+
+<p>Btw, terima kasih buat <a href="https://www.linkedin.com/in/muhammad-sa-idul-umam-47a56b183/">Mas Umam</a> yang uda bersedia ngajarin saya cara debug mode di android studio, semoga ilmunya tambah berkah :-) .</p>
+
+<p>Oke sobat ngoding cukup sekian dulu tulisan singkat saya kali ini, semoga bermanfaat.</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+  
+    
+      
+        <small><em>Post by: The Ngoding </em></small>
+      
+    
+  
+</article>
+
+
+<div class="pagination clearfix">
+  <div class="left">
+    
+      <a href="//2020/04/12/methode-tercepat-dalam-mencari-data-terkecil/">‹ Next post</a>
+    
+  </div>
+  <div class="right">
+    
+      <a href="//2020/03/02/menjalankan-android-studio-project-tanpa-kabel/">Previous post ›</a>
+    
+  </div>
+</div>
+
+
+
+
+	  <script>
+	    $("article").fitVids();
+	    $('article p').each(function(i){
+				if (($(this).find('img').length) && (!$.trim($(this).text()).length))  {
+					$(this).addClass('img-only');
+				}
+				if ($.trim($(this).text()).length - $.trim($(this).find('small').text()).length == 0 && ($(this).find('img').length)){
+					$(this).addClass('img-only-source');
+				}
+	  	});
+	  </script>
+	</div>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
+    authDomain: "my-apps-2660a.firebaseapp.com",
+    databaseURL: "https://my-apps-2660a.firebaseio.com",
+    projectId: "my-apps-2660a",
+    storageBucket: "my-apps-2660a.appspot.com",
+    messagingSenderId: "261985294091",
+    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
+    measurementId: "G-PFCC72DX37"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<footer>
+  <div class="inner">
+    <p>Copyright 2019 thengoding.com</p>
+  </div>
+</footer>
+
+</body>
+</html>
