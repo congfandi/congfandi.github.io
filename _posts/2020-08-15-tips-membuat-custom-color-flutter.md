@@ -8,7 +8,7 @@ tags: [Developer, Flutter, Tips, Mobile]
 
 Holaaaa sahabat ngoding semua, kali ini saya mau nulis tentang hal yang ga kalah menarik nih yaitu [tips membuat custom warna di flutter]({{site.url}}/2020/08/15/tips-membuat-custom-color-flutter).
 
-Standartnya di flutter sudah ada warna bawaan yang ada pada MaterialColor class, namun jika kita menghendaki pewarnaan sendiri pada aplikas kita, kita harus membuat beberapa beberapa daftarnya dulu dan kebayang jika kita harus menulisnya manual setiap kita butuh warnanya, nah pada tulisan kali ini saya akan bebagi tips yang saya gunakan untuk membuat custom warna sendiri. yok langsung lanjut ke tutorialnya.
+Standartnya di flutter sudah ada warna bawaan yang ada pada MaterialColor class, namun jika kita menghendaki pewarnaan sendiri pada aplikasi kita, kita harus membuat beberapa daftarnya dulu dan kebayang jika kita harus menulisnya manual setiap kita butuh warnanya, nah pada tulisan kali ini saya akan bebagi tips yang saya gunakan untuk membuat custom warna sendiri. yok langsung lanjut ke tutorialnya.
 
 ## Langkah 1 ##
 Buatlah sebuah file dengan nama `custom_color.dart` , disni kita akan selalu menggunakan file ini untuk mewarnai widget kita baik itu text maupun widget2 lain yang dapat diberikan warna.

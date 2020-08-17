@@ -1,0 +1,37 @@
+I"Ñ<p>Melanjutkan pembahasan <a href="http://localhost:4000/2020/08/16/cara-mengatasi-error-flutter-part-1">Cara Mengatasi Error Flutter Part 1</a>,namun pada tulisan ini yang akan kita tulis adalah widget <strong>COLUMN</strong>. Sebenarnya error pada <strong>COLUMN</strong> itu sama persis dengan yang terjadi pada row, namun jika row perhitungannya kesamping dan column perhitungannya kebawah. Berikut macam-macam error yang ada pada widget <strong>COLUMN</strong>.</p>
+
+<h2 id="error-saat-ada-list-didalam-column">Error Saat ada List didalam Column</h2>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="n">Column</span><span class="o">(</span>
+          <span class="n">children</span> <span class="o">:[</span>
+            <span class="n">Text</span><span class="o">(</span><span class="s">"this is title"</span><span class="o">),</span>
+            <span class="n">ListView</span><span class="o">.</span><span class="na">builder</span><span class="o">(</span>
+               <span class="nl">itemBuilder:</span><span class="o">(</span><span class="n">c</span><span class="o">,</span><span class="n">i</span><span class="o">)=&gt;</span><span class="n">Text</span><span class="o">(</span><span class="s">"halo"</span><span class="o">)</span>
+            <span class="o">)</span>
+          <span class="o">]</span>
+        <span class="o">)</span>
+</code></pre></div></div>
+<p>Saat kode ini dijalankan, akan terjadi error pada aplikasi, yakni tidak dapat menampilkan apa2 pada layout karen <strong>ListView</strong> tidak memiliki tinggi. cara mengatasinya adalah sebagai berikut:</p>
+
+<ol>
+  <li>Menambahkan tinggi dengan widget container</li>
+  <li>Menambahkan tinggi dengan widget Flexible
+    <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">Column</span><span class="o">(</span>
+       <span class="n">children</span> <span class="o">:[</span>
+         <span class="n">Text</span><span class="o">(</span><span class="s">"this is title"</span><span class="o">),</span>
+         <span class="n">Flexible</span><span class="o">(</span>
+           <span class="n">child</span> <span class="o">:</span> <span class="n">ListView</span><span class="o">.</span><span class="na">builder</span><span class="o">(</span>
+                 <span class="nl">itemBuilder:</span><span class="o">(</span><span class="n">c</span><span class="o">,</span><span class="n">i</span><span class="o">)=&gt;</span><span class="n">Text</span><span class="o">(</span><span class="s">"halo"</span><span class="o">)</span>
+             <span class="o">)</span>
+         <span class="o">)</span>
+       <span class="o">]</span>
+     <span class="o">),</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Menambahkan tinggi dengan widget Expaneded</li>
+</ol>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+:ET
