@@ -184,6 +184,12 @@
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter build appbundle --target-platform android-arm,android-arm64,android-x64
 </code></pre></div></div>
 
+<p>atau kalian bisa lebih memperkecil lagi dengan membuat target dari app kalian, kkodenya seperti ini:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+</code></pre></div></div>
+<p>dengan kode diatas, aplikasi dapat di reduce hingga 7mb akan tetapi tidak semua perangkat dapat menginstallnya karena saat selesai dibuild dengan kode diatas, aplikasi tebentuk menjadi 3 part dan menyesuaikan device yang ada.</p>
+
 <p>Nah, cukup sekian sobat tips dari thengoding untuk kali ini, semoga ngodignmu menyenangkan :-) …</p>
 
 <p>Akhir kata, See You On The Next Chapter!</p>

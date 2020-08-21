@@ -1,0 +1,163 @@
+I"NW<p>Hola Sobat Ngoding, Kali ini saya ingin berbagi tips yang bisa kalian jadikan refrensi untuk membangun aplikasi kalian. Tips ini saya gunakan disemua aplikasi yang sudha saya bangung dengan flutter, dan tips ini sangat membantu aku banget dalam tracking error dan tracking log serta maintanance yang sangat mudah.</p>
+
+<h2 id="kebutuhan">Kebutuhan</h2>
+
+<p>Hal dasar yang kita butuhkan untuk membuat Rest API Client ini adalah HTTP, kalain bisa lihat documentasinya dimasi ya <a href="https://pub.dev/packages/http">Documentasi HTTP</a>.</p>
+
+<h2 id="langkah-langkah">Langkah-Langkah</h2>
+
+<ol>
+  <li>
+    <p>Pasang dulu lib HTTP nya ya</p>
+  </li>
+  <li>
+    <p>Buat folder dibawah lib dengan nama <code class="language-plaintext highlighter-rouge">api</code> atau apapun yang kalian inginkan</p>
+  </li>
+  <li>Buat 3 file dengan nama
+    <ul>
+      <li>api_db.dart</li>
+      <li>api_client.dart</li>
+      <li>api.dart</li>
+    </ul>
+  </li>
+  <li>Edit file <code class="language-plaintext highlighter-rouge">api.dart</code>,
+Kita anggap kelas <em>Api.dart</em> adalah bapak dari kelas <em>ApiClient.dart</em> maka kita akan membuat abstrak kelas sebagai dasar kebutuhan dari kelas <em>ApiClient</em> nantinya, maka akan jadi seperti dibawah ini :</li>
+</ol>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'package:flutter/cupertino.dart'</span><span class="o">;</span>
+
+<span class="kd">abstract</span> <span class="kd">class</span> <span class="nc">Api</span> <span class="o">{</span>
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="kd">get</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+      <span class="n">VoidCallback</span> <span class="n">callback</span><span class="o">(</span>
+          <span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)});</span>
+
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">post</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+        <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+        <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">body</span><span class="o">,</span>
+        <span class="n">VoidCallback</span> <span class="n">callback</span><span class="o">(</span>
+            <span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)});</span>
+
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">put</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+        <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+        <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">body</span><span class="o">,</span>
+        <span class="n">VoidCallback</span> <span class="n">callback</span><span class="o">(</span>
+            <span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)});</span>
+
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">delete</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+        <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+        <span class="n">VoidCallback</span> <span class="n">callback</span><span class="o">(</span>
+            <span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)});</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<ol>
+  <li>Edit file <code class="language-plaintext highlighter-rouge">api_client.dart</code> menjadi seperti ini guys :</li>
+</ol>
+
+<div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="s">'dart:convert'</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="s">'package:flutter/cupertino.dart'</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="s">'api.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'api_db.dart'</span><span class="o">;</span>
+<span class="kn">import</span> <span class="s">'package:http/http.dart'</span> <span class="k">as</span> <span class="n">http</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">ApiClient</span> <span class="kd">extends</span> <span class="n">Api</span> <span class="kd">implements</span> <span class="n">ApiDb</span> <span class="o">{</span>
+  <span class="kd">static</span> <span class="n">ApiClient</span> <span class="n">_client</span> <span class="o">=</span> <span class="n">ApiClient</span><span class="o">.</span><span class="na">_singleTon</span><span class="o">();</span>
+
+  <span class="kd">factory</span> <span class="n">ApiClient</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">_client</span><span class="o">;</span>
+  <span class="o">}</span>
+
+  <span class="n">ApiClient</span><span class="o">.</span><span class="na">_singleTon</span><span class="o">();</span>
+
+  <span class="n">laporkanError</span><span class="o">(</span><span class="kt">String</span> <span class="n">judulError</span><span class="o">,</span> <span class="kt">String</span> <span class="n">pesanError</span><span class="o">)</span> <span class="o">{</span>
+<span class="c1">//    buat method untuk laporan</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">delete</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+      <span class="n">Function</span><span class="o">(</span><span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)</span>
+          <span class="n">callback</span><span class="o">})</span> <span class="n">async</span> <span class="o">{</span>
+    <span class="n">http</span><span class="o">.</span><span class="na">delete</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="nl">headers:</span> <span class="n">headers</span><span class="o">).</span><span class="na">then</span><span class="o">((</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="o">,</span>
+          <span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">?</span> <span class="s">"Sukses"</span> <span class="o">:</span> <span class="s">"Gagal"</span><span class="o">,</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">body</span><span class="o">));</span>
+      <span class="n">debugPrint</span><span class="o">(</span><span class="s">"print apa aja yang kamu butuhkan"</span><span class="o">);</span>
+    <span class="o">}).</span><span class="na">catchError</span><span class="o">((</span><span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="n">err</span><span class="o">.</span><span class="na">toString</span><span class="o">(),</span> <span class="kc">null</span><span class="o">);</span>
+      <span class="n">laporkanError</span><span class="o">(</span><span class="s">"judulError"</span><span class="o">,</span> <span class="s">"pesanError"</span><span class="o">);</span>
+    <span class="o">}).</span><span class="na">timeout</span><span class="o">(</span><span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">30</span><span class="o">),</span> <span class="nl">onTimeout:</span> <span class="o">()</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="s">"Timeout"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+      <span class="n">laporkanError</span><span class="o">(</span><span class="s">"judulError"</span><span class="o">,</span> <span class="s">"pesanError"</span><span class="o">);</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="kd">get</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+      <span class="n">Function</span><span class="o">(</span><span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)</span>
+          <span class="n">callback</span><span class="o">})</span> <span class="n">async</span> <span class="o">{</span>
+    <span class="n">http</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="nl">headers:</span> <span class="n">headers</span><span class="o">).</span><span class="na">then</span><span class="o">((</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="o">,</span>
+          <span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">?</span> <span class="s">"Sukses"</span> <span class="o">:</span> <span class="s">"Gagal"</span><span class="o">,</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">body</span><span class="o">));</span>
+    <span class="o">}).</span><span class="na">catchError</span><span class="o">((</span><span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="n">err</span><span class="o">.</span><span class="na">toString</span><span class="o">(),</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">}).</span><span class="na">timeout</span><span class="o">(</span><span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">30</span><span class="o">),</span> <span class="nl">onTimeout:</span> <span class="o">()</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="s">"Timeout"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">post</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">body</span><span class="o">,</span>
+      <span class="n">Function</span><span class="o">(</span><span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)</span>
+          <span class="n">callback</span><span class="o">})</span> <span class="n">async</span> <span class="o">{</span>
+    <span class="n">http</span><span class="o">.</span><span class="na">post</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="nl">headers:</span> <span class="n">headers</span><span class="o">,</span> <span class="nl">body:</span> <span class="n">body</span><span class="o">).</span><span class="na">then</span><span class="o">((</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="o">,</span>
+          <span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">?</span> <span class="s">"Sukses"</span> <span class="o">:</span> <span class="s">"Gagal"</span><span class="o">,</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">body</span><span class="o">));</span>
+    <span class="o">}).</span><span class="na">catchError</span><span class="o">((</span><span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="n">err</span><span class="o">.</span><span class="na">toString</span><span class="o">(),</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">}).</span><span class="na">timeout</span><span class="o">(</span><span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">30</span><span class="o">),</span> <span class="nl">onTimeout:</span> <span class="o">()</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="s">"Timeout"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+
+  <span class="nd">@override</span>
+  <span class="n">Future</span><span class="o">&lt;</span><span class="kt">void</span><span class="o">&gt;</span> <span class="n">put</span><span class="o">(</span>
+      <span class="o">{</span><span class="kt">String</span> <span class="n">url</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">headers</span><span class="o">,</span>
+      <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kt">String</span><span class="o">&gt;</span> <span class="n">body</span><span class="o">,</span>
+      <span class="n">Function</span><span class="o">(</span><span class="kt">bool</span> <span class="n">status</span><span class="o">,</span> <span class="kt">String</span> <span class="n">message</span><span class="o">,</span> <span class="n">Map</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">,</span> <span class="kd">dynamic</span><span class="o">&gt;</span> <span class="n">response</span><span class="o">)</span>
+          <span class="n">callback</span><span class="o">})</span> <span class="n">async</span> <span class="o">{</span>
+    <span class="n">http</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="n">url</span><span class="o">,</span> <span class="nl">headers:</span> <span class="n">headers</span><span class="o">,</span> <span class="nl">body:</span> <span class="n">body</span><span class="o">).</span><span class="na">then</span><span class="o">((</span><span class="n">res</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span><span class="o">,</span>
+          <span class="n">res</span><span class="o">.</span><span class="na">statusCode</span> <span class="o">==</span> <span class="mi">200</span> <span class="o">?</span> <span class="s">"Sukses"</span> <span class="o">:</span> <span class="s">"Gagal"</span><span class="o">,</span> <span class="n">jsonDecode</span><span class="o">(</span><span class="n">res</span><span class="o">.</span><span class="na">body</span><span class="o">));</span>
+    <span class="o">}).</span><span class="na">catchError</span><span class="o">((</span><span class="n">err</span><span class="o">)</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="n">err</span><span class="o">.</span><span class="na">toString</span><span class="o">(),</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">}).</span><span class="na">timeout</span><span class="o">(</span><span class="n">Duration</span><span class="o">(</span><span class="nl">seconds:</span> <span class="mi">30</span><span class="o">),</span> <span class="nl">onTimeout:</span> <span class="o">()</span> <span class="o">{</span>
+      <span class="n">callback</span><span class="o">(</span><span class="kc">false</span><span class="o">,</span> <span class="s">"Timeout"</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+    <span class="o">});</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+
+</code></pre></div></div>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+<p><b>Posted By : <a href="https://www.linkedin.com/in/moh-supandi-49b717119">Cong Fandi</a></b></p>
+:ET

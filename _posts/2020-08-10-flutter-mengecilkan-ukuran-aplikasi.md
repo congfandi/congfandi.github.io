@@ -43,6 +43,13 @@ artinya sudah saatnya kalian meninggalkan kebiasaan kalian ini dan ginakanlah co
     flutter build appbundle --target-platform android-arm,android-arm64,android-x64
 ```
 
+atau kalian bisa lebih memperkecil lagi dengan membuat target dari app kalian, kkodenya seperti ini:
+
+```
+    flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+```
+dengan kode diatas, aplikasi dapat di reduce hingga 7mb akan tetapi tidak semua perangkat dapat menginstallnya karena saat selesai dibuild dengan kode diatas, aplikasi tebentuk menjadi 3 part dan menyesuaikan device yang ada.
+
 Nah, cukup sekian sobat tips dari thengoding untuk kali ini, semoga ngodignmu menyenangkan :-) ...
 
 Akhir kata, See You On The Next Chapter!
