@@ -3,7 +3,7 @@ title: Upload Aplikasi Flutter ke Playstore Part 2
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, Flutter, Tips]
+tags: [Developer, Flutter, Android, Tutorial]
 ---
 
 Okay sobat ngoding, melanjutkan pembahasan sebelumnya yaitu pada part 1 [Upload Aplikasi Flutter ke Playstore Part 1](https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/) kita akan membahas disisi playstorenya, pada bagian ini tidak dibutuhkan skill ngoding.. heeee .... 
