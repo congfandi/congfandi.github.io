@@ -259,9 +259,9 @@ response : Map<String,dynamic>
 
 # Kelebihan Menggunakan Tips ini #
 
-1. Mudah Maintanancenya
+1. Memudahkan Maintanancenya
 2. Print Lognya cukup di satu kelas dan tidak perlu print log di tempat dia di instasiasi
-3. Memudahkan Tracking Api Error Reporting
+3. Memudahkan  Api Error Reporting
 4. Menghindari Redundance Code
 
 Cukup sekian kawan kawan tips flutter dari saya, semoga bermanfaat :-) ...
