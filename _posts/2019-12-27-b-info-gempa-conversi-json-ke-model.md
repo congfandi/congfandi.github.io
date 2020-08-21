@@ -3,7 +3,7 @@ title: Info Gempa - Conversi Json Ke Model
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, IOS, SWIFTUI, Tutorial]
+tags: [Developer, iOS, SwiftUI, Tutorial]
 ---
 
 Pada pembahasan sebelumnya, kita sudah membahas bagaimana membuat sebuah model, sekarang kita masuk kepembahasan yang lebih menarik lagi, yaitu conversi json menjadi object pojo yang sudah kita buat.

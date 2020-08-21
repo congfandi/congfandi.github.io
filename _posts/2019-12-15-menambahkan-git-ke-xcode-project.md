@@ -3,7 +3,7 @@ title: Menambahkan Git kedalam XCODE Project
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, IOS, XCODE, Tutorial,GIT]
+tags: [Developer, Xcode, Tutorial, Git]
 ---
 
 

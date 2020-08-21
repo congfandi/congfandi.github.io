@@ -3,7 +3,7 @@ title: Menambahkan akun Git kedalam XCODE
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, IOS, SWIFTUI, Tutorial, GIT]
+tags: [Developer, Xcode, Tutorial, Git]
 ---
 
 

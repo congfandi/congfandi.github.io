@@ -3,7 +3,7 @@ title: Mengganti Domain Github page dengan domain sendiri
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, GIHUB, DOMAIN, Tutorial]
+tags: [Developer, Github, Domain, Tutorial]
 ---
 
 Tulisan ini request dari teman saya, tentang gimana cara set DNS github page dengan domain sendiri,

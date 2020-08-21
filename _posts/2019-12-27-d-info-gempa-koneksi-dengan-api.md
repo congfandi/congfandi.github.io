@@ -3,7 +3,7 @@ title: Info Gempa - Koneksi dengan API
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, IOS, SWIFTUI, Tutorial]
+tags: [Developer, iOS, SwiftUI, Tutorial]
 ---
 
 Kita sudah selesai membuat membuat tampilan aplikasi, saatnya kita membuat koneksi dengan real data dengan menggunakan API

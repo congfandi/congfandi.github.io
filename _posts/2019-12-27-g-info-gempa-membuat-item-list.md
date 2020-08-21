@@ -3,7 +3,7 @@ title: Info Gempa - Membuat Item List
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, IOS, SWIFTUI, Tutorial]
+tags: [Developer, iOS, SwiftUI, Tutorial]
 ---
 
 Pada tutorial kali ini, kita akan membuat item list pada halaman utama aplikasi
