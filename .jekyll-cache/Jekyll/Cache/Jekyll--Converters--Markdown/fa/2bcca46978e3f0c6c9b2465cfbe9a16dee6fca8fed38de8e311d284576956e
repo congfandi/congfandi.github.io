@@ -1,0 +1,56 @@
+I"<p>Hallo guys, kali ini saya mau share tentang filter AWS logging , ini sangat bermanfaat bagi kalian yang sedang menggunakan AWS sebagai server kalian,
+<!--more--> <br />
+oke kita langsung saja pada pembahasan,</p>
+
+<p>sebagai contoh kasus kita memiliki logging dengan type json seperti dibawah ini</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+
+</span><span class="nl">"statusCode"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="mi">200</span><span class="p">,</span><span class="w">
+
+</span><span class="nl">"message"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">"succes"</span><span class="p">,</span><span class="w">
+
+</span><span class="nl">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+
+           </span><span class="nl">"resultCode"</span><span class="p">:</span><span class="mi">120</span><span class="p">,</span><span class="w">
+
+     </span><span class="p">}</span><span class="w">
+
+ </span><span class="nl">"result"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+
+                  </span><span class="p">{</span><span class="w">
+
+                     </span><span class="nl">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+
+                  </span><span class="p">}</span><span class="w">
+
+              </span><span class="p">]</span><span class="w">
+
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Untuk memfilter berdasarkan <code class="language-plaintext highlighter-rouge">statusCode</code> saja maka yang harus diketik pada filter seperti dibawah ini</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="err">$.statusCode</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">200</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Untuk memfilter berdasarkan <code class="language-plaintext highlighter-rouge">resultCode</code></p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="err">$.data.resultCode</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">120</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Untuk memfilter berdasarkan resultnya, maka yang harus diketik adalah</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="err">$.result</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="err">.id</span><span class="w"> </span><span class="err">=</span><span class="w"> </span><span class="mi">12</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Sekian tutorial kali ini semoga bermanfaat.</p>
+
+<p>Jika ada yang mau didiskusikan silahkan hubungi saya lewat semua social media yang saya sertakan di blog ini.</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+<p><b>Posted By : <a href="https://thengoding.com/resume">Cong Fandi</a></b></p>
+:ET

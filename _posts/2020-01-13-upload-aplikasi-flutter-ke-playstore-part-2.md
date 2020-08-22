@@ -64,3 +64,7 @@ Sekian sobat ngoding tentang bagaimana cara mengupload aplikasi pada google Play
 jika ada yang mau didiskusikan silahkan dapat menghubungi saya menggunakan semua social media yang saya sertkan di blog pribadi ini
 
 >Usaha yang disandarkan padanya doa, tidak akan pernah berkhianat<small> - Penulis</small>
+
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

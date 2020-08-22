@@ -1,0 +1,101 @@
+I"<p>Pada pembahasan sebelumnya, kita sudah membahas bagaimana membuat sebuah model, sekarang kita masuk kepembahasan yang lebih menarik lagi, yaitu conversi json menjadi object pojo yang sudah kita buat.
+<!--more--></p>
+
+<h2 id="daftar-isi">Daftar Isi</h2>
+
+<p><a href="https://thengoding.com/2019/12/27/j-info-gempa-daftar-isi/">Daftar Isi</a></p>
+
+<h2 id="spesifikasi-aplikasi">Spesifikasi APlikasi</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Spesifikasi</th>
+      <th style="text-align: center">Keterangan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Bahasa</td>
+      <td style="text-align: center">Swift 5</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Framework</td>
+      <td style="text-align: center">SwiftUI</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Editor/Tool</td>
+      <td style="text-align: center">Xcode 11.3</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Platform</td>
+      <td style="text-align: center">IOS</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="langkah---langkah">Langkah - langkah</h2>
+
+<ol>
+  <li>
+    <p>Buka file <code class="language-plaintext highlighter-rouge">NetworkingManager.swift</code> yang sudah kita buat pada pembahasan <a href="https://thengoding.com/2019/12/27/6-info-gempa-koneksi-dengan-api/">Koneksi API</a></p>
+  </li>
+  <li>
+    <p>Edit file tersebut</p>
+
+    <h2 id="before">Before</h2>
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">import</span> <span class="kt">Foundation</span>
+      <span class="kd">class</span> <span class="kt">NetworkingManager</span><span class="p">{</span>
+             
+        
+          <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+                 
+              <span class="k">guard</span> <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span> <span class="p">:</span> <span class="s">"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span><span class="k">return</span><span class="p">}</span>
+                 
+              <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span><span class="n">url</span><span class="p">){</span>
+                  <span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">)</span> <span class="k">in</span>
+                  <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span><span class="k">return</span><span class="p">}</span>
+                  <span class="nf">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+              <span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
+                 
+          <span class="p">}</span>
+      <span class="p">}</span>
+
+</code></pre></div>    </div>
+
+    <h2 id="after">After</h2>
+    <div class="language-swift highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">import</span> <span class="kt">Foundation</span>
+      <span class="kd">class</span> <span class="kt">NetworkingManager</span><span class="p">:</span> <span class="kt">ObservableObject</span> <span class="p">{</span>
+          <span class="kd">@Published</span> <span class="k">var</span> <span class="nv">dataList</span> <span class="o">=</span> <span class="kt">QuakeAPIList</span><span class="p">(</span><span class="nv">features</span> <span class="p">:</span> <span class="p">[])</span>
+             
+          <span class="nf">init</span><span class="p">()</span> <span class="p">{</span>
+                 
+              <span class="k">guard</span> <span class="k">let</span> <span class="nv">url</span> <span class="o">=</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span> <span class="p">:</span> <span class="s">"https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"</span><span class="p">)</span> <span class="k">else</span> <span class="p">{</span><span class="k">return</span><span class="p">}</span>
+                 
+              <span class="kt">URLSession</span><span class="o">.</span><span class="n">shared</span><span class="o">.</span><span class="nf">dataTask</span><span class="p">(</span><span class="nv">with</span><span class="p">:</span><span class="n">url</span><span class="p">){</span>
+                  <span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">_</span><span class="p">,</span><span class="n">_</span><span class="p">)</span> <span class="k">in</span>
+                  <span class="k">guard</span> <span class="k">let</span> <span class="nv">data</span> <span class="o">=</span> <span class="n">data</span> <span class="k">else</span> <span class="p">{</span><span class="k">return</span><span class="p">}</span>
+                  <span class="k">let</span> <span class="nv">dataList</span> <span class="o">=</span> <span class="k">try!</span> <span class="kt">JSONDecoder</span><span class="p">()</span><span class="o">.</span><span class="nf">decode</span><span class="p">(</span><span class="kt">QuakeAPIList</span><span class="o">.</span><span class="k">self</span><span class="p">,</span><span class="nv">from</span><span class="p">:</span><span class="n">data</span><span class="p">)</span>
+                  <span class="kt">DispatchQueue</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">async</span><span class="p">{</span>
+                      <span class="k">self</span><span class="o">.</span><span class="n">dataList</span> <span class="o">=</span> <span class="n">dataList</span>
+                      <span class="nf">print</span><span class="p">(</span><span class="n">dataList</span><span class="o">.</span><span class="n">features</span><span class="p">)</span>
+                  <span class="p">}</span>
+              <span class="p">}</span><span class="o">.</span><span class="nf">resume</span><span class="p">()</span>
+                 
+          <span class="p">}</span>
+      <span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Conversi selesai namun kita belum bisa melihat hasil dari aplikasi kita</p>
+  </li>
+</ol>
+
+<p>Bagaimana, gampang bukan pemrograman swift :-) . yang susah itu perangkatnya .. heeee…</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+<p><b>Posted By : <a href="https://thengoding.com/resume">Cong Fandi</a></b></p>
+:ET

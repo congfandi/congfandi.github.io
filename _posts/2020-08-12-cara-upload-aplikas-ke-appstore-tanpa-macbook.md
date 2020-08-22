@@ -84,3 +84,6 @@ Semoga ngoding kalian menyenangkan :-).
 
 
 >Jika kode kalian berjalan dengan baik, maka biarkanlah<small> - Steve Jobs</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

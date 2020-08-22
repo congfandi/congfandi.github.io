@@ -1,0 +1,325 @@
+I"sr<p><img src="/../img/06-04-2019/gift2.gif" alt="Cover" />
+Pada tutorial kali ini, kita akan mempercantik tampilan Welcome Screen. Kita langsung saja pada tutorialnya.
+<!--more--></p>
+
+<p>Langkah pertama, kita akan menambahkan icon indicator, yaitu tanda halaman yang sedang aktif :</p>
+
+<ol>
+  <li>Tambahkan icon titik warna <em>grey</em> dan warna <em>putih</em>
+    <ul>
+      <li>Klik kanan pada package <em><code class="language-plaintext highlighter-rouge">res/drawable</code></em></li>
+      <li>Pilih <em><code class="language-plaintext highlighter-rouge">New -&gt; Vector Asset</code></em></li>
+      <li>Pilih icon <em><code class="language-plaintext highlighter-rouge">ic_fiber_manual_record_black_24dp</code></em></li>
+      <li>Ganti nama menjadi <em><code class="language-plaintext highlighter-rouge">ic_indicator_grey.xml</code></em> kemudian ganti warnanya menjadi grey</li>
+      <li>Lakukan langkah yang sama dan ganti namanya menjadi <em><code class="language-plaintext highlighter-rouge">ic_indicator_white.xml</code></em> dan ubah warna menjadi warna putih</li>
+    </ul>
+  </li>
+  <li>Buka file <em><code class="language-plaintext highlighter-rouge">activity_welcome.xml</code></em>, kemudian tambahkan kode berikut
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="nt">&lt;LinearLayout</span>
+     <span class="na">android:layout_above=</span><span class="s">"@id/btn_order_now"</span>
+     <span class="na">android:id=</span><span class="s">"@+id/indicator"</span>
+     <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+     <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+     <span class="na">android:layout_marginBottom=</span><span class="s">"30.0dp"</span>
+     <span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+     <span class="na">android:orientation=</span><span class="s">"horizontal"</span><span class="nt">&gt;</span>
+
+             <span class="nt">&lt;ImageView</span>
+                 <span class="na">android:id=</span><span class="s">"@+id/indictor1"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"15dp"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"15dp"</span>
+                 <span class="na">android:src=</span><span class="s">"@drawable/ic_indicator_grey"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;ImageView</span>
+                 <span class="na">android:id=</span><span class="s">"@+id/indictor2"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"15dp"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"15dp"</span>
+                 <span class="na">android:src=</span><span class="s">"@drawable/ic_indicator_grey"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;ImageView</span>
+                 <span class="na">android:id=</span><span class="s">"@+id/indictor3"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"15dp"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"15dp"</span>
+                 <span class="na">android:src=</span><span class="s">"@drawable/ic_indicator_grey"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;/LinearLayout&gt;</span>
+
+     <span class="nt">&lt;Button</span>
+         <span class="na">android:layout_marginLeft=</span><span class="s">"24.0dp"</span>
+         <span class="na">android:layout_marginRight=</span><span class="s">"24.0dp"</span>
+         <span class="na">android:id=</span><span class="s">"@+id/btn_order_now"</span>
+         <span class="na">android:layout_marginBottom=</span><span class="s">"30.0dp"</span>
+         <span class="na">android:layout_alignParentBottom=</span><span class="s">"true"</span>
+         <span class="na">android:text=</span><span class="s">"Order Now"</span>
+         <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+         <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+         <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span> <span class="nt">/&gt;</span>
+</code></pre></div>    </div>
+    <p>pada preview, harusnya tampil seperti gambar 1.
+<img src="/../img/06-04-2019/gambar1.png" alt="Gambar 1" />
+<em>Gambar 1</em></p>
+  </li>
+</ol>
+
+<p><strong>Mempercantik tombol <code class="language-plaintext highlighter-rouge">ORDER NOW</code></strong></p>
+
+<p>untuk mempercantik tombol order now, kita membutuhkan sebuah backgound, untuk itu kita akan membuat background terleibh dahulu, caranya :</p>
+<ol>
+  <li>Klik kanan pada package <em><code class="language-plaintext highlighter-rouge">res -&gt; drawable</code></em></li>
+  <li>Pilih <em><code class="language-plaintext highlighter-rouge">New -&gt; Drawable resource file</code></em></li>
+  <li>Beri nama <em><code class="language-plaintext highlighter-rouge">background_tombol</code></em></li>
+  <li>
+    <p>Buka dan ganti kodenya menjadi seperti ini</p>
+
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+         <span class="nt">&lt;shape</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+             <span class="na">android:shape=</span><span class="s">"rectangle"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;solid</span> <span class="na">android:color=</span><span class="s">"#FF9800"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;corners</span> <span class="na">android:bottomRightRadius=</span><span class="s">"24dp"</span>
+                 <span class="na">android:bottomLeftRadius=</span><span class="s">"24dp"</span>
+                 <span class="na">android:topRightRadius=</span><span class="s">"24dp"</span>
+                 <span class="na">android:topLeftRadius=</span><span class="s">"24dp"</span><span class="nt">/&gt;</span>
+         <span class="nt">&lt;/shape&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Tambahkan file yang telah dibuat kedalam tombol <em><code class="language-plaintext highlighter-rouge">Order Now</code></em> dengan cara menambahkan atribut baru kedalamnya</p>
+
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>         android:background="@drawable/background_tombol"
+</code></pre></div>    </div>
+  </li>
+  <li>Harusnya tampilan tombol <em><code class="language-plaintext highlighter-rouge">Order now</code></em> sudah berubah sekarang</li>
+</ol>
+
+<p><strong>Membuat Logic <code class="language-plaintext highlighter-rouge">Slider</code></strong></p>
+
+<p>membuat logic pada slider dihalaman welcome, caranya :</p>
+
+<ol>
+  <li>Buka file <em><code class="language-plaintext highlighter-rouge">WelcomeActivity.java</code></em></li>
+  <li>Tambahkan kode berikut
+    <div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      <span class="kd">public</span> <span class="kd">class</span> <span class="nc">WelcomeActivity</span> <span class="kd">extends</span> <span class="nc">AppCompatActivity</span> <span class="o">{</span>
+
+          <span class="kd">private</span> <span class="nc">ViewPager</span> <span class="n">viewPager</span><span class="o">;</span>
+          <span class="kd">private</span> <span class="nc">ImageView</span><span class="o">[]</span> <span class="n">indicators</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">ImageView</span><span class="o">[</span><span class="mi">3</span><span class="o">];</span>
+
+
+          <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setIndicators</span><span class="o">()</span> <span class="o">{</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">indictor1</span><span class="o">);</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">indictor2</span><span class="o">);</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">indictor3</span><span class="o">);</span>
+          <span class="o">}</span>
+
+          <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setIndicatorImage</span><span class="o">(</span><span class="kt">int</span> <span class="n">position</span><span class="o">)</span> <span class="o">{</span>
+              <span class="kt">int</span> <span class="n">iconWhite</span> <span class="o">=</span> <span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_indicator_white</span><span class="o">;</span>
+              <span class="kt">int</span> <span class="n">iconGrey</span> <span class="o">=</span> <span class="no">R</span><span class="o">.</span><span class="na">drawable</span><span class="o">.</span><span class="na">ic_indicator_grey</span><span class="o">;</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">0</span><span class="o">].</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">position</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">iconWhite</span> <span class="o">:</span> <span class="n">iconGrey</span><span class="o">);</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">1</span><span class="o">].</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">position</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">?</span> <span class="n">iconWhite</span> <span class="o">:</span> <span class="n">iconGrey</span><span class="o">);</span>
+              <span class="n">indicators</span><span class="o">[</span><span class="mi">2</span><span class="o">].</span><span class="na">setImageResource</span><span class="o">(</span><span class="n">position</span> <span class="o">==</span> <span class="mi">2</span> <span class="o">?</span> <span class="n">iconWhite</span> <span class="o">:</span> <span class="n">iconGrey</span><span class="o">);</span>
+          <span class="o">}</span>
+
+          <span class="kd">private</span> <span class="kt">void</span> <span class="nf">setViewPager</span><span class="o">()</span> <span class="o">{</span>
+              <span class="n">viewPager</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">viewpager</span><span class="o">);</span>
+              <span class="n">viewPager</span><span class="o">.</span><span class="na">setAdapter</span><span class="o">(</span><span class="k">new</span> <span class="nc">WelcomeAdapter</span><span class="o">(</span><span class="k">this</span><span class="o">));</span>
+              <span class="n">viewPager</span><span class="o">.</span><span class="na">addOnPageChangeListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">ViewPager</span><span class="o">.</span><span class="na">OnPageChangeListener</span><span class="o">()</span> <span class="o">{</span>
+                  <span class="nd">@Override</span>
+                  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageScrolled</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">,</span> <span class="kt">float</span> <span class="n">v</span><span class="o">,</span> <span class="kt">int</span> <span class="n">i1</span><span class="o">)</span> <span class="o">{</span>
+
+                  <span class="o">}</span>
+
+                  <span class="nd">@Override</span>
+                  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageSelected</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+                      <span class="n">setIndicatorImage</span><span class="o">(</span><span class="n">i</span><span class="o">);</span>
+
+                  <span class="o">}</span>
+
+                  <span class="nd">@Override</span>
+                  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onPageScrollStateChanged</span><span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">)</span> <span class="o">{</span>
+
+                  <span class="o">}</span>
+              <span class="o">});</span>
+              <span class="n">setIndicatorImage</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+          <span class="o">}</span>
+
+          <span class="nd">@Override</span>
+          <span class="kd">protected</span> <span class="kt">void</span> <span class="nf">onCreate</span><span class="o">(</span><span class="nc">Bundle</span> <span class="n">savedInstanceState</span><span class="o">)</span> <span class="o">{</span>
+              <span class="kd">super</span><span class="o">.</span><span class="na">onCreate</span><span class="o">(</span><span class="n">savedInstanceState</span><span class="o">);</span>
+              <span class="n">setContentView</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">layout</span><span class="o">.</span><span class="na">activity_welcome</span><span class="o">);</span>
+              <span class="n">setIndicators</span><span class="o">();</span>
+              <span class="n">setViewPager</span><span class="o">();</span>
+
+              <span class="c1">//tombol order now</span>
+              <span class="nc">Button</span> <span class="n">orderNow</span> <span class="o">=</span> <span class="n">findViewById</span><span class="o">(</span><span class="no">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">btn_order_now</span><span class="o">);</span>
+              <span class="n">orderNow</span><span class="o">.</span><span class="na">setOnClickListener</span><span class="o">(</span><span class="k">new</span> <span class="nc">View</span><span class="o">.</span><span class="na">OnClickListener</span><span class="o">()</span> <span class="o">{</span>
+                  <span class="nd">@Override</span>
+                  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onClick</span><span class="o">(</span><span class="nc">View</span> <span class="n">v</span><span class="o">)</span> <span class="o">{</span>
+                      <span class="n">startActivity</span><span class="o">(</span><span class="k">new</span> <span class="nc">Intent</span><span class="o">(</span><span class="nc">WelcomeActivity</span><span class="o">.</span><span class="na">this</span><span class="o">,</span><span class="nc">LoginActivity</span><span class="o">.</span><span class="na">class</span><span class="o">));</span>
+                  <span class="o">}</span>
+              <span class="o">});</span>
+          <span class="o">}</span>
+      <span class="o">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li>Kita akan menjelaskan maksud dari kode ini dikelas nanti.</li>
+  <li>Silahkan jalankan aplikasi, seharusnya sudah selesai untuk mempercantik halaman <em><code class="language-plaintext highlighter-rouge">Welcome</code></em> dan akan terlihat seperti gift dibawah
+   <img src="/../img/06-04-2019/cover.gif" alt="Gift" /></li>
+</ol>
+
+<p><strong>Mempercantik halaman login</strong></p>
+
+<p>halaman login dan register merupakan halaman yang sangat penting pada aplikasi ini, pada dasarnya tidak semua aplikasi membutuhkan halaman login dan halaman register.
+Caranya sebagai berikut :</p>
+
+<ol>
+  <li>Buka file <em><code class="language-plaintext highlighter-rouge">activity_login.xml</code></em></li>
+  <li>
+    <p>Tambahkan kode berikut</p>
+
+    <div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     <span class="cp">&lt;?xml version="1.0" encoding="utf-8"?&gt;</span>
+     <span class="nt">&lt;RelativeLayout</span> <span class="na">xmlns:android=</span><span class="s">"http://schemas.android.com/apk/res/android"</span>
+         <span class="na">xmlns:tools=</span><span class="s">"http://schemas.android.com/tools"</span>
+         <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+         <span class="na">android:layout_height=</span><span class="s">"match_parent"</span>
+         <span class="na">android:background=</span><span class="s">"#FFB752"</span>
+         <span class="na">tools:context=</span><span class="s">".views.LoginActivity"</span><span class="nt">&gt;</span>
+
+         <span class="nt">&lt;RelativeLayout</span>
+             <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+             <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span><span class="nt">&gt;</span>
+
+             <span class="nt">&lt;ImageView</span>
+                 <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_margin=</span><span class="s">"30.0dp"</span>
+                 <span class="na">android:src=</span><span class="s">"@drawable/ic_arrow_back_black_24dp"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;TextView</span>
+                 <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+                 <span class="na">android:layout_marginTop=</span><span class="s">"30.0dp"</span>
+                 <span class="na">android:text=</span><span class="s">"Sig In"</span>
+                 <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span> <span class="nt">/&gt;</span>
+         <span class="nt">&lt;/RelativeLayout&gt;</span>
+
+         <span class="nt">&lt;LinearLayout</span>
+
+             <span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+             <span class="na">android:gravity=</span><span class="s">"center"</span>
+             <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+             <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span>
+             <span class="na">android:layout_alignParentBottom=</span><span class="s">"true"</span>
+             <span class="na">android:layout_margin=</span><span class="s">"24.0dp"</span>
+             <span class="na">android:orientation=</span><span class="s">"vertical"</span><span class="nt">&gt;</span>
+             <span class="nt">&lt;TextView</span>
+                 <span class="na">android:textSize=</span><span class="s">"40.0dp"</span>
+                 <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                 <span class="na">android:layout_centerHorizontal=</span><span class="s">"true"</span>
+                 <span class="na">android:text=</span><span class="s">"FoodBank"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_marginBottom=</span><span class="s">"100.0dp"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;EditText</span>
+                 <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span>
+                 <span class="na">android:layout_gravity=</span><span class="s">"center"</span>
+                 <span class="na">android:background=</span><span class="s">"@drawable/background_edittext"</span>
+                 <span class="na">android:gravity=</span><span class="s">"center"</span>
+                 <span class="na">android:hint=</span><span class="s">"Email Address"</span>
+                 <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;EditText</span>
+                 <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span>
+                 <span class="na">android:layout_gravity=</span><span class="s">"center"</span>
+                 <span class="na">android:layout_marginTop=</span><span class="s">"20.0dp"</span>
+                 <span class="na">android:background=</span><span class="s">"@drawable/background_edittext"</span>
+                 <span class="na">android:gravity=</span><span class="s">"center"</span>
+                 <span class="na">android:hint=</span><span class="s">"Password"</span>
+                 <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;Button</span>
+                 <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                 <span class="na">android:text=</span><span class="s">"SIGN IN"</span>
+                 <span class="na">android:background=</span><span class="s">"@drawable/background_tombol"</span>
+                 <span class="na">android:layout_marginTop=</span><span class="s">"20.0dp"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"match_parent"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span> <span class="nt">/&gt;</span>
+
+             <span class="nt">&lt;LinearLayout</span>
+                 <span class="na">android:layout_marginTop=</span><span class="s">"10.0dp"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;TextView</span>
+                     <span class="na">android:textColor=</span><span class="s">"#000000"</span>
+                     <span class="na">android:text=</span><span class="s">"Don't have account?"</span>
+                     <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                     <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+                 <span class="nt">&lt;TextView</span>
+                     <span class="na">android:id=</span><span class="s">"@+id/txt_register"</span>
+                     <span class="na">android:layout_marginLeft=</span><span class="s">"10.0dp"</span>
+                     <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                     <span class="na">android:text=</span><span class="s">"Register"</span>
+                     <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                     <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;/LinearLayout&gt;</span>
+     <span class="nt">&lt;TextView</span>
+         <span class="na">android:layout_marginTop=</span><span class="s">"20.0dp"</span>
+         <span class="na">android:layout_marginBottom=</span><span class="s">"20.0dp"</span>
+         <span class="na">android:text=</span><span class="s">"OR"</span>
+         <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+         <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;LinearLayout</span>
+                 <span class="na">android:layout_marginTop=</span><span class="s">"10.0dp"</span>
+                 <span class="na">android:layout_width=</span><span class="s">"wrap_content"</span>
+                 <span class="na">android:layout_height=</span><span class="s">"wrap_content"</span><span class="nt">&gt;</span>
+                 <span class="nt">&lt;Button</span>
+                     <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                     <span class="na">android:background=</span><span class="s">"@drawable/background_facebook"</span>
+                     <span class="na">android:text=</span><span class="s">"F"</span>
+                     <span class="na">android:layout_width=</span><span class="s">"80.0dp"</span>
+                     <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span> <span class="nt">/&gt;</span>
+                 <span class="nt">&lt;Button</span>
+                     <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                     <span class="na">android:text=</span><span class="s">"G+"</span>
+                     <span class="na">android:background=</span><span class="s">"@drawable/background_google"</span>
+                     <span class="na">android:layout_marginRight=</span><span class="s">"16.0dp"</span>
+                     <span class="na">android:layout_marginLeft=</span><span class="s">"16.0dp"</span>
+                     <span class="na">android:layout_width=</span><span class="s">"80.0dp"</span>
+                     <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span> <span class="nt">/&gt;</span>
+                 <span class="nt">&lt;Button</span>
+                     <span class="na">android:textColor=</span><span class="s">"#FFFFFF"</span>
+                     <span class="na">android:background=</span><span class="s">"@drawable/background_twitter"</span>
+                     <span class="na">android:text=</span><span class="s">"T"</span>
+                     <span class="na">android:layout_width=</span><span class="s">"80.0dp"</span>
+                     <span class="na">android:layout_height=</span><span class="s">"40.0dp"</span> <span class="nt">/&gt;</span>
+             <span class="nt">&lt;/LinearLayout&gt;</span>
+         <span class="nt">&lt;/LinearLayout&gt;</span>
+     <span class="nt">&lt;/RelativeLayout&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li><em><code class="language-plaintext highlighter-rouge">Buatlah tulisan </code> <strong>Register</strong> <code class="language-plaintext highlighter-rouge">dapat di klik dan arahkan fungsinya untuk membuka halaman register</code></em> (Ini challenge untuk temen-temen)</li>
+  <li>
+    <p>tampilan login seharusnya seperti gambar 2
+<img src="/../img/06-04-2019/gambar2.png" alt="Gambar2" /></p>
+  </li>
+  <li>Untuk file <code class="language-plaintext highlighter-rouge">background_facebook.xml</code> , <code class="language-plaintext highlighter-rouge">background_google.xml</code>  dan <code class="language-plaintext highlighter-rouge">background_twitter.xml</code>  silahkan dibuat sesuai dengan yang kalian sukai.</li>
+</ol>
+
+<p><strong>Mempercantik halaman Register</strong></p>
+
+<p>Silahkan percantik halaman register sesuai dengan yang kalian sukai, punya saya, saya buat seperti gambar 3
+<img src="/../img/06-04-2019/gambar3.png" alt="Gambar 3" /></p>
+
+<p>Hasil Akhir dari tutorial kali ini dapat dilihat pada gif dibawah</p>
+
+<p><img src="/../img/06-04-2019/gift2.gif" alt="Gift" /></p>
+
+<p>Ada banyak hal yang belum saya sampaikan pada tulisan ini, kita bahasnya dikelas ya, jika ada yang belum faham monggo ditanyakan.</p>
+
+<p>Oke sekian dari saya, maaf atas kesalahan dan ketidak sempurnaan modulnya, sampai ketemu dikelas.</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+<p><b>Posted By : <a href="https://thengoding.com/resume">Cong Fandi</a></b></p>
+:ET

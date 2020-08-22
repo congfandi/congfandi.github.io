@@ -80,8 +80,6 @@ Bagi kalian yang belum lolos semangat ya,, ingat ini, devicenya ditahun depan le
 <br>
 
 >Tidak ada usaha yang sia-sia, semuanya adalah pelajaran yang dapat membawa kedewasaan<small> - {{site.author}}</small>
-<br>
-<br>
 
-<b>Posted By : <a href="{{site.posted1-url}}">{{site.posted1}}</a></b>
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>
  

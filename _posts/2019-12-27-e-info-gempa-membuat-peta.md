@@ -102,3 +102,6 @@ Pada tutorial kali ini, kita akan membuat detail halaman yang merupakan tampilan
    ![map]({{ site.baseurl }}/img/191227/map.png)
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

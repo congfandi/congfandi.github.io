@@ -1,0 +1,85 @@
+I"�<p><em>Cara Upload Aplikasi Ke AppStore tanpa Macbook</em></p>
+
+<p>Bismillah, Kali ini saya ingin berbagi tentang bagaimana sih cara upload aplikasi ke appstore tanpa macbook, khusunya bagi pengguna flutter developer. Tutorial kali ini lebih dikhususkan bagi pengguna flutter sebeanarnya dan sebagai pengetahuan bagi temen temen bahwa appstore dan playstore itu bisa upload aplikasi tanpa harus menggunakan website resmi mereka dan ini legal ya.
+<!--more--></p>
+
+<p>Sebelum kita mulai tutorialnya, ada beberapa hal yang harus kalian ketahui terlebih dahulu yaitu tentang <a href="https://codemagic.io/start/">Codmagic</a>, tool ini yang akan kita gunakan untuk upload aplikasi kita ke appstore. Tool ini merupakan tool yang biasa digunakan untuk proses CI/CD oleh seorang pengembang dan tool ini dapat mempercepat proses development dan dsitribusi aplikasi kita serta didalam codemagic juga terdapat tool untuk testing.
+bagi kalian yang mau upload aplikasi ke appstore secara manual (dari xcode) bisa mengunjungi tulisan saya yang ini <a href="https://thengoding.com/2020/01/15/upload-aplikasi-flutter-ke-appstore-part-1/">Part1</a>,<a href="https://thengoding.com/2020/01/16/upload-aplikasi-flutter-ke-appstore-part-2/">Part2</a> and <a href="https://thengoding.com/2020/01/16/upload-aplikasi-flutter-ke-appstore-part-3/">part3</a>.</p>
+
+<h2 id="persyaratan-utama-sebelum-memulai">Persyaratan utama sebelum memulai</h2>
+
+<ul>
+  <li>Sudah punya project flutter yang sudah di integrasikan dengan version control(gitlab,github,bitbucket,etc)</li>
+  <li>Sudah punya akun apple developer</li>
+  <li>sebuah macbook untuk integrasi awal (sekali aja pas setup)</li>
+</ul>
+
+<h2 id="langkah---langkah-setupa">Langkah - Langkah setupa</h2>
+
+<ol>
+  <li>Buka situs <a href="https://codemagic.io/start/">Codmagic</a></li>
+  <li>Login menggunakan akun sobat ngoding yang terhubung dengan project flutternya</li>
+  <li>Pilih Project flutter yang hendak diupload dengan Codemagic</li>
+  <li>
+    <p>Setting untuk trigger uploadnya, dan berikut penjelasannya</p>
+
+    <p><img src="/img/200812/codemagic.png" alt="Code Magic" /></p>
+  </li>
+</ol>
+
+<p><em>a. Build Triggers</em></p>
+
+<p>Disini temen2 bisa setting untuk build ke appstore itu pas kapan, misal upload ke appstore saat ada pull request ke branch master, atau kalian bisa set * agar setiap ada aktivitas apapun akan diupload ke appstore</p>
+
+<p><em>b. Environment Variables</em></p>
+
+<p>Disni bisa teman teman gunakan untuk setup kondisi tertentu, saran saya untuk sementara temen2 kosongi dulu</p>
+
+<p><em>c. Dependency Caching</em></p>
+
+<p>Untuk awal, temen temen kosongin aja dulu, untuk explorenya bisa temen2 pelajari di situs codemagic langsung</p>
+
+<p><em>d. Test</em></p>
+
+<p>Ini digunakan untuk testing sebelum di upload ke appstore,, misal temen2 mengharuskan aplikasi harus lolos testing dulu sebelum masuk ke appstore bisa di konfig disini ya, tapi kodenya dari kalian sendiri ada pada project/test di project flutter temen2, saran saya dikosongi atau jangan digunakan jika temen2 tidak menulis kode testing sama sekali.</p>
+
+<p><em>e. Build</em></p>
+
+<p>nah, disini yang urgent temen2. pada menu ini temen2 bisa memilih jenis xcode yang mau digunakan untuk mendeploy aplikasi kita… karena hasil deploy dari sinilah yang akan digunakan untuk diupload ke appstore..</p>
+
+<p>Karena bagian ini bagian terpenting, saya bahas agak panjang yaaa…</p>
+
+<p>Dimenu ini temen2 bisa memilih mau dibuild versi apa aja ? ada android ios dan web. temen2 tinggal aktifkan aja centangannya</p>
+
+<p>Disini temen2 juga bisa memilih type nya, baik itu debug ataupun release dan profile</p>
+
+<p><em>g. Publish</em></p>
+
+<p><img src="/img/200812/publish.png" alt="Code Magic" /></p>
+
+<p>Nah yang terakhir temen2 dan yang paling bisa menetukan yang kalian sukses atau gagal.. perhatikan gambar diatas, yang saya berikan kotak merah itu bagian terpentignya.</p>
+
+<h2 id="ios-code-signing">IOS Code Signing</h2>
+
+<p>Temen2 bisa mendapatkan IOS Code Signing (Code signing certificate,Provisioning profiles) bisa temen2 dapatkan dari <a href="https://developer.apple.com/account/resources/certificates/list">Apple Developer</a> tapi ingat ya, kalian harus sudah membeli akun apple dev ya baru kalian bisa membuat IOS code signing.. dan untuk membuat Signing Certificate temen temen harus punya macbook untuk membuatnya.</p>
+
+<p>untuk tutorial ini akan saya buat terpisah teman2. ditunggu saja ya :-) .</p>
+
+<h2 id="app-store-connect">App Store Connect</h2>
+
+<p>Masukan apple id developer temen2 dan jangan lupa ya aktifkan App Password,</p>
+
+<p>untuk mengaktifkannya, temen2 bisa lakukan di <a href="https://appleid.apple.com/account/manage">Apple ID</a>, masuk ke menu <em>Keamanan</em> dan aktifkan <em>KATA SANDI KHUSUS APP</em> nah, dari sini kalian bakalan dapat kata sandi untuk aplikasi temen2,, silahkan masukan ke codemagic kembali.</p>
+
+<p>Jika tidak ada yang gagal dalam proses setup, artinya aplikasi temen2 siap diupload ke appstore tanpa menggunakan macbook..</p>
+
+<p>Sekian tutorial kali ini.. moga bermanfaat ya temen2 :-) ..</p>
+
+<p>Semoga ngoding kalian menyenangkan :-).</p>
+
+<blockquote>
+  <p>Jika kode kalian berjalan dengan baik, maka biarkanlah<small> - Steve Jobs</small></p>
+</blockquote>
+
+<p><b>Posted By : <a href="https://thengoding.com/resume">Cong Fandi</a></b></p>
+:ET

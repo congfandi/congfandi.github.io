@@ -109,3 +109,6 @@ oh iya, hal lain yang membuat saya tambah yakin kalau saya jadi korban adalah sa
 
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

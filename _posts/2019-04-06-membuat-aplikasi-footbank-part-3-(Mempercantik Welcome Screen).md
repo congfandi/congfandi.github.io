@@ -318,3 +318,6 @@ Oke sekian dari saya, maaf atas kesalahan dan ketidak sempurnaan modulnya, sampa
 
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

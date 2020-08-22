@@ -55,3 +55,6 @@ Nah, cukup sekian sobat tips dari thengoding untuk kali ini, semoga ngodignmu me
 Akhir kata, See You On The Next Chapter!
 
 >Ngoding itu bakalan indah pada waktunya!<small> - The Ngoding</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

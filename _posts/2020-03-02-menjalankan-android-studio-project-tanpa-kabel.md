@@ -49,3 +49,6 @@ Sejauh yang saya gunakan tool ini tidak memiliki kendala, hanya saja jika laptop
 Oke selamat mencoba dan sampai jumpa di tutorial selanjutnya :-) .
 
 >Karena aku bukan orang yang pasti bisa, aku akan berusaha untuk terbiasa agar aku biasa menjadi bisa :-)<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

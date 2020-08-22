@@ -3,7 +3,7 @@ title: Android Studio - Mengganti nama package
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, Flutter, Android, Tips]
+tags: [Developer, Android Studio, Tips]
 ---
 
 Hola Sobat ngoding, setelah sebelumnya kita membahas tentang bagaimana cara mengganti nama project pada android studio project, kali ini thengoding akan membahas gimana sih cara mengganti nama package pada andriod studio project.
@@ -56,3 +56,6 @@ Sekian pembahasan pada tulisan ini, jika ada yang ingin bertanya bisa langsung j
 
 
 >Ngoding itu bukan bakat tapi minat, trust me!<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

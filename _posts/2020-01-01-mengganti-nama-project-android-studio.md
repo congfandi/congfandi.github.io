@@ -3,7 +3,7 @@ title: Android Studio - Mengganti nama project
 img: hipster.jpg
 layout: post
 fig-caption: Developer
-tags: [Developer, Flutter, Android, Tips]
+tags: [Developer , Android Studio, Tips]
 ---
 
 Halo sobat ngoding, awal tahun 2020 ini aku buka dengan tulisan sederhana ini... sebenanrnya hanya untuk mengisi waktu luang aja karena tanggal 1 pada liburan semua.
@@ -65,3 +65,6 @@ Selamat Ngoding :-D
 
 
 >Coding itu tidak pernah sempurna, karena yang sempurna itu adalah manusianya<small> - Penulis</small>
+
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

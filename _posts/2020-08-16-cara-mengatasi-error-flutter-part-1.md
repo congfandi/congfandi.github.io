@@ -78,3 +78,5 @@ Selanjutnya kita akan membahas pada widget Column.
 [Cara Mengatasi Error Flutter Part 2]({{site.url}}/2020/08/17/cara-mengatasi-error-flutter-part-2/)
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
+
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>
