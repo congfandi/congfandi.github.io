@@ -1,6 +1,6 @@
 ---
 title: Tips Membuat Custom Warna Flutter
-img: ../../img/200815/cover.jpg
+img: ../../img/200815/www.thengoding.com.jpg
 layout: post
 fig-caption: Developer
 tags: [Developer, Flutter, Tips, Mobile]
