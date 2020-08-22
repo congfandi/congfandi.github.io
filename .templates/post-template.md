@@ -8,6 +8,6 @@ tags: [kategori tulisan]
 
 <br>
 <br>
->Kode itu ibarat Cinta, Butuh dimengerti dan dafahami.. asik asik<small> - Penulis</small>
+>Sekedar ingin berbagi, dan bukan yang paling mampu<small> - Penulis</small>
 
-<b>Posted By : <a href="{{site.posted1-url}}">{{site.posted1}}</a></b>
+<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>
