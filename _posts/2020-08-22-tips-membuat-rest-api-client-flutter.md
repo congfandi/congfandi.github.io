@@ -2,6 +2,9 @@
 title: Tips Membuat Rest Api Client Flutter
 img: 200822/cover.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Flutter, Tips, Rest Api, Developer]
 ---
@@ -269,5 +272,3 @@ Cukup sekian kawan kawan tips flutter dari saya, semoga bermanfaat :-) ...
 <br>
 <br>
 >Kode itu ibarat Cinta, Butuh dimengerti dan dafahami.. asik asik<small> - Penulis</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

@@ -2,6 +2,9 @@
 title: Android Studio - Mengganti nama project 
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer , Android Studio, Tips]
 ---
@@ -67,4 +70,3 @@ Selamat Ngoding :-D
 >Coding itu tidak pernah sempurna, karena yang sempurna itu adalah manusianya<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

@@ -2,6 +2,9 @@
 title: Cara Mengatasi Error Pada Flutter Part 2
 img: 200817/crash2.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Tips, Mobile]
 ---
@@ -79,5 +82,3 @@ Pada contoh diatas tidak terdapat perbedaan karena panajang widgetnya sama yakni
 Selanjutnya pada part 3, kita akan membahas solusi list didalam list.
 
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

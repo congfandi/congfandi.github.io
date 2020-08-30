@@ -2,6 +2,9 @@
 title: Cara Mendapatkan SHA1 Android Debug dan Release
 img: 200822/www.thengoding.com.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Tutorial,Developer,Android]
 ---
@@ -97,5 +100,3 @@ Selamat mencoba sobat ngoding :-) ..
 <br>
 <br>
 >Koding dan error itu seperti sabun dan busa, beda tapi satu<small> - Penulis</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

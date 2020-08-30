@@ -2,6 +2,9 @@
 title: XCODE - Menambahkan apple developer certificate
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Tips]
 ---
@@ -70,4 +73,3 @@ Nah, sekian tutorial bagaimana memasukan certificate apple developer ke perangka
 >Cinta adalah alasan terbaik untuk memulai sesuatu, maka cintailah koding agar kamu bisa memulainya dengan persiapan terbaik<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

@@ -2,6 +2,9 @@
 title: Info Gempa - Daftar Isi
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, iOS, SwiftUI, Tutorial]
 ---
@@ -49,4 +52,3 @@ Kita akan membuat sebuah aplikasi tentang informasi gempa diseluruh dunia, untuk
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

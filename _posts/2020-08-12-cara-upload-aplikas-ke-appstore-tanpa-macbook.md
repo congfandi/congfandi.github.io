@@ -2,6 +2,9 @@
 title: Cara Upload Aplikasi Ke AppStore tanpa Macbook
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Tips, iOS, Iphone, Apple]
 ---
@@ -84,6 +87,3 @@ Semoga ngoding kalian menyenangkan :-).
 
 
 >Jika kode kalian berjalan dengan baik, maka biarkanlah<small> - Steve Jobs</small>
-
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

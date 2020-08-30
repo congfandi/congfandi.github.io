@@ -2,6 +2,9 @@
 title: Caraku Lolos Apple Developer Academi 2021
 img: 200821/thengoding.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: thengoding.com
 tags: [Apple, Apple Academi, Apple Developer]
 ---
@@ -80,6 +83,4 @@ Bagi kalian yang belum lolos semangat ya,, ingat ini, devicenya ditahun depan le
 <br>
 
 >Tidak ada usaha yang sia-sia, semuanya adalah pelajaran yang dapat membawa kedewasaan<small> - {{site.author}}</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>
  

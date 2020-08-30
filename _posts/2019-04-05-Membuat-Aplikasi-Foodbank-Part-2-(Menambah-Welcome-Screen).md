@@ -2,6 +2,9 @@
 title: Android Native Membuat aplikasi foodbank part 2 - Menambahkan welcome screen
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Android, JAVA, Tutorial]
 ---
@@ -278,4 +281,3 @@ Maaf apa bila ada typo kata atau ada bahasa yang menyinggung dan sampai jumpa di
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

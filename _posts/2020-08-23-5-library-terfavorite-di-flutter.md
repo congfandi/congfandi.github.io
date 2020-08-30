@@ -2,6 +2,9 @@
 title: 5 Librari Terfavorite di Flutter
 img: 200823/www.thengoding.com.jpeg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Flutter, Developer, Mobile, Android, iOS]
 ---
@@ -57,5 +60,3 @@ kasih aku tahu dikolom komentar yaaa ....
 <br>
 <br>
 >Tidak ada koding yang instant, semuanya butuh proses. Biarkan mie instant aja yang dapat dinikmati secara instant<small> - Penulis</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

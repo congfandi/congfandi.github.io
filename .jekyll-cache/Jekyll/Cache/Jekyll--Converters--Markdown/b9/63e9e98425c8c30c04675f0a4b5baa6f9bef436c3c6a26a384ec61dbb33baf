@@ -1,0 +1,92 @@
+I"ì<p>Pada pembahasan kali ini, kita akan mensimulasikan bagaimana caranya mengganti icon aplikasi di andriod studio project.
+<!--more--></p>
+
+<p>Terdapat bebagai macam cara yang bisa kita lakukan, namun disini penulis akan membagikan cara penulis dalam mengganti app icon dengan mudah dan gampang, serta langsung menjadi beberapa bagian ukuran layar.</p>
+
+<h2 id="langkah---langkah-manual">Langkah - langkah manual</h2>
+
+<ol>
+  <li>
+    <p>Buat File icon teman-teman dengan ukuran 36x36, 48x48, 72x72, 96x96, 144x144 and 192x192 boleh berformat <code class="language-plaintext highlighter-rouge">png</code> atau <code class="language-plaintext highlighter-rouge">jpg</code></p>
+  </li>
+  <li>
+    <p>Pada bagian <code class="language-plaintext highlighter-rouge">src/res</code> buat folder tambahan dengan nama <code class="language-plaintext highlighter-rouge">drawable-hdpi</code> , <code class="language-plaintext highlighter-rouge">drawable-mdpi</code> , <code class="language-plaintext highlighter-rouge">drawable-xhdpi</code>, <code class="language-plaintext highlighter-rouge">drawable-xxhdpi</code> dan <code class="language-plaintext highlighter-rouge">drawable-xxxhdpi</code></p>
+  </li>
+  <li>
+    <p>Masukan file icon yang sudah dibuat dengan formasi seperti dibawah ini</p>
+
+    <p>36x36 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable</code></p>
+
+    <p>48x48 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable-mdpi</code></p>
+
+    <p>72x72 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable-hdpi</code></p>
+
+    <p>96x96 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable-xhdpi</code></p>
+
+    <p>144x144 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable-xxhdpi</code></p>
+
+    <p>192x192 masukan ke folder <code class="language-plaintext highlighter-rouge">drawable-xxxhdpi</code></p>
+  </li>
+  <li>
+    <p>Terakhir, panggil nama icon teman-teman pada bagian <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code></p>
+
+    <pre><code class="language-manifest">      &lt;application
+             android:name="MyName"
+             android:label="MyApp"
+             android:icon="@drawable/icon_baru_saya"&gt;
+             .....
+             &lt;/application&gt;
+</code></pre>
+  </li>
+</ol>
+
+<h2 id="langkah---langkah-dengan-batch-drawable-inporter">Langkah - langkah dengan <code class="language-plaintext highlighter-rouge">Batch Drawable Inporter</code></h2>
+
+<p>dengan menggunakan <code class="language-plaintext highlighter-rouge">Batch drawable importer</code> kita tidak perlu membuat banyak file, cukup dengan sekali klik maka secara otomatis icon aplikasi kita menjadi 5 bagian dengan folder masing masing, caranya adalah sebagai berikut :</p>
+
+<ol>
+  <li>
+    <p>Buat Icon nya dengan ukuran 192x192 boleh berformat <code class="language-plaintext highlighter-rouge">png</code> atau <code class="language-plaintext highlighter-rouge">jpg</code></p>
+  </li>
+  <li>
+    <p>Install Plugin pada Android Studio dengan nama <code class="language-plaintext highlighter-rouge">Android Drawable Importer</code> , Untuk menginstall plugin pada android studio, teman-teman bisa klik menu <code class="language-plaintext highlighter-rouge">Preferences -&gt; Plugin</code> kemudian pada pencarian, ketikkan saja <code class="language-plaintext highlighter-rouge">Android Drawable importer</code> maka akan muncul drawable importer nya dan pilih install</p>
+  </li>
+  <li>
+    <p>Restart Android Studio</p>
+  </li>
+  <li>
+    <p>Klik kanan pada folder <code class="language-plaintext highlighter-rouge">res/drawable</code>, kemudian pilih <code class="language-plaintext highlighter-rouge">New</code></p>
+  </li>
+  <li>
+    <p>Setelah itu pilih <code class="language-plaintext highlighter-rouge">Batch Drawable Importer</code></p>
+  </li>
+  <li>
+    <p>Pilih Icon yang sudah dibuat, kemudian klik oke</p>
+  </li>
+  <li>
+    <p>Icon sudah menjadi beberapa bagian</p>
+  </li>
+  <li>
+    <p>Masukan nama icon teman-teman ke <code class="language-plaintext highlighter-rouge">AndroidManifest.xml</code> aplikasi pada bagian ini</p>
+  </li>
+</ol>
+
+<pre><code class="language-manifest">         &lt;application
+                android:name="MyName"
+                android:label="MyApp"
+                android:icon="@drawable/icon_baru_saya"&gt;
+                .....
+                &lt;/application&gt;
+</code></pre>
+
+<ol>
+  <li>Jalankan aplikasinya seharusnya icon aplikasi teman teman sudah berubah menjadi seperti yang teman teman buat.</li>
+</ol>
+
+<p>Sekian tutorial kali ini, sampai jumpa di tutorial berikutnya :-) â€¦.</p>
+
+<blockquote>
+  <p>Usaha itu bukan segalanya, karena dibalik kesuksesan pasti ada doa yang dipanjatkan<small> - Penulis</small></p>
+</blockquote>
+
+:ET

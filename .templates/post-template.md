@@ -1,13 +1,15 @@
 ---
-title: judul tulisan
-img: lokasi image
-layout: post
-fig-caption: Developer
-tags: [kategori tulisan]
+title: #judul postingan
+img:  #gambar postingan taruh di assets/img dan langsung call nama imagenya
+layout: post #default jangan diganti
+author: Cong Fandi #default me
+author-img : congfandi.jpeg #default me
+author-detail : iOS Developer, Android Developer, Web Developer # default me
+fig-caption: Developer #default me
+tags: # tags dalam array [Developer, Web, Tips]
 ---
 
 <br>
 <br>
 >Sekedar ingin berbagi, dan bukan yang paling mampu<small> - Penulis</small>
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

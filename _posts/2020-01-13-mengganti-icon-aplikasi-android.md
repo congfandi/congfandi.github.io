@@ -2,6 +2,9 @@
 title: Mengganti Icon Aplikasi Android
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Android, Tips]
 ---
@@ -87,4 +90,3 @@ Sekian tutorial kali ini, sampai jumpa di tutorial berikutnya :-) ....
 >Usaha itu bukan segalanya, karena dibalik kesuksesan pasti ada doa yang dipanjatkan<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

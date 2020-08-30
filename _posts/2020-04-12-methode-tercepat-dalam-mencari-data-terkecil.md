@@ -2,6 +2,9 @@
 title: Methode Tercepat dalam mencari data terkecil
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Riset, Tips]
 ---
@@ -304,4 +307,3 @@ Source Code dapat dilihat pada link [Github](https://github.com/congfandi/riset)
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

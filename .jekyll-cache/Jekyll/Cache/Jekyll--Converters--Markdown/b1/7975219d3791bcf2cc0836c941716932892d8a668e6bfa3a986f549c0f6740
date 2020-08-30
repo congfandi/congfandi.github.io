@@ -1,0 +1,81 @@
+I"<p>Halo sobat ngoding, awal tahun 2020 ini aku buka dengan tulisan sederhana ini… sebenanrnya hanya untuk mengisi waktu luang aja karena tanggal 1 pada liburan semua.
+<!--more-->
+Mengganti nama project pada android studio merupakan suatu tindakan yang perlu kamu tahu jika kamu adalah seorang developer android, kenapa begitu ? karena hal ini kamu butuhkan jika ternyata project yang kamu buat mengandung <code class="language-plaintext highlighter-rouge">typo</code> atau ternyata nama project yang sudah kamu tulis salah atau ingin menggantinya karena ada permintaan dari client.</p>
+
+<p>oke kita mulai saja langkah - langkahnya , namun seperti biasa kita tuliskan dulu simulasinya nya</p>
+
+<h2 id="simulasi">Simulasi</h2>
+
+<ol>
+  <li>
+    <p>Sudah ada project android studio</p>
+  </li>
+  <li>
+    <p>Mennganti nama project dari</p>
+
+    <p>Sebelumnya : <code class="language-plaintext highlighter-rouge">My APlication</code></p>
+
+    <p>Menjadi : <code class="language-plaintext highlighter-rouge">My Application</code></p>
+  </li>
+  <li>
+    <p>Kita mengganti karena ada typo tulisan</p>
+  </li>
+</ol>
+
+<h2 id="langkah---langkah">Langkah - Langkah</h2>
+
+<ol>
+  <li>
+    <p>Ganti Tab project menjadi <code class="language-plaintext highlighter-rouge">Project files</code></p>
+
+    <p><img src="/img/200101/tabproject.png" alt="TabProject" /></p>
+  </li>
+  <li>
+    <p>Klik kanan pada root project</p>
+  </li>
+  <li>
+    <p>Refactor dengan cara</p>
+
+    <ul>
+      <li>Klik kanan <code class="language-plaintext highlighter-rouge">Refactor</code> =&gt; <code class="language-plaintext highlighter-rouge">Rename</code> atau</li>
+    </ul>
+
+    <p><img src="/img/200101/refactor.png" alt="Rename" /></p>
+
+    <ul>
+      <li>Tekan secara bersamaan pada keyboard <code class="language-plaintext highlighter-rouge">Shift</code> + <code class="language-plaintext highlighter-rouge">F6</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>Ganti nama menjadi <code class="language-plaintext highlighter-rouge">MyApplication</code> dan pastikan untuk mencentang reference dan string name nya</p>
+
+    <p><img src="/img/200101/rename.png" alt="rename" /></p>
+  </li>
+  <li>
+    <p>Expand(Buka) <code class="language-plaintext highlighter-rouge">.idea</code> folder</p>
+  </li>
+  <li>
+    <p>Klik <code class="language-plaintext highlighter-rouge">.name</code> dan ganti menjadi <code class="language-plaintext highlighter-rouge">My Application</code></p>
+
+    <p><img src="/img/200101/dotname.png" alt="dotname" /></p>
+  </li>
+  <li>
+    <p>Klik <code class="language-plaintext highlighter-rouge">setting.gradle</code></p>
+  </li>
+  <li>
+    <p>Ganti <code class="language-plaintext highlighter-rouge">rootProject.name='My APlication'</code> menjadi <code class="language-plaintext highlighter-rouge">rootProject.name='My Application'</code></p>
+  </li>
+  <li>
+    <p>Terakhir restart android studio sobat ngoding dan, tara… berubahlah nama project kita</p>
+  </li>
+</ol>
+
+<p>Untuk pembahasan penggantian packagename, akan dibahas dipostingan selanjutnya, atau langsung aja klik <code class="language-plaintext highlighter-rouge">Next Post</code> pada akhir tuisan ini, akhir kata …</p>
+
+<p>Selamat Ngoding :-D</p>
+
+<blockquote>
+  <p>Coding itu tidak pernah sempurna, karena yang sempurna itu adalah manusianya<small> - Penulis</small></p>
+</blockquote>
+
+:ET

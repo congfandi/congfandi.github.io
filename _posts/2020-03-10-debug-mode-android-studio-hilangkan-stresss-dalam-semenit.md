@@ -2,6 +2,9 @@
 title: Debug Mode Android Studio hilangkan stress dalam semenit
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Android Studio, Tips]
 ---
@@ -61,4 +64,3 @@ Oke sobat ngoding cukup sekian dulu tulisan singkat saya kali ini, semoga berman
 >Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

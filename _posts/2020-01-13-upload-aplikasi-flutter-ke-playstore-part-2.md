@@ -2,6 +2,9 @@
 title: Upload Aplikasi Flutter ke Playstore Part 2
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Android, Tutorial]
 ---
@@ -67,4 +70,3 @@ jika ada yang mau didiskusikan silahkan dapat menghubungi saya menggunakan semua
 
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

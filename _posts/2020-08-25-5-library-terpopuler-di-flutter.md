@@ -1,9 +1,12 @@
 ---
 title: 5 Library Terpopuler di Flutter
 img: 200825/www.thengoding.com.jpg
-layout: post
 fig-caption: Developer
 tags: [Flutter, Developer, Mobile, Android, iOS]
+layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 ---
 
 Sudah bukan rahasia lagi kalau [Flutter](https://flutter.dev) makin diminati oleh para pengembang, terlepas dari alasan mereka masing masing memilih flutter daripada framework yang lain. Flutter adalah sebuah framework multi platform yang dibuat oleh google yang berfokus pada UI dan Animasi namun bisa juga untuk project besar yang mementingkan performa karena flutter mengklaim performa aplikasi yang dibuat dengan flutter tidak jauh dari native meskipun kalau diadu dari segi performa Native masig jauh lebi unggul ya.
@@ -64,5 +67,3 @@ Sekian dulu sobat tentang library terpopuler.. smapai jumpa di postingan selanju
 <br>
 <br>
 >Sebuah Apresiasi adalah suntikan semangat bagi kontent creator, so jangan lupa comment ya ...<small> - Penulis</small>
-
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

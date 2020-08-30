@@ -2,6 +2,9 @@
 title: Menjalankan Project Android Studio Tanpa Kabel
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Android Studio, Tips]
 ---
@@ -51,4 +54,3 @@ Oke selamat mencoba dan sampai jumpa di tutorial selanjutnya :-) .
 >Karena aku bukan orang yang pasti bisa, aku akan berusaha untuk terbiasa agar aku biasa menjadi bisa :-)<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

@@ -1,0 +1,53 @@
+I"9<p><em>Tips Memperkecil Ukuran Aplikias Flutter</em></p>
+
+<p>Hola sobat ngoding yang budiman.. masih semangat ngoding kan ? . Oke jadi kali ini saya mau nulis tentang pertanyaan yang sering muncul nih dikomunitas flutter indonesia dimana bnayak dari temen-temen komunitas bertanya bagaimana cara memperkecil ukuran aplikasi yang dibuat dengan flutter.
+<!--more--></p>
+
+<p>Sebenarnya, pada situs <a href="https://flutter.dev">flutter</a> sudah ada penjelasan tentang caranya, akan tetapi saya menyadari bahwa tidak semua orang memiliki kemampuan yang sama dalam menerima informasi. Ada yang dapat mnerima informasi dengan simulasi, ada juga dengan video dan ada juga yang lebih mudah menerima informasi dengan bentuk tulisan seperti ini, tentu saja kalian yang masih enak membaca tulisan ini adalah kalian yang masuk kedalam golongan yang ketiga, bener kan ? wkwwkwk… kalau <a href="https://thengoding.com">thengonding</a> sendiri sih bergantung ya.. kalau informasi itu bener2 baru, maka saya butuh lihat videonya agar mengerti step by step nya, tapi kalau informasi itu saya sudah mengerti sebelumnya dan hanya butuh improvement dari yang sudah saya ketahui maka saya lebih suka membaca dari pada menonton, karena membaca meskipun di skip2 dapat ketangkep maksud dan tujuannya, nah itu juga yang menjadi alasan saya membangun website sederhana ini. Well, saya stop dulu deh ngocehnya biar kita bisa langsung bahas pada inti permasalahannya.</p>
+
+<h1 id="tips-memperkecil-ukuran-aplikasi-flutter">Tips Memperkecil Ukuran Aplikasi flutter</h1>
+
+<h2 id="1-menghapus-unused-resource">1 Menghapus Unused Resource</h2>
+<p>Menghapus unuse resource dapat dilakukan dengan 2 metode, manual dan otomatis, cara manual dapat dilakukan dengan menghapus sendiri file file yang tidak kalian butuhkan dan cara otomatis dapat kalian lakukan dengan menggunakan <em>Android Studio</em>. Caranya adalah</p>
+<ol>
+  <li>Klik Kanan pada Project</li>
+  <li>Klik Menu <em>Refactor</em></li>
+  <li>Klik Menu <em>Remove Unused Resources</em></li>
+</ol>
+
+<h2 id="2-melakukan-optimse-import">2 Melakukan Optimse Import</h2>
+<p>Tips ini tidak banyak berpengaruh sih pada ukuran app temen temen, tapi tips ini dapat melancarkan serang jantung pada aplikasi temen2 :-D, caranya ada 2, yang pertama adalah dengan manual dan otomatis, otomatis caranya dengan menggunakan <em>Android Studio</em></p>
+<ol>
+  <li>Klik kanan pada folder <em>lib</em></li>
+  <li>Klik <em>Optimise Import</em></li>
+</ol>
+
+<h2 id="3-analisa-file-yang-paling-besar-dan-hapus-yang-tidak-perlu">3 Analisa file yang paling besar dan hapus yang tidak perlu</h2>
+<p>Cara ini menurut saya pribadi lumayan ampuh banget dan ini sudah ditulis juga sama si jujel di situs berikut <a href="https://developer.android.com/topic/performance/reduce-apk-size">Reduce APK Size</a></p>
+
+<h2 id="4-gunakan-build-appbundle-dan-hindari-build-apk-untuk-yang-mau-dirilis-ke-android">4 Gunakan Build appbundle dan hindari build .apk (Untuk yang mau dirilis ke android)</h2>
+<p>Nah, ini cara yang terakhir nih.. jika kalian biasa menggunakan perintah berikut untuk membuat apk</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter build apk --release
+</code></pre></div></div>
+
+<p>artinya sudah saatnya kalian meninggalkan kebiasaan kalian ini dan ginakanlah command seperti ini</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter build appbundle --target-platform android-arm,android-arm64,android-x64
+</code></pre></div></div>
+
+<p>atau kalian bisa lebih memperkecil lagi dengan membuat target dari app kalian, kkodenya seperti ini:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    flutter build apk --target-platform android-arm,android-arm64,android-x64 --split-per-abi
+</code></pre></div></div>
+<p>dengan kode diatas, aplikasi dapat di reduce hingga 7mb akan tetapi tidak semua perangkat dapat menginstallnya karena saat selesai dibuild dengan kode diatas, aplikasi tebentuk menjadi 3 part dan menyesuaikan device yang ada.</p>
+
+<p>Nah, cukup sekian sobat tips dari thengoding untuk kali ini, semoga ngodignmu menyenangkan :-) …</p>
+
+<p>Akhir kata, See You On The Next Chapter!</p>
+
+<blockquote>
+  <p>Ngoding itu bakalan indah pada waktunya!<small> - The Ngoding</small></p>
+</blockquote>
+
+:ET

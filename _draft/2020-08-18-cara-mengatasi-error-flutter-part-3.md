@@ -2,6 +2,9 @@
 title: Cara Mengatasi Error Pada Flutter Part 3
 img: 200817/crash3.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Tips, Mobile]
 ---

@@ -2,6 +2,9 @@
 title: Cara membuat Key Store File
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Flutter, Android, Tips]
 ---
@@ -121,4 +124,3 @@ Dan sepertin itu temen2 cara membuat *Key Store*. temen2 dapat menggunakan *Key 
 >Kode Error itu seperti micin, jika kebanyakan dapat membahayakan :-D<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>

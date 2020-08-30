@@ -1,0 +1,55 @@
+I"'
+<p>Pada bagian 2 ini, kita akan membahas di sisi appstore connectnya, sebagai informasi, appstore adalah portal appstore disisi developernya sedangkan apple developer console adalah portal bagi developernya (ini adalah pengertian yang penulis pahami), jadi keduanya adalah hal yang berbda.
+<!--more-->
+Oke kita langsung saja pada tutorialnya.</p>
+
+<h2 id="simulasi">Simulasi</h2>
+
+<ol>
+  <li>
+    <p>Sudah ada project flutter</p>
+  </li>
+  <li>
+    <p>Sudah punya akun apple developer. Akun apple developer ini harus temen-temen beli dengan harga $99/tahun dan berbeda dengan playstore yang sekali beli untuk selamanya, akun apple developer harus diperpanjang setiap tahunnya.</p>
+  </li>
+  <li>
+    <p>Sudah punya Macbook/Imac dan Iphone/Ipad (Hal ini wajib dan tidak dapat di tolerir)</p>
+  </li>
+</ol>
+
+<h2 id="langkah---langkah-pada-bagian-appstore-connect">Langkah - Langkah Pada bagian Appstore Connect</h2>
+
+<ol>
+  <li>
+    <p>Buka alamat <a href="https://appstoreconnect.apple.com/">Appstore Connect</a></p>
+  </li>
+  <li>
+    <p>Pilih menu <code class="language-plaintext highlighter-rouge">My Apps</code></p>
+  </li>
+  <li>
+    <p>Klik Tombol <code class="language-plaintext highlighter-rouge">Plus</code> Pada bagian kiri atas halaman seperti pada gambar dibawah ini</p>
+
+    <p><img src="/img/200116/plus.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Isi popup yang muncul sesuai dengan nama aplikasi, tapi jangan lupa ya untuk memilih <code class="language-plaintext highlighter-rouge">Bundle ID</code> dengan nama bundle yang sudah kita buat pada tutorial part 1 (Upload aplikasi flutter ke appstore part 1)[https://thengoding.com/2020/01/15/upload-aplikasi-flutter-ke-appstore-part-1/]</p>
+
+    <p><img src="/img/200116/popup.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>Isi dan lengkapi semua halaman yang sudah saya beri tanda garis kotak merah ini, ada beberapa yang opsional dan ada beberpa juga yang sifatnya wajib diisi, perbedaan keduanya adalah pada tanda bintang di masing masing judul isian</p>
+
+    <p><img src="/img/200116/final.png" alt="generate" /></p>
+  </li>
+  <li>
+    <p>apabila sudah selseai semua diisi, maka pembahasan pada bagian appstore connect sudah selsai dan saatnya kita beralih ke bagian XCODE nya. pembahasan pada XCODE kita akan bahas pada modul selanjutnya yaaa…</p>
+  </li>
+</ol>
+
+<p>oke cukup sekian pada pembahsan part 2 ini, semoga masih semangat ngoding nya ya .. hiihihi..</p>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+:ET

@@ -1,0 +1,125 @@
+I"<p>Hi sobat ngoding, kali ini saya khsus membahas cara upload aplikasi yang dibuat menggunakan flutter ke playstore. Cara uploadnya saya bagi menjadi 2 bagian, yang pertama ini adalah khusus bagaimana cara membuat <code class="language-plaintext highlighter-rouge">app-release.apk</code> untuk bisa dimasukan ke ke playstore.
+ <!--more-->
+Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada blog saya ini akan saya tambahkan beberapa hal yang tidak dibahas disana, seperti biasa kita mulai saja tutorial nya dengan simulasi</p>
+
+<h2 id="simulasi">Simulasi</h2>
+
+<ol>
+  <li>
+    <p>Sudah punya akun google play console, kalau belum punya beli dulu disini <a href="https://play.google.com/apps/publish/">https://play.google.com/</a></p>
+  </li>
+  <li>
+    <p>Sudah ada project flutter</p>
+  </li>
+</ol>
+
+<h2 id="langkah----langkah">Langkah -  langkah</h2>
+
+<ol>
+  <li>
+    <h3 id="pastikan-package-kalian-benar">Pastikan Package kalian benar</h3>
+
+    <p>Memastikan nama package kalian benar adalah langkah yang paling penting menurut saya pribadi, karena nama package tidak dapat diganti setelah aplikasi kalian masuk ke playstore, untuk mengganti nama package apabila ada kesalahan, teman-teman dapat merubahnya, tutorialnya ada pada blog ini juga atau klik aja bagian disni <a href="https://thengoding.com/2020/01/01/mennganti-nama-package-android-studio-project/">Cara mengganti nama package</a></p>
+  </li>
+  <li>
+    <h3 id="buat-key-store-file">Buat <code class="language-plaintext highlighter-rouge">Key Store</code> File</h3>
+
+    <p>Membuat <em>Key Store</em> adalah langkah yang penting juga karena playstore dapat menerima aplikasi apabila key store disertakan pada aplikasi sobat, untuk membuat key store, dapat mengunjungi halaman <a href="https://thengoding.com/2020/01/12/cara-membuat-keystore/">ini</a></p>
+  </li>
+  <li>
+    <h3 id="buat-keypropertise">Buat <code class="language-plaintext highlighter-rouge">key.propertise</code></h3>
+
+    <p>Buatlah file ini pada lokasi berikut <code class="language-plaintext highlighter-rouge">app dir&gt;/android/key.properties</code> kemudian isi filenya menjadi seperti ini</p>
+
+    <div class="language-gradle highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   <span class="n">storePassword</span><span class="o">=&lt;</span><span class="n">password</span> <span class="n">from</span> <span class="n">previous</span> <span class="n">step</span><span class="o">&gt;</span>
+   <span class="n">keyPassword</span><span class="o">=&lt;</span><span class="n">password</span> <span class="n">from</span> <span class="n">previous</span> <span class="n">step</span><span class="o">&gt;</span>
+   <span class="n">keyAlias</span><span class="o">=</span><span class="n">key</span>
+   <span class="n">storeFile</span><span class="o">=&lt;</span><span class="n">location</span> <span class="n">of</span> <span class="n">the</span> <span class="n">key</span> <span class="n">store</span> <span class="n">file</span><span class="o">,</span> <span class="n">such</span> <span class="k">as</span> <span class="s">/Users/</span><span class="o">&lt;</span><span class="n">user</span> <span class="n">name</span><span class="o">&gt;/</span><span class="n">key</span><span class="o">.</span><span class="na">jks</span><span class="o">&gt;</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <h3 id="edit-file-app-dirandroidappbuildgradle">Edit file <code class="language-plaintext highlighter-rouge">&lt;app dir&gt;/android/app/build.gradle</code></h3>
+
+    <p>Ada beberapa step untuk meng edit file gradle ini,</p>
+
+    <p>a. Ganti</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     android {
+</code></pre></div>    </div>
+
+    <p>menjadi</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     def keystoreProperties = new Properties()
+     def keystorePropertiesFile = rootProject.file('key.properties')
+     if (keystorePropertiesFile.exists()) {
+         keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+     }
+
+     android {
+</code></pre></div>    </div>
+
+    <p>b. Ganti</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     buildTypes {
+         release {
+             // TODO: Add your own signing config for the release build.
+             // Signing with the debug keys for now,
+             // so `flutter run --release` works.
+             signingConfig signingConfigs.debug
+         }
+     }
+</code></pre></div>    </div>
+
+    <p>Menjadi</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     signingConfigs {
+         release {
+             keyAlias keystoreProperties['keyAlias']
+             keyPassword keystoreProperties['keyPassword']
+             storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+             storePassword keystoreProperties['storePassword']
+         }
+     }
+     buildTypes {
+         release {
+             signingConfig signingConfigs.release
+         }
+     }
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <h3 id="ganti-app-icon">Ganti APP Icon</h3>
+
+    <p>Untuk mengganti icon, sudah saya tulis pada bagian yang lain yaitu pada tulisan saya ini <a href="https://thengoding.com/2020/01/13/mengganti-icon-aplikasi-android/">Mengganti Icon aplikasi android</a></p>
+  </li>
+  <li>
+    <h3 id="mengetikkan-perintah-pada-terminal">Mengetikkan perintah pada terminal</h3>
+
+    <p>Ini adalah bagian akhir dari tulisan saya ini, silahkan buka terminal pada <code class="language-plaintext highlighter-rouge">directory</code> project teman teman, baik Linux/Mac atau Windows caranya sama aja,</p>
+
+    <p><em>membuat apk release</em></p>
+    <ul>
+      <li>flutter clean</li>
+      <li>flutter build apk –release</li>
+    </ul>
+
+    <p><em>membuat apk debug</em></p>
+    <ul>
+      <li>flutter clean</li>
+      <li>flutter build apk –debug</li>
+    </ul>
+
+    <p><em>membuat app bundle</em></p>
+    <ul>
+      <li>flutter clean</li>
+      <li>flutter build appbundle –target-platform android-arm,android-arm64,android-x64</li>
+    </ul>
+  </li>
+  <li>Tunggu hingga proses pembuatan apk selesai, jika sukses hasil apka teman-teman akan ada pada folder <code class="language-plaintext highlighter-rouge">build/app/outputs/apk/release/app-release.apk</code></li>
+</ol>
+
+<blockquote>
+  <p>Penulis bukan orang yang paling mampu, hanya ingin berbagi saja. Semoga dapat mengambil manfaat<small> - Penulis</small></p>
+</blockquote>
+
+:ET

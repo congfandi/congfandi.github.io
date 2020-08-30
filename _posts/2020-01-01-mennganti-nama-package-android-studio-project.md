@@ -2,6 +2,9 @@
 title: Android Studio - Mengganti nama package
 img: hipster.jpg
 layout: post
+author: Cong Fandi
+author-img : congfandi.jpeg
+author-detail : iOS Developer, Android Developer, Web Developer
 fig-caption: Developer
 tags: [Developer, Android Studio, Tips]
 ---
@@ -58,4 +61,3 @@ Sekian pembahasan pada tulisan ini, jika ada yang ingin bertanya bisa langsung j
 >Ngoding itu bukan bakat tapi minat, trust me!<small> - Penulis</small>
 
 
-<b>Posted By : <a href="{{site.cong-url}}">{{site.cong-fandi}}</a></b>
