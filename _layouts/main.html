@@ -11,18 +11,6 @@ layout: default
       <div class="author-name">{{site.author}}</div>
       <p>{{site.about-author}}</p>
     </div>
-    <div class="warning">
-      <a href="{{site.url}}">Home</a>
-    </div>
-    <div>
-      <a href="{{site.url}}/2010/08/15/daftar-isi/">Daftar Isi</a>
-    </div>
-    <div>
-      <a href="{{site.url}}/tags/">Kategori Postingan</a>
-    </div>
-    <div>
-      <a href="{{site.url}}/resume">Tentang Penulis</a>
-    </div>
   </header> <!-- End Header -->
   <footer>
     <section class="contact">
@@ -61,5 +49,21 @@ layout: default
   </footer> <!-- End Footer -->
 </aside> <!-- End Sidebar -->
 <div class="content-box clearfix">
+  {% include navbar.html %}
   {{ content }}
 </div>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+  }
+  </script>
+  

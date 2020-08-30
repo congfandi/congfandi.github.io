@@ -1,6 +1,5 @@
 title: The Ngoding
-description: > # this means to ignore newlines until "baseurl:"
-  Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.
+description: Yuk Ngoding bareng!
 permalink: '/:year/:month/:day/:title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://thengoding.com" # the base hostname & protocol for your site, e.g. http://example.com
@@ -9,7 +8,7 @@ site-twitter: #if your site has a twitter account, enter it here
 # Author Settings
 author: The Ngoding # add your name
 author-img: logo.png # add your photo
-about-author: Sekedar ingin berbagi, dan bukan yang paling mampu, semoga dapat bermanfaat buat rekan-rekan pembaca sekalian.
+about-author: Yuk Ngoding bareng!
 social-twitter: TheNgoding
 social-facebook: congfandii
 social-github: congfandi 
