@@ -64,6 +64,8 @@ Saya pernah menggunakan librari ini untuk  membuat preview saat hendak mau uploa
 
 Sekian dulu sobat tentang library terpopuler.. smapai jumpa di postingan selanjutnya ya :-) ...
 
+Tulisan ini lebih dulu tayang dilaman web [Jago Ngoding](https://www.jagongoding.com) dengan judul [5 Library Terpopuler di Flutter](https://jagongoding.com/android/flutter/5-library-terpopuler/)
+
 <br>
 <br>
 >Sebuah Apresiasi adalah suntikan semangat bagi kontent creator, so jangan lupa comment ya ...<small> - Penulis</small>
