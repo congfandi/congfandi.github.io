@@ -7,7 +7,7 @@ author-img : congfandi.jpeg #default me
 author-detail : iOS Developer, Android Developer, Web Developer # default me
 fig-caption: Developer #default me
 tags: [Developer, Flutter, Tips] # tags dalam array [Developer, Web, Tips]
-posted: false
+published: false
 ---
 Hola sobat ngoding semua, kali ini saya ingin berbagi tips sederhana yang saya rasa sangat bermanfaat untuk teman-teman semua. 
 Membuat model dari json dapat dilakukan dengan 2 metode, yaitu otomatis dan maunal. Masing masing cara memiliki kebelebihan dan kekurangan masing-masing.
