@@ -1,4 +1,4 @@
-I"~<p>Sudah bukan rahasia lagi kalau <a href="https://flutter.dev">Flutter</a> makin diminati oleh para pengembang, terlepas dari alasan mereka masing masing memilih flutter daripada framework yang lain. Flutter adalah sebuah framework multi platform yang dibuat oleh google yang berfokus pada UI dan Animasi namun bisa juga untuk project besar yang mementingkan performa karena flutter mengklaim performa aplikasi yang dibuat dengan flutter tidak jauh dari native meskipun kalau diadu dari segi performa Native masig jauh lebi unggul ya.</p>
+I"`<p>Sudah bukan rahasia lagi kalau <a href="https://flutter.dev">Flutter</a> makin diminati oleh para pengembang, terlepas dari alasan mereka masing masing memilih flutter daripada framework yang lain. Flutter adalah sebuah framework multi platform yang dibuat oleh google yang berfokus pada UI dan Animasi namun bisa juga untuk project besar yang mementingkan performa karena flutter mengklaim performa aplikasi yang dibuat dengan flutter tidak jauh dari native meskipun kalau diadu dari segi performa Native masig jauh lebi unggul ya.</p>
 
 <p>Berbicara tentang framework tidak lepas dari library yang dapat membuat feel dari aplikasi menjadi seperti nativenya dan dapat juga menjalankan hal hal yang seperti native lakukan..</p>
 
@@ -125,6 +125,8 @@
 Saya pernah menggunakan librari ini untuk  membuat preview saat hendak mau upload sebuah video.. oh iya, lib ini juga bsia diconbinasikan dengan image_picker.</p>
 
 <p>Sekian dulu sobat tentang library terpopuler.. smapai jumpa di postingan selanjutnya ya :-) …</p>
+
+<p>Tulisan ini lebih dulu tayang dilaman web <a href="https://www.jagongoding.com">Jago Ngoding</a> dengan judul <a href="https://jagongoding.com/android/flutter/5-library-terpopuler/">5 Library Terpopuler di Flutter</a></p>
 
 <p><br />
 <br /></p>
