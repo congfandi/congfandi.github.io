@@ -231,6 +231,8 @@ dan jika hasilnya seperti dibawah ini, maka tandanya data kita sudah berhasil di
 
 Bagaimana temen-temen ? cukup mudah bukan [Tutorial Sqflite ini]({{post.url}})..
 
+Jika kalian ingin menlihat full code nya bisa dilihat di link berikut [GITHUB SOURCE](https://github.com/congfandi/simple_sqflite)
+
 Sampai jumpa di tutorial selanjutnya.....
 
 <br>
