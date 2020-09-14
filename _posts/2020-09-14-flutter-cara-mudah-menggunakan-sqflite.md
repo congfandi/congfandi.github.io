@@ -13,7 +13,7 @@ Halo sobat ngoding semuanya, kali ini saya ingin berbagi tentang cara simple men
 
 Oke, Kita mulai saja tutorial kita pada kali ini : 
 
-# 1. Install SQFLITE
+# 1. Pasang Library SQFLITE
  
 version : [sqflite: ^1.3.1+1](https://pub.dev/packages/sqflite/install) atau klik link untuk mendapatkan yang paling baru,
 
@@ -48,7 +48,7 @@ JSON Country
 
 *Pastikan model dan query untuk membuat tablenya sama ya guys agar nanti dapat di casting dengan mudah menjadi sebuah model*
 
-class UserQuery
+*class UserQuery*
 
 ```dart
 class UserQuery {
@@ -59,7 +59,7 @@ class UserQuery {
 }
 ```
 
-class User 
+*class User* 
 
 ```dart
 class User {
@@ -88,7 +88,7 @@ class User {
 ```
 
 
-class Country Query
+*class Country Query*
 
 ```dart
 class CountryQuery {
@@ -99,7 +99,7 @@ class CountryQuery {
 }
 ```
 
-kelass Country
+*Class Country*
 
 ```dart
 class Country {
@@ -127,9 +127,9 @@ class Country {
 pastikan sama dengan yang aku buat ya,, kalau udah bisa baru deh kalian bisa eksplorasi.
 
 
- # 4. Buat Kelas DbHelper #
+# 4. Buat Kelas DbHelper #
 
- ```dart
+```dart
  import 'package:flutter_atomic_design/database/queries/country_query.dart';
 import 'package:flutter_atomic_design/database/queries/user_query.dart';
 import 'package:sqflite/sqflite.dart' as sqlite;
@@ -186,9 +186,9 @@ class DbHelper {
  ```
 
 
- # 5. Testing DbHelper dengan Insert #
+# 5. Testing DbHelper dengan Insert #
 
- Untuk melakukan testing database, silahkan temen2 panggil dimain kelas seperti code dibawah ini
+ Untuk melakukan testing database, silahkan temen2 panggil dimain class seperti code dibawah ini
 
  ```dart
  final DbHelper _helper = new DbHelper();

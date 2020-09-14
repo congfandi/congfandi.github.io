@@ -1,199 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-	<meta charset="utf-8">
-	<title>Flutter - Cara mudah menggunakan SQFLITE - The Ngoding</title>
-
-  <!-- Edit site and author settings in `_config.yml` to make the social details your own -->
-
-    <meta content="The Ngoding" property="og:site_name">
-  
-    <meta content="Flutter - Cara mudah menggunakan SQFLITE" property="og:title">
-  
-  
-    <meta content="article" property="og:type">
-  
-  
-    <meta content="Yuk Ngoding bareng!" property="og:description">
-  
-  
-    <meta content="http://localhost:4000/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/" property="og:url">
-  
-  
-    <meta content="2020-09-14T00:00:00+07:00" property="article:published_time">
-    <meta content="http://localhost:4000/about/" property="article:author">
-  
-  
-    <meta content="http://localhost:4000/assets/img/200914/cover.jpg" property="og:image">
-  
-  
-    
-  
-  
-    
-    <meta content="Flutter" property="article:tag">
-    
-    <meta content="Tips" property="article:tag">
-    
-  
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:site" content="@">
-    <meta name="twitter:creator" content="@TheNgoding">
-  
-    <meta name="twitter:title" content="Flutter - Cara mudah menggunakan SQFLITE">
-  
-  
-    <meta name="twitter:url" content="http://localhost:4000/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/">
-  
-  
-    <meta name="twitter:description" content="Yuk Ngoding bareng!">
-  
-  
-    <meta name="twitter:image:src" content="http://localhost:4000/assets/img/200914/cover.jpg">
-  
-
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta property="og:image" content="">
-	<link rel="shortcut icon" href="/assets/img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicon/apple-touch-icon-144x144.png">
-	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#263959">
-	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#263959">
-	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#263959">
-	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Lato:300,400,700&display=swap" rel="stylesheet">
-	<!-- Font Awesome -->
-	<link rel="stylesheet" href="/assets/fonts/font-awesome/css/font-awesome.min.css">
-	<!-- Styles -->
-  <link rel="stylesheet" href="/assets/css/main.css">
-  <script data-ad-client="ca-pub-4804520724232853" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-</head>
-
-    <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {},
-            Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"),
-                s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = "https://embed.tawk.to/5f45d49b1e7ade5df443f9df/default";
-            s1.charset = "UTF-8";
-            s1.setAttribute("crossorigin", "*");
-            s0.parentNode.insertBefore(s1, s0);
-        })();
-    </script>
-    <!--End of Tawk.to Script-->
-    <style>
-        /* Style the navbar */
-        #navbar {
-            width: 100%;
-            overflow: hidden;
-            background-color: #333;
-            margin-bottom: 25px;
-            z-index: 4;
-        }
-
-        /* Navbar links */
-        #navbar a {
-            float: left;
-            display: block;
-            color: #f2f2f2;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-        }
-
-        /* Page content */
-        .content {
-            padding: 16px;
-        }
-
-        /* The sticky class is added to the navbar with JS when it reaches its scroll position */
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-
-        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-        .sticky + .content {
-            padding-top: 60px;
-        }
-    </style>
-    <body>
-        <div class="wrapper">
-            <aside class="sidebar">
-  <header>
-    <div class="about">
-      <div class="cover-author-image">
-        <a href="http://localhost:4000/"><img src="http://localhost:4000/assets/img/logo.png" alt="The Ngoding"></a>
-      </div>
-      <div class="author-name">The Ngoding</div>
-      <p>Yuk Ngoding bareng!</p>
-    </div>
-  </header> <!-- End Header -->
-  <footer>
-    <section class="contact">
-      <h3 class="contact-title">Contact me</h3>
-      <ul>
-        
-          <li><a href="https://twitter.com/TheNgoding" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        
-        
-          <li><a href="https://facebook.com/congfandii" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        
-        
-          <li class="github"><a href="http://github.com/congfandi" target="_blank"><i class="fa fa-github"></i></a></li>
-        
-        
-          <li class="linkedin"><a href="https://in.linkedin.com/in/moh-supandi-49b717119/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-        
-        
-          <li class="email"><a href="mailto:congfandi@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
-        
-      </ul>
-    </section> <!-- End Section Contact -->
-    <div class="copyright">
-      <p>2020 &copy; The Ngoding</p>
-    </div>
-  </footer> <!-- End Footer -->
-</aside> <!-- End Sidebar -->
-<div class="content-box clearfix">
-  <div id="navbar">
-        <a href="http://localhost:4000">Home</a>
-        <a href="http://localhost:4000/2010/08/15/daftar-isi/">Dftar Isi</a>
-        <a href="http://localhost:4000/tags/">Kategori</a>
-</div>
-  <article class="article-page">
-  <div class="page-content">
-    
-    <div class="page-cover-image">
-      <figure>
-        <img class="page-image" src=/assets/img/200914/cover.jpg alt="Flutter - Cara mudah menggunakan SQFLITE">
-        
-          <figcaption>SQFLITE</figcaption>
-        
-      </figure>
-    </div> <!-- End Page Cover Image -->
-    
-    <div class="wrap-content">
-      <header class="header-page">
-        <h1 class="page-title">Flutter - Cara mudah menggunakan SQFLITE</h1>
-        <div class="page-date"><span>2020, Sep 14&nbsp;&nbsp;&nbsp;&nbsp;</span></div>
-      </header>
-      <p>Halo sobat ngoding semuanya, kali ini saya ingin berbagi tentang cara simple menggunakan <a href="">SQFLITE</a> pada flutter. <a href="">SQFLITE</a> pada dasarnya sama seperti SQLITE pada android dan IOS.. cara penggunaannyapun sama yaitu menyimpan data kompleks di local. Jika kalian ingin membaca referensinya, silahkan buka <a href="https://pub.dev/packages/sqflite/example">CONTOH</a> ini untuk mempelajari lebih lanjut.</p>
+I"†V<p>Halo sobat ngoding semuanya, kali ini saya ingin berbagi tentang cara simple menggunakan <a href="">SQFLITE</a> pada flutter. <a href="">SQFLITE</a> pada dasarnya sama seperti SQLITE pada android dan IOS.. cara penggunaannyapun sama yaitu menyimpan data kompleks di local. Jika kalian ingin membaca referensinya, silahkan buka <a href="https://pub.dev/packages/sqflite/example">CONTOH</a> ini untuk mempelajari lebih lanjut.</p>
 
 <p>Oke, Kita mulai saja tutorial kita pada kali ini :</p>
 
-<h1 id="1-pasang-library-sqflite">1. Pasang Library SQFLITE</h1>
+<h1 id="1-pasang-sqflite">1. Pasang SQFLITE</h1>
 
 <p>version : <a href="https://pub.dev/packages/sqflite/install">sqflite: ^1.3.1+1</a> atau klik link untuk mendapatkan yang paling baru,</p>
 
@@ -225,7 +34,7 @@
 
 <p><em>Pastikan model dan query untuk membuat tablenya sama ya guys agar nanti dapat di casting dengan mudah menjadi sebuah model</em></p>
 
-<p><em>class UserQuery</em></p>
+<p>class UserQuery</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">UserQuery</span> <span class="o">{</span>
   <span class="kd">static</span> <span class="kd">const</span> <span class="kt">String</span> <span class="n">TABLE_NAME</span> <span class="o">=</span> <span class="s">"users"</span><span class="o">;</span>
@@ -235,7 +44,7 @@
 <span class="o">}</span>
 </code></pre></div></div>
 
-<p><em>class User</em></p>
+<p>class User</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">User</span> <span class="o">{</span>
     <span class="kt">String</span> <span class="n">address</span><span class="o">;</span>
@@ -262,7 +71,7 @@
 <span class="o">}</span>
 </code></pre></div></div>
 
-<p><em>class Country Query</em></p>
+<p>class Country Query</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">CountryQuery</span> <span class="o">{</span>
   <span class="kd">static</span> <span class="kd">const</span> <span class="kt">String</span> <span class="n">TABLE_NAME</span> <span class="o">=</span> <span class="s">"countries"</span><span class="o">;</span>
@@ -272,7 +81,7 @@
 <span class="o">}</span>
 </code></pre></div></div>
 
-<p><em>Class Country</em></p>
+<p>kelass Country</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nc">Country</span> <span class="o">{</span>
     <span class="kt">int</span> <span class="n">id</span><span class="o">;</span>
@@ -357,7 +166,7 @@
 
 <h1 id="5-testing-dbhelper-dengan-insert">5. Testing DbHelper dengan Insert</h1>
 
-<p>Untuk melakukan testing database, silahkan temen2 panggil dimain class seperti code dibawah ini</p>
+<p>Untuk melakukan testing database, silahkan temen2 panggil dimain kelas seperti code dibawah ini</p>
 
 <div class="language-dart highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="kd">final</span> <span class="n">DbHelper</span> <span class="n">_helper</span> <span class="o">=</span> <span class="k">new</span> <span class="n">DbHelper</span><span class="o">();</span>
   <span class="nd">@override</span>
@@ -407,110 +216,4 @@ Untuk melihat hasilnya,, silahkan ganti code untuk insert menjadi seperti dibawa
   <p>Ngoding itu berat, tapi kamu pasti kuat!<small> - Penulis</small></p>
 </blockquote>
 
-
-      <div style="margin: 50px 50px 50px 50px;">
-    <img class="image" alt="http://localhost:4000" class="br-100" style="max-width: 4rem;" src="http://localhost:4000/assets/img/congfandi.jpeg" />
-    <h4 style="text-align: center;">Cong Fandi</h4>
-    <p style="text-align: center;">
-        iOS Developer, Android Developer, Web Developer
-    </p>
-</div>
-
-<style>
-    .image {
-        display: flex;
-        justify-content: center;
-        border-radius: 100px;
-        width: 100px;
-        margin: 0 auto;
-    }
-</style>
-
-      <div class="page-footer">
-        <div class="page-share">
-          <a href="https://twitter.com/intent/tweet?text=Flutter - Cara mudah menggunakan SQFLITE&url=http://localhost:4000/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/" title="Share on Twitter" rel="nofollow" target="_blank">Twitter</a>
-          <a href="https://facebook.com/sharer.php?u=http://localhost:4000/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/" title="Share on Facebook" rel="nofollow" target="_blank">Facebook</a>
-        </div>
-        <div class="page-tag">
-          
-            <a href="/tags#Flutter" class="tag">&#35; Flutter</a>
-          
-            <a href="/tags#Tips" class="tag">&#35; Tips</a>
-          
-        </div>
-      </div>
-      <section class="comment-area">
-  <div class="comment-wrapper">
-    
-    <div id="disqus_thread" class="article-comments"></div>
-    <script>
-      (function() {
-          var d = document, s = d.createElement('script');
-          s.src = '//the-ngoding.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    
-  </div>
-</section> <!-- End Comment Area -->
-
-    </div> <!-- End Wrap Content -->
-  </div> <!-- End Page Content -->
-</article> <!-- End Article Page -->
-
-</div>
-<script>
-  window.onscroll = function() {myFunction()};
-  
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-  
-  function myFunction() {
-    if (window.pageYOffset >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-  }
-  </script>
-  
-        </div>
-    </body>
-</html>
-
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBAKNniWF4psdXPjmpGJ1B1ZurICgTy5sE",
-    authDomain: "my-apps-2660a.firebaseapp.com",
-    databaseURL: "https://my-apps-2660a.firebaseio.com",
-    projectId: "my-apps-2660a",
-    storageBucket: "my-apps-2660a.appspot.com",
-    messagingSenderId: "261985294091",
-    appId: "1:261985294091:web:8a5efcd13ab458a576b40e",
-    measurementId: "G-PFCC72DX37"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148964993-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-148964993-1');
-</script>
+:ET
