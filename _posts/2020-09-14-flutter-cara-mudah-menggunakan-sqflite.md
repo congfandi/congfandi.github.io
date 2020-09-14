@@ -205,7 +205,7 @@ class DbHelper {
 
  ![inser]({{site.url}}/assets/img/200914/create.png)
 
- # 6. Print data yang sudah kesimpan #
+# 6. Print data yang sudah kesimpan #
 Untuk melihat hasilnya,, silahkan ganti code untuk insert menjadi seperti dibawah ini
 
 ```dart
