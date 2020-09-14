@@ -1,13 +1,32 @@
 jekyllPostsCallback([
 	
 		{
+            "id"         : "/2020/09/15/membuat-copyright-otomatis-android-studio",
+            "title"      : "Membuat Copyright Otomatis Android Studio",
+            "category"   : "",
+            "tags"       : "Android Studio, Tips",
+            "url"        : "/2020/09/15/membuat-copyright-otomatis-android-studio/",
+            "path"       : "_posts/2020-09-15-membuat-copyright-otomatis-android-studio.md",
+            "next"       : "",
+            "previous"   : "/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/",
+            "date"       : "2020-09-15 00:00:00 +0700",
+            "cover"      : "200915/cover.jpg",
+            "author"     : "Cong Fandi",
+            "authorImage": "congfandi.jpeg",
+            "authorDetail": "iOS Developer, Android Developer, Web Developer",
+            "shortdate"  : "September 15, 2020",
+            "content"    : "&lt;p&gt;Halo Sobat Ngoding Semua, Pada tulisan kali ini saya tidak akan membahas tentang ngoding, tapi saya ingin menulis tentang sebuah tool yang sangat berguna saat kalian berkolaborasi dengan team kalian, tujuannya simple, &lt;strong&gt;Membedakan mana yang merupakan pekerjaan kalian dan mana yang bukan&lt;/strong&gt; . Dengan begitu apaabila ada file pekerjaan yang sedikit susah unutk difahami, kalian bisa langsung mengetahui siapa yang mengerjakannya.. oke kita mulai Tutorialnya.&lt;/p&gt;&lt;h1 id=&quot;mengaktifkan-plugin-copyright&quot;&gt;Mengaktifkan Plugin Copyright&lt;/h1&gt;&lt;ol&gt;  &lt;li&gt;Buka Project anda menggunakan &lt;strong&gt;Android Studio&lt;/strong&gt;&lt;/li&gt;  &lt;li&gt;    &lt;p&gt;Buka menu &lt;strong&gt;Preferences&lt;/strong&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/1.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;  &lt;/li&gt;  &lt;li&gt;    &lt;p&gt;Masuk ke menu Plugin&lt;img src=&quot;http://localhost:4000/assets/img/200915/2.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;  &lt;/li&gt;  &lt;li&gt;Cari dan install plugin &lt;em&gt;Copyright&lt;/em&gt;&lt;/li&gt;&lt;/ol&gt;&lt;h1 id=&quot;memasang-copyright-template&quot;&gt;Memasang Copyright template&lt;/h1&gt;&lt;ol&gt;  &lt;li&gt;    &lt;p&gt;Buka Menu &lt;strong&gt;Editor&lt;/strong&gt; dari &lt;strong&gt;Preferences&lt;/strong&gt; Menu&lt;/p&gt;  &lt;/li&gt;  &lt;li&gt;    &lt;p&gt;Masuk Ke menu &lt;strong&gt;Copyright&lt;/strong&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/3.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;  &lt;/li&gt;  &lt;li&gt;    &lt;p&gt;Tambahkan Profile&lt;img src=&quot;http://localhost:4000/assets/img/200915/4.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;  &lt;/li&gt;&lt;/ol&gt;&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    $project.name    $file.fileName    Created by Cong Fandi on $today.day/$today.month/$today.year    email 	    : congfandi@gmail.com    website 	: https://www.thengoding.com     Copyright © $today.year Cong Fandi. All rights reserved.&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;&lt;ol&gt;  &lt;li&gt;Kembali ke menu &lt;strong&gt;Copyright&lt;/strong&gt;&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/5.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;&lt;ol&gt;  &lt;li&gt;Pilih Profile yang sudah kita buat tadi&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/6.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;&lt;h1 id=&quot;cara-menggunakan-copyright-template&quot;&gt;Cara Menggunakan Copyright template&lt;/h1&gt;&lt;ol&gt;  &lt;li&gt;Buat sebuah &lt;strong&gt;file&lt;/strong&gt; baik itu dart, java,kotlin maupun xml maka secara otomatis filenya akan ada tulisan copyrightnya&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/7.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;&lt;ol&gt;  &lt;li&gt;Atau kalian bisa menggunakan pada file yang sudah ada dengan cara    &lt;ul&gt;      &lt;li&gt;Klik Kanan pada folder yang ingin di update copyrightnya&lt;/li&gt;      &lt;li&gt;pilih menu &lt;strong&gt;Update Copyright&lt;/strong&gt;&lt;/li&gt;      &lt;li&gt;Selesai…&lt;/li&gt;    &lt;/ul&gt;    &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/img/200915/8.png&quot; alt=&quot;Preferences&quot; /&gt;&lt;/p&gt;  &lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Cukup mudah bukan….&lt;/p&gt;&lt;p&gt;Oh iya, kalian bisa lho menambahkan parameetr selain dari yang aku tulis, kalian bisa mengunjungi situs ini &lt;a href=&quot;https://www.jetbrains.com/help/idea/copyright-profiles.html#profile_page&quot;&gt;Copyright Profile&lt;/a&gt;.&lt;/p&gt;&lt;p&gt;Cukup sekian, sampai ketemu pada artikel selanjutnya.. akhir kata..&lt;/p&gt;&lt;p&gt;Yuk belajar ngoding bareng…!&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;&lt;blockquote&gt;  &lt;p&gt;Sekedar ingin berbagi, dan bukan yang paling mampu&lt;small&gt; - Penulis&lt;/small&gt;&lt;/p&gt;&lt;/blockquote&gt;",
+            "excerpt"    : "&lt;p&gt;Halo Sobat Ngoding Semua, Pada tulisan kali ini saya tidak akan membahas tentang ngoding, tapi saya ingin menulis tentang sebuah tool yang sangat berguna saat kalian berkolaborasi dengan team kalian, tujuannya simple, &lt;strong&gt;Membedakan mana yang merupakan pekerjaan kalian dan mana yang bukan&lt;/strong&gt; . Dengan begitu apaabila ada file pekerjaan yang sedikit susah unutk difahami, kalian bisa langsung mengetahui siapa yang mengerjakannya.. oke kita mulai Tutorialnya.&lt;/p&gt;"
+		} ,
+	
+		{
             "id"         : "/2020/09/14/flutter-cara-mudah-menggunakan-sqflite",
             "title"      : "Flutter - Cara mudah menggunakan SQFLITE",
             "category"   : "",
             "tags"       : "Flutter, Tips",
             "url"        : "/2020/09/14/flutter-cara-mudah-menggunakan-sqflite/",
             "path"       : "_posts/2020-09-14-flutter-cara-mudah-menggunakan-sqflite.md",
-            "next"       : "",
+            "next"       : "/2020/09/15/membuat-copyright-otomatis-android-studio/",
             "previous"   : "/2020/09/04/cara-menambahkan-border-openwork-linkedin/",
             "date"       : "2020-09-14 00:00:00 +0700",
             "cover"      : "200914/cover.jpg",

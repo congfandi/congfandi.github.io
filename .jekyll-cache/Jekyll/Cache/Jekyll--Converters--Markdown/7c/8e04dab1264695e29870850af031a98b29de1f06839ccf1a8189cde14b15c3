@@ -1,0 +1,58 @@
+I"		<p>Halo Sobat Ngoding Semua, Pada tulisan kali ini saya tidak akan membahas tentang ngoding, tapi saya ingin menulis tentang sebuah tool yang sangat berguna saat kalian berkolaborasi dengan team kalian, tujuannya simple, <strong>Membedakan mana yang merupakan pekerjaan kalian dan mana yang bukan</strong> . Dengan begitu apaabila ada file pekerjaan yang sedikit susah unutk difahami, kalian bisa langsung mengetahui siapa yang mengerjakannya.. oke kita mulai Tutorialnya.</p>
+
+<h1 id="mengaktifkan-plugin-copyright">Mengaktifkan Plugin Copyright</h1>
+<ol>
+  <li>Buka Project anda menggunakan <strong>Android Studio</strong></li>
+  <li>Buka menu <strong>Preferences</strong></li>
+  <li>Masuk ke menu Plugin</li>
+  <li>Cari dan install plugin <em>Copyright</em></li>
+</ol>
+
+<h1 id="memasang-copyright-template">Memasang Copyright template</h1>
+<ol>
+  <li>Buka Menu <strong>Editor</strong> dari <strong>Preferences</strong> Menu</li>
+  <li>Masuk Ke menu <strong>Copyright</strong></li>
+  <li>Tambahkan Profile</li>
+</ol>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    $project.name
+    $file.fileName
+    Created by Cong Fandi on $today.day/$today.month/$today.year
+    email 	    : congfandi@gmail.com
+    website 	: https://www.thengoding.com 
+    Copyright © $today.year Cong Fandi. All rights reserved.
+</code></pre></div></div>
+
+<ol>
+  <li>Kembali ke menu <strong>Copyright</strong></li>
+  <li>Pilih Profile yang sudah kita buat tadi</li>
+</ol>
+
+<h1 id="cara-menggunakan-copyright-template">Cara Menggunakan Copyright template</h1>
+<ol>
+  <li>
+    <p>Buat sebuah <strong>file</strong> baik itu dart, java,kotlin maupun xml maka secara otomatis filenya akan ada tulisan copyrightnya</p>
+  </li>
+  <li>
+    <p>Atau kalian bisa menggunakan pada file yang sudah ada dengan cara</p>
+    <ul>
+      <li>Klik Kanan pada folder yang ingin di update copyrightnya</li>
+      <li>pilih menu <strong>Update Copyright</strong></li>
+      <li>Selesai…</li>
+    </ul>
+  </li>
+</ol>
+
+<p>Cukup mudah bukan….</p>
+
+<p>Cukup sekian, sampai ketemu pada artikel selanjutnya.. akhir kata..</p>
+
+<p>Yuk belajar ngoding bareng…!</p>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <p>Sekedar ingin berbagi, dan bukan yang paling mampu<small> - Penulis</small></p>
+</blockquote>
+
+:ET

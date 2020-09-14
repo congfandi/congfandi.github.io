@@ -1,0 +1,19 @@
+I"¹<p>Halo Sobat Ngoding Semua, Pada tulisan kali ini saya tidak akan membahas tentang ngoding, tapi saya ingin menulis tentang sebuah tool yang sangat berguna saat kalian berkolaborasi dengan team kalian, tujuannya simple, <strong>Membedakan mana yang merupakan pekerjaan kalian dan mana yang bukan</strong> . Dengan begitu apaabila ada file pekerjaan yang sedikit susah unutk difahami, kalian bisa langsung mengetahui siapa yang mengerjakannya.. oke kita mulai Tutorialnya.</p>
+
+<h1 id="mengaktifkan-plugin-copyright">Mengaktifkan Plugin Copyright</h1>
+<ol>
+  <li>Buka <strong>Android Studio</strong></li>
+  <li>Buka menu <strong>Preferences</strong></li>
+  <li>Masuk ke menu Plugin</li>
+  <li>Cari dan install plugin <em>Copyright</em></li>
+</ol>
+
+<h1 id="memasang-copyright-template">Memasang Copyright template</h1>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <p>Sekedar ingin berbagi, dan bukan yang paling mampu<small> - Penulis</small></p>
+</blockquote>
+
+:ET
