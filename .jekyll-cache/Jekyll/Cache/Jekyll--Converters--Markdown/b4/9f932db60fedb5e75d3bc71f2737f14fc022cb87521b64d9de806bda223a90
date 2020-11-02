@@ -1,0 +1,43 @@
+I"å<p>Hola sobat ngoding, akhirnya kita ada di penghujung dunia :-D .. pada last chapter ini kita akan membahas tentang bagaimana cara melihat user yang sudah login dan register kedalam aplikasi kita, kali ini kita ga bahas koding2 lagi..</p>
+
+<h2 id="melihat-user">Melihat User</h2>
+
+<ol>
+  <li>
+    <p>Buka situs <a href="https://console.firebase.google.com/">Firebase</a></p>
+  </li>
+  <li>
+    <p>Masuk ke halaman(Menu) <code class="language-plaintext highlighter-rouge">Authentication</code></p>
+  </li>
+  <li>
+    <p>Buka Tab Users, dan hasilnya seperti pada gambar dibawah ini</p>
+  </li>
+</ol>
+
+<p><img src="http://localhost:4000/assets/img/200920/hasil.png" alt="Preferences" /></p>
+
+<p>Segitu dulu ya sobat, cukup mudah bukan ?</p>
+
+<p>tanpa harus ada Backend atau API kita sudah bisa membuat aplikasi kita melakukan proses login dan register, kalian juga bisa menambahkan sesuai kebutuhan kalian yaâ€¦</p>
+
+<h1 id="source-code-github">Source Code Github</h1>
+
+<p>Jika kalian ingin melihat sourcecodenya bisa kalian lihat disni ya</p>
+
+<p><a href="https://github.com/congfandi/login_with_firebase">Source Code Aplikasi</a></p>
+
+<p><a href="/2020/09/27/flutter-firebase-auth-part1/">Flutter Firebase Auth Part 1 - Config Project</a></p>
+
+<p><a href="/2020/09/28/flutter-firebase-auth-part2/">Flutter Firebase Auth Part 2 - Membuat UI/UX</a></p>
+
+<p><a href="/2020/09/29/flutter-firebase-auth-part3/">Flutter Firebase Auth Part 3 - Menambahkan Code Auth</a></p>
+
+<p><a href="/2020/09/30/flutter-firebase-auth-part4/">Flutter Firebase Auth Part 4 - Melihat Hasil</a></p>
+
+<p><br />
+<br /></p>
+<blockquote>
+  <p>Cukuplah mie instant yang dapat disedu dengan instant, Ilmu itu perlu perjuangan, selamat ngoding kawan..<small> - Penulis</small></p>
+</blockquote>
+
+:ET

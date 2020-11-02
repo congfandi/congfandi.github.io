@@ -38,8 +38,9 @@ Kita mulai saja tutorialnya.
 
 Selanjutnya kita akan membahas part 2, yaitu menyiapkan UInya sobat.
 
-[Flutter Firebase Auth Part 2 - Membuat UI/UX]({{base_url}}/2020/09/20/flutter-firebase-auth-part2/)
+[Flutter Firebase Auth Part 2 - Membuat UI/UX]({{base_url}}/2020/09/29/flutter-firebase-auth-part2/)
 <br>
 <br>
->Cukuplah mie instant yang dapat disedu dengan instant, Ilmu itu perlu perjuangan, selamat ngoding kawan..<small> - Penulis</small>
+*Diakhir Chapter aku kasih bonus repo source code aplikasi*>
+<small> - Penulis</small>
 

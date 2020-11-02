@@ -8,7 +8,7 @@ author-detail : iOS Developer, Android Developer, Web Developer # default me
 fig-caption: Developer #default me
 tags: # tags dalam array [Developer, Web, Tips]
 ---
-OKe sobat, melanjutkan dari pembahasan kita sebelumnya, yaitu [Flutter Firebase Auth Part 1 - Config Project]({{base_url}}/2020/09/20/flutter-firebase-auth-part1/), kali ini kita bahas tentang membangun UI nya ya sobat, lihatlah design dibawah ini
+OKe sobat, melanjutkan dari pembahasan kita sebelumnya, yaitu [Flutter Firebase Auth Part 1 - Config Project]({{base_url}}/2020/09/30/flutter-firebase-auth-part1/), kali ini kita bahas tentang membangun UI nya ya sobat, lihatlah design dibawah ini
 
 ![Preferences]({{site.url}}/assets/img/200920/design.png)
 

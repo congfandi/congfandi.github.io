@@ -153,7 +153,7 @@ Cukup mudah bukan guys ? hanya dengan satu file kita sudah menghandle proses log
 
 Untuk melihat hasilnya kalian bisa buka part ke 4 ya, cara melihat user yang login dan yang udah register
 
-[Flutter Firebase Auth Part 4 - Melihat Hasil]({{base_url}}/2020/09/20/flutter-firebase-auth-part4/)
+[Flutter Firebase Auth Part 4 - Melihat Hasil]({{base_url}}/2020/09/27/flutter-firebase-auth-part4/)
 
 <br>
 <br>
