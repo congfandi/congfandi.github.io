@@ -31,13 +31,13 @@ Jika kalian ingin melihat sourcecodenya bisa kalian lihat disni ya
 [Source Code Aplikasi](https://github.com/congfandi/login_with_firebase)
 
 
-[Flutter Firebase Auth Part 1 - Config Project]({{base_url}}/2020/09/27/flutter-firebase-auth-part1/)
+[Flutter Firebase Auth Part 1 - Config Project]({{base_url}}/2020/09/30/flutter-firebase-auth-part1/)
 
-[Flutter Firebase Auth Part 2 - Membuat UI/UX]({{base_url}}/2020/09/28/flutter-firebase-auth-part2/)
+[Flutter Firebase Auth Part 2 - Membuat UI/UX]({{base_url}}/2020/09/29/flutter-firebase-auth-part2/)
 
-[Flutter Firebase Auth Part 3 - Menambahkan Code Auth]({{base_url}}/2020/09/29/flutter-firebase-auth-part3/)
+[Flutter Firebase Auth Part 3 - Menambahkan Code Auth]({{base_url}}/2020/09/28/flutter-firebase-auth-part3/)
 
-[Flutter Firebase Auth Part 4 - Melihat Hasil]({{base_url}}/2020/09/30/flutter-firebase-auth-part4/)
+[Flutter Firebase Auth Part 4 - Melihat Hasil]({{base_url}}/2020/09/27/flutter-firebase-auth-part4/)
 
 
 
