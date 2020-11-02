@@ -1,0 +1,30 @@
+I"}<p>Hola sobat ngoding, akhirnya kita ada di penghujung dunia :-D .. pada last chapter ini kita akan membahas tentang bagaimana cara melihat user yang sudah login dan register kedalam aplikasi kita, kali ini kita ga bahas koding2 lagi..</p>
+
+<h2 id="melihat-user">Melihat User</h2>
+
+<ol>
+  <li>
+    <p>Buka situs <a href="https://console.firebase.google.com/">Firebase</a></p>
+  </li>
+  <li>
+    <p>Masuk ke halaman(Menu) <code class="language-plaintext highlighter-rouge">Authentication</code></p>
+  </li>
+  <li>
+    <p>Buka Tab Users, dan hasilnya seperti pada gambar dibawah ini</p>
+  </li>
+</ol>
+
+<p><img src="http://localhost:4000/assets/img/200920/hasil.png" alt="Preferences" /></p>
+
+<p>Segitu dulu ya sobat, cukup mudah bukan ?</p>
+
+<p>tanpa harus ada Backend atau API kita sudah bisa membuat aplikasi kita melakukan proses login dan register, kalian juga bisa menambahkan sesuai kebutuhan kalian ya…</p>
+
+<p><a href="/2020/09/20/flutter-firebase-auth-part4/">Flutter Firebase Auth Part 4 - Melihat Hasil</a>
+<br />
+<br /></p>
+<blockquote>
+  <p>Sekedar ingin berbagi, dan bukan yang paling mampu<small> - Penulis</small></p>
+</blockquote>
+
+:ET
