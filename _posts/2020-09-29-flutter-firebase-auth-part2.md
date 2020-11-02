@@ -470,7 +470,7 @@ class HomeView extends StatelessWidget {
 
 Pada bagian ini , kode kalian pasti banyak yang error karena state nya belum kita buat. Oke kita akan membahas cara membuat statenya pada tulisan kita di chapter 3
 
-[Flutter Firebase Auth Part 3 - Menambahkan Code Auth]({{base_url}}/2020/09/20/flutter-firebase-auth-part3/)
+[Flutter Firebase Auth Part 3 - Menambahkan Code Auth]({{base_url}}/2020/09/28/flutter-firebase-auth-part3/)
 
 <br>
 <br>
