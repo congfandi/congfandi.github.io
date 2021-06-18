@@ -65,7 +65,7 @@ Tabel diatas merepresentasikan nama variable yang akan kita tulis pada file `Vie
 
 Setelah selesai mengkoneksikan semua komponen yang kita pasang di `Main.storyboard` dengan `ViewController.swift`, kita lanjutkan dengan menginisialisasi semua kebutuhan kita terkait speech recognitionnya. Lihat pada gambar dibawah ini.
 
-![Image3]({{site.url}/assets/img/210618/image3.png})
+![Image3]({{site.url}}/assets/img/210618/image3.png)
 
 berikut penjelasannya pada tabel dibawah ini
 
