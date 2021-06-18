@@ -52,7 +52,7 @@ berikan nama pada component kalian serperti pada gambar ini, tujuannya untuk mem
 
 |  Komponen    | idName      |
 | :------------ |:---------------:|
-| ViewColo      | colorView           |
+| View      | colorView           |
 | Tombol Buat Speech  | startButton           |
 | text mendeteksi warna      | detectedTextLabel |
 |Click tombol speech| startButtonTapped|
