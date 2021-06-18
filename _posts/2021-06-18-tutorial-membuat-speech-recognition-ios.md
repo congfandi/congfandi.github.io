@@ -51,5 +51,30 @@ Gambar diatas adalah tampilan projcet secara keseluruhan. Idenya adalah jika kal
 
 Jika kalian berhasil mengkoneksikan component kalian pada controllerview, kalian dapat melihatnya dengan cara klik kanan pada component yang kalian inginkan dana kan terlihat seperti gambar diatas.
 
+berikan nama pada component kalian serperti pada gambar ini, tujuannya untuk meminimalisir error di code kalian
 
+|  Komponen    | idName      |
+| :------------ |:---------------:|
+| ViewColo      | colorView           |
+| Tombol Buat Speech  | startButton           |
+| text mendeteksi warna      | detectedTextLabel |
 
+Tabel diatas merepresentasikan nama variable yang akan kita tulis pada file `ViewController.swift`
+
+## Inisialisasi kebutuhan speech recognition pada 
+
+Setelah selesai mengkoneksikan semua komponen yang kita pasang di `Main.storyboard` dengan `ViewController.swift`, kita lanjutkan dengan menginisialisasi semua kebutuhan kita terkait speech recognitionnya. Lihat pada gambar dibawah ini.
+
+![Image3]({{site.url}/assets/img/210618/image3.png})
+
+berikut penjelasannya pada tabel dibawah ini
+
+|  Variabel    | Keterangan      |
+| :------------ |:---------------:|
+|  let audioEngine| Kita gunakan untuk merekam suara kita|
+|  let speechRecognizer| |
+|  let request |Kita gunakan untuk meminta user menyetujui aplikasi untuk menggunakan fitur speec recognition/phone|
+|  var recognitionTask|Kita gunakan untuk melakukan proses pengenalan suara|
+|  var isRecording |kita gunakan untuk membuat flag antara sedang merekam atau tidak dalam sedang merekam|
+|  var index:Int |Untuk menandai posisi dari warna yang akan kita ucapkan nantinya|
+|  let colorData |Data warna yang kita butuhkan|
