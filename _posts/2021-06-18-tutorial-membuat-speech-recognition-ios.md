@@ -11,7 +11,7 @@ tags: [Developer, iOS, iPhone]# tags dalam array [Developer, Web, Tips]
 
 
 Hola soabt ngoding dimanapun kalian berada, kita berjumpa lagi dalam sebuah karya sederhana dari anak desa. Sduah lama sekali saya belum mempublikasikan sebuah tulisan karena kesibukan. Oke tanpa berbasa basi, kali ini saya akan sedikit sharing tentang sebuah teknologi yang dimliki oleh Apple sebut saja `Speech Recognition`. Speech recognition ini berbeda ya dengan Sicantik siri yang sudah bisa digunakan secara luas pada platform yang dikeluarkan oleh Apple.
-
+![video]({{site.url}}/assets/img/210618/demo.mov)
 Ok tanpa berbasa bagi yuk kita lanjut ke bagian bagian ngoding dulu.
 
 
