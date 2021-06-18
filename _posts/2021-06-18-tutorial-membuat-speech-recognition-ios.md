@@ -12,8 +12,6 @@ tags: [Developer, iOS, iPhone]# tags dalam array [Developer, Web, Tips]
 
 Hola soabt ngoding dimanapun kalian berada, kita berjumpa lagi dalam sebuah karya sederhana dari anak desa. Sduah lama sekali saya belum mempublikasikan sebuah tulisan karena kesibukan. Oke tanpa berbasa basi, kali ini saya akan sedikit sharing tentang sebuah teknologi yang dimliki oleh Apple sebut saja `Speech Recognition`. Speech recognition ini berbeda ya dengan Sicantik siri yang sudah bisa digunakan secara luas pada platform yang dikeluarkan oleh Apple.
 
-![Preferences]({{site.url}}/assets/img/210618/demo.mov)
-
 Ok tanpa berbasa bagi yuk kita lanjut ke bagian bagian ngoding dulu.
 
 
@@ -97,5 +95,63 @@ berikut penjelasannya pada tabel dibawah ini
             isRecording = true
             startButton.backgroundColor = UIColor.red
         }
+    }
+```
+
+## Membuat fungsi pembatalan rekaman suara
+```swift
+    func cancelRecording() {
+        recognitionTask?.finish()
+        recognitionTask = nil
+        
+        // stop audio
+        request.endAudio()
+        audioEngine.stop()
+        audioEngine.inputNode.removeTap(onBus: 0)
+    }
+```
+
+## Mengecek permission dari speech library
+```swift
+ func requestSpeechAuthorization() {
+        SFSpeechRecognizer.requestAuthorization { authStatus in
+            OperationQueue.main.addOperation {
+                switch authStatus {
+                case .authorized:
+                    self.startButton.isEnabled = true
+                case .denied:
+                    self.startButton.isEnabled = false
+                    self.detectedTextLabel.text = "User denied access to speech recognition"
+                case .restricted:
+                    self.startButton.isEnabled = false
+                    self.detectedTextLabel.text = "Speech recognition restricted on this device"
+                case .notDetermined:
+                    self.startButton.isEnabled = false
+                    self.detectedTextLabel.text = "Speech recognition not yet authorized"
+                @unknown default:
+                    return
+                }
+            }
+        }
+    }
+```
+
+## Mengubah warna view saat ada kata sesuai warna yang diucapkan
+```swift
+    func checkForColorsSaid(resultString: String) {
+        let finalColor = resultString.prefix(1).uppercased()+resultString.lowercased().dropFirst();
+        print("warna \(finalColor)")
+        guard let color = Color(rawValue: finalColor) else { return }
+        colorView.backgroundColor = color.create
+        self.detectedTextLabel.text = resultString
+    }
+```
+
+## Membuat dialog saat speechrecognition tidak bisa digunakan atau error
+```swift
+    func sendAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 ```
