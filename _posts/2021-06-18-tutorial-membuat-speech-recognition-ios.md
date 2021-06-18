@@ -58,6 +58,7 @@ berikan nama pada component kalian serperti pada gambar ini, tujuannya untuk mem
 | ViewColo      | colorView           |
 | Tombol Buat Speech  | startButton           |
 | text mendeteksi warna      | detectedTextLabel |
+|Click tombol speech| startButtonTapped|
 
 Tabel diatas merepresentasikan nama variable yang akan kita tulis pada file `ViewController.swift`
 
@@ -72,9 +73,25 @@ berikut penjelasannya pada tabel dibawah ini
 |  Variabel    | Keterangan      |
 | :------------ |:---------------:|
 |  let audioEngine| Kita gunakan untuk merekam suara kita|
-|  let speechRecognizer| |
-|  let request |Kita gunakan untuk meminta user menyetujui aplikasi untuk menggunakan fitur speec recognition/phone|
+|  let speechRecognizer| Kita gunakan untuk meminta user menyetujui aplikasi untuk menggunakan fitur speech recognition|
+|  let request |Kita gunakan untuk meminta user menyetujui aplikasi untuk menggunakan fitur microphone|
 |  var recognitionTask|Kita gunakan untuk melakukan proses pengenalan suara|
 |  var isRecording |kita gunakan untuk membuat flag antara sedang merekam atau tidak dalam sedang merekam|
 |  var index:Int |Untuk menandai posisi dari warna yang akan kita ucapkan nantinya|
 |  let colorData |Data warna yang kita butuhkan|
+
+
+## Membuat rekaman suara dengan menekan tombol 
+```swift
+//MARK: IBActions and Cancel
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        if isRecording == true {
+            cancelRecording()
+            isRecording = false
+            startButton.backgroundColor = UIColor.gray
+        } else {
+            self.recordAndRecognizeSpeech()
+            isRecording = true
+            startButton.backgroundColor = UIColor.red
+        }
+    }```
