@@ -79,8 +79,6 @@ berikut penjelasannya pada tabel dibawah ini
 |  let request |Kita gunakan untuk meminta user menyetujui aplikasi untuk menggunakan fitur microphone|
 |  var recognitionTask|Kita gunakan untuk melakukan proses pengenalan suara|
 |  var isRecording |kita gunakan untuk membuat flag antara sedang merekam atau tidak dalam sedang merekam|
-|  var index:Int |Untuk menandai posisi dari warna yang akan kita ucapkan nantinya|
-|  let colorData |Data warna yang kita butuhkan|
 
 
 ## Membuat rekaman suara dengan menekan tombol 
@@ -155,3 +153,93 @@ berikut penjelasannya pada tabel dibawah ini
         self.present(alert, animated: true, completion: nil)
     }
 ```
+
+## Membuat daftar warna yang akan kita tampilkan
+```swift
+    enum Color: String {
+        case Red, Orange, Yellow, Green, Blue, Purple, Black, Gray
+
+        var create: UIColor {
+            switch self {
+            case .Red:
+                return UIColor.red
+            case .Orange:
+                return UIColor.orange
+            case .Yellow:
+                return UIColor.yellow
+            case .Green:
+                return UIColor.green
+            case .Blue:
+                return UIColor.blue
+            case .Purple:
+                return UIColor.purple
+            case .Black:
+                return UIColor.black
+            case .Gray:
+                return UIColor.gray
+            }
+        }
+    }
+```
+
+## Mulai perekaman suara dan mengkonversinya menjadi string
+```swift
+func recordAndRecognizeSpeech() {
+        let node = audioEngine.inputNode
+        let recordingFormat = node.outputFormat(forBus: 0)
+        node.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { buffer, _ in
+            self.request.append(buffer)
+        }
+        audioEngine.prepare()
+        do {
+            try audioEngine.start()
+        } catch {
+            self.sendAlert(title: "Speech Recognizer Error", message: "There has been an audio engine error.")
+            return print(error)
+        }
+        guard let myRecognizer = SFSpeechRecognizer() else {
+            self.sendAlert(title: "Speech Recognizer Error", message: "Speech recognition is not supported for your current locale.")
+            return
+        }
+        if !myRecognizer.isAvailable {
+            self.sendAlert(title: "Speech Recognizer Error", message: "Speech recognition is not currently available. Check back at a later time.")
+            // Recognizer is not available right now
+            return
+        }
+        recognitionTask = speechRecognizer?.recognitionTask(with: request, resultHandler: { result, error in
+            if let result = result {
+                let bestString = result.bestTranscription.formattedString
+                var lastString: String = ""
+                for segment in result.bestTranscription.segments {
+                    let indexTo = bestString.index(bestString.startIndex, offsetBy: segment.substringRange.location)
+                    lastString = String(bestString[indexTo...])
+                }
+                self.checkForColorsSaid(resultString: lastString)
+            } else if let error = error {
+                self.sendAlert(title: "Speech Recognizer Error", message: "There has been a speech recognition error.")
+                print(error)
+            }
+        })
+    }
+```
+
+## Mengecek permision untuk merekam suara
+```swift
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.requestSpeechAuthorization()//method ini juga bisa kita panggil saat tombol speech ditekan
+    }
+```
+
+
+Dan tutorial berakhir xD . Seharusnya apilkasi kalian sudah dapat dijalankan dan untuk mencoba fitur tersebut, kalian cukup running aplikasi dan kaatkan warna dengan bahasa ingiris sebagai contoh coba katakan 'Black'.
+
+
+Sekian dulu Tutorial kali ini dan sampai jumpa di tutorial lainnya.
+
+Link repo project ini bisa di download [disini](https://github.com/congfandi/speechrecognitionIos)
+
+<br>
+<br>
+>Jika kau tidak mampu menahan sulitnya belajar, maka kau harus siap menahan perihnya kebodohan<small> - Imam Syafi'i</small>
+
