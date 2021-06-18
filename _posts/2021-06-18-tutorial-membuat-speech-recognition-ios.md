@@ -83,7 +83,6 @@ berikut penjelasannya pada tabel dibawah ini
 
 ## Membuat rekaman suara dengan menekan tombol 
 ```swift
-//MARK: IBActions and Cancel
     @IBAction func startButtonTapped(_ sender: UIButton) {
         if isRecording == true {
             cancelRecording()
