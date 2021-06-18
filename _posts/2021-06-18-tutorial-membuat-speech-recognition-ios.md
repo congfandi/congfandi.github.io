@@ -18,3 +18,26 @@ Ok tanpa berbasa bagi yuk kita lanjut ke bagian bagian ngoding dulu.
 ## Kebutuhan / Prasyarat
 
 Sebelum kalian melanjutkan, ada baiknya kita bahas dulu hal hal yang dibutuhkan untuk membuat tutorial kali ini karena tidak semua platform dapat menjalankan hal ini.
+
+
+|  Spesifikasi  | Keterangan      |
+| :------------ |:---------------:|
+| OS            | MacOs           |
+| Editor/Tool   | Xcode           |
+| Platform      | iPhone/Emolator |
+
+
+Spesifikasi diatas hanyalah saran guys, jika kalian ada cara lain masih tetap bisa mengikuti tutorial ini.
+
+
+## Coding
+
+Pada bagian bakalan sangat seru guys, kita bakalan ngoding dengan menggunakan Xcode dengan mengunakan bahasa Swift.
+
+### Membuat Layout 
+pembuatan layout ini akan kita lakukan denga menggunakan storyborad, untuk hasilnya dapat kalian lihat pada gambar diabwah ini. 
+
+Untuk langkah pertama ini silahkan kalian buatlah project terlebih dahulu pada Xcode kailan. dan buka file `Main.storybord`.
+
+*Pastikan buat project default agar nama file bisa sama dengan apa yang akan kita lakukan di profject ini*
+
