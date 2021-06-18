@@ -24,7 +24,7 @@ Sebelum kalian melanjutkan, ada baiknya kita bahas dulu hal hal yang dibutuhkan 
 | :------------ |:---------------:|
 | OS            | MacOs           |
 | Editor/Tool   | Xcode           |
-| Platform      | iPhone/Emolator |
+| Platform      | iPhone/iPhone Simulator |
 
 
 Spesifikasi diatas hanyalah saran guys, jika kalian ada cara lain masih tetap bisa mengikuti tutorial ini.
@@ -40,4 +40,16 @@ pembuatan layout ini akan kita lakukan denga menggunakan storyborad, untuk hasil
 Untuk langkah pertama ini silahkan kalian buatlah project terlebih dahulu pada Xcode kailan. dan buka file `Main.storybord`.
 
 *Pastikan buat project default agar nama file bisa sama dengan apa yang akan kita lakukan di profject ini*
+
+![Preferences]({{site.url}}/assets/img/210618/image1.png)
+
+Gambar diatas adalah tampilan projcet secara keseluruhan. Idenya adalah jika kalian ucapkan 1 kata dalam bahasa ingris kita akan mengganti warnanya dengan warna yang kita ucapkan.
+
+
+## Koneksikan layout yang kita buat dengan controller
+![Preferences]({{site.url}}/assets/img/210618/image2.png)
+
+Jika kalian berhasil mengkoneksikan component kalian pada controllerview, kalian dapat melihatnya dengan cara klik kanan pada component yang kalian inginkan dana kan terlihat seperti gambar diatas.
+
+
 
