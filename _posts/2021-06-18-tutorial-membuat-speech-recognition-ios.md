@@ -82,4 +82,16 @@ berikut penjelasannya pada tabel dibawah ini
 
 
 ## Membuat rekaman suara dengan menekan tombol 
-![Start Or Stop Record]({{site.url}}/assets/img/210618/image4.png)
+```swift
+    @IBAction func startButtonTapped(_ sender: UIButton) {
+        if isRecording == true {
+            cancelRecording()
+            isRecording = false
+            startButton.backgroundColor = UIColor.gray
+        } else {
+            self.recordAndRecognizeSpeech()
+            isRecording = true
+            startButton.backgroundColor = UIColor.red
+        }
+    }
+```
