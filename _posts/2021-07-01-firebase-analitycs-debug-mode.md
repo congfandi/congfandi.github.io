@@ -35,7 +35,7 @@ Hasil dapat dilihat pada gambar dibawah ini :
 ganti *package_name* dengan nama package apliksi temen temen.
 - hasil kemudian restart aplikasi dan tunggu hasilnya setelah beberapa menit. dan jangan lupa di resfresh halaman debug consolenya ya.
 
-### Debuging mode do IOS ###
+### Debuging mode di IOS ###
 - Buka XCODE temen temen
 - masuk ke menu *edit schema* danlihat
 - Tambahkan script berikut pada bagian *Argumnents* tab
@@ -51,7 +51,7 @@ ganti *package_name* dengan nama package apliksi temen temen.
 - Restart aplikasi temen temen dengan cara menjalankan kembali dari xcode temen temen.
 
     
-### Debuging mode WEB ###
+### Debuging mode di WEB ###
 Cukup berbeda dengan cara yang ada di android dan ios, untuk mengaktifkan debuging mode di web app, kalian hanya perlu 
 - Gunakan google chrome
 - Masuk ke [google chrome store](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
