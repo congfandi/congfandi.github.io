@@ -23,7 +23,8 @@ Hasil dapat dilihat pada gambar dibawah ini :
 2. Kalian wajib implementasi firebase analytics di project kalian baik itu web maupun apps di android maupun di ios
 
 3. Bagian ini yang sangat penting,
-    ### Debuging mode di Android
+<br>
+    ### Debuging mode di Android ###
     - Buka terminal di root project temen temen
     - Ketikkan perintah berikut ini
     ```terminal
@@ -31,8 +32,8 @@ Hasil dapat dilihat pada gambar dibawah ini :
     ```
     ganti *package_name* dengan nama package apliksi temen temen.
     - hasil kemudian restart aplikasi dan tunggu hasilnya setelah beberapa menit. dan jangan lupa di resfresh halaman debug consolenya ya.
-
-    ### Debuging mode do IOS
+<br>
+    ### Debuging mode do IOS ###
     - Buka XCODE temen temen
     - masuk ke menu *edit schema* danlihat
     - Tambahkan script berikut pada bagian *Argumnents* tab
@@ -47,7 +48,7 @@ Hasil dapat dilihat pada gambar dibawah ini :
       ![xcode config]({{site.url}}/assets/img/210701/xcode1.png)
     - Restart aplikasi temen temen dengan cara menjalankan kembali dari xcode temen temen.
 
-    ### Debuging mode WEB
+    ### Debuging mode WEB ###
      Cukup berbeda dengan cara yang ada di android dan ios, untuk mengaktifkan debuging mode di web app, kalian hanya perlu 
      1. Gunakan google chrome
      2. Masuk ke [google chrome store](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
