@@ -24,7 +24,8 @@ Hasil dapat dilihat pada gambar dibawah ini :
 
 3. Bagian ini yang sangat penting,
 <br>
-    ### Debuging mode di Android ###
+
+### Debuging mode di Android ###
     - Buka terminal di root project temen temen
     - Ketikkan perintah berikut ini
     ```terminal
@@ -33,27 +34,29 @@ Hasil dapat dilihat pada gambar dibawah ini :
     ganti *package_name* dengan nama package apliksi temen temen.
     - hasil kemudian restart aplikasi dan tunggu hasilnya setelah beberapa menit. dan jangan lupa di resfresh halaman debug consolenya ya.
 <br>
-    ### Debuging mode do IOS ###
+
+### Debuging mode do IOS ###
     - Buka XCODE temen temen
     - masuk ke menu *edit schema* danlihat
     - Tambahkan script berikut pada bagian *Argumnents* tab
     - Kemudian pada menu *Arguments Passed On Lauch* tambahkan script berikut
        
-        *-DIRDebugEnabled*
-        *-FIRAnalyticsVerboseLoggingEnabled*
-        *-FIRAnalyticsDebugEnable*
+        1. *-DIRDebugEnabled*
+        2. *-FIRAnalyticsVerboseLoggingEnabled*
+        3. *-FIRAnalyticsDebugEnable*
       
       Lengkapnya coba perhatikan gambar dibawah ini : 
 
       ![xcode config]({{site.url}}/assets/img/210701/xcode1.png)
     - Restart aplikasi temen temen dengan cara menjalankan kembali dari xcode temen temen.
 
-    ### Debuging mode WEB ###
+    
+### Debuging mode WEB ###
      Cukup berbeda dengan cara yang ada di android dan ios, untuk mengaktifkan debuging mode di web app, kalian hanya perlu 
-     1. Gunakan google chrome
-     2. Masuk ke [google chrome store](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
-     3. install extention [Google Analytics Debuger](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
-     4. Selesai.
+      - Gunakan google chrome
+      - Masuk ke [google chrome store](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
+      - install extention [Google Analytics Debuger](https://chrome.google.com/webstore/search/Google%20analytics%20debuger)
+      - Selesai.
 
 
      Untuk melihat hasilnya, teman teman cukup kembali ke firebase console teman teman dan tunggu beberapa menit, tentunya dalam keadaan kondisi aplikasi dirunning ya hasilnya dapat dilihat secara realtime sebagaimana pada gambar pertama.
