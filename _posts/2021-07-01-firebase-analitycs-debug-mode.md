@@ -28,6 +28,7 @@ Hasil dapat dilihat pada gambar dibawah ini :
 ### Debuging mode di Android ###
 - Buka terminal di root project temen temen
 - Ketikkan perintah berikut ini
+
 ```terminal
     adb shell setprop debug.firebase.analytics.app package_name
 ```
@@ -58,12 +59,12 @@ Cukup berbeda dengan cara yang ada di android dan ios, untuk mengaktifkan debugi
 - Selesai.
 
 
-     Untuk melihat hasilnya, teman teman cukup kembali ke firebase console teman teman dan tunggu beberapa menit, tentunya dalam keadaan kondisi aplikasi dirunning ya hasilnya dapat dilihat secara realtime sebagaimana pada gambar pertama.
+Untuk melihat hasilnya, teman teman cukup kembali ke firebase console teman teman dan tunggu beberapa menit, tentunya dalam keadaan kondisi aplikasi dirunning ya hasilnya dapat dilihat secara realtime sebagaimana pada gambar pertama.
 
-     Cukup sekian teman teman jika ada yang perlu untuk di diskusikan silahakn masukan pertanyaan dibawah atau bisa langsung chatting di bagian pojok kanan bawah.
+Cukup sekian teman teman jika ada yang perlu untuk di diskusikan silahakn masukan pertanyaan dibawah atau bisa langsung chatting di bagian pojok kanan bawah.
 
 
-     *Source : [https://firebase.google.com/docs/analytics/debugview#web](https://firebase.google.com/docs/analytics/debugview#web)*
+*Source : [https://firebase.google.com/docs/analytics/debugview#web](https://firebase.google.com/docs/analytics/debugview#web)*
     
 
 
