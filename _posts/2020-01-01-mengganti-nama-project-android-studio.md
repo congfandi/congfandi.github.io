@@ -1,6 +1,6 @@
 ---
 title: Android Studio - Mengganti nama project 
-img: hipster.jpg
+img: 200101/cover.png
 layout: post
 author: Cong Fandi
 author-img : congfandi.jpeg
