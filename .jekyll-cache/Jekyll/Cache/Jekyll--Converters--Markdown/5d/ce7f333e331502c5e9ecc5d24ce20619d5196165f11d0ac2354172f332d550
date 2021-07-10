@@ -1,4 +1,0 @@
-I"-<p>Hi sobat ngoding, kali ini saya khsus membahas cara upload aplikasi yang dibuat menggunakan flutter ke playstore. Cara uploadnya saya bagi menjadi 2 bagian, yang pertama ini adalah khusus bagaimana cara membuat <code class="language-plaintext highlighter-rouge">app-release.apk</code> untuk bisa dimasukan ke ke playstore.
- <!--more-->
-Sebenarnya flutter sudah membahas tatacara nya ada di blognya flutter cuman pada blog saya ini akan saya tambahkan beberapa hal yang tidak dibahas disana, seperti biasa kita mulai saja tutorial nya dengan simulasi</p>
-:ET

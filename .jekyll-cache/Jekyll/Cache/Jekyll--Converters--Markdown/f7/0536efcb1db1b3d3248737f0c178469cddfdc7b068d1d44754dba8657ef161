@@ -1,4 +1,0 @@
-I"Š<p>Halo sobat ngoding, kali ini saya ingin menulis tentang cara membuat JKS file atau istilah kerenya <em>Key Store</em>. Sebagai intrudction, <em>Key Store file adalah file yang digunakan untuk mengupload aplikasi ke playstore</em> ini menurut pengertian saya probadi dan agar dapat dengan mudah difahami. Keystore ini sebagai kunci atau syarat agar aplikasi dapat diupload ke playstore, mennurut google, isi dari <em>Key Store</em> ini adalah penandatanganan aplikasi.
-<!--more-->
-Perlu di ingat bahwa , <em>_1 Key Store dapat dipasang di banyak aplikasi namun 1 aplikasi yang sudah tayang di playstore, Key Store nya tidak dapat diganti_</em></p>
-:ET

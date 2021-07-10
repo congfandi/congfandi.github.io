@@ -1,4 +1,0 @@
-I"x<p>Sebelumnya saya sudah membahas <a href="https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/">Upload aplikasi flutter ke playstore</a>, saat nya kita membahas bagaiaman cara upload aplikasi flutter ke appstore. Sebenarnya flutter juga sudah membahas juga di blognya cara uploadnya ke appstore namun saya disini akan membahas lebih detail. 
-<!--more-->
-Seperti pada pembahasan <a href="https://thengoding.com/2020/01/10/upload-aplikasi-flutter-ke-playstore-part-1/">Upload aplikasi flutter ke playstore</a> , kita akan membagi pembahasan kali ini menjadi 3 bagian, bagian pertama kita akan membahas pada sisi developer console nya dan bagian kedua kita bahas disisi appstore connect nya dan terakhir pada bagian xcode nya. Ada beberapa syarat yang harus kalian penuhi sebelum kalian mengupload aplikasi kalian ke appstore, syarat -syarat sebagai berikut :</p>
-:ET
